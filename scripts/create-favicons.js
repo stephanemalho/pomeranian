@@ -3,11 +3,11 @@ const fs = require("fs");
 const path = require("path");
 
 const publicDir = path.join(__dirname, "..", "public");
-const logoPath = path.join(publicDir, "logo-kawaii-shiba.jpg");
+const logoPath = path.join(publicDir, "logo-cercle-polaire.png");
 
 async function createFavicons() {
     if (!fs.existsSync(logoPath)) {
-        console.log("❌ logo-kawaii-shiba.jpg not found!");
+        console.log("❌ logo-cercle-polaire.png not found!");
         return;
     }
 

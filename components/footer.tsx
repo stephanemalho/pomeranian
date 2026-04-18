@@ -12,7 +12,7 @@ export function Footer() {
                         <div className="flex items-center space-x-2">
                             <div className="h-10 w-10 relative">
                                 <Image
-                                    src="/icon.png"
+                                    src="/logo-cercle-polaire.png"
                                     alt="logo Spitz nain Poméranien elevage de mameshiba"
                                     fill
                                     sizes="40px"

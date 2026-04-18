@@ -16,7 +16,7 @@ const questrial = Questrial({
   display: "swap",
 })
 
-const iconVersion = "v2"
+const iconVersion = "v3"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       { url: `/favicon.ico?${iconVersion}`, type: "image/x-icon" },
     ],
     apple: [
-      { url: `/apple-icon.png?${iconVersion}`, type: "image/png", sizes: "512x512" },
+      { url: `/apple-icon.png?${iconVersion}`, type: "image/png", sizes: "180x180" },
     ],
   },
 
