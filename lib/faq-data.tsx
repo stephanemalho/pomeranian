@@ -1,0 +1,651 @@
+import type { FAQItem } from "@/components/faq"
+
+export const faqHome: FAQItem[] = [
+  {
+    question: "Qu'est-ce qui distingue Kawaii Shiba MAMESHIBA des autres élevages de Shiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Kawaii MAMESHIBA est un élevage de type professionnel, aux normes du bien être animal passionné par les Chiens de petits formats et de lignée originelles, avec une sélection rigoureuse des reproducteurs et de leurs origines, nos portées sont limitées pour garantir la santé des chiots mais surtout des reproducteurs, et un suivi structuré est effectué à chaque étape du développement de nos chiots.
+        </p>
+        <p>
+          Chaque projet d'élevage vise à produire des chiens équilibrés, conformes au type et adaptés à la vie de compagnie.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Comment les chiots Mameshiba sont-ils socialisés ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          La socialisation des mameshiba commence dès les premiers jours, avec des stimulations adaptées à leurs caractère spécifique, des manipulations régulières sont faite et une exposition progressive à l'environnement leurs permets d’être préparé a leurs future vie adoptive.
+        </p>
+        <p>
+          Les chiots sont habitués aux bruits du quotidien, aux interactions humaines et aux différentes textures afin de favoriser confiance et stabilité.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Quels types de Mameshiba sont proposés par Kawaii Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          L'élevage travaille plusieurs tailles de MAMESHIBA, de 4 à 7kg une fois adultes.
+        </p>
+        <p>
+          Les chiens présentent une grande variété de robes et de couleurs, les coloris vont de roux-blanc à noir-roux-blanc en passant par tout blanc, issues d'une sélection visant à concilier esthétique, tempérament et santé.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Quel suivi est proposé après l'adoption ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Le Mameshiba est un chien au caractère unique, Un accompagnement vous est assuré avant, pendant le processus d'adoption et également après le départ du chiot et tout au long de sa vie afin de répondre aux questions liées à l'alimentation, à l'adaptation et aux premiers mois de vie particulièrement.
+        </p>
+        <p>
+          Ce suivi permet d'accompagner chaque adoptant pour que chaque chiot soit heureux et équilibré dans son nouveau foyer.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Pourquoi passer par un élevage professionnel plutôt qu'une annonce en ligne ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Un élevage professionnel comme le nôtre offre une génétique des lignées saine, une sélection de grande qualité avec des parents aux origines Japonaise (Pour Kawaii Shiba).
+          Nous avons un suivi vétérinaire rigoureux, un cahier des charges élevé. Chez nous, les locaux sont adaptés au bien être animal, nous avons une connaissance accrue des soins à prodiguer aux animaux, actes de premiers secours, des urgences médicales, il y'a également une présence permanente.
+          Un suivi des parents, des chiots, de la sociabilisation, de la gestion émotionnelle et un cadre structuré pour le développement des chiots est nécessaire.
+        </p>
+        <p>
+          Cela permet de faire un choix réfléchi et responsable, basé sur des critères objectifs, basé sur le choix d'avoir choisi un chiot élevé dans des conditions optimales et sérieuses plutôt que sur une simple annonce ne respectant aucun cadre légal, et dont les conditions d'hygiène et les connaissances du naisseur laissent à désirer.
+        </p>
+      </div>
+    ),
+  },
+]
+
+export const faqPresentation: FAQItem[] = [
+  {
+    question: "Comment sont choisis les futurs parents ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Les futurs parents sont choisis avec beaucoup d&apos;exigence : origine des lignées, cohérence du type, qualité de construction, tempérament et stabilité émotionnelle.
+        </p>
+        <p>
+          Chez le Mameshiba, nous recherchons un chien harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif.
+        </p>
+        <p>
+          Les tests de santé, l&apos;observation du caractère et la traçabilité sont des points centraux de notre sélection. Si un chien ne présente pas l&apos;équilibre recherché, il ne reproduit pas.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Combien de portées sont réalisées par an ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Ce nombre est variable selon les femelles, les repos nécessaires et la qualité des mariages envisagés.
+        </p>
+        <p>
+          Chez Kawaii Mameshiba, nous privilégions clairement la qualité à la quantité.
+        </p>
+        <p>
+          Les femelles ont leurs périodes de repos après gestation, et le nombre de portées est volontairement limité afin de garantir :
+        </p>
+        <ul className="list-disc ml-4">
+          <li>une présence quotidienne auprès des chiots,</li>
+          <li>une socialisation adaptée au tempérament du Mameshiba,</li>
+          <li>un suivi individualisé pour chaque famille adoptante.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question: "Où grandissent les chiots ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Les chiots évoluent dans un environnement professionnel, sécurisé et stimulant, au contact de leur fratrie, de leur mère et de l&apos;humain.
+        </p>
+        <p>
+          Ils découvrent progressivement les bruits, les manipulations, les textures et les situations du quotidien, toujours de manière mesurée, afin de construire leur confiance sans les brusquer.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "L'élevage respecte-t-il le rythme des chiens ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Chez Kawaii Mameshiba, chaque chien évolue dans le respect de son rythme physiologique et émotionnel.
+          Les périodes de reproduction, de repos et de récupération sont soigneusement respectées afin de préserver la santé et l'équilibre des reproducteurs.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Accordez-vous de l'importance à l'équilibre émotionnel ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Absolument. L&apos;équilibre émotionnel est une partie essentielle de notre travail, en particulier chez le Mameshiba, qui peut être très fin dans sa lecture du monde et de l&apos;humain.
+        </p>
+        <p>Un chiot bien dans sa tête devient un adulte stable, confiant et agréable à vivre.</p>
+        <p>C&apos;est pourquoi chaque interaction est pensée pour renforcer la sécurité affective, la confiance en l&apos;humain et l&apos;autonomie.</p>
+      </div>
+    ),
+  },
+  {
+    question: "L'élevage est-il adapté aux familles avec enfants ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui, à condition que les rencontres se fassent dans le calme et le respect. Les enfants doivent apprendre à approcher le chiot en douceur, sans agitation.
+        </p>
+        <p>
+          Les chiots sont habitués à une présence humaine variée et à des manipulations respectueuses, ce qui facilite leur intégration dans des foyers avec enfants, sous supervision et dans le respect mutuel.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Proposez-vous un accompagnement pour les primo-adoptants ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui, bien sûr. Nous accompagnons tout particulièrement les premières adoptions en prenant le temps d&apos;expliquer les besoins du Mameshiba, les bases éducatives et les bonnes pratiques pour un départ serein.
+        </p>
+        <p>
+          L&apos;accompagnement continue après le départ du chiot, car notre travail ne s&apos;arrête pas au moment du placement.
+        </p>
+      </div>
+    ),
+  },
+
+]
+
+export const faqEleveuses: FAQItem[] = [
+  {
+    question: "Quelle est votre taille de Mameshiba préférée ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Le Mameshiba est un petit chien, et j'aime particulièrement les chiens de petite taille, entre 4 et 6 kg, qui restent dans le type du Mameshiba : un petit primitif harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif. Attention cependant à ne pas chercher à faire du Mameshiba un chien de poche, il doit rester dans les standards de la race pour être un Mameshiba, c'est à dire entre 25 et 34 cm pour le mâle et entre 25 et 32 cm pour la femelle selon le KCJ.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Faites vous des concours et expositions ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Jusqu'à présent non, je suis membre de la fédération française du Mameshiba, et j'ai été ( aurelie ) juge d'un concours organisé par l'european Mameshiba club et la fédération française du Mameshiba ( FFP) je me suis beaucoup amusée. Depuis je n'ai pas participé à des expositions cependant ce n'est pas exclu que j'envisage de le faire à l'avenir. Les concours sont très contraignants en terme de planning, de risques sanitaires de mon point de vue. Cependant c'est aussi très intéressant pour présenter la race en devenir et connecter à d'autres passionnés.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Pourquoi adhérer à un club de race ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          C'est une façon de retracer les lignées à travers la création de la race et de féderer les gens autour du Mameshiba, pour le moment les clubs en France sont nombreux mais non officiels, étant donné que la race n'est pas recconue par la FCI, le but des clubs est d'accéder à la reconnaissance de la race Mameshiba un jour ou l'autre.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Que vous apporte votre vision de thérapeute et de comportementaliste canin ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Je peux percevoir d'une manière plus fine le chiot le plus adapté au contexte familial décrit.
+        </p>
+        <p>
+          Cela me permet de faire un pont entre la problématique de l'humain, sa personnalité, et la résolution de la problématique à travers la relation avec l'animal, parfois cela représente aussi un chemin initiatique pour l'adoptant. Je suis alors là pour soutenir, cadrer, accompagner l'un et l'autre dans leur processus d'intégration et de vie commune.
+        </p>
+      </div>
+    ),
+  },
+]
+
+export const faqBienEtre: FAQItem[] = [
+  {
+    question: "Dans quel environnement vivent les chiens et les chiots chez Kawaii Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Les chiens et les chiots Mameshiba de notre élevage évoluent dans un environnement propre, sécurisé et adapté à leurs besoins, au sein d'un élevage professionnel déclaré.
+        </p>
+        <p>
+          Les espaces sont pensés pour garantir confort, hygiène, repos et stimulation, tout en respectant les normes en vigueur.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Quel est le cadre naturel de l'élevage Kawaii Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Kawaii Mameshiba est implanté dans un cadre naturel calme et préservé, propice au bien-être des chiens et des chiots.</p>
+        <p>L'environnement est volontairement éloigné de l'agitation urbaine, offrant sérénité, espace et qualité de vie.</p>
+      </div>
+    ),
+  },
+  {
+    question: "Les chiots bénéficient-ils de cet environnement ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Dès leur plus jeune âge, les chiots découvrent progressivement ce cadre naturel, toujours de manière sécurisée.</p>
+        <p>Cette exposition favorise des chiots curieux, confiants et adaptables, capables de s'épanouir dans des environnements variés par la suite.</p>
+      </div>
+    ),
+  },
+  {
+    question: "Le cadre naturel est-il compatible avec un élevage professionnel ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui, parfaitement.</p>
+        <p>Kawaii Mameshiba allie cadre naturel et structure professionnelle, en respectant les normes sanitaires, réglementaires et organisationnelles d'un élevage canin.</p>
+      </div>
+    ),
+  },
+  {
+    question: "Comment accompagnez-vous la croissance du Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          La croissance est progressive et adaptée au gabarit du Mameshiba.
+          L'activité est encadrée, les jeux sont choisis pour limiter les impacts,
+          et le rythme du chiot est toujours respecté.
+        </p>
+        <p>
+          Une attention particulière est portée à l'équilibre, au repos et à l'évolution
+          physique durant les premiers mois.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Le Mameshiba peut il vivre en appartement ? ",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui, il peut vivre en appartement et souvent un chien est plus heureux en appartement qu'en maison car les balades sont plus nombreuses !
+        </p>
+        <p>
+          4 balades par jour seront nécessaires pour rendre votre Mameshiba heureux, pour la propreté également.
+          Vous pouvez alterner des balades en ville et en campagne, le Mameshiba aime la variété.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Comment préparez-vous la séparation avec la mère ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Les chiots vivent à la fois en intérieur et en extérieur, de manière progressive et encadrée.</p>
+        <p>
+          Les premières semaines de vie ils sont dans une nurserie. Jusqu'à l'âge de 4 semaines ils ne vont pas en extérieur, ils passent ensuite les 5-6 autres semaines à alterner : la journée en extérieur, la nuit en intérieur.</p>
+        <ul className="list-disc">
+          Progressivement, les chiots gagnent en autonomie grâce à :
+          <li className="ml-4">
+            des temps de séparation courts et adaptés,
+          </li>
+          <li className="ml-4"> l'exploration de leur environnement en toute sécurité,</li>
+          <li className="ml-4"> des interactions positives avec l'humain,</li>
+          <li className="ml-4"> le maintien de routines rassurantes.</li>
+        </ul>
+        <p>La mère reste présente et attentive tout au long de ce processus, ce qui permet aux chiots de développer leur confiance, leur stabilité émotionnelle et leur capacité d'adaptation.</p>
+        <p>Cette préparation en douceur favorise une transition sereine vers leur nouvelle famille et contribue à faire des chiots bien dans leur tête et bien dans leurs pattes</p>
+      </div>
+    ),
+  },
+
+
+]
+
+export const faqNosChiots: FAQItem[] = [
+  {
+    question: "Comment sont préparés les chiots Mameshiba avant leur départ ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Les chiots sont préparés progressivement à la vie de famille :
+          manipulations quotidiennes, découvertes sensorielles, interactions humaines
+          et premières routines.
+        </p>
+        <p>
+          Cette préparation facilite leur adaptation et favorise un départ serein
+          dans leur nouveau foyer.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "À quel âge les chiots peuvent-ils rejoindre leur famille ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Nos chiots Mameshiba rejoignent leur famille à l'âge de 9 à 10 semaines : leur développement, leur permettant d'avoir acquis les codes canins appris par leur mère, les bases essentielles pour une transition en douceur vers leur nouveau foyer.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Les chiots Mameshiba sont-ils suivis sur le plan vétérinaire ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Tous les chiots bénéficient d'un suivi vétérinaire rigoureux.
+        </p>
+        <p>Ils quittent l'élevage :</p>
+        <ul className="list-disc ml-6">
+          <li>identifiés par puce électronique</li>
+          <li>vaccinés ( CHPPL )</li>
+          <li>vermifugés</li>
+          <li>Certificat de bonne santé</li>
+          <li>Test ADN de filiation</li>
+          <li>avec les documents légaux obligatoires ( carnet de santé ou passeport international/ certificat d'identification / certificat de vente / cession )</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question: "Aidez-vous les familles à choisir leur chiot Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Un accompagnement personnalisé est proposé pour orienter les adoptants vers le chiot le plus adapté à leur mode de vie, leurs attentes et leur environnement. A l'âge de 5 semaines nous pouvons vous conseiller le chiot le plus adapté à votre mode de vie, en fonction de son caractère et des interactions qu'il a avec nous au quotidien : bien sûr le choix reste à la famille.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Les chiots sont-ils adaptés à la vie de famille ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Nos petits chiots Mameshiba sont élevés dans une optique de chien de compagnie, adaptés à la vie de famille, avec enfants, dans le respect mutuel et sous supervision.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Que signifie pour vous un chiot bien préparé ?",
+    answer: (
+      <div className="space-y-3">
+        <p>Un chiot Mameshiba bien préparé est un chiot :</p>
+        <ul className="list-disc ml-6">
+          <li>confiant,</li>
+          <li>équilibré,</li>
+          <li>curieux,</li>
+          <li>prêt à s'adapter sereinement à sa nouvelle vie.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question: "Les chiots sont-ils visibles à l'élevage ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui, les chiots peuvent être rencontrés à l'élevage, dans un cadre sanitaire extrêmement strict, organisé et respectueux de leur bien-être.
+        </p>
+        <p>
+          Les visites sont proposées sur rendez-vous, lorsque l'âge des chiots le permet et dans le respect de leur développement, de leur rythme et des règles sanitaires.
+        </p>
+        <p>
+          Chez Kawaii Mameshiba, les rencontres sont pensées comme un temps privilégié, permettant aux familles de découvrir les chiots, l'environnement dans lequel ils grandissent et la philosophie de l'élevage, en toute transparence et bienveillance
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Peut-on manipuler les chiots Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Pour des raisons sanitaires et de sécurité, les chiots sont visibles mais ne sont pas manipulés par les visiteurs jusquà lâge de 9 semaines ( après avoir effectué leur vaccination )
+        </p>
+        <p>Seul léleveur est autorisé à manipuler les chiots, afin de :</p>
+        <ul className="list-disc ml-6">
+          <li>préserver leur santé et limiter les risques de contamination,</li>
+          <li>respecter leur rythme de développement,</li>
+          <li>garantir des manipulations douces, adaptées et cohérentes.</li>
+        </ul>
+        <p>Cette règle est essentielle et fait partie intégrante de l'engagement de Kawaii Mameshiba pour le bien-être et la protection des chiots déjà adoptés, des portées et de la santé sanitaire de l'élevage selon les recommandations de notre équipe vétérinaire.</p>
+
+      </div>
+    ),
+  }
+]
+
+
+export const faqReproducteurs: FAQItem[] = [
+  {
+    question: "Les chiens reproducteurs vivent-ils à l'élevage ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Les reproducteurs vivent au sein de l'élevage, aucun chien ne provient d'ailleurs : ils sont au contact de l'humain et de leur environnement naturel, ce qui contribue à leur équilibre et à la qualité des chiots à naître.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Pourquoi le choix des reproducteurs est-il si important ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Il est primordial dans un élevage ! Nos reproducteurs transmettent non seulement leur patrimoine génétique, mais aussi une part de leur équilibre émotionnel.
+        </p>
+        <p>
+          Des chiens stables et bien dans leur tête donnent naissance à des chiots plus confiants, plus adaptables et mieux préparés à la vie de famille et citadine.
+        </p>
+        <p>
+          Chez le Mameshiba, la sélection des reproducteurs est primordiale pour obtenir des chiens équilibrés, stables, bien construits et fidèles au type recherché.
+        </p>
+        <p>Le tempérament, la morphologie, la santé et le comportement sont pris en compte avant chaque projet de reproduction.
+        </p>
+      </div>
+    ),
+  }, {
+    question: "Les reproducteurs participent-ils à l'évolution de l'élevage ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Chaque reproducteur s'inscrit dans un projet d'élevage cohérent et durable pour la réaction de la race Mameshiba, visant à améliorer la qualité, l'équilibre et le type des générations futures.
+        </p>
+      </div>
+    ),
+  }, {
+    question: "Les mâles et les femelles s'entendent ils entre eux ? ",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Nos mâles reproducteurs sont très doux et vivent ensemble, nos femelles vivent ensemble également.
+        </p>
+        <p>
+          Nous n'avons aucun problème d'incompatibilité de caractère malgré quelques ajustements dans la meute. Le Mameshiba n'est pas un chien dominant et territorial mais sociable et équilibré.
+        </p>
+      </div>
+    ),
+  }, {
+    question: "Pourquoi le choix des reproducteurs est-il essentiel chez le Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Le choix des reproducteurs est essentiel pour conserver l’identité du Mameshiba :
+          un petit chien primitif, harmonieux, sensible, propre et bien codé.
+        </p>
+        <p>
+          Le tempérament, la morphologie, la santé et le comportement sont pris en compte
+          avant chaque projet de reproduction.
+        </p>
+      </div>
+    ),
+  },
+]
+
+
+export const faqContact: FAQItem[] = [
+  {
+    question: "Pourquoi échanger avant toute adoption ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Chaque projet d'adoption est différent.
+          L'échange permet de comprendre votre mode de vie,
+          vos attentes et de vérifier que le Mameshiba correspond à votre quotidien.
+        </p>
+        <p>
+          Cela permet également de vous orienter vers le gabarit
+          et le tempérament les plus adaptés.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Est-il possible d'être inscrit sur liste d'attente ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui, il est tout à fait possible d'être inscrit sur liste d'attente chez Kawaii Mameshiba.
+        </p>
+        <p>
+          La liste d'attente permet d'anticiper un futur projet d'adoption et de prendre le temps d'échanger afin de vérifier la compatibilité entre le chiot et la future famille.
+        </p>
+        <p>Elle ne constitue pas un engagement automatique, mais une démarche réfléchie et encadrée.</p>
+        <p>L'inscription se fait après un premier échange, permettant de mieux comprendre votre mode de vie, vos attentes et votre projet.</p>
+        <p>Chaque demande est étudiée avec attention, dans l'intérêt du chiot comme de la famille.</p>
+        <p>Chez Kawaii Mameshiba, la liste d'attente est avant tout un moyen de confiance et de préparation, pour des adoptions sereines et durables</p>
+
+      </div>
+    ),
+  },
+  {
+    question: "Puis-je vous contacter après l'adoption si j'ai des questions ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui, bien sûr.
+        </p>
+        <p>
+          Chez Kawaii Mameshiba, l'accompagnement ne s'arrête pas au départ du chiot.
+        </p>
+        <p>L'élevage reste disponible après l'adoption pour répondre aux questions, accompagner les premières étapes et apporter des conseils sur l'adaptation, l'éducation et le quotidien du chiot.</p>
+        <p>Garder le lien avec les familles fait partie intégrante de la philosophie de Kawaii Mameshiba, car une adoption réussie se construit dans la durée, avec écoute, bienveillance et responsabilité</p>
+      </div>
+    ),
+  },
+]
+
+
+export const faqMameShiba: FAQItem[] = [
+  {
+    question: "Quelle est la différence entre un Shiba Inu et un Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Le Mameshiba descend du Shiba Inu et lui ressemble beaucoup dans son expression, sa silhouette et son tempérament primitif.
+        </p>
+        <p>
+          La différence la plus visible reste la taille : le Shiba Inu adulte se situe autour de 39,5 cm chez le mâle et 36,5 cm chez la femelle, tandis que le Mameshiba est plus compact, avec un standard situé autour de 25 à 34 cm pour le mâle et 25 à 32 cm pour la femelle selon le KCJ.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Le Mameshiba est-il reconnu au LOF ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Non. En France, le Mameshiba n'est pas reconnu au LOF à ce jour.
+        </p>
+        <p>
+          Le Shiba Inu, lui, appartient bien au groupe 5 des chiens de type spitz et primitifs. Pour le Mameshiba, la référence souvent citée est le Kennel Club of Japan, qui enregistre des chiens mesurés et confirmés à l'âge adulte.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Comment reconnaître un véritable Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Un Mameshiba sérieux ne se résume pas à un Shiba Inu plus petit que la moyenne. L'éleveur doit être capable de présenter une vraie traçabilité de lignée, avec un pedigree KCJ remontant sur plusieurs générations de Mameshiba.
+        </p>
+        <p>
+          La confirmation à plus d'un an, la mesure officielle de la taille et, dans une démarche rigoureuse, un test ADN montrant l'absence d'autre race que le Shiba Inu sont des repères importants pour éviter les faux Mameshiba.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Quel caractère faut-il attendre d'un Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Le Mameshiba reste un petit chien primitif : éveillé, agile, propre, observateur et souvent très attaché à sa famille.
+        </p>
+        <p>
+          Il n'est pas fait pour une éducation dure. Il a besoin de cohérence, de respect et d'une socialisation sérieuse pour exprimer son meilleur équilibre.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Le Mameshiba est-il rare en France ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Le Mameshiba reste aujourd'hui une race très rare en France.
+        </p>
+        <p>
+          Cette rareté explique en partie la présence d'annonces trompeuses : certains chiots vendus comme Mameshiba sont en réalité de petits Shiba Inu sans traçabilité sérieuse.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Le Mameshiba perd-il beaucoup de poils ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Comme le Shiba Inu, le Mameshiba possède un double poil et connaît des périodes de mue marquées.
+        </p>
+        <p>
+          En dehors de ces périodes, l'entretien reste raisonnable avec un brossage régulier, davantage soutenu au printemps et à l'automne.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Pourquoi faut-il être vigilant avant d'acheter un Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Parce qu'un simple petit gabarit ne suffit pas à faire un Mameshiba. Sans sélection sérieuse, on peut obtenir des chiens trop petits, mal construits ou issus de croisements douteux.
+        </p>
+        <p>
+          Il vaut mieux vérifier la filiation, la cohérence de l'élevage, les certificats fournis et la qualité du suivi plutôt que se fier uniquement au mot "Mameshiba" sur une annonce.
+        </p>
+      </div>
+    ),
+  },
+]
