@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
 import { faqHome } from "@/lib/faq-data"
-import { Heart, MapPin, Route } from "lucide-react"
+import { ArrowRight, Heart, MapPin, Route } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
@@ -64,6 +64,11 @@ export default function HomePage() {
     "l'équilibre émotionnel et la douceur de caractère",
     "la capacité à être un bon chien de compagnie",
     "son adaptation à tous les milieux, du citadin au rural",
+  ]
+  const heroHighlights = [
+    { label: "Rareté", value: "1 sur 1 million", href: "/chiots-disponibles" },
+    { label: "Signature", value: "Marquage husky", href: "/nos-chiens" },
+    { label: "Essence", value: "Le plus petit primitif", href: "/presentation-elevage" },
   ]
   const founders = [
     {
@@ -132,9 +137,10 @@ export default function HomePage() {
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                     <Link
                       href="/chiots-disponibles"
-                      className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#223852] transition hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:bg-[#d8e5f0] dark:text-[#102030] dark:hover:bg-[#c9d8e8]"
+                      className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#223852] transition hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:bg-[#d8e5f0] dark:text-[#102030] dark:hover:bg-[#c9d8e8]"
                     >
                       Voir nos chiots disponibles
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </Link>
                     <p className="text-sm leading-relaxed text-white/74 md:max-w-sm">
                       À la recherche d&apos;un Spitz nain poméranien absolument atypique ?
@@ -142,24 +148,21 @@ export default function HomePage() {
                   </div>
 
                   <div className="grid gap-5 border-t border-white/14 pt-6 sm:grid-cols-3">
-                    <div className="space-y-2">
-                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/65">
-                        Rareté
-                      </p>
-                      <p className="text-lg font-semibold text-white">1 sur 1 million</p>
-                    </div>
-                    <div className="space-y-2">
-                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/65">
-                        Signature
-                      </p>
-                      <p className="text-lg font-semibold text-white">Marquage husky</p>
-                    </div>
-                    <div className="space-y-2">
-                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/65">
-                        Essence
-                      </p>
-                      <p className="text-lg font-semibold text-white">Le plus petit primitif</p>
-                    </div>
+                    {heroHighlights.map((item) => (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        className="block rounded-2xl px-1 py-1 transition hover:bg-white/6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/65">
+                          {item.label}
+                        </p>
+                        <div className="mt-2 inline-flex items-center gap-2 text-lg font-semibold text-white">
+                          <span>{item.value}</span>
+                          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                        </div>
+                      </Link>
+                    ))}
                   </div>
                 </div>
 
@@ -250,7 +253,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
-                  <div className="rounded-3xl border border-primary/10 bg-white/80 p-5 shadow-sm dark:bg-[#1a2a3d]">
+                  <div className="flex h-full flex-col rounded-3xl border border-primary/10 bg-white/80 p-5 shadow-sm dark:bg-[#1a2a3d]">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary/70">
                       Notre signature
                     </p>
@@ -259,9 +262,16 @@ export default function HomePage() {
                       unique de couleurs allant du gris silver au noir et blanc, en passant par le bleu et
                       blanc, tout en conservant l&apos;âme sauvage du husky.
                     </p>
+                    <Link
+                      href="/nos-chiens"
+                      className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      Explorer nos chiens
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </Link>
                   </div>
 
-                  <div className="rounded-3xl bg-[#1d3046] p-5 text-white shadow-[0_20px_60px_rgba(16,30,48,0.24)]">
+                  <div className="flex h-full flex-col rounded-3xl bg-[#1d3046] p-5 text-white shadow-[0_20px_60px_rgba(16,30,48,0.24)]">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
                       Un seul regard
                     </p>
@@ -269,6 +279,13 @@ export default function HomePage() {
                       Leur masque est dessiné à la manière d&apos;une œuvre d&apos;art. Il est possible de les
                       reconnaître en un seul coup d&apos;œil.
                     </p>
+                    <Link
+                      href="/chiots-disponibles"
+                      className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                      Voir des chiots disponibles
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </Link>
                   </div>
                 </div>
 
@@ -279,16 +296,17 @@ export default function HomePage() {
                   </p>
                   <Link
                     href="/presentation-elevage"
-                    className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     Découvrir notre méthode d&apos;élevage
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
                 </div>
               </div>
 
-              <div className="mx-auto w-full max-w-md xl:max-w-sm">
-                <div className="overflow-hidden rounded-[2rem] border border-primary/10 bg-white/70 p-3 shadow-[0_28px_90px_rgba(52,81,110,0.14)] backdrop-blur-sm dark:bg-[#182737]">
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
+              <div className="mx-auto w-full h-140 max-w-md xl:max-w-sm">
+                <div className="overflow-hidden h-full rounded-[2rem] border border-primary/10 bg-white/70 p-3 shadow-[0_28px_90px_rgba(52,81,110,0.14)] backdrop-blur-sm dark:bg-[#182737]">
+                  <div className="relative aspect-[2/3] overflow-hidden rounded-[1.5rem]">
                     <Image
                       src={introPortraitImage}
                       alt="Chiot blanc dans un décor japonais"
@@ -325,7 +343,7 @@ export default function HomePage() {
 
               <div className="grid gap-6 xl:grid-cols-[1.08fr_0.92fr]">
                 <Card className="overflow-hidden border-primary/15 bg-linear-to-br from-[#fbfdff] via-white/95 to-[#e7eef6] shadow-[0_24px_80px_rgba(52,81,110,0.12)] dark:from-[#122031] dark:via-[#152231] dark:to-[#1c2d41]">
-                  <CardContent className="space-y-6 p-6 md:p-8">
+                  <CardContent className="flex h-full flex-col space-y-6 p-6 md:p-8">
                     <div className="space-y-3">
                       <div className="inline-flex rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
                         Signature visuelle
@@ -376,19 +394,26 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                        <div className="rounded-[1.8rem] bg-[#1d3046] px-6 py-6 text-white shadow-[0_24px_70px_rgba(16,30,48,0.26)]">
+                    <div className="rounded-[1.8rem] bg-[#1d3046] px-6 py-6 text-white shadow-[0_24px_70px_rgba(16,30,48,0.26)]">
                       <p className="leading-relaxed text-white/92 md:text-lg">
                         Nous aimons dire que nos chiots portent la couleur du husky dans le plus petit
                         primitif du monde. Au-delà de l&apos;esthétique, notre travail repose sur une sélection
                         exigeante, pensée pour faire naître des compagnons harmonieux, sensibles et
                         profondément connectés à leur famille.
                       </p>
+                      <Link
+                        href="/nos-chiens"
+                        className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        Voir les marquages de nos chiens
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
 
                 <Card className="overflow-hidden border-primary/15 bg-white/85 shadow-[0_24px_80px_rgba(52,81,110,0.10)] backdrop-blur-sm dark:bg-[#142334]">
-                  <CardContent className="space-y-6 p-6 md:p-8">
+                  <CardContent className="flex h-full flex-col space-y-6 p-6 md:p-8">
                     <div className="space-y-3">
                       <div className="inline-flex rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
                         Méthode d&apos;élevage
@@ -425,6 +450,13 @@ export default function HomePage() {
                         devenir des compagnons confiants, rares et magnétiques, destinés à ceux qui ressentent
                         l&apos;appel du sauvage en version extrêmement miniature.
                       </p>
+                      <Link
+                        href="/bien-etre-animal"
+                        className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      >
+                        Comprendre notre approche du bien-être
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
@@ -452,7 +484,7 @@ export default function HomePage() {
 
               <div className="grid gap-6 md:grid-cols-2">
                 <Card className="overflow-hidden border-primary/15 bg-white/80 shadow-[0_20px_60px_rgba(52,81,110,0.08)] backdrop-blur-sm dark:bg-[#142334]">
-                  <CardContent className="space-y-5 p-6 md:p-8">
+                  <CardContent className="flex h-full flex-col space-y-5 p-6 md:p-8">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/12 text-primary shadow-sm">
                       <MapPin className="h-6 w-6" aria-hidden="true" />
                     </div>
@@ -479,11 +511,18 @@ export default function HomePage() {
                         </span>
                       </div>
                     </div>
+                    <Link
+                      href="/adoption"
+                      className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      Avant de vous déplacer, préparez votre adoption
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </Link> 
                   </CardContent>
                 </Card>
 
                 <Card className="overflow-hidden border-primary/15 bg-[#1d3046] text-white shadow-[0_24px_70px_rgba(16,30,48,0.24)]">
-                  <CardContent className="space-y-5 p-6 md:p-8">
+                  <CardContent className="flex h-full flex-col space-y-5 p-6 md:p-8">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-white backdrop-blur-sm">
                       <Heart className="h-6 w-6" aria-hidden="true" />
                     </div>
@@ -505,6 +544,13 @@ export default function HomePage() {
                         soins intensifs des premiers jours demandent une énergie considérable, que nous
                         assumons avec exigence pour donner à chaque chiot le meilleur départ possible.
                       </p>
+                      <Link
+                        href="/presentation-elevage"
+                        className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        Découvrir notre préparation des portées
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
@@ -536,42 +582,53 @@ export default function HomePage() {
               {shibaBenefits.map((item) => (
                 <Card
                   key={item.title}
-                  className="group h-full overflow-hidden rounded-[1.8rem] border-primary/10 bg-white/85 p-3 shadow-[0_18px_50px_rgba(52,81,110,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(52,81,110,0.12)] dark:bg-[#142334]"
+                  className="group h-full overflow-hidden rounded-[1.8rem] border-primary/10 bg-white/85 p-3 shadow-[0_18px_50px_rgba(52,81,110,0.08)] dark:bg-[#142334]"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-[1.2rem]">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      fill
-                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      quality={75}
-                    />
-                    <div
-                      className="absolute inset-0 bg-linear-to-t from-[#4a2b13]/20 via-transparent to-transparent"
-                      aria-hidden="true"
-                    />
-                  </div>
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-[1.2rem]">
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        fill
+                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        quality={75}
+                      />
+                      <div
+                        className="absolute inset-0 bg-linear-to-t from-[#1a2c40]/20 via-transparent to-transparent"
+                        aria-hidden="true"
+                      />
+                    </div>
 
-                  <CardContent className="flex h-[220px] flex-col space-y-3 p-6">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
-                      Valeur
-                    </p>
-                    <h3 className="text-xl font-semibold tracking-[0.01em]">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      {item.text}
-                    </p>
-                  </CardContent>
-                </Card>
+                    <CardContent className="flex flex-col space-y-3 p-6 md:h-[220px]">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
+                        Valeur
+                      </p>
+                      <h3 className="text-xl font-semibold tracking-[0.01em]">{item.title}</h3>
+                      <p className="text-sm leading-relaxed text-muted-foreground">
+                        {item.text}
+                      </p>
+                    </CardContent>
+                    <div className="p-5 pt-0 text-center">
+                      <Link
+                        href={item.href}
+                        aria-label={`Découvrir ${item.title}`}
+                        className="inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      >
+                        {item.cta}
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </Link>
+                    </div>
+                  </Card>
               ))}
             </div>
           </div>
           {isBlogEnabled ? (
             <Link
               href="/blog"
-              className="mt-12 flex w-fit m-auto items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="mt-12 flex w-fit m-auto items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Découvrir nos conseils autour du Spitz nain
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           ) : null}
         </section>
@@ -602,61 +659,65 @@ export default function HomePage() {
               </div>
 
               <div className="grid gap-8 lg:grid-cols-2">
-              {founders.map((founder, index) => (
-                <Link
-                  key={index}
-                  href={`/presentation-eleveuses#${founder.name.toLowerCase()}`}
-                  className="block h-full rounded-[1.8rem] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                  aria-label={`Lire la présentation de ${founder.name}`}
-                >
-                  <article className="group flex h-full overflow-hidden rounded-[1.9rem] border border-primary/10 bg-linear-to-br from-white via-[#f8fbfe] to-[#e7eef6] shadow-[0_18px_50px_rgba(52,81,110,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(52,81,110,0.12)] dark:from-[#122031] dark:via-[#162435] dark:to-[#1d2d42]">
-                    <div className="grid h-full w-full gap-0 md:grid-cols-[240px_1fr]">
-                      <div className="flex items-start justify-center p-5 md:p-6">
-                        <div className="w-full max-w-[220px] overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d]">
-                          <div className="relative aspect-4/5 w-full overflow-hidden">
-                            <Image
-                              src={founder.image || "/home-founder-fallback.jpg"}
-                              alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
-                              fill
-                              className="object-cover transition duration-500 group-hover:scale-[1.04]"
-                              sizes="(max-width: 768px) 70vw, (max-width: 1024px) 38vw, 240px"
-                              quality={70}
-                            />
+                {founders.map((founder, index) => (
+                  <article
+                    key={index}
+                    className="group flex h-full overflow-hidden rounded-[1.9rem] border border-primary/10 bg-linear-to-br from-white via-[#f8fbfe] to-[#e7eef6] shadow-[0_18px_50px_rgba(52,81,110,0.08)] dark:from-[#122031] dark:via-[#162435] dark:to-[#1d2d42]"
+                  >
+                      <div className="grid h-full w-full gap-0 md:grid-cols-[240px_1fr]">
+                        <div className="flex items-start justify-center p-5 md:p-6">
+                          <div className="w-full max-w-[220px] overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d]">
+                            <div className="relative aspect-4/5 w-full overflow-hidden">
+                              <Image
+                                src={founder.image || "/home-founder-fallback.jpg"}
+                                alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
+                                fill
+                                className="object-cover transition duration-500 group-hover:scale-[1.04]"
+                                sizes="(max-width: 768px) 70vw, (max-width: 1024px) 38vw, 240px"
+                                quality={70}
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="grid h-full grid-rows-[auto_auto_1fr] gap-5 p-6 md:p-7">
+                          <div className="space-y-3">
+                            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
+                              Éleveuse
+                            </p>
+                            <h3 className="text-2xl font-semibold tracking-[0.01em] md:text-3xl">
+                              {founder.name}
+                            </h3>
+                          </div>
+
+                          <div className="min-h-[72px] space-y-1.5">
+                            {founder.badges.map((badge, badgeIdx) => (
+                              <p
+                                key={badgeIdx}
+                                className="text-sm leading-relaxed text-primary/75"
+                              >
+                                {badge}
+                              </p>
+                            ))}
+                          </div>
+
+                          <div className="flex h-full flex-col rounded-[1.4rem] border border-primary/10 bg-white/70 px-5 py-4 dark:bg-[#1a2a3d]">
+                            <p className="text-sm leading-relaxed text-muted-foreground">
+                              {founder.description}
+                            </p>
+                            <Link
+                              href={`/presentation-eleveuses#${founder.name.toLowerCase()}`}
+                              aria-label={`Lire la présentation de ${founder.name}`}
+                              className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                            >
+                              Lire le portrait de {founder.name}
+                              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                            </Link>
                           </div>
                         </div>
                       </div>
-
-                      <div className="grid h-full grid-rows-[auto_auto_1fr] gap-5 p-6 md:p-7">
-                        <div className="space-y-3">
-                          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
-                            Éleveuse
-                          </p>
-                          <h3 className="text-2xl font-semibold tracking-[0.01em] md:text-3xl">
-                            {founder.name}
-                          </h3>
-                        </div>
-
-                        <div className="min-h-[72px] space-y-1.5">
-                          {founder.badges.map((badge, badgeIdx) => (
-                            <p
-                              key={badgeIdx}
-                              className="text-sm leading-relaxed text-primary/75"
-                            >
-                              {badge}
-                            </p>
-                          ))}
-                        </div>
-
-                        <div className="h-full rounded-[1.4rem] border border-primary/10 bg-white/70 px-5 py-4 dark:bg-[#1a2a3d]">
-                          <p className="text-sm leading-relaxed text-muted-foreground">
-                            {founder.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </Link>
-              ))}
+                    </article>
+                ))}
               </div>
 
               <div className="mt-12 rounded-[1.8rem] border border-primary/10 bg-white/75 px-6 py-8 text-center shadow-[0_16px_40px_rgba(52,81,110,0.06)] dark:bg-[#142334]">
@@ -672,9 +733,10 @@ export default function HomePage() {
                   <Link
                     href="/contact"
                     aria-label="Contacter les éleveuses pour un projet d'adoption de Spitz nain Poméranien"
-                    className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     Contacter Aurélie et Marine
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
                 </div>
               </div>
