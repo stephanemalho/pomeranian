@@ -50,7 +50,7 @@ const navGroups = [
                 description: "Aurélie & Marine, leur parcours et leur vision.",
             },
             {
-                title: "Nos chiens",
+                title: "Nos chiens de reproduction",
                 href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
                 description: "Nos adultes, leurs lignées et notre sélection.",
             },
@@ -65,7 +65,7 @@ const navGroups = [
         label: "Adoption",
         items: [
             {
-                title: "Nos chiots",
+                title: "Nos chiots disponibles",
                 href: "/spitz-nain-pomeranien/chiots-disponibles",
                 description: "Portées disponibles et informations d'adoption.",
             },
