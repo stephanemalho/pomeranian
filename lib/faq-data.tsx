@@ -2,40 +2,67 @@ import type { FAQItem } from "@/components/faq"
 
 export const faqHome: FAQItem[] = [
   {
-    question: "Qu'est-ce qui distingue Spitz nain Poméranien MAMESHIBA des autres élevages de Shiba ?",
+    question: "Qu'est-ce qui distingue votre élevage de Spitz nain Poméranien au marquage husky ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Kawaii MAMESHIBA est un élevage de type professionnel, aux normes du bien être animal passionné par les Chiens de petits formats et de lignée originelles, avec une sélection rigoureuse des reproducteurs et de leurs origines, nos portées sont limitées pour garantir la santé des chiots mais surtout des reproducteurs, et un suivi structuré est effectué à chaque étape du développement de nos chiots.
+          Notre élevage repose sur une sélection exigeante de Spitz nains Poméraniens 100 % de race,
+          sans croisement, avec une attention particulière portée au marquage husky, à la stabilité de
+          la taille, à la qualité du type et à l&apos;équilibre émotionnel.
         </p>
         <p>
-          Chaque projet d'élevage vise à produire des chiens équilibrés, conformes au type et adaptés à la vie de compagnie.
+          Nos portées sont volontairement limitées afin de préserver la santé des reproducteurs, d&apos;assurer
+          un accompagnement individualisé de chaque chiot et de proposer un vrai travail de fond sur la
+          socialisation et la vie de compagnie.
         </p>
       </div>
     ),
   },
   {
-    question: "Comment les chiots Mameshiba sont-ils socialisés ?",
+    question: "Comment les chiots sont-ils socialisés ?",
     answer: (
       <div className="space-y-3">
         <p>
-          La socialisation des mameshiba commence dès les premiers jours, avec des stimulations adaptées à leurs caractère spécifique, des manipulations régulières sont faite et une exposition progressive à l'environnement leurs permets d’être préparé a leurs future vie adoptive.
+          La socialisation commence dès les premiers jours, avec des manipulations régulières, des
+          stimulations neurosensorielles adaptées, des jeux et des découvertes progressives.
         </p>
         <p>
-          Les chiots sont habitués aux bruits du quotidien, aux interactions humaines et aux différentes textures afin de favoriser confiance et stabilité.
+          Les chiots sont habitués aux bruits du quotidien, aux interactions humaines, aux différentes
+          textures et aux sorties afin de favoriser la confiance, la stabilité et une intégration sereine
+          dans leur future famille.
         </p>
       </div>
     ),
   },
   {
-    question: "Quels types de Mameshiba sont proposés par Kawaii Mameshiba ?",
+    question: "Quelle place accordez-vous à la santé et aux tests ADN ?",
     answer: (
       <div className="space-y-3">
         <p>
-          L'élevage travaille plusieurs tailles de MAMESHIBA, de 4 à 7kg une fois adultes.
+          La santé occupe une place centrale dans notre programme d&apos;élevage. Les parents sont testés ADN
+          et les mariages sont réfléchis pour limiter les risques, préserver la cohérence du type et
+          garantir la transmission naturelle du marquage husky.
         </p>
         <p>
-          Les chiens présentent une grande variété de robes et de couleurs, les coloris vont de roux-blanc à noir-roux-blanc en passant par tout blanc, issues d'une sélection visant à concilier esthétique, tempérament et santé.
+          Chaque portée bénéficie également d&apos;un suivi vétérinaire rigoureux pendant la gestation, la
+          naissance et les premières semaines de vie, avec une attention particulière portée à cette race
+          miniature et délicate.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Dans quel environnement grandissent les chiots ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Les chiots évoluent dans un environnement professionnel, sécurisé et stimulant, avec des espaces
+          pensés pour la maternité, le repos, l&apos;éveil et la présence humaine quotidienne.
+        </p>
+        <p>
+          Ils découvrent progressivement les bruits du quotidien et profitent aussi de sorties dans notre
+          terrain, afin de devenir des chiens curieux, confiants et adaptables à des cadres de vie variés,
+          du citadin au rural.
         </p>
       </div>
     ),
@@ -45,25 +72,14 @@ export const faqHome: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mameshiba est un chien au caractère unique, Un accompagnement vous est assuré avant, pendant le processus d'adoption et également après le départ du chiot et tout au long de sa vie afin de répondre aux questions liées à l'alimentation, à l'adaptation et aux premiers mois de vie particulièrement.
+          Nous accompagnons les familles avant, pendant et après l&apos;adoption, avec des conseils concrets sur
+          l&apos;alimentation, l&apos;adaptation à la maison, la socialisation et les besoins spécifiques du
+          Spitz nain Poméranien.
         </p>
         <p>
-          Ce suivi permet d'accompagner chaque adoptant pour que chaque chiot soit heureux et équilibré dans son nouveau foyer.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Pourquoi passer par un élevage professionnel plutôt qu'une annonce en ligne ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Un élevage professionnel comme le nôtre offre une génétique des lignées saine, une sélection de grande qualité avec des parents aux origines Japonaise (Pour Spitz nain Poméranien).
-          Nous avons un suivi vétérinaire rigoureux, un cahier des charges élevé. Chez nous, les locaux sont adaptés au bien être animal, nous avons une connaissance accrue des soins à prodiguer aux animaux, actes de premiers secours, des urgences médicales, il y'a également une présence permanente.
-          Un suivi des parents, des chiots, de la sociabilisation, de la gestion émotionnelle et un cadre structuré pour le développement des chiots est nécessaire.
-        </p>
-        <p>
-          Cela permet de faire un choix réfléchi et responsable, basé sur des critères objectifs, basé sur le choix d'avoir choisi un chiot élevé dans des conditions optimales et sérieuses plutôt que sur une simple annonce ne respectant aucun cadre légal, et dont les conditions d'hygiène et les connaissances du naisseur laissent à désirer.
+          Chaque famille repart avec un livret d&apos;accueil, un kit chiot et la possibilité de rester en lien
+          avec nous pour avancer sereinement dans les premières semaines comme dans la suite de la vie du
+          chien.
         </p>
       </div>
     ),

@@ -139,7 +139,7 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         height: 1709,
         type: "image/jpeg"
     },
-    "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg": {
+    "/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.jpeg": {
         width: 1320,
         height: 1908,
         type: "image/jpeg"

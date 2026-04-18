@@ -54,7 +54,7 @@ export const publicAssetRoutes = [
     "/pages/homePage/marine-de-kawaii-avec-un-chiot-mame.jpg",
     "/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg",
     "/pages/homePage/ushiro-paris.jpg",
-    "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg",
+    "/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.jpeg",
     "/pages/image-all-shiba/humain-avec-mameshiba-exterieur-02.jpeg",
     "/pages/image-all-shiba/jardin-cloture-elevage-horizontal.jpeg",
     "/pages/image-all-shiba/jardin-cloture-elevage-horizontal.webp",

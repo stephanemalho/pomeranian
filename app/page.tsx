@@ -47,17 +47,29 @@ export default function HomePage() {
   const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Accueil", url: "/" }])
   const faqSchema = generateFAQSchema(convertFAQsToSchema(faqHome))
   const lastMod = returnLastmod(siteConfig.pages.home)
+  const nordicTraits = [
+    "la noblesse du husky",
+    "son regard attendrissant",
+    "son esthétique sauvage",
+  ]
+  const breedingCommitments = [
+    "la sélection rigoureuse des couleurs et des marquages",
+    "le respect de la santé et du bien-être de nos chiens",
+    "des tests ADN rigoureux",
+    "l'équilibre émotionnel et la douceur de caractère",
+    "la capacité à être un bon chien de compagnie",
+    "son adaptation à tous les milieux, du citadin au rural",
+  ]
   const founders = [
     {
       name: "Aurélie",
       image: "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg",
       description:
-        "Aurélie est passionnée par les chiens de type primitif et la culture japonaise depuis toujours. Son coup de cœur pour le Spitz nain Poméranien l'a conduite à mettre son expertise d'éducatrice comportementaliste au service d'un accompagnement doux et exigeant. Elle privilégie la socialisation, l'équilibre émotionnel et le lien humain-chien, avec une approche positive qui respecte l'identité sensible et indépendante du Spitz nain Poméranien.",
+        "Passionnée par les animaux depuis toujours, Aurélie a d'abord exercé comme éducatrice comportementaliste auprès de centres de rééducation, d'éducation canine et d'associations de protection animale. Son expérience des chiens nordiques, puis sa rencontre avec le Spitz nain Poméranien, l'ont naturellement conduite vers un élevage où le comportement, la socialisation et le bien-être occupent une place centrale. Elle accompagne chaque chiot et chaque famille avec précision, de la naissance jusqu'à la vie adulte.",
       badges: [
-        "diplômée éducateur canin comportementaliste",
         "Ancienne éducatrice comportementaliste",
-        "8 ans d'expérience en élevage canin",
-        "Certifiée en communication animale",
+        "Depuis 2018 dans l'élevage",
+        "Spécialiste bien-être animal",
         "Spécialiste socialisation chiots",
       ],
     },
@@ -65,7 +77,7 @@ export default function HomePage() {
       name: "Marine",
       image: "/pages/homePage/marine-de-kawaii-avec-un-chiot-mame.jpg",
       description:
-        "Marine a rejoint l'aventure Spitz nain Poméranien pour garantir un cadre stable et serein à chaque chien. Observatrice et méthodique, elle veille au bien-être quotidien, aux routines et à l'équilibre des groupes. Son exigence sur la propreté, la régularité des soins et l'organisation permet à chaque chiots d'évoluer dans un environnement sain, apaisant et rassurant.",
+        "Marine a changé de vie pour se consacrer pleinement au développement de l'élevage depuis quatre ans. Véritable perfectionniste, elle veille à l'entretien rigoureux des locaux, à l'observation quotidienne des chiots et au confort de chaque maman. Grâce à sa vigilance et à son sens de l'anticipation, chaque petit est ausculté, accompagné et bichonné dès la naissance afin d'évoluer dans des conditions optimales pour sa santé et son bien-être.",
       badges: [
         "4 ans d'expérience en élevage canin",
         "Protocoles d'hygiène rigoureux",
@@ -136,7 +148,7 @@ export default function HomePage() {
 
                 <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#6a4021]/82 px-6 py-6 text-white shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
                   <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/72">
-                    À la recherche d'un Spitz nain
+                    À la recherche d&apos;un Spitz nain
                     poméranien absolument atypique ?
                   </p>
                   <div className="mt-5 grid gap-6 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
@@ -163,13 +175,13 @@ export default function HomePage() {
         </section>
 
         {/* Contenu centré */}
-        {/* Présentation Mameshiba */}
+        {/* Présentation */}
         <section className="py-16 bg-muted/30 my-8">
           <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center p-2">
               <div className="space-y-6">
                 <Badge variant="secondary" className="w-fit">
-                  Le Spitz nain Poméraninen
+                  Le Spitz nain Poméranien
                 </Badge>
 
                 <h2 className="text-xl md:text-2xl font-bold">
@@ -184,32 +196,22 @@ export default function HomePage() {
                   par le bleu et blanc, tout en conservant l’âme sauvage du husky.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Leur masque est dessiné à la manière d’une oeuvre d’art, il est possible de les recconaître
-                  en un seul coup d’oeil
+                  Leur masque est dessiné à la manière d’une œuvre d’art, il est possible de les reconnaître
+                  en un seul coup d’œil
                 </p>
 
-                <div className="space-y-2">
-                  <h3 className="font-semibold">Un petit primitif de noble origine</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Héritier direct du Shiba Inu, le Mameshiba conserve le tempérament
-                    vif et l'allure noble des chiens primitifs japonais. Il est connu pour
-                    sa curiosité, son intelligence et sa capacité à créer un lien profond,
-                    tout en gardant une part d'indépendance.
-                  </p>
-                </div>
-
                 <Link
-                  href="/mameshiba"
+                  href="/presentation-elevage"
                   className="inline-block rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                  Découvrir la race Mameshiba
+                  Découvrir notre méthode d&apos;élevage
                 </Link>
               </div>
 
               <div className="relative w-full aspect-video md:h-200 h-125 md:aspect-4/5 overflow-hidden rounded-lg">
                 <Image
-                  src="/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
-                  alt="Chiot Mameshiba blanc dans un décoe japonais"
+                  src="/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.jpeg"
+                  alt="Chiot blanc dans un décor japonais"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 85vw, 50vw"
@@ -219,6 +221,106 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <section className="py-12 my-8">
+          <div className="container mx-auto p-2">
+            <div className="mx-auto max-w-4xl text-center space-y-4 mb-10">
+              <Badge variant="secondary" className="w-fit mx-auto">
+                Une identité rare
+              </Badge>
+              <h2 className="text-xl md:text-2xl font-bold">L&apos;expression nordique en version miniature</h2>
+              <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Une section dédiée pour mieux raconter ce qui rend nos spitz nains Poméraniens si
+                singuliers : l&apos;allure nordique, la sélection, l&apos;équilibre et la qualité de vie que
+                nous construisons autour de chaque chiot.
+              </p>
+              <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
+            </div>
+
+            <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+              <Card className="overflow-hidden border-primary/15 bg-linear-to-br from-[#fff8ef] via-card to-[#f6ede2] shadow-[0_24px_80px_rgba(115,74,32,0.12)]">
+                <CardContent className="p-6 md:p-8 space-y-6">
+                  <div className="space-y-3">
+                    <div className="inline-flex rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                      Signature visuelle
+                    </div>
+                    <h3 className="text-2xl font-semibold tracking-[0.02em]">
+                      L&apos;expression nordique en version miniature
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      À travers le marquage husky, il devient la plus petite expression du chien nordique,
+                      concentrant dans un format délicat, élégant et proche de l&apos;humain une présence
+                      immédiatement reconnaissable.
+                    </p>
+                  </div>
+
+                  <div className="grid gap-3 sm:grid-cols-3">
+                    {nordicTraits.map((trait, index) => (
+                      <div
+                        key={trait}
+                        className="rounded-2xl border border-primary/10 bg-white/80 p-4 shadow-sm"
+                      >
+                        <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary/70">
+                          0{index + 1}
+                        </div>
+                        <p className="mt-3 text-sm font-medium leading-relaxed text-foreground">
+                          {trait}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="rounded-3xl bg-[#6b401f] px-6 py-5 text-white shadow-[0_20px_60px_rgba(61,36,16,0.22)]">
+                    <p className="leading-relaxed text-white/92">
+                      Nous aimons dire que nos chiots portent la couleur du husky dans le plus petit
+                      primitif du monde. Au-delà de l&apos;esthétique, notre travail repose sur une sélection
+                      exigeante, pensée pour faire naître des compagnons harmonieux, sensibles et
+                      profondément connectés à leur famille.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden border-primary/15 bg-card shadow-[0_24px_80px_rgba(115,74,32,0.10)]">
+                <CardContent className="p-6 md:p-8 space-y-6">
+                  <div className="space-y-3">
+                    <div className="inline-flex rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                      Méthode d&apos;élevage
+                    </div>
+                    <h3 className="text-2xl font-semibold tracking-[0.02em]">
+                      Une sélection guidée par la santé et l&apos;équilibre
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Notre programme d&apos;élevage repose sur des choix précis, effectués avec constance
+                      pour préserver la beauté du type, la stabilité émotionnelle et les aptitudes de chien
+                      de compagnie du Spitz nain Poméranien.
+                    </p>
+                  </div>
+
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {breedingCommitments.map((commitment) => (
+                      <div
+                        key={commitment}
+                        className="rounded-2xl border border-primary/10 bg-muted/40 px-4 py-4 text-sm leading-relaxed text-foreground"
+                      >
+                        {commitment}
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="rounded-3xl border border-primary/10 bg-primary/6 px-6 py-5">
+                    <p className="text-muted-foreground leading-relaxed">
+                      Nos chiots grandissent dans un environnement optimal, sécurisant et stimulant afin de
+                      devenir des compagnons confiants, rares et magnétiques, destinés à ceux qui ressentent
+                      l&apos;appel du sauvage en version extrêmement miniature.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         <section className="py-12 my-8">
           <div className="container mx-auto">
             <div className="grid gap-6 md:grid-cols-2">
@@ -228,13 +330,16 @@ export default function HomePage() {
                     <MapPin className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <div className="space-y-3">
-                    <h2 className="text-xl font-semibold">Un élevage accessible depuis toute la France</h2>
+                    <h2 className="text-xl font-semibold">Un élevage ancré dans le Jura, pensé pour leur bien-être</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      L'élevage Spitz nain Poméranien est situé en Bourgogne-Franche-Comté à la limite du JURA, dans la commune de Dommartin-lès-Cuiseaux (71), à 1h30 de Lyon, 2h de Genève et moins de 4h de Paris en voiture.
+                      L&apos;élevage est situé dans le Jura, non loin de Saint-Amour, à Dommartin-lès-Cuiseaux.
+                      Nos Spitz nains Poméraniens marquage husky y grandissent dans des espaces dédiés à
+                      leur sécurité et à leur confort : maternité haut de gamme, locaux aménagés, présence
+                      humaine constante et sorties régulières sur notre terrain d&apos;un hectare.
                     </p>
                     <div className="flex items-start gap-3 rounded-xl bg-primary/6 px-4 py-3 text-sm text-muted-foreground">
                       <Route className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                      <span>Nous sommes idéalement situés pour accueillir les familles de toute la France et des pays limitrophes qui souhaitent adopter un Mameshiba.</span>
+                      <span>Ce cadre nous permet de préparer des chiots curieux, confiants et capables de s&apos;adapter aussi bien à une vie citadine qu&apos;à un environnement rural.</span>
                     </div>
                   </div>
                 </CardContent>
@@ -246,12 +351,17 @@ export default function HomePage() {
                     <Heart className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <div className="space-y-3">
-                    <h2 className="text-xl font-semibold">Une passion née des chiens primitifs et du Japon</h2>
+                    <h2 className="text-xl font-semibold">Faire naître des compagnons harmonieux</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et notre adoration pour la culture japonaise nous ont menés tout droit jusqu'à un véritable coup de cœur : le Mameshiba.
+                      Chaque portée est préparée bien avant la naissance : sélection de lignées saines,
+                      dépistages ADN et maladies génétiques, suivi vétérinaire rigoureux et beaucoup de
+                      présence humaine dès les premiers jours.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Cette rencontre a façonné l'identité de Spitz nain Poméranien, avec une sélection portée par l'émotion, l'exigence et le respect du type japonais.
+                      Le Spitz nain Poméranien est une race particulièrement délicate à élever en raison de
+                      sa très petite taille. Le suivi de gestation, l&apos;accompagnement des mises bas et les
+                      soins intensifs des premiers jours demandent une énergie considérable, que nous
+                      assumons avec exigence pour donner à chaque chiot le meilleur départ possible.
                     </p>
                   </div>
                 </CardContent>
@@ -285,18 +395,18 @@ export default function HomePage() {
 
         </div>
       </section> */}
-        {/* Pourquoi choisir un Mameshiba */}
+        {/* Nos valeurs */}
         <section className="py-16 my-8 bg-muted/30">
           <div className="container mx-auto p-2">
             <div className="text-center space-y-4 mb-10">
               <h2 className="text-xl md:text-2xl font-bold">
-                Pourquoi choisir un Mameshiba ?
+                Nos valeurs
               </h2>
 
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Petit chien au grand cœur, <strong>le Mameshiba</strong> est un
-                Shiba Inu miniature réputé pour son intelligence vive, sa finesse de
-                communication et son attachement discret mais profond à sa famille.
+                Au-delà de la rareté du marquage husky, notre élevage repose sur une méthode
+                responsable : santé, socialisation précoce, transparence et temps réellement dédié
+                à chaque chiot comme à chaque famille.
               </p>
 
               <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
@@ -328,10 +438,10 @@ export default function HomePage() {
           </div>
           {isBlogEnabled ? (
             <Link
-              href="/blog/mame-shiba"
+              href="/blog"
               className="flex my-12 m-auto w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              En savoir plus sur le Mameshiba
+              Découvrir nos conseils autour du Spitz nain
             </Link>
           ) : null}
         </section>
@@ -342,12 +452,17 @@ export default function HomePage() {
             <div className="text-center space-y-4 mb-12">
               <h2 className="text-xl md:text-2xl font-bold">Les Éleveuses</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto text-sm leading-relaxed">
-                Derrière l'élevage se trouvent <strong>Aurélie et Marine</strong>, deux
-                éleveuses passionnées par le bien-être animal et unies par un amour
-                profond pour le Japon et le <strong>Mameshiba</strong>. Issues de parcours
-                complémentaires dans l'éducation, le comportement et l'élevage canin,
-                elles accordent une attention particulière à la socialisation, à
-                l'équilibre émotionnel et au développement harmonieux de chaque chiot.
+                L&apos;élevage est né d&apos;une longue expérience des chiens de type nordique, développée pendant
+                neuf ans au sein de l&apos;élevage Royal Pomsky. Cette connaissance du type husky nous a
+                naturellement conduites vers un nouveau défi : retrouver cette expression sauvage et
+                magnétique dans le plus petit primitif du monde, sans altérer l&apos;intégrité du
+                Spitz nain Poméranien.
+              </p>
+              <p className="text-muted-foreground max-w-3xl mx-auto text-sm leading-relaxed">
+                Nos chiens sont issus d&apos;un travail de sélection sur plusieurs générations. Leurs tests
+                ADN confirment des Poméraniens 100 %, sans croisement, afin de préserver la pureté de la
+                race, la stabilité de la taille, la cohérence du type et la transmission naturelle du
+                marquage husky.
               </p>
               <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
             </div>
@@ -397,16 +512,17 @@ export default function HomePage() {
             </div>
             <div className="text-center space-y-4 my-12">
               <h3 className="text-xl md:text-2xl font-semibold">
-                Vous souhaitez adopter un Mameshiba ?
+                Vous souhaitez adopter un Spitz nain Poméranien ?
               </h3>
               <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-                Échangeons ensemble sur votre projet d'adoption et trouvons le Mameshiba qui correspond le mieux à votre mode de vie.
+                Échangeons ensemble sur votre projet d&apos;adoption et trouvons le chiot qui correspond le
+                mieux à votre mode de vie, à votre sensibilité et à votre environnement.
               </p>
               <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
             </div>
             <Link
               href="/contact"
-              aria-label="Contacter les éleveuses pour un projet d'adoption de Mameshiba"
+              aria-label="Contacter les éleveuses pour un projet d'adoption de Spitz nain Poméranien"
               className="flex my-12 m-auto w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Contacter Aurélie et Marine
@@ -414,8 +530,8 @@ export default function HomePage() {
           </div>
         </section>
         <FAQSection
-          title="FAQ Mameshiba en bref"
-          description="Les points clés sur le Mameshiba en bref."
+          title="FAQ Spitz nain Poméranien en bref"
+          description="Les points clés sur notre élevage de Spitz nain Poméranien."
           items={faqHome}
         />
         <div className="container mx-auto text-right text-xs text-muted-foreground my-6">

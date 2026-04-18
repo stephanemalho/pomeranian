@@ -243,7 +243,7 @@ export default function AdoptionGuidePage() {
         },
         image: [
             `${siteConfig.siteUrl}${pageImage}`,
-            `${siteConfig.siteUrl}/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg`,
+            `${siteConfig.siteUrl}/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.jpeg`,
         ],
         about: [
             { "@type": "Thing", name: "Mameshiba" },
