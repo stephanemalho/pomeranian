@@ -109,8 +109,8 @@ export default function HomePage() {
 
       <div className="flex flex-col">
         <section className="relative overflow-hidden bg-accent-foreground">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_34%),radial-gradient(circle_at_85%_18%,rgba(255,255,255,0.12),transparent_24%)]" aria-hidden="true" />
-          <div className="relative overflow-hidden bg-linear-to-br from-[#f8d49d] via-[#df8d3f] to-[#8e4d20]">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.22),transparent_34%),radial-gradient(circle_at_85%_18%,rgba(255,255,255,0.14),transparent_24%)]" aria-hidden="true" />
+          <div className="relative overflow-hidden bg-linear-to-tl from-[#1a3048] to-[#07111d]">
             <div className="container mx-auto px-4 py-8 md:px-6 md:py-10 lg:px-8 lg:py-14">
               <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
                 <div className="space-y-8 text-white">
@@ -132,7 +132,7 @@ export default function HomePage() {
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                     <Link
                       href="/chiots-disponibles"
-                      className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#7a471f] transition hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#223852] transition hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:bg-[#d8e5f0] dark:text-[#102030] dark:hover:bg-[#c9d8e8]"
                     >
                       Voir nos chiots disponibles
                     </Link>
@@ -179,7 +179,7 @@ export default function HomePage() {
                         className="object-cover"
                       />
                       <div
-                        className="absolute inset-0 bg-linear-to-t from-[#553015]/28 via-transparent to-white/8"
+                        className="absolute inset-0 bg-linear-to-t from-[#16253a]/36 via-transparent to-white/8"
                         aria-hidden="true"
                       />
                     </div>
@@ -216,7 +216,7 @@ export default function HomePage() {
                           className="object-cover object-center"
                         />
                         <div
-                          className="absolute inset-0 bg-linear-to-t from-[#4b2b14]/18 via-transparent to-transparent"
+                          className="absolute inset-0 bg-linear-to-t from-[#152538]/24 via-transparent to-transparent"
                           aria-hidden="true"
                         />
                       </div>
@@ -233,7 +233,7 @@ export default function HomePage() {
         <section className="py-16 bg-muted/30 my-8">
           <div className="container mx-auto p-2">
             <div className="grid gap-8 xl:grid-cols-[1.15fr_0.85fr] xl:items-center">
-              <div className="space-y-6 rounded-[2rem] border border-primary/10 bg-linear-to-br from-[#fffaf4] via-card to-[#f4eadf] p-6 shadow-[0_28px_80px_rgba(115,74,32,0.10)] md:p-8 lg:p-10">
+              <div className="space-y-6 rounded-[2rem] border border-primary/10 bg-linear-to-br from-[#fbfdff] via-card to-[#e8eff6] p-6 shadow-[0_28px_80px_rgba(52,81,110,0.10)] dark:from-[#122031] dark:via-[#152231] dark:to-[#1a2a3d] md:p-8 lg:p-10">
                 <p className="w-fit text-xs font-semibold uppercase tracking-[0.24em] text-primary/70">
                   Le Spitz nain Poméranien
                 </p>
@@ -250,7 +250,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
-                  <div className="rounded-3xl border border-primary/10 bg-white/80 p-5 shadow-sm">
+                  <div className="rounded-3xl border border-primary/10 bg-white/80 p-5 shadow-sm dark:bg-[#1a2a3d]">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary/70">
                       Notre signature
                     </p>
@@ -261,7 +261,7 @@ export default function HomePage() {
                     </p>
                   </div>
 
-                  <div className="rounded-3xl bg-[#6b401f] p-5 text-white shadow-[0_20px_60px_rgba(61,36,16,0.18)]">
+                  <div className="rounded-3xl bg-[#1d3046] p-5 text-white shadow-[0_20px_60px_rgba(16,30,48,0.24)]">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
                       Un seul regard
                     </p>
@@ -287,7 +287,7 @@ export default function HomePage() {
               </div>
 
               <div className="mx-auto w-full max-w-md xl:max-w-sm">
-                <div className="overflow-hidden rounded-[2rem] border border-primary/10 bg-white/70 p-3 shadow-[0_28px_90px_rgba(115,74,32,0.14)] backdrop-blur-sm">
+                <div className="overflow-hidden rounded-[2rem] border border-primary/10 bg-white/70 p-3 shadow-[0_28px_90px_rgba(52,81,110,0.14)] backdrop-blur-sm dark:bg-[#182737]">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
                     <Image
                       src={introPortraitImage}
@@ -307,7 +307,7 @@ export default function HomePage() {
 
         <section className="my-8 py-12">
           <div className="container mx-auto p-2">
-            <div className="overflow-hidden rounded-[2.5rem] border border-primary/10 bg-linear-to-br from-[#fffaf5] via-[#fbf3ea] to-[#f3e6d7] px-4 py-8 shadow-[0_32px_120px_rgba(115,74,32,0.10)] md:px-6 md:py-10 lg:px-8">
+            <div className="overflow-hidden rounded-[2.5rem] border border-primary/10 bg-linear-to-br from-[#fbfdff] via-[#f1f6fb] to-[#e3ebf4] px-4 py-8 shadow-[0_32px_120px_rgba(52,81,110,0.10)] dark:from-[#101b28] dark:via-[#142233] dark:to-[#1a2a3d] md:px-6 md:py-10 lg:px-8">
               <div className="mx-auto mb-10 max-w-4xl text-center space-y-4">
                 <p className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.24em] text-primary/70">
                   Une identité rare
@@ -324,7 +324,7 @@ export default function HomePage() {
               </div>
 
               <div className="grid gap-6 xl:grid-cols-[1.08fr_0.92fr]">
-                <Card className="overflow-hidden border-primary/15 bg-linear-to-br from-[#fff8ef] via-white/95 to-[#f8ede0] shadow-[0_24px_80px_rgba(115,74,32,0.12)]">
+                <Card className="overflow-hidden border-primary/15 bg-linear-to-br from-[#fbfdff] via-white/95 to-[#e7eef6] shadow-[0_24px_80px_rgba(52,81,110,0.12)] dark:from-[#122031] dark:via-[#152231] dark:to-[#1c2d41]">
                   <CardContent className="space-y-6 p-6 md:p-8">
                     <div className="space-y-3">
                       <div className="inline-flex rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
@@ -345,7 +345,7 @@ export default function HomePage() {
                         {nordicTraits.map((trait, index) => (
                           <div
                             key={trait}
-                            className="rounded-[1.4rem] border border-primary/10 bg-white/90 p-4 shadow-[0_10px_30px_rgba(115,74,32,0.08)]"
+                            className="rounded-[1.4rem] border border-primary/10 bg-white/90 p-4 shadow-[0_10px_30px_rgba(52,81,110,0.08)] dark:bg-[#1b2b3f]"
                           >
                             <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary/70">
                               0{index + 1}
@@ -357,7 +357,7 @@ export default function HomePage() {
                         ))}
                       </div>
 
-                      <div className="overflow-hidden rounded-[1.8rem] border border-primary/10 bg-white/70 p-3 shadow-[0_18px_50px_rgba(115,74,32,0.10)]">
+                      <div className="overflow-hidden rounded-[1.8rem] border border-primary/10 bg-white/70 p-3 shadow-[0_18px_50px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d]">
                         <div className="relative aspect-4/5 overflow-hidden rounded-[1.2rem]">
                           <Image
                             src={signatureDogImage}
@@ -376,7 +376,7 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                    <div className="rounded-[1.8rem] bg-[#6b401f] px-6 py-6 text-white shadow-[0_24px_70px_rgba(61,36,16,0.22)]">
+                        <div className="rounded-[1.8rem] bg-[#1d3046] px-6 py-6 text-white shadow-[0_24px_70px_rgba(16,30,48,0.26)]">
                       <p className="leading-relaxed text-white/92 md:text-lg">
                         Nous aimons dire que nos chiots portent la couleur du husky dans le plus petit
                         primitif du monde. Au-delà de l&apos;esthétique, notre travail repose sur une sélection
@@ -387,7 +387,7 @@ export default function HomePage() {
                   </CardContent>
                 </Card>
 
-                <Card className="overflow-hidden border-primary/15 bg-white/85 shadow-[0_24px_80px_rgba(115,74,32,0.10)] backdrop-blur-sm">
+                <Card className="overflow-hidden border-primary/15 bg-white/85 shadow-[0_24px_80px_rgba(52,81,110,0.10)] backdrop-blur-sm dark:bg-[#142334]">
                   <CardContent className="space-y-6 p-6 md:p-8">
                     <div className="space-y-3">
                       <div className="inline-flex rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
@@ -407,7 +407,7 @@ export default function HomePage() {
                       {breedingCommitments.map((commitment, index) => (
                         <div
                           key={commitment}
-                          className="rounded-[1.4rem] border border-primary/10 bg-linear-to-br from-white to-[#faf4ee] px-4 py-4 shadow-[0_8px_24px_rgba(115,74,32,0.06)]"
+                          className="rounded-[1.4rem] border border-primary/10 bg-linear-to-br from-white to-[#eef4fa] px-4 py-4 shadow-[0_8px_24px_rgba(52,81,110,0.06)] dark:from-[#182737] dark:to-[#203246]"
                         >
                           <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary/65">
                             Engagement 0{index + 1}
@@ -435,7 +435,7 @@ export default function HomePage() {
 
         <section className="my-8 py-12">
           <div className="container mx-auto p-2">
-            <div className="overflow-hidden rounded-[2.2rem] border border-primary/10 bg-linear-to-br from-white via-[#fbf6ef] to-[#f4e7d8] px-4 py-8 shadow-[0_24px_90px_rgba(115,74,32,0.08)] md:px-6 md:py-10">
+            <div className="overflow-hidden rounded-[2.2rem] border border-primary/10 bg-linear-to-br from-white via-[#f4f8fc] to-[#e4ecf5] px-4 py-8 shadow-[0_24px_90px_rgba(52,81,110,0.08)] dark:from-[#101b28] dark:via-[#142233] dark:to-[#1a2a3d] md:px-6 md:py-10">
               <div className="mx-auto mb-10 max-w-4xl text-center space-y-4">
                 <p className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.24em] text-primary/70">
                   Le quotidien de l&apos;élevage
@@ -451,7 +451,7 @@ export default function HomePage() {
               </div>
 
               <div className="grid gap-6 md:grid-cols-2">
-                <Card className="overflow-hidden border-primary/15 bg-white/80 shadow-[0_20px_60px_rgba(115,74,32,0.08)] backdrop-blur-sm">
+                <Card className="overflow-hidden border-primary/15 bg-white/80 shadow-[0_20px_60px_rgba(52,81,110,0.08)] backdrop-blur-sm dark:bg-[#142334]">
                   <CardContent className="space-y-5 p-6 md:p-8">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/12 text-primary shadow-sm">
                       <MapPin className="h-6 w-6" aria-hidden="true" />
@@ -482,7 +482,7 @@ export default function HomePage() {
                   </CardContent>
                 </Card>
 
-                <Card className="overflow-hidden border-primary/15 bg-[#6b401f] text-white shadow-[0_24px_70px_rgba(61,36,16,0.18)]">
+                <Card className="overflow-hidden border-primary/15 bg-[#1d3046] text-white shadow-[0_24px_70px_rgba(16,30,48,0.24)]">
                   <CardContent className="space-y-5 p-6 md:p-8">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-white backdrop-blur-sm">
                       <Heart className="h-6 w-6" aria-hidden="true" />
@@ -513,7 +513,7 @@ export default function HomePage() {
           </div>
         </section>
         {/* Nos valeurs */}
-        <section className="my-8 bg-muted/20 py-16">
+        <section className="my-8 bg-muted/20 py-16 dark:bg-[#0f1823]">
           <div className="container mx-auto p-2">
             <div className="mb-12 text-center space-y-4">
               <p className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.24em] text-primary/70">
@@ -536,7 +536,7 @@ export default function HomePage() {
               {shibaBenefits.map((item) => (
                 <Card
                   key={item.title}
-                  className="group h-full overflow-hidden rounded-[1.8rem] border-primary/10 bg-white/85 p-3 shadow-[0_18px_50px_rgba(115,74,32,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(115,74,32,0.12)]"
+                  className="group h-full overflow-hidden rounded-[1.8rem] border-primary/10 bg-white/85 p-3 shadow-[0_18px_50px_rgba(52,81,110,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(52,81,110,0.12)] dark:bg-[#142334]"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden rounded-[1.2rem]">
                     <Image
@@ -577,9 +577,9 @@ export default function HomePage() {
         </section>
 
         {/* éleveurs */}
-        <section className="my-8 bg-muted/30 py-16">
+        <section className="my-8 bg-muted/30 py-16 dark:bg-[#0f1823]">
           <div className="container mx-auto p-2">
-            <div className="overflow-hidden rounded-[2.5rem] border border-primary/10 bg-linear-to-br from-[#fff9f3] via-white to-[#efe3d5] px-4 py-8 shadow-[0_26px_90px_rgba(115,74,32,0.08)] md:px-6 md:py-10">
+            <div className="overflow-hidden rounded-[2.5rem] border border-primary/10 bg-linear-to-br from-[#fbfdff] via-white to-[#e7eef6] px-4 py-8 shadow-[0_26px_90px_rgba(52,81,110,0.08)] dark:from-[#101b28] dark:via-[#142233] dark:to-[#1a2a3d] md:px-6 md:py-10">
               <div className="mb-12 text-center space-y-4">
                 <p className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.24em] text-primary/70">
                   Les éleveuses
@@ -609,10 +609,10 @@ export default function HomePage() {
                   className="block h-full rounded-[1.8rem] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   aria-label={`Lire la présentation de ${founder.name}`}
                 >
-                  <article className="group flex h-full overflow-hidden rounded-[1.9rem] border border-primary/10 bg-linear-to-br from-white via-[#fffaf4] to-[#f3e6d8] shadow-[0_18px_50px_rgba(115,74,32,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(115,74,32,0.12)]">
+                  <article className="group flex h-full overflow-hidden rounded-[1.9rem] border border-primary/10 bg-linear-to-br from-white via-[#f8fbfe] to-[#e7eef6] shadow-[0_18px_50px_rgba(52,81,110,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(52,81,110,0.12)] dark:from-[#122031] dark:via-[#162435] dark:to-[#1d2d42]">
                     <div className="grid h-full w-full gap-0 md:grid-cols-[240px_1fr]">
                       <div className="flex items-start justify-center p-5 md:p-6">
-                        <div className="w-full max-w-[220px] overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(115,74,32,0.10)]">
+                        <div className="w-full max-w-[220px] overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d]">
                           <div className="relative aspect-4/5 w-full overflow-hidden">
                             <Image
                               src={founder.image || "/home-founder-fallback.jpg"}
@@ -647,7 +647,7 @@ export default function HomePage() {
                           ))}
                         </div>
 
-                        <div className="h-full rounded-[1.4rem] border border-primary/10 bg-white/70 px-5 py-4">
+                        <div className="h-full rounded-[1.4rem] border border-primary/10 bg-white/70 px-5 py-4 dark:bg-[#1a2a3d]">
                           <p className="text-sm leading-relaxed text-muted-foreground">
                             {founder.description}
                           </p>
@@ -659,7 +659,7 @@ export default function HomePage() {
               ))}
               </div>
 
-              <div className="mt-12 rounded-[1.8rem] border border-primary/10 bg-white/75 px-6 py-8 text-center shadow-[0_16px_40px_rgba(115,74,32,0.06)]">
+              <div className="mt-12 rounded-[1.8rem] border border-primary/10 bg-white/75 px-6 py-8 text-center shadow-[0_16px_40px_rgba(52,81,110,0.06)] dark:bg-[#142334]">
                 <div className="space-y-4">
                   <h3 className="text-2xl font-semibold tracking-[0.01em] md:text-3xl">
                     Vous souhaitez adopter un Spitz nain Poméranien ?
