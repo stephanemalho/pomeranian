@@ -240,7 +240,7 @@ export default function ContactPage() {
                                     <div className="relative w-40 aspect-square my-4">
                                         <Image
                                             src="/adobe-express-qr-code.png"
-                                            alt="QR code pour contacter Kawaii Shiba"
+                                            alt="QR code pour contacter Spitz nain Poméranien"
                                             fill
                                             className="object-cover"
                                             sizes="160px"

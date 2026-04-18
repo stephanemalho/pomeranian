@@ -34,11 +34,11 @@ export const dogs: AdultDog[] = [
         images: [
             {
                 src: "/pages/reproducteurs/ichiro-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait d'Ichiro, mâle Mameshiba de l'élevage Kawaii Shiba"
+                alt: "Portrait d'Ichiro, mâle Mameshiba de l'élevage Spitz nain Poméranien"
             },
             {
                 src: "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp",
-                alt: "Ichiro, mâle Mameshiba de l'élevage Kawaii Shiba"
+                alt: "Ichiro, mâle Mameshiba de l'élevage Spitz nain Poméranien"
             }
         ]
     },
@@ -59,7 +59,7 @@ export const dogs: AdultDog[] = [
         images: [
             {
                 src: "/pages/reproducteurs/yuzu-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Yuzu, femelle Mameshiba de l'élevage Kawaii Shiba"
+                alt: "Portrait de Yuzu, femelle Mameshiba de l'élevage Spitz nain Poméranien"
             }
         ]
     },
@@ -80,7 +80,7 @@ export const dogs: AdultDog[] = [
         images: [
             {
                 src: "/pages/reproducteurs/sakura-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Sakura, femelle Mameshiba crème de l'élevage Kawaii Shiba"
+                alt: "Portrait de Sakura, femelle Mameshiba crème de l'élevage Spitz nain Poméranien"
             },
             {
                 src: "/pages/reproducteurs/SAKURA-white-mame-shiba-from-japan.webp",
@@ -141,10 +141,10 @@ export const dogs: AdultDog[] = [
         name: "Karasuki",
         title: "KARASUKI - Femelle Mameshiba",
         color: "Non précisé",
-        origin: "Née chez Kawaii Shiba",
+        origin: "Née chez Spitz nain Poméranien",
         size: "27 cm au garrot • 4 kg",
         temperament:
-            "Karasuki est une femelle Mameshiba née chez Kawaii Shiba, au petit gabarit, certifiée et confirmée au Kennel Club of Japan.",
+            "Karasuki est une femelle Mameshiba née chez Spitz nain Poméranien, au petit gabarit, certifiée et confirmée au Kennel Club of Japan.",
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Shiba Inu",
@@ -153,7 +153,7 @@ export const dogs: AdultDog[] = [
         images: [
             {
                 src: "/pages/reproducteurs/Karasuki.webp",
-                alt: "Karasuki, femelle Mameshiba née chez Kawaii Shiba"
+                alt: "Karasuki, femelle Mameshiba née chez Spitz nain Poméranien"
             }
         ]
     },
@@ -189,7 +189,7 @@ export const dogs: AdultDog[] = [
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques",
+            "Indemne de maladies génétiques"
         ],
         images: [
             {
@@ -214,12 +214,12 @@ export const dogs: AdultDog[] = [
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques",
+            "Indemne de maladies génétiques"
         ],
         images: [
             {
                 src: "/pages/reproducteurs/yumi-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Yumi, femelle Mameshiba de l'élevage Kawaii Shiba"
+                alt: "Portrait de Yumi, femelle Mameshiba de l'élevage Spitz nain Poméranien"
             },
             {
                 src: "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp",
@@ -239,12 +239,12 @@ export const dogs: AdultDog[] = [
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques",
+            "Indemne de maladies génétiques"
         ],
         images: [
             {
                 src: "/pages/reproducteurs/waru-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Waru, mâle Mameshiba de l'élevage Kawaii Shiba"
+                alt: "Portrait de Waru, mâle Mameshiba de l'élevage Spitz nain Poméranien"
             },
             {
                 src: "/pages/reproducteurs/WARU-male-mame-shiba-couleur-feu.webp",

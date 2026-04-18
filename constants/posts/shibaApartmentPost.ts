@@ -18,21 +18,24 @@ export const shibaApartmentPost: BlogPost = {
             ]
         },
         {
-            subtitle: "Ce que disent les sources japonaises sur le Shiba en intérieur",
+            subtitle:
+                "Ce que disent les sources japonaises sur le Shiba en intérieur",
             paragraphs: [
                 "La littérature japonaise moderne autour du Shiba montre bien que la vie en intérieur s'est largement développée. Anicom note même que le Shiba est aujourd'hui bien plus souvent élevé en intérieur qu'autrefois, ce qui a fait reculer certains comportements d'alerte excessifs liés à la garde extérieure.",
                 "Cela ne veut pas dire que tous les Shiba s'adaptent facilement à n'importe quel appartement. Un Shiba sous-stimulé, surexposé aux bruits de palier ou constamment sollicité par un environnement mal géré peut vite devenir tendu, aboyer davantage ou se montrer plus réactif."
             ]
         },
         {
-            subtitle: "Pourquoi le Mameshiba a été pensé pour les modes de vie modernes",
+            subtitle:
+                "Pourquoi le Mameshiba a été pensé pour les modes de vie modernes",
             paragraphs: [
                 "KC Japan présente le Mameshiba comme le résultat d'une sélection de petits Shiba menée pour mieux correspondre aux conditions de vie modernes. Les sources japonaises évoquent clairement l'essor de la vie en intérieur, le vieillissement des propriétaires et l'augmentation des logements plus compacts.",
                 "Cela donne au Mameshiba un vrai intérêt pratique en appartement : petit gabarit, entretien physique plus léger, promenades plus faciles à gérer pour certains profils et intégration souvent plus simple dans un quotidien urbain. En revanche, le Mameshiba n'est pas un chien 'facile par défaut'. Il garde une base primitive, une grande finesse émotionnelle et un besoin de cohérence."
             ]
         },
         {
-            subtitle: "Dans quels cas le Shiba Inu peut très bien vivre en appartement",
+            subtitle:
+                "Dans quels cas le Shiba Inu peut très bien vivre en appartement",
             paragraphs: [
                 "Le Shiba peut très bien vivre en appartement si ses besoins sont vraiment compris. Il lui faut des sorties régulières, un cadre calme, des règles stables et des humains qui savent ne pas l'envahir. Un appartement bien géré vaut souvent mieux qu'une maison avec jardin dans laquelle le chien est livré à lui-même.",
                 "Il faut aussi penser à l'environnement sonore, aux ascenseurs, aux paliers, aux visiteurs et aux rencontres canines mal choisies. Le Shiba ne pardonne pas toujours une accumulation de petites erreurs de gestion. Ce n'est pas le manque de mètres carrés qui pose le plus de problèmes, mais l'incohérence quotidienne."
@@ -79,7 +82,7 @@ export const shibaApartmentPost: BlogPost = {
             href: "/chiots-disponibles"
         },
         {
-            label: "Découvrir l’élevage Kawaii Shiba",
+            label: "Découvrir l’élevage Spitz nain Poméranien",
             href: "/presentation-elevage"
         },
         {

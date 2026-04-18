@@ -2,7 +2,7 @@ import type { FAQItem } from "@/components/faq"
 
 export const faqHome: FAQItem[] = [
   {
-    question: "Qu'est-ce qui distingue Kawaii Shiba MAMESHIBA des autres élevages de Shiba ?",
+    question: "Qu'est-ce qui distingue Spitz nain Poméranien MAMESHIBA des autres élevages de Shiba ?",
     answer: (
       <div className="space-y-3">
         <p>
@@ -58,7 +58,7 @@ export const faqHome: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Un élevage professionnel comme le nôtre offre une génétique des lignées saine, une sélection de grande qualité avec des parents aux origines Japonaise (Pour Kawaii Shiba).
+          Un élevage professionnel comme le nôtre offre une génétique des lignées saine, une sélection de grande qualité avec des parents aux origines Japonaise (Pour Spitz nain Poméranien).
           Nous avons un suivi vétérinaire rigoureux, un cahier des charges élevé. Chez nous, les locaux sont adaptés au bien être animal, nous avons une connaissance accrue des soins à prodiguer aux animaux, actes de premiers secours, des urgences médicales, il y'a également une présence permanente.
           Un suivi des parents, des chiots, de la sociabilisation, de la gestion émotionnelle et un cadre structuré pour le développement des chiots est nécessaire.
         </p>

@@ -17,7 +17,7 @@ const eleveusesInternalLinks: InternalLinkItem[] = filterBlogLinks([
     {
         href: "/presentation-elevage",
         title: "Découvrir l’élevage",
-        description: "Comprendre l’environnement, la philosophie et les engagements de Kawaii Shiba.",
+        description: "Comprendre l’environnement, la philosophie et les engagements de Spitz nain Poméranien.",
     },
     {
         href: "/nos-chiens",
@@ -71,7 +71,7 @@ export default function PresentationEleveusesPage() {
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqEleveuses))
     const lastMod = returnLastmod(siteConfig.pages.eleveuses)
-  {/* @TODO modifier LES IMAGES DE AURELIE ET MARINE */}
+    {/* @TODO modifier LES IMAGES DE AURELIE ET MARINE */ }
     const aurelieGallery = [
         {
             src: "/assets/authors/aurelie-magnetisme-past-work.jpeg",
@@ -122,7 +122,7 @@ export default function PresentationEleveusesPage() {
             <div className="py-16">
                 <div className="container mx-auto">
                     <section className="text-center space-y-6 mb-16">
-                        <h1 className="text-xl md:text-3xl font-bold">Les éleveuses de Kawaii Shiba</h1>
+                        <h1 className="text-xl md:text-3xl font-bold">Les éleveuses de Spitz nain Poméranien</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                             Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.
                         </p>
@@ -258,7 +258,7 @@ export default function PresentationEleveusesPage() {
                                         <p>
                                             Avec Aurélie, nous formons un duo complémentaire : elle porte une lecture très fine du
                                             comportement et du lien, tandis que je veille à la structure, à la logistique et à la
-                                            constance du cadre. C’est cet équilibre qui fait aussi la force de Kawaii Shiba.
+                                            constance du cadre. C’est cet équilibre qui fait aussi la force de Spitz nain Poméranien.
                                         </p>
                                     </div>
                                 </div>

@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Locaux et espaces de l elevage Kawaii Shiba",
+                alt: "Locaux et espaces de l elevage Spitz nain Poméranien",
                 width: 1200,
                 height: 630,
                 type: "image/webp",
@@ -120,7 +120,7 @@ export default function SejoursPage() {
                     </section>
                     {/* Portée Info */}
                     <section className="text-center mb-16">
-                        <h2 className="text-xl md:text-2xl font-bold mb-4">Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba</h2>
+                        <h2 className="text-xl md:text-2xl font-bold mb-4">Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Spitz nain Poméranien</h2>
                         <div className="flex flex-col md:flex-row items-center justify-center text-muted-foreground mb-8 gap-6">
                             <div className="flex flex-col items-center justify-center md:flex-row">
                                 <MapPin className="h-4 w-4" aria-hidden="true" />
@@ -214,7 +214,7 @@ export default function SejoursPage() {
                                     </Badge>
                                     <h3 className="text-xl md:text-2xl font-bold">Des sorties régulières en pleine nature, au service de l’équilibre du Mameshiba</h3>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Chez Kawaii Shiba, le bien-être et l’équilibre de nos chiens et chiots sont une priorité quotidienne. Au-delà d’un environnement sécurisé à la maison, nous accordons une place essentielle aux sorties régulières en pleine nature, toujours encadrées.
+                                        Chez Spitz nain Poméranien, le bien-être et l’équilibre de nos chiens et chiots sont une priorité quotidienne. Au-delà d’un environnement sécurisé à la maison, nous accordons une place essentielle aux sorties régulières en pleine nature, toujours encadrées.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed">
                                         Forêts, jardins, lacs, prairies et chemins de campagne font partie intégrante de leur quotidien. Ces promenades permettent aux adultes comme aux chiots de découvrir des environnements variés, de développer leur curiosité naturelle et de renforcer leur confiance face aux bruits du monde extérieur.

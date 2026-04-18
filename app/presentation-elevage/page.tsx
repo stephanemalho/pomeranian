@@ -103,7 +103,7 @@ export default function PresentationPage() {
             <div className="py-16">
                 <div className="container mx-auto">
                     <section className="text-center space-y-6 mb-16">
-                        <h1 className="text-xl md:text-3xl font-bold">L&apos;élevage Kawaii Shiba - Mameshiba</h1>
+                        <h1 className="text-xl md:text-3xl font-bold">L&apos;élevage Spitz nain Poméranien - Mameshiba</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                             Élevage spécialisé Mameshiba en Saône-et-Loire (71) à la frontière du Jura.
                         </p>

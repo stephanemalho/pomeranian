@@ -13,14 +13,14 @@ export function Footer() {
                             <div className="h-10 w-10 relative">
                                 <Image
                                     src="/icon.png"
-                                    alt="logo Kawaii Shiba elevage de mameshiba"
+                                    alt="logo Spitz nain Poméranien elevage de mameshiba"
                                     fill
                                     sizes="40px"
                                     className="object-contain"
                                     quality={80}
                                 />
                             </div>
-                            <span className="text-lg font-bold text-primary">Kawaii Shiba - MAMESHIBA</span>
+                            <span className="text-lg font-bold text-primary">Spitz nain Poméranien - MAMESHIBA</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
                             Elevage Professionel de Mameshiba en Saône-et-Loire (71). Santé, socialisation et accompagnement des familles.
@@ -204,7 +204,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-                    <p>&copy; 2026 Kawaii Shiba - Mameshiba. Tous droits réservés.</p>
+                    <p>&copy; 2026 Spitz nain Poméranien - Mameshiba. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>

@@ -2,7 +2,7 @@ import { createLastmodGetter } from "./lastmod";
 
 /**
  * ============================================================
- * CONFIGURATION SEO & LÉGALE — Kawaii Shiba
+ * CONFIGURATION SEO & LÉGALE — Spitz nain Poméranien
  * ============================================================
  * Source de vérité unique pour :
  * - SEO
@@ -15,7 +15,7 @@ import { createLastmodGetter } from "./lastmod";
 /*  CANONICAL NAME (UNE SEULE SOURCE DE VÉRITÉ)                                */
 /* -------------------------------------------------------------------------- */
 
-const CANONICAL_NAME = "Kawaii Shiba";
+const CANONICAL_NAME = "Spitz nain Poméranien";
 
 export const seoLastmod = "2026-04-04";
 
@@ -32,9 +32,9 @@ export const siteConfig = {
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kawaii-shiba.com",
 
     /* ------------------------------ SEO Global -------------------------------- */
-    title: "Élevage de Mameshiba en France | Kawaii Shiba",
+    title: "Élevage de Mameshiba en France | Spitz nain Poméranien",
     description:
-        "Kawaii Shiba est un élevage spécialisé en Mameshiba en France. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
+        "Spitz nain Poméranien est un élevage spécialisé en Mameshiba en France. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
     keywords: [
         "élevage Mameshiba",
         "Mameshiba France",
@@ -91,7 +91,7 @@ export const siteConfig = {
     /* ------------------------------ OpenGraph --------------------------------- */
     ogImage: "/mame-shiba-in-a-sakura-tree.jpg",
     ogImageAlt:
-        "Mameshiba femelle de Kawaii Shiba sur un arbre en fleurs de cerisier",
+        "Mameshiba femelle de Spitz nain Poméranien sur un arbre en fleurs de cerisier",
     ogImageWidth: 2560,
     ogImageHeight: 1707,
 
@@ -349,9 +349,9 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "Élevage de Mameshiba en France | Chiots & lignées japonaises | Kawaii Shiba",
+        title: "Élevage de Mameshiba en France | Chiots & lignées japonaises | Spitz nain Poméranien",
         description:
-            "Élevage de Mameshiba en France (Shiba Inu de petite taille): chiots élevés avec soin, lignées japonaises, socialisation sérieuse et accompagnement avant adoption. Découvrez Kawaii Shiba.",
+            "Élevage de Mameshiba en France (Shiba Inu de petite taille): chiots élevés avec soin, lignées japonaises, socialisation sérieuse et accompagnement avant adoption. Découvrez Spitz nain Poméranien.",
         keywords: [
             "élevage de mameshiba responsable",
             "chiots mameshiba rares en France",
@@ -361,7 +361,7 @@ export const pageMetadata = {
             "Mameshiba noir",
             "Mameshiba blanc",
             "adopter un chien japonais",
-            "Kawaii Shiba",
+            "Spitz nain Poméranien",
             "élevage de Mameshiba en France",
             "adopter un Mameshiba en France"
         ]
@@ -402,23 +402,23 @@ export const pageMetadata = {
     },
 
     mameshibaPrice: {
-        title: "Prix de nos Mameshiba | Kawaii Shiba",
+        title: "Prix de nos Mameshiba | Spitz nain Poméranien",
         description:
-            "Découvrez les prix de nos Mameshiba à l'élevage Kawaii Shiba : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
+            "Découvrez les prix de nos Mameshiba à l'élevage Spitz nain Poméranien : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
         keywords: [
             "prix Mameshiba",
             "prix mameshiba elevage",
             "tarif Mameshiba",
-            "prix mameshiba kawaii shiba",
+            "prix mameshiba Spitz nain Poméranien",
             "prix chiot mameshiba",
             "prix male mameshiba",
             "prix femelle mameshiba",
-            "kawaii shiba prix"
+            "Spitz nain Poméranien prix"
         ]
     },
 
     adoptionGuide: {
-        title: "Réussir l'adoption de son chiot Mameshiba | Kawaii Shiba",
+        title: "Réussir l'adoption de son chiot Mameshiba | Spitz nain Poméranien",
         description:
             "Guide pratique pour réussir l'adoption d'un chiot Mameshiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
         keywords: [
@@ -435,7 +435,7 @@ export const pageMetadata = {
     reproductors: {
         title: "Nos adultes reproducteurs Mameshiba",
         description:
-            "Les chiens présentés ici constituent le cœur de notre élevage Kawaii Shiba. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.",
+            "Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.",
         keywords: [
             "mameshiba japon",
             "nos chiens mameshiba",
@@ -447,7 +447,7 @@ export const pageMetadata = {
     },
 
     presentation: {
-        title: "L'élevage Kawaii Shiba - Mameshiba",
+        title: "L'élevage Spitz nain Poméranien - Mameshiba",
         description:
             "Élevage spécialisé Mameshiba à Dommartin-lès-Cuiseaux (71) : sélection raisonnée, lignées japonaises, santé suivie et chiots élevés avec une vraie attention portée à l'équilibre émotionnel.",
         keywords: [
@@ -461,7 +461,7 @@ export const pageMetadata = {
         ]
     },
     eleveuses: {
-        title: "Les éleveuses de Kawaii Shiba",
+        title: "Les éleveuses de Spitz nain Poméranien",
         description:
             "Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.",
         keywords: [
@@ -477,7 +477,7 @@ export const pageMetadata = {
     wellness: {
         title: "La vie en élevage",
         description:
-            "Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba",
+            "Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Spitz nain Poméranien",
         keywords: [
             "conditions de vie des chiots en élevage",
             "élevage familial responsable",
@@ -497,7 +497,7 @@ export const pageMetadata = {
         description:
             "Parlons de votre futur compagnon. Les visites se font uniquement sur rendez-vous pour respecter le rythme des chiots.",
         keywords: [
-            "contact elevage kawaii shiba",
+            "contact elevage Spitz nain Poméranien",
             "visite elevage",
             "rendez-vous",
             "adoption mameshiba",
@@ -511,7 +511,7 @@ export const pageMetadata = {
     legalNotice: {
         title: "Mentions légales",
         description:
-            "Informations réglementaires de l'élevage Kawaii Shiba et cadre juridique d'utilisation du site.",
+            "Informations réglementaires de l'élevage Spitz nain Poméranien et cadre juridique d'utilisation du site.",
         keywords: [
             "mentions legales",
             "informations legales",
@@ -524,7 +524,7 @@ export const pageMetadata = {
     terms: {
         title: "Termes et conditions d'utilisation",
         description:
-            "Règles d'usage du site Kawaii Shiba, informations précontractuelles et responsabilités de chacune des parties.",
+            "Règles d'usage du site Spitz nain Poméranien, informations précontractuelles et responsabilités de chacune des parties.",
         keywords: [
             "conditions generales",
             "conditions dutilisation",
@@ -537,7 +537,7 @@ export const pageMetadata = {
     privacy: {
         title: "Politique de confidentialité",
         description:
-            "Comment Kawaii Shiba collecte, utilise et protège vos données personnelles dans le respect du RGPD.",
+            "Comment Spitz nain Poméranien collecte, utilise et protège vos données personnelles dans le respect du RGPD.",
         keywords: [
             "RGPD",
             "confidentialite",

@@ -70,7 +70,7 @@ export default function MentionsLegalesPage() {
             <p className="text-sm uppercase tracking-wide text-primary/80">Informations légales</p>
             <h1 className="text-xl md:text-3xl font-bold">Mentions légales</h1>
             <p className="text-muted-foreground">
-              Informations réglementaires de l&apos;élevage Kawaii Shiba et cadre juridique d&apos;utilisation du site.
+              Informations réglementaires de l&apos;élevage Spitz nain Poméranien et cadre juridique d&apos;utilisation du site.
             </p>
           </header>
 
@@ -106,7 +106,7 @@ export default function MentionsLegalesPage() {
             <h2 className="text-xl md:text-2xl font-semibold">Propriété intellectuelle</h2>
             <p className="text-muted-foreground">
               L&apos;ensemble des contenus (textes, photographies, visuels, logo) présents sur ce site est protégé par le droit d&apos;auteur
-              et demeure la propriété exclusive de Kawaii Shiba ou de leurs auteurs respectifs. Toute reproduction, adaptation ou
+              et demeure la propriété exclusive de Spitz nain Poméranien ou de leurs auteurs respectifs. Toute reproduction, adaptation ou
               diffusion, même partielle, nécessite une autorisation écrite préalable.
             </p>
           </section>
@@ -116,7 +116,7 @@ export default function MentionsLegalesPage() {
             <p className="text-muted-foreground">
               Les informations publiées sur ce site sont fournies à titre informatif sur l&apos;élevage, les chiots disponibles et les pratiques de bien-être animal.
               Malgré une mise à jour régulière, certaines données (disponibilités, tarifs indicatifs, dates de portées) peuvent évoluer. Nous vous invitons
-              à confirmer chaque information lors de la prise de contact. Kawaii Shiba ne saurait être tenue responsable d&apos;une mauvaise interprétation
+              à confirmer chaque information lors de la prise de contact. Spitz nain Poméranien ne saurait être tenue responsable d&apos;une mauvaise interprétation
               ou d&apos;un usage inapproprié des contenus du site.
             </p>
           </section>
@@ -124,7 +124,7 @@ export default function MentionsLegalesPage() {
           <section className="space-y-3">
             <h2 className="text-xl md:text-2xl font-semibold">Liens hypertextes</h2>
             <p className="text-muted-foreground">
-              Les liens externes (Instagram, formulaires, ressources partenaires) sont proposés pour faciliter vos démarches. Kawaii Shiba ne contrôle
+              Les liens externes (Instagram, formulaires, ressources partenaires) sont proposés pour faciliter vos démarches. Spitz nain Poméranien ne contrôle
               pas le contenu de ces sites tiers et décline toute responsabilité quant aux informations qui y figurent.
             </p>
           </section>

@@ -262,7 +262,7 @@ export default function NosChiotsPage() {
                                             <Sprout className="h-6 w-6 text-primary" aria-hidden="true" />
                                             <div>
                                                 <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                    Contactez nous 
+                                                    Contactez nous
                                                 </h2>
                                                 <p className="text-muted-foreground mt-2">
                                                     Si vous avez des questions au sujet de nos chiots ou de la prochaine portée, ou vous réflechissez à adopter un Mameshiba, nous prenons le temps d'échanger avec vous
@@ -310,7 +310,7 @@ export default function NosChiotsPage() {
                                     Des portées rares, pensées avec soin
                                 </h2>
                                 <p className="text-muted-foreground mt-2">
-                                    Chez Kawaii Shiba, nous préférons attendre la bonne portée plutôt que produire vite.
+                                    Chez Spitz nain Poméranien, nous préférons attendre la bonne portée plutôt que produire vite.
                                 </p>
                             </div>
                         </div>

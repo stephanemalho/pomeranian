@@ -3,7 +3,7 @@ import { AlertCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Page non trouvée - Kawaii Shiba',
+    title: 'Page non trouvée - Spitz nain Poméranien',
     description: 'La page que tu cherches n\'existe pas.',
 };
 

@@ -52,7 +52,7 @@ export default function HomePage() {
       name: "Aurélie",
       image: "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg",
       description:
-        "Aurélie est passionnée par les chiens de type primitif et la culture japonaise depuis toujours. Son coup de cœur pour le Mameshiba l'a conduite à mettre son expertise d'éducatrice comportementaliste au service d'un accompagnement doux et exigeant. Elle privilégie la socialisation, l'équilibre émotionnel et le lien humain-chien, avec une approche positive qui respecte l'identité sensible et indépendante du Mameshiba.",
+        "Aurélie est passionnée par les chiens de type primitif et la culture japonaise depuis toujours. Son coup de cœur pour le Spitz nain Poméranien l'a conduite à mettre son expertise d'éducatrice comportementaliste au service d'un accompagnement doux et exigeant. Elle privilégie la socialisation, l'équilibre émotionnel et le lien humain-chien, avec une approche positive qui respecte l'identité sensible et indépendante du Spitz nain Poméranien.",
       badges: [
         "diplômée éducateur canin comportementaliste",
         "Ancienne éducatrice comportementaliste",
@@ -65,7 +65,7 @@ export default function HomePage() {
       name: "Marine",
       image: "/pages/homePage/marine-de-kawaii-avec-un-chiot-mame.jpg",
       description:
-        "Marine a rejoint l'aventure Mameshiba pour garantir un cadre stable et serein à chaque chien. Observatrice et méthodique, elle veille au bien-être quotidien, aux routines et à l'équilibre des groupes. Son exigence sur la propreté, la régularité des soins et l'organisation permet à chaque Mameshiba d'évoluer dans un environnement sain, apaisant et rassurant.",
+        "Marine a rejoint l'aventure Spitz nain Poméranien pour garantir un cadre stable et serein à chaque chien. Observatrice et méthodique, elle veille au bien-être quotidien, aux routines et à l'équilibre des groupes. Son exigence sur la propreté, la régularité des soins et l'organisation permet à chaque chiots d'évoluer dans un environnement sain, apaisant et rassurant.",
       badges: [
         "4 ans d'expérience en élevage canin",
         "Protocoles d'hygiène rigoureux",
@@ -98,7 +98,7 @@ export default function HomePage() {
                 <div className="overflow-hidden rounded-xl border border-white/10 bg-[#8a572c] shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
                   <Image
                     src="/pages/homePage/bandeau-presentation-kawaii-mameshiba.jpg"
-                    alt="Bandeau de présentation Kawaii Shiba Mameshiba"
+                    alt="Bandeau de présentation Spitz nain Poméranien"
                     width={1260}
                     height={400}
                     priority
@@ -111,12 +111,11 @@ export default function HomePage() {
 
                 <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#9b6331]/72 px-6 py-6 text-center text-white shadow-[0_30px_100px_rgba(0,0,0,0.32)] backdrop-blur-sm md:rounded-4xl md:px-8">
                   <div className="mx-auto max-w-4xl">
-                    <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/80">
-                      Kawaii Shiba
+                    <div className="mx-auto inline-flex items-center gap-3 px-4 py-1 text-md uppercase tracking-[0.35em] text-white/80">
+                      Cercle Polaire
                     </div>
                     <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-white md:text-4xl">
-                      Bienvenue dans notre élevage Kawaii - Shiba
-                      MAMESHIBA
+                      Bienvenue dans notre élevage Cercle Polaire - Spitz nain Poméranien
                     </h1>
                   </div>
                 </div>
@@ -125,7 +124,7 @@ export default function HomePage() {
                   <div className="relative aspect-4/3 sm:aspect-16/11 md:aspect-16/8 lg:aspect-16/7">
                     <Image
                       src="/mame-shiba-in-a-sakura-tree.jpg"
-                      alt="Mameshiba dans un décor inspiré du Japon"
+                      alt="Spitz nain Poméranien dans un décor inspiré du Japon"
                       fill
                       className="object-cover object-center"
                       sizes="(min-width: 1280px) 960px, (min-width: 1024px) 80vw, (min-width: 768px) calc(100vw - 80px), calc(100vw - 32px)"
@@ -137,12 +136,15 @@ export default function HomePage() {
 
                 <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#6a4021]/82 px-6 py-6 text-white shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
                   <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/72">
-                    Nous sommes parmi les premiers élevages de Mameshiba en France
+                    À la recherche d'un Spitz nain
+                    poméranien absolument atypique ?
                   </p>
                   <div className="mt-5 grid gap-6 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
                     <div className="space-y-4">
                       <p className="text-base leading-relaxed text-white/88 md:text-lg">
-                        Nos Mameshiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine pour garantir l'excellence des lignées importées
+                        Découvrez notre programme d’élevage dédié au Spitz nain, appelé également loulou de
+                        Poméranie au marquage husky : 1 sujet sur 1 million possède ce gène absolument rarissime, et
+                        en fait le plus petit primitif au monde ressemblant au Husky.
                       </p>
                     </div>
                     <div className="flex lg:justify-end">
@@ -150,7 +152,7 @@ export default function HomePage() {
                         href="/chiots-disponibles"
                         className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:rounded-full"
                       >
-                        Voir les chiots Mameshiba disponibles
+                        Voir nos chiots disponibles
                       </Link>
                     </div>
                   </div>
@@ -167,24 +169,23 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-12 items-center p-2">
               <div className="space-y-6">
                 <Badge variant="secondary" className="w-fit">
-                  Le Mameshiba
+                  Le Spitz nain Poméraninen
                 </Badge>
 
                 <h2 className="text-xl md:text-2xl font-bold">
-                  Le Mameshiba, un Shiba Inu miniature d'origine japonaise
+                  Nos spitz nains sont issus d’un long travail de sélection
                 </h2>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  C'est un véritable Shiba Inu, mais de petite taille. Le mot
-                  « mame » signifie haricot en japonais : une façon affectueuse de parler
-                  d'un petit chien au charme intact. Rare en Europe, il s'inscrit dans une
-                  sélection rigoureuse menée au Japon depuis des décennies.
+                  Nous élevons avec passion et engagement, le plus petit de tous les primitifs au monde : le
+                  spitz nain poméranien, nous sommes tombés sous le charme d’une robe unique au monde
+                  : le marquage husky ! Provenant du gène domino, chaque chiot est une œuvre vivante,
+                  avec une combinaison unique de couleurs allant du gris silver au noir et blanc, en passant
+                  par le bleu et blanc, tout en conservant l’âme sauvage du husky.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Le club de race japonais (KCJ) a officialisé le nom « Mameshiba » et
-                  a débuté les enregistrements en 2008. Cette reconnaissance souligne
-                  l'exigence autour de la généalogie et du type, afin de préserver un
-                  Shiba Inu miniature fidèle à son héritage.
+                  Leur masque est dessiné à la manière d’une oeuvre d’art, il est possible de les recconaître
+                  en un seul coup d’oeil
                 </p>
 
                 <div className="space-y-2">
@@ -229,7 +230,7 @@ export default function HomePage() {
                   <div className="space-y-3">
                     <h2 className="text-xl font-semibold">Un élevage accessible depuis toute la France</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      L'élevage Kawaii Shiba est situé en Bourgogne-Franche-Comté à la limite du JURA, dans la commune de Dommartin-lès-Cuiseaux (71), à 1h30 de Lyon, 2h de Genève et moins de 4h de Paris en voiture.
+                      L'élevage Spitz nain Poméranien est situé en Bourgogne-Franche-Comté à la limite du JURA, dans la commune de Dommartin-lès-Cuiseaux (71), à 1h30 de Lyon, 2h de Genève et moins de 4h de Paris en voiture.
                     </p>
                     <div className="flex items-start gap-3 rounded-xl bg-primary/6 px-4 py-3 text-sm text-muted-foreground">
                       <Route className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
@@ -250,7 +251,7 @@ export default function HomePage() {
                       Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et notre adoration pour la culture japonaise nous ont menés tout droit jusqu'à un véritable coup de cœur : le Mameshiba.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Cette rencontre a façonné l'identité de Kawaii Shiba, avec une sélection portée par l'émotion, l'exigence et le respect du type japonais.
+                      Cette rencontre a façonné l'identité de Spitz nain Poméranien, avec une sélection portée par l'émotion, l'exigence et le respect du type japonais.
                     </p>
                   </div>
                 </CardContent>

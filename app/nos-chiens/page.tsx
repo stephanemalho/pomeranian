@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Ichiro mameshiba de l elevage Kawaii Shiba",
+                alt: "Ichiro mameshiba de l elevage Spitz nain Poméranien",
                 width: 1200,
                 height: 630,
                 type: "image/webp",
@@ -90,7 +90,7 @@ export default function NosChiensPage() {
                         <h1 className="text-xl md:text-3xl font-bold">Nos adultes reproducteurs Mameshiba</h1>
                         <h2 className="text-xl md:text-2xl">Lignées japonaises, caractères et sélection de l&apos;élevage</h2>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Les chiens présentés ici constituent le cœur de notre élevage Kawaii Shiba. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.
+                            Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.
                         </p>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                             Chaque mariage est soigneusement réfléchi afin de préserver l&apos;équilibre émotionnel, la morphologie, la douceur de caractère et l&apos;identité du véritable Mameshiba.

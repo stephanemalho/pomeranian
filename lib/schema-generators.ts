@@ -2,7 +2,7 @@
 import { siteConfig } from "./seo-config";
 
 /**
- * Schéma Organization pour l'élevage Kawaii Shiba
+ * Schéma Organization pour l'élevage Spitz nain Poméranien
  * Utilisé notamment sur la page d'accueil
  */
 export function generateOrganizationSchema() {
@@ -54,7 +54,9 @@ export function generateOrganizationSchema() {
             addressLocality: address.city,
             postalCode: address.postalCode,
             addressCountry: address.country,
-            ...(location?.department ? { addressRegion: location.department } : {})
+            ...(location?.department
+                ? { addressRegion: location.department }
+                : {})
         },
         additionalProperty: [
             {
@@ -138,7 +140,7 @@ export function generateLocalBusinessSchema() {
                 ? { addressRegion: location.department }
                 : location?.region
                   ? { addressRegion: location.region }
-                : {})
+                  : {})
         },
         ...(coordinates?.latitude != null && coordinates?.longitude != null
             ? {
@@ -257,7 +259,7 @@ export function generatePuppyListSchema(
         "@type": "ItemList",
         name: "Chiots Mameshiba disponibles",
         description:
-            "Liste des chiots Mameshiba de l'élevage Kawaii Shiba disponibles à l'adoption.",
+            "Liste des chiots Mameshiba de l'élevage Spitz nain Poméranien disponibles à l'adoption.",
         numberOfItems: puppies.length,
         itemListElement: puppies.map((puppy, index) => ({
             "@type": "ListItem",
@@ -383,7 +385,11 @@ export function generateBlogPostingSchema(params: {
         publisher: {
             "@id": `${siteConfig.siteUrl}#organization`
         },
-        ...(params.keywords?.length ? { keywords: params.keywords.join(", ") } : {}),
-        ...(params.articleSection ? { articleSection: params.articleSection } : {})
+        ...(params.keywords?.length
+            ? { keywords: params.keywords.join(", ") }
+            : {}),
+        ...(params.articleSection
+            ? { articleSection: params.articleSection }
+            : {})
     };
 }

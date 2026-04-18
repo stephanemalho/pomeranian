@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${mameshibaPriceOgJpg}`,
-                alt: "Chiot Mameshiba de l elevage Kawaii Shiba",
+                alt: "Chiot Mameshiba de l elevage Spitz nain Poméranien",
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
                 type: "image/jpeg",
@@ -49,14 +49,14 @@ const priceCategories = [
     {
         category: "Mâle Mameshiba",
         profile: "chiot de compagnie issu de notre sélection, suivi avec sérieux et élevé pour une vie de famille équilibrée",
-        lineage: "sélection Kawaii Shiba",
+        lineage: "sélection Spitz nain Poméranien",
         price: "4 500 €",
         availability: "Selon les portées",
     },
     {
         category: "Femelle Mameshiba",
         profile: "chiot de compagnie issu de notre sélection, avec le même niveau d’exigence sur le type, le caractère et le suivi",
-        lineage: "sélection Kawaii Shiba",
+        lineage: "sélection Spitz nain Poméranien",
         price: "5 000 €",
         availability: "Selon les portées",
     },
@@ -192,10 +192,10 @@ export default function MameshibaPricePage() {
                                 Prix de nos Mameshiba
                             </Badge>
                             <h1 className="text-2xl font-bold md:text-4xl">
-                                Prix de nos Mameshiba à l'élevage Kawaii Shiba
+                                Prix de nos Mameshiba à l'élevage Spitz nain Poméranien
                             </h1>
                             <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
-                                Chez Kawaii Shiba, nous souhaitons afficher nos
+                                Chez Spitz nain Poméranien, nous souhaitons afficher nos
                                 tarifs de manière simple et lisible. Le prix de nos chiots Mameshiba correspond au prix d'un chiot Mameshiba au Japon : ils sont fixés à 4 500 € pour un mâle et 5 000 € pour une femelle.
                             </p>
                             <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">Ce prix élevé est le reflet de la rareté absolue qu'est le Mameshiba. </p>
@@ -221,7 +221,7 @@ export default function MameshibaPricePage() {
                         <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-[30rem]">
                             <Image
                                 src={mameshibaPriceOgJpg}
-                                alt="Chiot Mameshiba de Kawaii Shiba"
+                                alt="Chiot Mameshiba de Spitz nain Poméranien"
                                 fill
                                 priority
                                 fetchPriority="high"
@@ -275,7 +275,7 @@ export default function MameshibaPricePage() {
                                             <th className="px-5 py-4 font-semibold">Description</th>
                                             <th className="px-5 py-4 font-semibold">Approche d’élevage</th>
                                             <th className="px-5 py-4 font-semibold">Tarif</th>
-                                            <th className="px-5 py-4 font-semibold">Chez Kawaii Shiba</th>
+                                            <th className="px-5 py-4 font-semibold">Chez Spitz nain Poméranien</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -298,7 +298,7 @@ export default function MameshibaPricePage() {
                         <div className="space-y-3">
                             <h2 className="text-xl font-bold md:text-2xl">Ce que reflètent nos prix à l’élevage</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Nos tarifs ne sont pas pensés comme un simple chiffre. Ils reflètent l’ensemble du travail d’élevage réalisé autour de chaque portée et le niveau d’exigence que nous souhaitons maintenir chez Kawaii Shiba.
+                                Nos tarifs ne sont pas pensés comme un simple chiffre. Ils reflètent l’ensemble du travail d’élevage réalisé autour de chaque portée et le niveau d’exigence que nous souhaitons maintenir chez Spitz nain Poméranien.
                             </p>
                         </div>
 
@@ -320,7 +320,7 @@ export default function MameshibaPricePage() {
                             <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
                                 <Image
                                     src="/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
-                                    alt="Mameshiba adulte chez Kawaii Shiba"
+                                    alt="Mameshiba adulte chez Spitz nain Poméranien"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 1024px) 35vw, 100vw"
@@ -329,7 +329,7 @@ export default function MameshibaPricePage() {
                             <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
                                 <Image
                                     src="/pages/image-all-shiba/visuel-texte-mameshiba-elevage-kawaii.webp"
-                                    alt="Mameshiba adulte chez Kawaii Shiba"
+                                    alt="Mameshiba adulte chez Spitz nain Poméranien"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 1024px) 35vw, 100vw"
