@@ -465,6 +465,29 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="my-8">
+          <div className="container mx-auto p-2">
+            <div className="overflow-hidden rounded-[2rem] border border-primary/10 bg-linear-to-br from-[#f7fbff] via-white to-[#e8f0f7] px-6 py-10 shadow-[0_20px_70px_rgba(52,81,110,0.08)] dark:from-[#101b28] dark:via-[#142233] dark:to-[#1a2a3d] md:px-10 md:py-12">
+              <blockquote className="mx-auto max-w-4xl text-center">
+                <p className="text-lg leading-relaxed text-foreground md:text-2xl md:leading-relaxed">
+                  &ldquo;Nos chiens sont issus d&apos;un travail de sélection sur plusieurs générations. Leurs
+                  tests ADN confirment des Poméraniens 100 %, sans croisement, afin de préserver la
+                  pureté de la race, la stabilité de la taille, la cohérence du type et la transmission
+                  naturelle du marquage husky.&rdquo;
+                </p>
+                <footer className="mt-6 space-y-2">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary/70">
+                    Marine
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Éleveuse, sélection et équilibre de la lignée
+                  </p>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
         <section className="my-8 py-12">
           <div className="container mx-auto p-2">
             <div className="overflow-hidden rounded-[2.2rem] border border-primary/10 bg-linear-to-br from-white via-[#f4f8fc] to-[#e4ecf5] px-4 py-8 shadow-[0_24px_90px_rgba(52,81,110,0.08)] dark:from-[#101b28] dark:via-[#142233] dark:to-[#1a2a3d] md:px-6 md:py-10">
@@ -649,12 +672,6 @@ export default function HomePage() {
                   magnétique dans le plus petit primitif du monde, sans altérer l&apos;intégrité du Spitz nain
                   Poméranien.
                 </p>
-                <p className="mx-auto max-w-3xl leading-relaxed text-muted-foreground">
-                  Nos chiens sont issus d&apos;un travail de sélection sur plusieurs générations. Leurs tests ADN
-                  confirment des Poméraniens 100 %, sans croisement, afin de préserver la pureté de la race,
-                  la stabilité de la taille, la cohérence du type et la transmission naturelle du marquage
-                  husky.
-                </p>
                 <div className="mx-auto h-1 w-24 rounded-full bg-primary" aria-hidden="true" />
               </div>
 
@@ -664,23 +681,23 @@ export default function HomePage() {
                     key={index}
                     className="group flex h-full overflow-hidden rounded-[1.9rem] border border-primary/10 bg-linear-to-br from-white via-[#f8fbfe] to-[#e7eef6] shadow-[0_18px_50px_rgba(52,81,110,0.08)] dark:from-[#122031] dark:via-[#162435] dark:to-[#1d2d42]"
                   >
-                      <div className="grid h-full w-full gap-0 md:grid-cols-[240px_1fr]">
-                        <div className="flex items-start justify-center p-5 md:p-6">
-                          <div className="w-full max-w-[220px] overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d]">
-                            <div className="relative aspect-4/5 w-full overflow-hidden">
+                      <div className="grid h-full w-full gap-0 xl:grid-cols-[240px_1fr]">
+                        <div className="p-5 md:p-6 xl:flex xl:items-start xl:justify-center">
+                          <div className="w-full overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d] xl:max-w-[220px]">
+                            <div className="relative h-120 overflow-hidden">
                               <Image
                                 src={founder.image || "/home-founder-fallback.jpg"}
                                 alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
                                 fill
                                 className="object-cover transition duration-500 group-hover:scale-[1.04]"
-                                sizes="(max-width: 768px) 70vw, (max-width: 1024px) 38vw, 240px"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1279px) calc(100vw - 96px), 240px"
                                 quality={70}
                               />
                             </div>
                           </div>
                         </div>
 
-                        <div className="grid h-full grid-rows-[auto_auto_1fr] gap-5 p-6 md:p-7">
+                        <div className="grid h-full grid-rows-[auto_auto_1fr] gap-5 p-5 pt-0 md:p-6 md:pt-0 xl:p-7">
                           <div className="space-y-3">
                             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
                               Éleveuse

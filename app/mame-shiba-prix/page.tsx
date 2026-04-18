@@ -129,7 +129,7 @@ const categoryGuides = [
     },
 ]
 
-const faqMameshibaPrice: FAQItem[] = [
+const faqSpitzNainPomeranienPrice: FAQItem[] = [
     {
         question: "Pourquoi le prix d’une femelle est-il plus élevé ?",
         answer: (
@@ -170,7 +170,7 @@ export default function MameshibaPricePage() {
         { name: "Accueil", url: "/" },
         { name: "Prix de nos Mameshiba", url: siteConfig.pages.mameshibaPrice },
     ])
-    const faqSchema = generateFAQSchema(convertFAQsToSchema(faqMameshibaPrice))
+    const faqSchema = generateFAQSchema(convertFAQsToSchema(faqSpitzNainPomeranienPrice))
     const lastMod = returnLastmod(siteConfig.pages.mameshibaPrice)
 
     return (
@@ -407,7 +407,7 @@ export default function MameshibaPricePage() {
                     <FAQSection
                         title="Questions fréquentes sur nos prix Mameshiba"
                         description="Les réponses essentielles sur nos tarifs à l’élevage, ce qu’ils recouvrent et la manière dont nous accompagnons les réservations."
-                        items={faqMameshibaPrice}
+                        items={faqSpitzNainPomeranienPrice}
                     />
 
                     {pageLastModValue ? (

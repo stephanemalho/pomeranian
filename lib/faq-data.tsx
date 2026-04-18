@@ -2,18 +2,18 @@ import type { FAQItem } from "@/components/faq"
 
 export const faqHome: FAQItem[] = [
   {
-    question: "Qu'est-ce qui distingue votre élevage de Spitz nain Poméranien au marquage husky ?",
+    question: "Qu’est-ce qui distingue votre élevage de Spitz nain Poméranien ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Notre élevage repose sur une sélection exigeante de Spitz nains Poméraniens 100 % de race,
-          sans croisement, avec une attention particulière portée au marquage husky, à la stabilité de
-          la taille, à la qualité du type et à l&apos;équilibre émotionnel.
+          Notre élevage repose sur une sélection sérieuse du Spitz nain Poméranien,
+          avec une attention particulière portée à la santé, au tempérament, à la
+          qualité du type et à la vie de compagnie.
         </p>
         <p>
-          Nos portées sont volontairement limitées afin de préserver la santé des reproducteurs, d&apos;assurer
-          un accompagnement individualisé de chaque chiot et de proposer un vrai travail de fond sur la
-          socialisation et la vie de compagnie.
+          Nos portées sont volontairement limitées afin d’assurer un suivi attentif
+          de chaque chiot, une socialisation progressive et un accompagnement réel
+          des familles avant comme après l’adoption.
         </p>
       </div>
     ),
@@ -23,30 +23,82 @@ export const faqHome: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          La socialisation commence dès les premiers jours, avec des manipulations régulières, des
-          stimulations neurosensorielles adaptées, des jeux et des découvertes progressives.
+          Les chiots découvrent progressivement les bruits du quotidien, les
+          manipulations douces, les interactions humaines, les textures variées et
+          les premières sorties adaptées à leur âge.
         </p>
         <p>
-          Les chiots sont habitués aux bruits du quotidien, aux interactions humaines, aux différentes
-          textures et aux sorties afin de favoriser la confiance, la stabilité et une intégration sereine
-          dans leur future famille.
+          Cette socialisation précoce vise à faire grandir des chiots curieux,
+          équilibrés, sereins et proches de l’humain.
         </p>
       </div>
     ),
   },
   {
-    question: "Quelle place accordez-vous à la santé et aux tests ADN ?",
+    question: "Quelle place accordez-vous à la santé des parents et des chiots ?",
     answer: (
       <div className="space-y-3">
         <p>
-          La santé occupe une place centrale dans notre programme d&apos;élevage. Les parents sont testés ADN
-          et les mariages sont réfléchis pour limiter les risques, préserver la cohérence du type et
-          garantir la transmission naturelle du marquage husky.
+          La santé occupe une place centrale dans notre élevage. Les mariages sont
+          réfléchis avec attention, les parents sont suivis sérieusement et chaque
+          portée bénéficie d’un accompagnement vétérinaire rigoureux.
         </p>
         <p>
-          Chaque portée bénéficie également d&apos;un suivi vétérinaire rigoureux pendant la gestation, la
-          naissance et les premières semaines de vie, avec une attention particulière portée à cette race
-          miniature et délicate.
+          Nous attachons aussi une grande importance à la qualité de vie des
+          reproducteurs, au respect de leur rythme et à la bonne préparation des
+          chiots avant leur départ.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Quel accompagnement proposez-vous après l’adoption ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Nous restons disponibles pour conseiller les familles sur l’arrivée du
+          chiot, son adaptation, les premières bases éducatives, l’alimentation et
+          l’organisation du quotidien.
+        </p>
+        <p>
+          Notre objectif est de permettre une transition sereine et durable, dans
+          l’intérêt du chiot comme de sa nouvelle famille.
+        </p>
+      </div>
+    ),
+  },
+]
+
+export const faqPresentation: FAQItem[] = [
+  {
+    question: "Comment choisissez-vous les futurs parents ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Les futurs parents sont choisis avec exigence, en tenant compte de leur
+          santé, de leur construction, de leur tempérament et de leur capacité à
+          transmettre un bon équilibre.
+        </p>
+        <p>
+          Nous recherchons des Spitz nains Poméraniens harmonieux, bien codés,
+          expressifs et adaptés à une vraie vie de famille.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Pourquoi limitez-vous le nombre de portées ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Nous privilégions clairement la qualité à la quantité. Limiter le nombre
+          de portées permet de respecter les temps de repos des femelles, de
+          préserver leur bien-être et de consacrer davantage de temps à chaque
+          chiot.
+        </p>
+        <p>
+          Cela nous permet aussi d’assurer un meilleur suivi des familles et une
+          socialisation plus individualisée.
         </p>
       </div>
     ),
@@ -56,179 +108,95 @@ export const faqHome: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Les chiots évoluent dans un environnement professionnel, sécurisé et stimulant, avec des espaces
-          pensés pour la maternité, le repos, l&apos;éveil et la présence humaine quotidienne.
+          Les chiots évoluent dans un environnement propre, sécurisé et stimulant,
+          pensé pour la maternité, le repos, l’éveil et les interactions humaines
+          quotidiennes.
         </p>
         <p>
-          Ils découvrent progressivement les bruits du quotidien et profitent aussi de sorties dans notre
-          terrain, afin de devenir des chiens curieux, confiants et adaptables à des cadres de vie variés,
-          du citadin au rural.
+          Ils découvrent progressivement différents repères du quotidien dans un
+          cadre stable et rassurant.
         </p>
       </div>
     ),
   },
   {
-    question: "Quel suivi est proposé après l'adoption ?",
+    question: "L’élevage respecte-t-il le rythme des chiens ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Nous accompagnons les familles avant, pendant et après l&apos;adoption, avec des conseils concrets sur
-          l&apos;alimentation, l&apos;adaptation à la maison, la socialisation et les besoins spécifiques du
-          Spitz nain Poméranien.
+          Oui. Le respect du rythme physiologique et émotionnel des chiens fait
+          partie de nos priorités.
         </p>
         <p>
-          Chaque famille repart avec un livret d&apos;accueil, un kit chiot et la possibilité de rester en lien
-          avec nous pour avancer sereinement dans les premières semaines comme dans la suite de la vie du
-          chien.
+          Les temps de repos, les périodes de reproduction, la récupération des
+          femelles et le développement des chiots sont encadrés avec attention afin
+          de préserver leur équilibre.
         </p>
       </div>
     ),
   },
-]
-
-export const faqPresentation: FAQItem[] = [
-  {
-    question: "Comment sont choisis les futurs parents ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Les futurs parents sont choisis avec beaucoup d&apos;exigence : origine des lignées, cohérence du type, qualité de construction, tempérament et stabilité émotionnelle.
-        </p>
-        <p>
-          Chez le Mameshiba, nous recherchons un chien harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif.
-        </p>
-        <p>
-          Les tests de santé, l&apos;observation du caractère et la traçabilité sont des points centraux de notre sélection. Si un chien ne présente pas l&apos;équilibre recherché, il ne reproduit pas.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Combien de portées sont réalisées par an ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Ce nombre est variable selon les femelles, les repos nécessaires et la qualité des mariages envisagés.
-        </p>
-        <p>
-          Chez Kawaii Mameshiba, nous privilégions clairement la qualité à la quantité.
-        </p>
-        <p>
-          Les femelles ont leurs périodes de repos après gestation, et le nombre de portées est volontairement limité afin de garantir :
-        </p>
-        <ul className="list-disc ml-4">
-          <li>une présence quotidienne auprès des chiots,</li>
-          <li>une socialisation adaptée au tempérament du Mameshiba,</li>
-          <li>un suivi individualisé pour chaque famille adoptante.</li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    question: "Où grandissent les chiots ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Les chiots évoluent dans un environnement professionnel, sécurisé et stimulant, au contact de leur fratrie, de leur mère et de l&apos;humain.
-        </p>
-        <p>
-          Ils découvrent progressivement les bruits, les manipulations, les textures et les situations du quotidien, toujours de manière mesurée, afin de construire leur confiance sans les brusquer.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "L'élevage respecte-t-il le rythme des chiens ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Oui. Chez Kawaii Mameshiba, chaque chien évolue dans le respect de son rythme physiologique et émotionnel.
-          Les périodes de reproduction, de repos et de récupération sont soigneusement respectées afin de préserver la santé et l'équilibre des reproducteurs.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Accordez-vous de l'importance à l'équilibre émotionnel ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Absolument. L&apos;équilibre émotionnel est une partie essentielle de notre travail, en particulier chez le Mameshiba, qui peut être très fin dans sa lecture du monde et de l&apos;humain.
-        </p>
-        <p>Un chiot bien dans sa tête devient un adulte stable, confiant et agréable à vivre.</p>
-        <p>C&apos;est pourquoi chaque interaction est pensée pour renforcer la sécurité affective, la confiance en l&apos;humain et l&apos;autonomie.</p>
-      </div>
-    ),
-  },
-  {
-    question: "L'élevage est-il adapté aux familles avec enfants ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Oui, à condition que les rencontres se fassent dans le calme et le respect. Les enfants doivent apprendre à approcher le chiot en douceur, sans agitation.
-        </p>
-        <p>
-          Les chiots sont habitués à une présence humaine variée et à des manipulations respectueuses, ce qui facilite leur intégration dans des foyers avec enfants, sous supervision et dans le respect mutuel.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Proposez-vous un accompagnement pour les primo-adoptants ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Oui, bien sûr. Nous accompagnons tout particulièrement les premières adoptions en prenant le temps d&apos;expliquer les besoins du Mameshiba, les bases éducatives et les bonnes pratiques pour un départ serein.
-        </p>
-        <p>
-          L&apos;accompagnement continue après le départ du chiot, car notre travail ne s&apos;arrête pas au moment du placement.
-        </p>
-      </div>
-    ),
-  },
-
 ]
 
 export const faqEleveuses: FAQItem[] = [
   {
-    question: "Quelle est votre taille de Mameshiba préférée ?",
+    question: "Pourquoi avoir choisi le Spitz nain Poméranien ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mameshiba est un petit chien, et j'aime particulièrement les chiens de petite taille, entre 4 et 6 kg, qui restent dans le type du Mameshiba : un petit primitif harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif. Attention cependant à ne pas chercher à faire du Mameshiba un chien de poche, il doit rester dans les standards de la race pour être un Mameshiba, c'est à dire entre 25 et 34 cm pour le mâle et entre 25 et 32 cm pour la femelle selon le KCJ.
+          Le Spitz nain Poméranien est un petit chien vif, attachant, expressif et
+          très proche de l’humain. Son intelligence, sa présence et son tempérament
+          en font un merveilleux compagnon de vie.
+        </p>
+        <p>
+          Nous apprécions particulièrement son équilibre entre élégance, énergie,
+          sensibilité et vie de famille.
         </p>
       </div>
     ),
   },
   {
-    question: "Faites vous des concours et expositions ?",
+    question: "Quelle est votre vision d’un beau Spitz nain Poméranien ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Jusqu'à présent non, je suis membre de la fédération française du Mameshiba, et j'ai été ( aurelie ) juge d'un concours organisé par l'european Mameshiba club et la fédération française du Mameshiba ( FFP) je me suis beaucoup amusée. Depuis je n'ai pas participé à des expositions cependant ce n'est pas exclu que j'envisage de le faire à l'avenir. Les concours sont très contraignants en terme de planning, de risques sanitaires de mon point de vue. Cependant c'est aussi très intéressant pour présenter la race en devenir et connecter à d'autres passionnés.
+          Pour nous, un beau Spitz nain Poméranien ne se résume pas à son apparence.
+          Il doit aussi être bien construit, sain, stable émotionnellement et
+          agréable à vivre au quotidien.
+        </p>
+        <p>
+          Le tempérament compte autant que le type, car un chiot est avant tout
+          destiné à partager la vie de sa famille.
         </p>
       </div>
     ),
   },
   {
-    question: "Pourquoi adhérer à un club de race ?",
+    question: "Quelle place accordez-vous au tempérament dans votre élevage ?",
     answer: (
       <div className="space-y-3">
         <p>
-          C'est une façon de retracer les lignées à travers la création de la race et de féderer les gens autour du Mameshiba, pour le moment les clubs en France sont nombreux mais non officiels, étant donné que la race n'est pas recconue par la FCI, le but des clubs est d'accéder à la reconnaissance de la race Mameshiba un jour ou l'autre.
+          Le tempérament est un critère fondamental. Nous recherchons des chiens
+          sociables, confiants, proches de l’humain et capables de s’adapter à la
+          vie de famille.
+        </p>
+        <p>
+          Un chiot bien dans sa tête a de meilleures bases pour évoluer sereinement
+          dans son futur foyer.
         </p>
       </div>
     ),
   },
   {
-    question: "Que vous apporte votre vision de thérapeute et de comportementaliste canin ?",
+    question: "Comment accompagnez-vous les familles dans leur projet d’adoption ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Je peux percevoir d'une manière plus fine le chiot le plus adapté au contexte familial décrit.
+          Nous prenons le temps d’échanger avec chaque famille afin de comprendre
+          son mode de vie, ses attentes et son projet d’adoption.
         </p>
         <p>
-          Cela me permet de faire un pont entre la problématique de l'humain, sa personnalité, et la résolution de la problématique à travers la relation avec l'animal, parfois cela représente aussi un chemin initiatique pour l'adoptant. Je suis alors là pour soutenir, cadrer, accompagner l'un et l'autre dans leur processus d'intégration et de vie commune.
+          Cet accompagnement permet de construire une adoption réfléchie, cohérente
+          et la plus adaptée possible au chiot comme à son futur foyer.
         </p>
       </div>
     ),
@@ -237,228 +205,148 @@ export const faqEleveuses: FAQItem[] = [
 
 export const faqBienEtre: FAQItem[] = [
   {
-    question: "Dans quel environnement vivent les chiens et les chiots chez Kawaii Mameshiba ?",
+    question: "Le Spitz nain Poméranien peut-il vivre en appartement ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Les chiens et les chiots Mameshiba de notre élevage évoluent dans un environnement propre, sécurisé et adapté à leurs besoins, au sein d'un élevage professionnel déclaré.
+          Oui, le Spitz nain Poméranien peut très bien vivre en appartement s’il
+          bénéficie de sorties régulières, d’une routine stable et d’interactions
+          quotidiennes avec ses humains.
         </p>
         <p>
-          Les espaces sont pensés pour garantir confort, hygiène, repos et stimulation, tout en respectant les normes en vigueur.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Quel est le cadre naturel de l'élevage Kawaii Mameshiba ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Kawaii Mameshiba est implanté dans un cadre naturel calme et préservé, propice au bien-être des chiens et des chiots.</p>
-        <p>L'environnement est volontairement éloigné de l'agitation urbaine, offrant sérénité, espace et qualité de vie.</p>
-      </div>
-    ),
-  },
-  {
-    question: "Les chiots bénéficient-ils de cet environnement ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Oui. Dès leur plus jeune âge, les chiots découvrent progressivement ce cadre naturel, toujours de manière sécurisée.</p>
-        <p>Cette exposition favorise des chiots curieux, confiants et adaptables, capables de s'épanouir dans des environnements variés par la suite.</p>
-      </div>
-    ),
-  },
-  {
-    question: "Le cadre naturel est-il compatible avec un élevage professionnel ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Oui, parfaitement.</p>
-        <p>Kawaii Mameshiba allie cadre naturel et structure professionnelle, en respectant les normes sanitaires, réglementaires et organisationnelles d'un élevage canin.</p>
-      </div>
-    ),
-  },
-  {
-    question: "Comment accompagnez-vous la croissance du Mameshiba ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          La croissance est progressive et adaptée au gabarit du Mameshiba.
-          L'activité est encadrée, les jeux sont choisis pour limiter les impacts,
-          et le rythme du chiot est toujours respecté.
-        </p>
-        <p>
-          Une attention particulière est portée à l'équilibre, au repos et à l'évolution
-          physique durant les premiers mois.
+          Ce n’est pas la taille du logement qui compte le plus, mais la qualité de
+          vie, la présence, la stimulation et le respect de ses besoins.
         </p>
       </div>
     ),
   },
   {
-    question: "Le Mameshiba peut il vivre en appartement ? ",
+    question: "De combien d’activité un Spitz nain Poméranien a-t-il besoin chaque jour ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui, il peut vivre en appartement et souvent un chien est plus heureux en appartement qu'en maison car les balades sont plus nombreuses !
+          Le Spitz nain Poméranien a besoin d’une activité quotidienne régulière,
+          sans effort excessif.
         </p>
         <p>
-          4 balades par jour seront nécessaires pour rendre votre Mameshiba heureux, pour la propreté également.
-          Vous pouvez alterner des balades en ville et en campagne, le Mameshiba aime la variété.
+          Des promenades adaptées, des temps de jeu, de la découverte et de
+          l’enrichissement mental participent à son équilibre physique et émotionnel.
         </p>
       </div>
     ),
   },
   {
-    question: "Comment préparez-vous la séparation avec la mère ?",
+    question: "Comment socialisez-vous les chiots au quotidien ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Les chiots vivent à la fois en intérieur et en extérieur, de manière progressive et encadrée.</p>
+          Les chiots découvrent progressivement les bruits, les manipulations, les
+          objets nouveaux, les textures, les routines de la maison et les
+          interactions humaines positives.
+        </p>
         <p>
-          Les premières semaines de vie ils sont dans une nurserie. Jusqu'à l'âge de 4 semaines ils ne vont pas en extérieur, ils passent ensuite les 5-6 autres semaines à alterner : la journée en extérieur, la nuit en intérieur.</p>
-        <ul className="list-disc">
-          Progressivement, les chiots gagnent en autonomie grâce à :
-          <li className="ml-4">
-            des temps de séparation courts et adaptés,
-          </li>
-          <li className="ml-4"> l'exploration de leur environnement en toute sécurité,</li>
-          <li className="ml-4"> des interactions positives avec l'humain,</li>
-          <li className="ml-4"> le maintien de routines rassurantes.</li>
-        </ul>
-        <p>La mère reste présente et attentive tout au long de ce processus, ce qui permet aux chiots de développer leur confiance, leur stabilité émotionnelle et leur capacité d'adaptation.</p>
-        <p>Cette préparation en douceur favorise une transition sereine vers leur nouvelle famille et contribue à faire des chiots bien dans leur tête et bien dans leurs pattes</p>
+          Cette approche douce et progressive aide à construire des chiots confiants,
+          curieux et bien préparés à leur future vie de famille.
+        </p>
       </div>
     ),
   },
-
-
+  {
+    question: "Quel entretien demande le pelage d’un Spitz nain Poméranien ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Le Spitz nain Poméranien possède un pelage dense qui demande un entretien
+          régulier.
+        </p>
+        <p>
+          Nous habituons les chiots très tôt au brossage, au toucher et aux soins,
+          afin que ces manipulations deviennent naturelles et plus faciles à vivre
+          dans leur future famille.
+        </p>
+      </div>
+    ),
+  },
 ]
 
 export const faqNosChiots: FAQItem[] = [
   {
-    question: "Comment sont préparés les chiots Mameshiba avant leur départ ?",
+    question: "Comment les chiots sont-ils préparés avant leur départ ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Les chiots sont préparés progressivement à la vie de famille :
-          manipulations quotidiennes, découvertes sensorielles, interactions humaines
-          et premières routines.
+          Les chiots sont préparés progressivement à la vie de famille grâce aux
+          manipulations quotidiennes, aux découvertes sensorielles, aux interactions
+          humaines et à la mise en place de premiers repères.
         </p>
         <p>
-          Cette préparation facilite leur adaptation et favorise un départ serein
-          dans leur nouveau foyer.
+          Cette préparation favorise une adaptation plus sereine dans leur nouveau
+          foyer.
         </p>
       </div>
     ),
   },
   {
-    question: "À quel âge les chiots peuvent-ils rejoindre leur famille ?",
+    question: "À quel âge un chiot Spitz nain Poméranien peut-il rejoindre sa famille ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Nos chiots Mameshiba rejoignent leur famille à l'âge de 9 à 10 semaines : leur développement, leur permettant d'avoir acquis les codes canins appris par leur mère, les bases essentielles pour une transition en douceur vers leur nouveau foyer.
+          Les chiots rejoignent leur famille lorsque leur développement, leur
+          socialisation et leur préparation au départ permettent une transition
+          cohérente et sécurisée.
+        </p>
+        <p>
+          Nous veillons à respecter le temps nécessaire pour qu’ils acquièrent les
+          premières bases essentielles auprès de leur mère, de leur fratrie et de
+          l’humain.
         </p>
       </div>
     ),
   },
   {
-    question: "Les chiots Mameshiba sont-ils suivis sur le plan vétérinaire ?",
+    question: "Quel suivi vétérinaire est réalisé avant le départ ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Tous les chiots bénéficient d'un suivi vétérinaire rigoureux.
+          Chaque chiot bénéficie d’un suivi vétérinaire sérieux avant son départ.
         </p>
-        <p>Ils quittent l'élevage :</p>
-        <ul className="list-disc ml-6">
-          <li>identifiés par puce électronique</li>
-          <li>vaccinés ( CHPPL )</li>
-          <li>vermifugés</li>
-          <li>Certificat de bonne santé</li>
-          <li>Test ADN de filiation</li>
-          <li>avec les documents légaux obligatoires ( carnet de santé ou passeport international/ certificat d'identification / certificat de vente / cession )</li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    question: "Aidez-vous les familles à choisir leur chiot Mameshiba ?",
-    answer: (
-      <div className="space-y-3">
         <p>
-          Oui. Un accompagnement personnalisé est proposé pour orienter les adoptants vers le chiot le plus adapté à leur mode de vie, leurs attentes et leur environnement. A l'âge de 5 semaines nous pouvons vous conseiller le chiot le plus adapté à votre mode de vie, en fonction de son caractère et des interactions qu'il a avec nous au quotidien : bien sûr le choix reste à la famille.
+          Il quitte l’élevage avec son identification, ses soins de base réalisés
+          selon son âge, les documents nécessaires et un dossier clair remis à la
+          famille.
         </p>
       </div>
     ),
   },
   {
-    question: "Les chiots sont-ils adaptés à la vie de famille ?",
+    question: "Aidez-vous les familles à choisir le chiot le plus adapté ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Nos petits chiots Mameshiba sont élevés dans une optique de chien de compagnie, adaptés à la vie de famille, avec enfants, dans le respect mutuel et sous supervision.
+          Oui. Nous accompagnons les familles dans leur réflexion afin d’orienter
+          leur choix selon leur mode de vie, leurs attentes et le tempérament des
+          chiots.
+        </p>
+        <p>
+          Le but est de favoriser une adoption cohérente, réfléchie et durable.
         </p>
       </div>
     ),
   },
-  {
-    question: "Que signifie pour vous un chiot bien préparé ?",
-    answer: (
-      <div className="space-y-3">
-        <p>Un chiot Mameshiba bien préparé est un chiot :</p>
-        <ul className="list-disc ml-6">
-          <li>confiant,</li>
-          <li>équilibré,</li>
-          <li>curieux,</li>
-          <li>prêt à s'adapter sereinement à sa nouvelle vie.</li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    question: "Les chiots sont-ils visibles à l'élevage ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Oui, les chiots peuvent être rencontrés à l'élevage, dans un cadre sanitaire extrêmement strict, organisé et respectueux de leur bien-être.
-        </p>
-        <p>
-          Les visites sont proposées sur rendez-vous, lorsque l'âge des chiots le permet et dans le respect de leur développement, de leur rythme et des règles sanitaires.
-        </p>
-        <p>
-          Chez Kawaii Mameshiba, les rencontres sont pensées comme un temps privilégié, permettant aux familles de découvrir les chiots, l'environnement dans lequel ils grandissent et la philosophie de l'élevage, en toute transparence et bienveillance
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Peut-on manipuler les chiots Mameshiba ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Pour des raisons sanitaires et de sécurité, les chiots sont visibles mais ne sont pas manipulés par les visiteurs jusquà lâge de 9 semaines ( après avoir effectué leur vaccination )
-        </p>
-        <p>Seul léleveur est autorisé à manipuler les chiots, afin de :</p>
-        <ul className="list-disc ml-6">
-          <li>préserver leur santé et limiter les risques de contamination,</li>
-          <li>respecter leur rythme de développement,</li>
-          <li>garantir des manipulations douces, adaptées et cohérentes.</li>
-        </ul>
-        <p>Cette règle est essentielle et fait partie intégrante de l'engagement de Kawaii Mameshiba pour le bien-être et la protection des chiots déjà adoptés, des portées et de la santé sanitaire de l'élevage selon les recommandations de notre équipe vétérinaire.</p>
-
-      </div>
-    ),
-  }
 ]
-
 
 export const faqReproducteurs: FAQItem[] = [
   {
-    question: "Les chiens reproducteurs vivent-ils à l'élevage ?",
+    question: "Les reproducteurs vivent-ils à l’élevage ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Les reproducteurs vivent au sein de l'élevage, aucun chien ne provient d'ailleurs : ils sont au contact de l'humain et de leur environnement naturel, ce qui contribue à leur équilibre et à la qualité des chiots à naître.
+          Oui. Les reproducteurs vivent dans un cadre suivi, structuré et respectueux
+          de leur bien-être.
+        </p>
+        <p>
+          Leur qualité de vie, leur équilibre et leur relation à l’humain font
+          partie intégrante de notre travail d’élevage.
         </p>
       </div>
     ),
@@ -468,56 +356,47 @@ export const faqReproducteurs: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Il est primordial dans un élevage ! Nos reproducteurs transmettent non seulement leur patrimoine génétique, mais aussi une part de leur équilibre émotionnel.
+          Les reproducteurs transmettent à la fois des caractéristiques physiques et
+          une part de leur équilibre général.
         </p>
         <p>
-          Des chiens stables et bien dans leur tête donnent naissance à des chiots plus confiants, plus adaptables et mieux préparés à la vie de famille et citadine.
-        </p>
-        <p>
-          Chez le Mameshiba, la sélection des reproducteurs est primordiale pour obtenir des chiens équilibrés, stables, bien construits et fidèles au type recherché.
-        </p>
-        <p>Le tempérament, la morphologie, la santé et le comportement sont pris en compte avant chaque projet de reproduction.
+          Leur sélection est donc essentielle pour préserver la santé, le type, le
+          tempérament et la cohérence des générations futures.
         </p>
       </div>
     ),
-  }, {
-    question: "Les reproducteurs participent-ils à l'évolution de l'élevage ?",
+  },
+  {
+    question: "Quels critères retenez-vous pour sélectionner un reproducteur ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Chaque reproducteur s'inscrit dans un projet d'élevage cohérent et durable pour la réaction de la race Mameshiba, visant à améliorer la qualité, l'équilibre et le type des générations futures.
+          Nous observons la santé, la construction, le tempérament, l’expression, la
+          cohérence du type et la qualité générale du chien.
+        </p>
+        <p>
+          Aucun projet de reproduction n’est envisagé sans une vraie réflexion sur
+          l’équilibre global du futur mariage.
         </p>
       </div>
     ),
-  }, {
-    question: "Les mâles et les femelles s'entendent ils entre eux ? ",
+  },
+  {
+    question: "Accordez-vous autant d’importance au tempérament qu’au physique ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Nos mâles reproducteurs sont très doux et vivent ensemble, nos femelles vivent ensemble également.
+          Oui, absolument. Le tempérament est aussi important que l’apparence.
         </p>
         <p>
-          Nous n'avons aucun problème d'incompatibilité de caractère malgré quelques ajustements dans la meute. Le Mameshiba n'est pas un chien dominant et territorial mais sociable et équilibré.
-        </p>
-      </div>
-    ),
-  }, {
-    question: "Pourquoi le choix des reproducteurs est-il essentiel chez le Mameshiba ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Le choix des reproducteurs est essentiel pour conserver l’identité du Mameshiba :
-          un petit chien primitif, harmonieux, sensible, propre et bien codé.
-        </p>
-        <p>
-          Le tempérament, la morphologie, la santé et le comportement sont pris en compte
-          avant chaque projet de reproduction.
+          Nous recherchons des Spitz nains Poméraniens agréables à vivre, stables,
+          proches de l’humain et aptes à s’intégrer sereinement dans une vie de
+          famille.
         </p>
       </div>
     ),
   },
 ]
-
 
 export const faqContact: FAQItem[] = [
   {
@@ -525,141 +404,123 @@ export const faqContact: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Chaque projet d'adoption est différent.
-          L'échange permet de comprendre votre mode de vie,
-          vos attentes et de vérifier que le Mameshiba correspond à votre quotidien.
+          Chaque projet d’adoption mérite d’être réfléchi. L’échange permet de
+          comprendre votre mode de vie, vos attentes et de vérifier que le Spitz
+          nain Poméranien correspond bien à votre quotidien.
         </p>
         <p>
-          Cela permet également de vous orienter vers le gabarit
-          et le tempérament les plus adaptés.
+          Cela nous permet aussi de vous accompagner plus justement dans votre
+          démarche.
         </p>
       </div>
     ),
   },
   {
-    question: "Est-il possible d'être inscrit sur liste d'attente ?",
+    question: "Peut-on s’inscrire pour une future portée ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui, il est tout à fait possible d'être inscrit sur liste d'attente chez Kawaii Mameshiba.
+          Oui, il est possible de nous contacter pour être informé des futures
+          portées et de l’ouverture des réservations.
         </p>
         <p>
-          La liste d'attente permet d'anticiper un futur projet d'adoption et de prendre le temps d'échanger afin de vérifier la compatibilité entre le chiot et la future famille.
+          Cette démarche permet d’anticiper votre projet, de prendre le temps
+          d’échanger et de préparer une adoption dans de bonnes conditions.
         </p>
-        <p>Elle ne constitue pas un engagement automatique, mais une démarche réfléchie et encadrée.</p>
-        <p>L'inscription se fait après un premier échange, permettant de mieux comprendre votre mode de vie, vos attentes et votre projet.</p>
-        <p>Chaque demande est étudiée avec attention, dans l'intérêt du chiot comme de la famille.</p>
-        <p>Chez Kawaii Mameshiba, la liste d'attente est avant tout un moyen de confiance et de préparation, pour des adoptions sereines et durables</p>
-
       </div>
     ),
   },
   {
-    question: "Puis-je vous contacter après l'adoption si j'ai des questions ?",
+    question: "Est-il possible de visiter l’élevage ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui, bien sûr.
+          Oui, les visites peuvent être organisées sur rendez-vous, dans le respect
+          du rythme des chiens, de l’âge des chiots et des règles sanitaires mises
+          en place à l’élevage.
         </p>
         <p>
-          Chez Kawaii Mameshiba, l'accompagnement ne s'arrête pas au départ du chiot.
+          Ces rencontres sont pensées comme un temps de découverte, d’échange et de
+          transparence.
         </p>
-        <p>L'élevage reste disponible après l'adoption pour répondre aux questions, accompagner les premières étapes et apporter des conseils sur l'adaptation, l'éducation et le quotidien du chiot.</p>
-        <p>Garder le lien avec les familles fait partie intégrante de la philosophie de Kawaii Mameshiba, car une adoption réussie se construit dans la durée, avec écoute, bienveillance et responsabilité</p>
+      </div>
+    ),
+  },
+  {
+    question: "Restez-vous disponible après l’adoption ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Oui. Nous restons disponibles après le départ du chiot pour répondre aux
+          questions sur son adaptation, son quotidien, ses premières routines et son
+          éducation.
+        </p>
+        <p>
+          Pour nous, l’accompagnement fait pleinement partie d’une adoption réussie.
+        </p>
       </div>
     ),
   },
 ]
 
-
-export const faqMameShiba: FAQItem[] = [
+export const faqSpitzNainPomeranien: FAQItem[] = [
   {
-    question: "Quelle est la différence entre un Shiba Inu et un Mameshiba ?",
+    question: "Le Spitz nain Poméranien est-il un bon chien de compagnie ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mameshiba descend du Shiba Inu et lui ressemble beaucoup dans son expression, sa silhouette et son tempérament primitif.
+          Oui, c’est avant tout un chien de compagnie, très attaché à ses humains,
+          vif, expressif et agréable à vivre lorsqu’il est bien socialisé.
         </p>
         <p>
-          La différence la plus visible reste la taille : le Shiba Inu adulte se situe autour de 39,5 cm chez le mâle et 36,5 cm chez la femelle, tandis que le Mameshiba est plus compact, avec un standard situé autour de 25 à 34 cm pour le mâle et 25 à 32 cm pour la femelle selon le KCJ.
+          Il aime partager le quotidien de sa famille et apprécie une relation
+          proche, cohérente et rassurante.
         </p>
       </div>
     ),
   },
   {
-    question: "Le Mameshiba est-il reconnu au LOF ?",
+    question: "Le Spitz nain Poméranien convient-il à une vie de famille ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Non. En France, le Mameshiba n'est pas reconnu au LOF à ce jour.
+          Oui, il peut tout à fait vivre en famille, à condition que les échanges
+          avec lui soient respectueux, cohérents et adaptés à son petit gabarit.
         </p>
         <p>
-          Le Shiba Inu, lui, appartient bien au groupe 5 des chiens de type spitz et primitifs. Pour le Mameshiba, la référence souvent citée est le Kennel Club of Japan, qui enregistre des chiens mesurés et confirmés à l'âge adulte.
+          Comme pour tout chien, les interactions avec les enfants doivent être
+          encadrées et se faire dans le calme.
         </p>
       </div>
     ),
   },
   {
-    question: "Comment reconnaître un véritable Mameshiba ?",
+    question: "Le Spitz nain Poméranien perd-il beaucoup de poils ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Un Mameshiba sérieux ne se résume pas à un Shiba Inu plus petit que la moyenne. L'éleveur doit être capable de présenter une vraie traçabilité de lignée, avec un pedigree KCJ remontant sur plusieurs générations de Mameshiba.
+          Son pelage demande un entretien régulier, notamment avec un brossage
+          fréquent et une bonne habitude des soins dès le plus jeune âge.
         </p>
         <p>
-          La confirmation à plus d'un an, la mesure officielle de la taille et, dans une démarche rigoureuse, un test ADN montrant l'absence d'autre race que le Shiba Inu sont des repères importants pour éviter les faux Mameshiba.
+          Une routine d’entretien bien installée permet de conserver un poil propre,
+          aéré et agréable à entretenir au quotidien.
         </p>
       </div>
     ),
   },
   {
-    question: "Quel caractère faut-il attendre d'un Mameshiba ?",
+    question: "Quels points faut-il vérifier avant d’adopter un Spitz nain Poméranien ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mameshiba reste un petit chien primitif : éveillé, agile, propre, observateur et souvent très attaché à sa famille.
+          Il est important de s’intéresser à la qualité de l’élevage, au sérieux du
+          suivi, aux conditions de vie des chiens, à la préparation des chiots, à la
+          transparence des informations et à l’accompagnement proposé.
         </p>
         <p>
-          Il n'est pas fait pour une éducation dure. Il a besoin de cohérence, de respect et d'une socialisation sérieuse pour exprimer son meilleur équilibre.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Le Mameshiba est-il rare en France ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Oui. Le Mameshiba reste aujourd'hui une race très rare en France.
-        </p>
-        <p>
-          Cette rareté explique en partie la présence d'annonces trompeuses : certains chiots vendus comme Mameshiba sont en réalité de petits Shiba Inu sans traçabilité sérieuse.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Le Mameshiba perd-il beaucoup de poils ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Comme le Shiba Inu, le Mameshiba possède un double poil et connaît des périodes de mue marquées.
-        </p>
-        <p>
-          En dehors de ces périodes, l'entretien reste raisonnable avec un brossage régulier, davantage soutenu au printemps et à l'automne.
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "Pourquoi faut-il être vigilant avant d'acheter un Mameshiba ?",
-    answer: (
-      <div className="space-y-3">
-        <p>
-          Parce qu'un simple petit gabarit ne suffit pas à faire un Mameshiba. Sans sélection sérieuse, on peut obtenir des chiens trop petits, mal construits ou issus de croisements douteux.
-        </p>
-        <p>
-          Il vaut mieux vérifier la filiation, la cohérence de l'élevage, les certificats fournis et la qualité du suivi plutôt que se fier uniquement au mot "Mameshiba" sur une annonce.
+          Une adoption réussie repose sur la confiance, la clarté et une vraie
+          cohérence entre le chiot et sa future famille.
         </p>
       </div>
     ),

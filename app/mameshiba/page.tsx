@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { filterBlogLinks } from "@/lib/blog-visibility"
-import { faqMameShiba } from "@/lib/faq-data"
+import { faqSpitzNainPomeranien } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
@@ -209,7 +209,7 @@ export default function MameShibaPage() {
         { name: "Accueil", url: "/" },
         { name: "Le Mameshiba", url: siteConfig.pages.shiba },
     ])
-    const faqSchema = generateFAQSchema(convertFAQsToSchema(faqMameShiba))
+    const faqSchema = generateFAQSchema(convertFAQsToSchema(faqSpitzNainPomeranien))
     const lastMod = returnLastmod(siteConfig.pages.shiba)
 
     return (
@@ -681,7 +681,7 @@ export default function MameShibaPage() {
                     <FAQSection
                         title="FAQ sur le Mameshiba"
                         description="Origines, taille, reconnaissance et critères de sérieux : les réponses essentielles avant d’aller plus loin."
-                        items={faqMameShiba}
+                        items={faqSpitzNainPomeranien}
                     />
 
                     <div className="text-right text-xs text-muted-foreground mt-6">
