@@ -8,7 +8,6 @@ import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
-import { isBlogEnabled } from "@/lib/blog-visibility"
 import heroBannerImage from "@/public/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.webp"
 import heroPuppyImage from "@/public/pages/homePage/spitz-chiot-gris-1-mois.webp"
 import introPortraitImage from "@/public/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp"
@@ -645,15 +644,6 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          {isBlogEnabled ? (
-            <Link
-              href="/blog"
-              className="mt-12 flex w-fit m-auto items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              Découvrir nos conseils autour du Spitz nain
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          ) : null}
         </section>
 
         {/* éleveurs */}

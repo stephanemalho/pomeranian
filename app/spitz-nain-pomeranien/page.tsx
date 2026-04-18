@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
-import { filterBlogLinks } from "@/lib/blog-visibility"
 import { faqSpitzNainPomeranien } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
@@ -181,7 +180,7 @@ const historySteps: HistoryStep[] = [
     },
 ]
 
-const mameshibaInternalLinks: InternalLinkItem[] = filterBlogLinks([
+const mameshibaInternalLinks: InternalLinkItem[] = [
     {
         href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         title: "Voir nos chiens reproducteurs",
@@ -197,12 +196,7 @@ const mameshibaInternalLinks: InternalLinkItem[] = filterBlogLinks([
         title: "Consulter nos prix à l’élevage",
         description: "Retrouver nos tarifs actuels et ce qu’ils recouvrent concrètement.",
     },
-    {
-        href: "/blog/mame-shiba",
-        title: "Lire nos articles dédiés",
-        description: "Approfondir la race, le comportement et l’adoption responsable du Mameshiba.",
-    },
-])
+]
 
 export default function MameShibaPage() {
     const breadcrumbSchema = generateBreadcrumbSchema([

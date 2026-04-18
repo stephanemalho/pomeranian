@@ -1,7 +1,5 @@
 import type { NextConfig } from "next";
 
-const isBlogEnabled = process.env.NEXT_PUBLIC_ENABLE_BLOG !== "false";
-
 const nextConfig: NextConfig = {
     images: {
         qualities: [70, 75, 80]
@@ -24,6 +22,11 @@ const nextConfig: NextConfig = {
                 permanent: true
             },
             {
+                source: "/blog/:path*",
+                destination: "/spitz-nain-pomeranien",
+                permanent: true
+            },
+            {
                 source: "/nos-adultes-reproducteurs",
                 destination: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
                 permanent: true
@@ -35,16 +38,12 @@ const nextConfig: NextConfig = {
             },
             {
                 source: "/le-shiba-inu/",
-                destination: isBlogEnabled
-                    ? "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix"
-                    : "/spitz-nain-pomeranien",
+                destination: "/spitz-nain-pomeranien",
                 permanent: true
             },
             {
                 source: "/le-shiba-inu",
-                destination: isBlogEnabled
-                    ? "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix"
-                    : "/spitz-nain-pomeranien",
+                destination: "/spitz-nain-pomeranien",
                 permanent: true
             }
         ];

@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
-import { isBlogEnabled } from "@/lib/blog-visibility"
 import { cn } from "@/lib/utils"
 
 const navigation = [
@@ -19,16 +18,12 @@ const navigation = [
     { name: "Nos chiots", href: "/spitz-nain-pomeranien/chiots-disponibles" },
     { name: "Réussir son adoption", href: "/adoption/reussir-son-adoption" },
     { name: "Les conditions de vie", href: "/bien-etre-animal" },
-    { name: "Blog", href: "/blog/mame-shiba" },
     { name: "Contact", href: "/contact" },
 ]
 
 export function MobileNav() {
     const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
-    const visibleNavigation = isBlogEnabled
-        ? navigation
-        : navigation.filter((item) => !item.href.startsWith("/blog"))
 
     return (
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -49,7 +44,7 @@ export function MobileNav() {
                     <SheetDescription>Liens principaux du site</SheetDescription>
                 </div>
                 <nav className="flex flex-col space-y-4 mt-8 p-4" aria-label="Navigation mobile">
-                    {visibleNavigation.map((item) => (
+                    {navigation.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}

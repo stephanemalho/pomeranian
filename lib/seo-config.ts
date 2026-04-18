@@ -199,11 +199,6 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         width: 1708,
         height: 2560,
         type: "image/jpeg"
-    },
-    "/assets/blog/Kaito-et-Yushi-en-appartement.jpg": {
-        width: 1600,
-        height: 1200,
-        type: "image/jpeg"
     }
 };
 
@@ -544,21 +539,6 @@ export const pageMetadata = {
             "donnees personnelles",
             "cookies",
             "droits des utilisateurs"
-        ]
-    },
-    blog: {
-        title: "Blog Mameshiba | Shiba Inu, comportement et adoption",
-        description:
-            "Articles sur le Shiba Inu et le Mameshiba : comportement, comparatifs, vie quotidienne et conseils d'adoption.",
-        keywords: [
-            "blog Mameshiba",
-            "blog shiba inu",
-            "shiba inu caractere",
-            "Mameshiba adoption",
-            "chien japonais",
-            "comparatif shiba akita",
-            "shiba appartement",
-            "premiere adoption shiba"
         ]
     }
 };

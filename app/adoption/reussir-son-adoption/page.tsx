@@ -18,7 +18,6 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
-import { filterBlogLinks } from "@/lib/blog-visibility"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, seoLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
@@ -117,7 +116,7 @@ const pottySchedule = [
     { age: "Jusqu'à 6 mois", rhythm: "la retenue reste limitée", note: "on garde des sorties fréquentes sans attendre un contrôle complet trop tôt" },
 ]
 
-const resources = filterBlogLinks([
+const resources = [
     {
         title: "Bien comprendre le Mameshiba",
         href: "/spitz-nain-pomeranien",
@@ -138,12 +137,7 @@ const resources = filterBlogLinks([
         href: "/presentation-elevage#travail-educatif-elevage",
         description: "Voir ce que nous commençons déjà à travailler sur le rappel, la propreté, la socialisation et la manipulation.",
     },
-    {
-        title: "Lire nos articles de blog",
-        href: "/blog/mame-shiba",
-        description: "Des contenus complémentaires sur le Shiba Inu, le Mameshiba et la vie quotidienne avec un chien japonais.",
-    },
-])
+]
 
 const adoptionGuideFaq = [
     {
@@ -573,7 +567,7 @@ export default function AdoptionGuidePage() {
                             </Badge>
                             <h2 className="text-xl font-bold md:text-2xl">Pour aller plus loin avant et après l&apos;adoption</h2>
                             <p className="text-muted-foreground">
-                                Cette page vous donne les bases pour bien démarrer. Pour compléter votre préparation, nous vous conseillons aussi de parcourir nos pages de fond sur la race, le prix, les réservations et nos articles de blog.
+                                Cette page vous donne les bases pour bien démarrer. Pour compléter votre préparation, nous vous conseillons aussi de parcourir nos pages de fond sur la race, le prix, les réservations et notre approche de l’élevage.
                             </p>
                             <figure>
                                 <div className="relative min-h-140 overflow-hidden rounded-3xl">

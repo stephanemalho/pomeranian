@@ -1,5 +1,3 @@
-import { blog } from "@/constants/blog/blog";
-import { isBlogEnabled } from "@/lib/blog-visibility";
 import { publicAssetRoutes } from "@/lib/generated-public-asset-paths";
 import { sitemapPages, siteConfig } from "@/lib/seo-config";
 
@@ -13,10 +11,24 @@ const APP_METADATA_ROUTES = [
     "/apple-icon.png",
 ] as const;
 
+const REDIRECT_SOURCE_EXACT_ROUTES = [
+    "/blog",
+    "/chiots-disponibles",
+    "/le-mame-shiba",
+    "/le-shiba-inu",
+    "/mame-shiba-prix",
+    "/nos-adultes-reproducteurs",
+    "/nos-chiens",
+] as const;
+
 const TECHNICAL_ROUTE_PREFIXES = [
     "/_next/",
     "/_vercel/",
     "/__nextjs_",
+] as const;
+
+const REDIRECT_ROUTE_PREFIXES = [
+    "/blog/",
 ] as const;
 
 const TECHNICAL_EXACT_ROUTES = [
@@ -57,18 +69,9 @@ const staticPageRoutes = [
     ...EXTRA_STATIC_PAGE_ROUTES,
 ] as const;
 
-const blogRoutes = isBlogEnabled
-    ? [
-          "/blog",
-          "/blog/mame-shiba",
-          ...blog.themes.map((theme) => `/blog/mame-shiba/${theme.slug}`),
-          ...blog.posts.map((post) => `/blog/${post.slug}`),
-      ]
-    : [];
-
 const exactAllowedRoutes = [
     ...staticPageRoutes,
-    ...blogRoutes,
+    ...REDIRECT_SOURCE_EXACT_ROUTES,
     ...APP_METADATA_ROUTES,
     ...publicAssetRoutes,
     ...TECHNICAL_EXACT_ROUTES,
@@ -85,6 +88,14 @@ export const isAllowedRequestPath = (pathname: string): boolean => {
 
     if (
         TECHNICAL_ROUTE_PREFIXES.some((prefix) =>
+            normalizedPathname.startsWith(prefix)
+        )
+    ) {
+        return true;
+    }
+
+    if (
+        REDIRECT_ROUTE_PREFIXES.some((prefix) =>
             normalizedPathname.startsWith(prefix)
         )
     ) {

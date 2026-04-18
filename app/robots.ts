@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
 
-import { isBlogEnabled } from "@/lib/blog-visibility";
 import { siteConfig } from "@/lib/seo-config";
 
 export default function robots(): MetadataRoute.Robots {
@@ -14,7 +13,6 @@ export default function robots(): MetadataRoute.Robots {
                     "/wp-admin",
                     "/wp-content",
                     "/wp-includes",
-                    ...(isBlogEnabled ? [] : ["/blog", "/blog/"])
                 ]
             }
         ],

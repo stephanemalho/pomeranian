@@ -1,11 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
-import { filterBlogLinks, isBlogEnabled } from "@/lib/blog-visibility"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
@@ -13,7 +11,7 @@ import { faqEleveuses } from "@/lib/faq-data"
 
 const pageImage = "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
 
-const eleveusesInternalLinks: InternalLinkItem[] = filterBlogLinks([
+const eleveusesInternalLinks: InternalLinkItem[] = [
     {
         href: "/presentation-elevage",
         title: "Découvrir l’élevage",
@@ -25,16 +23,11 @@ const eleveusesInternalLinks: InternalLinkItem[] = filterBlogLinks([
         description: "Mettre des chiens et des lignées concrètes derrière notre travail quotidien.",
     },
     {
-        href: "/blog/mame-shiba",
-        title: "Lire le blog Mameshiba",
-        description: "Retrouver nos articles de fond sur la race, le tempérament et l’adoption.",
-    },
-    {
         href: "/contact",
         title: "Parler de votre projet",
         description: "Échanger directement avec nous pour préparer une rencontre ou une réservation.",
     },
-])
+]
 
 export const metadata: Metadata = {
     title: pageMetadata.eleveuses.title,
@@ -264,62 +257,6 @@ export default function PresentationEleveusesPage() {
                                 </div>
                             </article>
                         </div>
-                    </section>
-
-                    <section className="mb-16">
-                        <Card className="bg-muted/30">
-                            <CardContent className="p-8 md:p-10">
-                                <div className="grid md:grid-cols-[1.3fr_0.7fr] gap-8 items-center">
-                                    <div className="space-y-4">
-                                        <h2 className="text-xl md:text-2xl font-bold">
-                                            Les articles d’Aurélie et Marine sur le Mameshiba
-                                        </h2>
-                                        <h3 className="text-base md:text-xl font-semibold">
-                                            Élevage de Mameshiba : expérience terrain, conseils sincères et adoption responsable.
-                                        </h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            À travers nos articles, nous partageons une vision concrète de l’élevage : la sélection
-                                            des lignées, la socialisation des chiots, la santé, le tempérament du Mameshiba et les
-                                            repères utiles avant d’accueillir un chiot.
-                                        </p>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            Le but est simple : proposer un contenu fiable, pédagogique et honnête, nourri par notre
-                                            expérience quotidienne auprès des chiens et des familles.
-                                        </p>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            Objectif : informer, rassurer et vous aider à mieux comprendre ce petit chien primitif,
-                                            rare, sensible et absolument unique.
-                                        </p>
-                                    </div>
-
-                                    <div className="space-y-6 md:justify-self-end lg:justify-self-stretch">
-                                        <div className="relative w-full overflow-hidden rounded-2xl">
-                                            <div className="relative aspect-4/5 lg:aspect-4/3">
-                                                <Image
-                                                    src="/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
-                                                    alt="Mameshiba gris et blanc en portrait"
-                                                    fill
-                                                    sizes="(min-width: 1024px) 360px, 100vw"
-                                                    className="object-cover"
-                                                    quality={75}
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {isBlogEnabled ? (
-                                        <div className="flex md:justify-end">
-                                            <Link
-                                                href="/blog/mame-shiba"
-                                                className="inline-flex w-full items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                            >
-                                                Découvrir le blog Mameshiba
-                                            </Link>
-                                        </div>
-                                    ) : null}
-                                </div>
-                            </CardContent>
-                        </Card>
                     </section>
 
                     <InternalLinksSection

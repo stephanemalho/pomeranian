@@ -3,7 +3,6 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { isBlogEnabled } from "@/lib/blog-visibility"
 import { cn } from "@/lib/utils"
 import {
     NavigationMenu,
@@ -28,11 +27,6 @@ const navGroups = [
                 title: "Prix du Spitz nain Poméranien",
                 href: "/spitz-nain-pomeranien/prix",
                 description: "Fourchette de prix, rareté et repères avant adoption.",
-            },
-            {
-                title: "Blog",
-                href: "/blog/mame-shiba",
-                description: "Conseils, race, génétique et bien-être.",
             },
         ],
     },
@@ -85,12 +79,6 @@ const navGroups = [
 
 export function DesktopNav() {
     const pathname = usePathname()
-    const visibleNavGroups = navGroups.map((group) => ({
-        ...group,
-        items: isBlogEnabled
-            ? group.items
-            : group.items.filter((item) => !item.href.startsWith("/blog")),
-    }))
 
     return (
         <NavigationMenu className="hidden lg:flex" aria-label="Navigation principale">
@@ -110,7 +98,7 @@ export function DesktopNav() {
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {visibleNavGroups.map((group) => {
+                {navGroups.map((group) => {
                     const isActive = group.items.some((item) => pathname === item.href)
                     return (
                         <NavigationMenuItem key={group.label}>
