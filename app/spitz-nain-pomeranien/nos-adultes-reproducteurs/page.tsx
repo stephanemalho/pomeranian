@@ -16,7 +16,7 @@ const pageImage = "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp
 
 const reproductorsInternalLinks: InternalLinkItem[] = [
     {
-        href: "/mameshiba",
+        href: "/spitz-nain-pomeranien",
         title: "Mieux comprendre la race",
         description: "Relier nos chiens adultes au standard, à l’histoire et au tempérament du Mameshiba.",
     },
@@ -26,7 +26,7 @@ const reproductorsInternalLinks: InternalLinkItem[] = [
         description: "Découvrir le quotidien de la meute, la socialisation et l’environnement de l’élevage.",
     },
     {
-        href: "/mame-shiba-prix",
+        href: "/spitz-nain-pomeranien/prix",
         title: "Consulter nos prix",
         description: "Retrouver nos tarifs actuels pour les chiots issus de cette sélection.",
     },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     openGraph: buildOpenGraph({
         title: pageMetadata.reproductors.title,
         description: pageMetadata.reproductors.description,
-        url: `${siteConfig.siteUrl}/nos-chiens`,
+        url: `${siteConfig.siteUrl}${siteConfig.pages.reproductors}`,
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         imageUrl: `${siteConfig.siteUrl}${pageImage}`,
     }),
     alternates: {
-        canonical: `${siteConfig.siteUrl}/nos-chiens`,
+        canonical: `${siteConfig.siteUrl}${siteConfig.pages.reproductors}`,
     },
 }
 
@@ -154,7 +154,7 @@ export default function NosChiensPage() {
                         ))}
 
                         <Link
-                            href="/chiots-disponibles"
+                            href="/spitz-nain-pomeranien/chiots-disponibles"
                             className="inline-block w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                         >
                             Découvrir nos chiots

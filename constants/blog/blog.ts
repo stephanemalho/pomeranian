@@ -11,7 +11,7 @@ export const blog: BlogContentType = {
         subtitle:
             "Comparatifs, comportement, vie quotidienne et repères d'adoption pour mieux comprendre les chiens japonais qui vous attirent.",
         cta: "Découvrir le Mameshiba",
-        linkTo: "/mameshiba",
+        linkTo: "/spitz-nain-pomeranien",
         Icon: "paw",
         color: "orange"
     },

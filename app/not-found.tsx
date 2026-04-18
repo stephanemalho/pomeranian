@@ -45,12 +45,12 @@ export default function NotFound() {
                     <p className="mb-3">Ou explore nos sections :</p>
                     <ul className="space-y-2">
                         <li>
-                            <Link href="/chiots-disponibles" className="text-primary hover:underline">
+                            <Link href="/spitz-nain-pomeranien/chiots-disponibles" className="text-primary hover:underline">
                                 Nos chiots disponibles
                             </Link>
                         </li>
                         <li>
-                            <Link href="/nos-chiens" className="text-primary hover:underline">
+                            <Link href="/spitz-nain-pomeranien/nos-adultes-reproducteurs" className="text-primary hover:underline">
                                 Nos chiens
                             </Link>
                         </li>
@@ -62,6 +62,6 @@ export default function NotFound() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

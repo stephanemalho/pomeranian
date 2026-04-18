@@ -79,7 +79,7 @@ export const shibaApartmentPost: BlogPost = {
         },
         {
             label: "Voir les prochaines disponibilités",
-            href: "/chiots-disponibles"
+            href: "/spitz-nain-pomeranien/chiots-disponibles"
         },
         {
             label: "Découvrir l’élevage Spitz nain Poméranien",

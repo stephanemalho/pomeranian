@@ -265,7 +265,7 @@ export function generatePuppyListSchema(
             "@type": "ListItem",
             position: index + 1,
             name: puppy.name,
-            url: `${siteConfig.siteUrl}/chiots-disponibles`,
+            url: `${siteConfig.siteUrl}${siteConfig.pages.puppies}`,
             image: `${siteConfig.siteUrl}${puppy.image}`
         }))
     };

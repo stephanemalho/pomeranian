@@ -31,7 +31,7 @@ const wellnessInternalLinks: InternalLinkItem[] = [
         description: "Anticiper les premiers jours à la maison, la transition alimentaire et les bonnes bases pour un départ serein.",
     },
     {
-        href: "/chiots-disponibles",
+        href: "/spitz-nain-pomeranien/chiots-disponibles",
         title: "Voir nos portées",
         description: "Suivre les disponibilités, les futures ouvertures de réservation et nos prochaines naissances.",
     },
@@ -129,7 +129,7 @@ export default function SejoursPage() {
                                         Planifiez une visite
                                     </Link>{" "}
                                     ou{" "}
-                                    <Link href="/chiots-disponibles" className="text-blue-700 underline hover:text-blue-500">
+                                    <Link href="/spitz-nain-pomeranien/chiots-disponibles" className="text-blue-700 underline hover:text-blue-500">
                                         inscrivez-vous pour suivre l’ouverture des réservations
                                     </Link>
                                 </span>
@@ -399,7 +399,7 @@ export default function SejoursPage() {
 
                         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link
-                                href="/chiots-disponibles"
+                                href="/spitz-nain-pomeranien/chiots-disponibles"
                                 className="flex w-fit items-center justify-center rounded-md bg-primary px-6 py-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
                                 Voir nos portées

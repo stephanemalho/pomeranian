@@ -17,12 +17,12 @@ const pageImage = "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
 
 const puppiesInternalLinks: InternalLinkItem[] = [
     {
-        href: "/nos-chiens",
+        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         title: "Voir les parents et reproducteurs",
         description: "Relier les futures portées aux adultes qui composent notre sélection Mameshiba.",
     },
     {
-        href: "/mame-shiba-prix",
+        href: "/spitz-nain-pomeranien/prix",
         title: "Consulter nos prix à l’élevage",
         description: "Retrouver nos tarifs actuels et ce qu’ils recouvrent dans notre travail quotidien.",
     },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     openGraph: buildOpenGraph({
         title: pageMetadata.puppies.title,
         description: pageMetadata.puppies.description,
-        url: `${siteConfig.siteUrl}/chiots-disponibles`,
+        url: `${siteConfig.siteUrl}${siteConfig.pages.puppies}`,
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
         imageUrl: `${siteConfig.siteUrl}${pageImage}`,
     }),
     alternates: {
-        canonical: `${siteConfig.siteUrl}/chiots-disponibles`,
+        canonical: `${siteConfig.siteUrl}${siteConfig.pages.puppies}`,
     },
 }
 
@@ -242,7 +242,7 @@ export default function NosChiotsPage() {
                                             dans une optique de véritable chien de compagnie.
                                         </p>
                                         <Link
-                                            href="/mame-shiba-prix"
+                                            href="/spitz-nain-pomeranien/prix"
                                             className="inline-flex w-fit rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                         >
                                             Voir nos prix à l’élevage

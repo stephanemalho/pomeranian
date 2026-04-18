@@ -75,15 +75,15 @@ export const akitaShibaMameComparisonPost: BlogPost = {
     relatedLinks: [
         {
             label: "Découvrir notre page de fond sur le Mameshiba",
-            href: "/mameshiba"
+            href: "/spitz-nain-pomeranien"
         },
         {
             label: "Voir nos chiens adultes",
-            href: "/nos-chiens"
+            href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs"
         },
         {
             label: "Consulter les prochaines portées",
-            href: "/chiots-disponibles"
+            href: "/spitz-nain-pomeranien/chiots-disponibles"
         },
         {
             label: "Nous écrire pour parler de votre projet",

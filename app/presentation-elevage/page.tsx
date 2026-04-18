@@ -37,7 +37,7 @@ const presentationInternalLinks: InternalLinkItem[] = [
         description: "Découvrir le parcours d’Aurélie et Marine et leur vision du Mameshiba.",
     },
     {
-        href: "/nos-chiens",
+        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         title: "Voir nos chiens adultes",
         description: "Observer les reproducteurs qui composent notre programme d’élevage.",
     },
@@ -47,7 +47,7 @@ const presentationInternalLinks: InternalLinkItem[] = [
         description: "Explorer les espaces de vie, la socialisation et l’organisation à l’élevage.",
     },
     {
-        href: "/chiots-disponibles",
+        href: "/spitz-nain-pomeranien/chiots-disponibles",
         title: "Suivre les prochaines portées",
         description: "Consulter les disponibilités et les réservations autour de nos chiots.",
     },
@@ -255,7 +255,7 @@ export default function PresentationPage() {
                                     </div>
                                 </div>
                                 <Link
-                                    href="/nos-chiens"
+                                    href="/spitz-nain-pomeranien/nos-adultes-reproducteurs"
                                     className="flex h-10 w-fit items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85"
                                 >
                                     Voir nos chiens reproducteurs
@@ -509,7 +509,7 @@ export default function PresentationPage() {
                         </p>
                         <div className="flex flex-col mt-12 sm:flex-row gap-8 justify-center h-10 items-center">
                             <Link
-                                href="/chiots-disponibles"
+                                href="/spitz-nain-pomeranien/chiots-disponibles"
                                 className="flex min-h-12 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
                                 Voir nos portées
@@ -525,8 +525,8 @@ export default function PresentationPage() {
                             Dernière mise à jour : {lastMod}
                         </div>
                     </section>
-                </div>
-            </div>
+                </div >
+            </div >
         </>
     )
 }

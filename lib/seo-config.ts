@@ -102,11 +102,11 @@ export const siteConfig = {
     /* ------------------------------- Pages ------------------------------------ */
     pages: {
         home: "/",
-        shiba: "/mameshiba",
-        mameshibaPrice: "/mame-shiba-prix",
+        shiba: "/spitz-nain-pomeranien",
+        mameshibaPrice: "/spitz-nain-pomeranien/prix",
         adoptionGuide: "/adoption/reussir-son-adoption",
-        puppies: "/chiots-disponibles",
-        reproductors: "/nos-chiens",
+        puppies: "/spitz-nain-pomeranien/chiots-disponibles",
+        reproductors: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         presentation: "/presentation-elevage",
         eleveuses: "/presentation-eleveuses",
         wellness: "/bien-etre-animal",
@@ -575,13 +575,13 @@ export const sitemapPages = [
         lastmod: "2026-04-12"
     },
     {
-        url: "/mameshiba",
+        url: "/spitz-nain-pomeranien",
         changefreq: "monthly",
         priority: 0.75,
         lastmod: "2026-04-06"
     },
     {
-        url: "/chiots-disponibles",
+        url: "/spitz-nain-pomeranien/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.9,
         lastmod: "2026-04-12"
@@ -593,13 +593,13 @@ export const sitemapPages = [
         lastmod: seoLastmod
     },
     {
-        url: "/mame-shiba-prix",
+        url: "/spitz-nain-pomeranien/prix",
         changefreq: "monthly",
         priority: 0.8,
         lastmod: "2026-04-06"
     },
     {
-        url: "/nos-chiens",
+        url: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         changefreq: "monthly",
         priority: 0.8,
         lastmod: "2026-04-12"

@@ -67,7 +67,8 @@ export const shibaOverviewPost: BlogPost = {
             ]
         },
         {
-            subtitle: "Pourquoi bien comprendre le Shiba Inu avant de s'intéresser au Mameshiba",
+            subtitle:
+                "Pourquoi bien comprendre le Shiba Inu avant de s'intéresser au Mameshiba",
             paragraphs: [
                 "Le Mameshiba s'inscrit dans l'histoire du Shiba Inu. Comprendre le Shiba, c'est donc comprendre la base : son tempérament, sa finesse émotionnelle, sa vigilance, son besoin de cadre et sa manière bien à lui d'entrer en relation. Le Mameshiba ne sort pas de nulle part ; il hérite de cette identité japonaise primitive.",
                 "Si vous êtes attiré par le Mameshiba, prendre le temps de découvrir d'abord le Shiba Inu est une excellente chose. Cela permet de mieux distinguer ce qui relève du format et ce qui relève du tempérament de fond, pour construire un projet d'adoption plus lucide et plus cohérent."
@@ -95,7 +96,7 @@ export const shibaOverviewPost: BlogPost = {
     relatedLinks: [
         {
             label: "Découvrir notre page de fond sur le Mameshiba",
-            href: "/mameshiba"
+            href: "/spitz-nain-pomeranien"
         },
         {
             label: "Lire notre guide pour réussir l'adoption",
@@ -103,11 +104,11 @@ export const shibaOverviewPost: BlogPost = {
         },
         {
             label: "Voir nos chiens reproducteurs",
-            href: "/nos-chiens"
+            href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs"
         },
         {
             label: "Consulter nos prochaines disponibilités",
-            href: "/chiots-disponibles"
+            href: "/spitz-nain-pomeranien/chiots-disponibles"
         }
     ],
     sources: [

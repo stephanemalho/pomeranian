@@ -74,7 +74,7 @@ export const shibaSociablePost: BlogPost = {
     relatedLinks: [
         {
             label: "Lire notre page de fond sur le Mameshiba",
-            href: "/mameshiba"
+            href: "/spitz-nain-pomeranien"
         },
         {
             label: "Découvrir la vie en élevage",

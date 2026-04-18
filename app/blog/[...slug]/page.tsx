@@ -30,17 +30,17 @@ const formatDate = (value: string) =>
 
 const blogInternalLinks: InternalLinkItem[] = [
     {
-        href: "/mameshiba",
+        href: "/spitz-nain-pomeranien",
         title: "Comprendre le Mameshiba",
         description: "Retrouver notre page pilier sur la race, sa taille, son origine et son tempérament.",
     },
     {
-        href: "/chiots-disponibles",
+        href: "/spitz-nain-pomeranien/chiots-disponibles",
         title: "Voir les prochaines portées",
         description: "Consulter les disponibilités et les réservations autour de nos chiots Mameshiba.",
     },
     {
-        href: "/mame-shiba-prix",
+        href: "/spitz-nain-pomeranien/prix",
         title: "Consulter nos prix à l’élevage",
         description: "Accéder à nos tarifs actuels et à leur lecture dans le cadre de notre sélection.",
     },

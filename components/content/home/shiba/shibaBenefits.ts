@@ -26,7 +26,7 @@ export const shibaBenefits: BenefitCard[] = [
         text: "Nos mariages sont pensés pour préserver la pureté du Spitz nain Poméranien, la stabilité de la taille, l'harmonie du type et la transmission naturelle du marquage husky, sans aucun croisement.",
         image: nihonMame,
         alt: "Deux chiots blottis l'un contre l'autre",
-        href: "/nos-chiens",
+        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         cta: "Rencontrer nos chiens"
     },
     {
@@ -36,5 +36,5 @@ export const shibaBenefits: BenefitCard[] = [
         alt: "Petit chien après une baignade, regard vif",
         href: "/presentation-elevage",
         cta: "Voir notre méthode d'élevage"
-    },
+    }
 ];

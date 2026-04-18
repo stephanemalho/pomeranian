@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
 const contactInternalLinks: InternalLinkItem[] = [
     {
-        href: "/chiots-disponibles",
+        href: "/spitz-nain-pomeranien/chiots-disponibles",
         title: "Voir les chiots et réservations",
         description: "Consulter les disponibilités actuelles et l’état des prochaines portées.",
     },
@@ -50,12 +50,12 @@ const contactInternalLinks: InternalLinkItem[] = [
         description: "Lire notre guide pratique avant un premier échange ou une future réservation.",
     },
     {
-        href: "/mame-shiba-prix",
+        href: "/spitz-nain-pomeranien/prix",
         title: "Consulter nos tarifs",
         description: "Retrouver les prix de nos Mameshiba à l’élevage et ce qu’ils recouvrent.",
     },
     {
-        href: "/nos-chiens",
+        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         title: "Découvrir nos adultes",
         description: "Mieux connaître les reproducteurs, leurs lignées et leur tempérament avant de nous contacter.",
     },

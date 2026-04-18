@@ -20,7 +20,7 @@ const eleveusesInternalLinks: InternalLinkItem[] = filterBlogLinks([
         description: "Comprendre l’environnement, la philosophie et les engagements de Spitz nain Poméranien.",
     },
     {
-        href: "/nos-chiens",
+        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         title: "Voir nos reproducteurs",
         description: "Mettre des chiens et des lignées concrètes derrière notre travail quotidien.",
     },
@@ -348,7 +348,7 @@ export default function PresentationEleveusesPage() {
                                 Contacter Aurélie et Marine
                             </Link>
                             <Link
-                                href="/chiots-disponibles"
+                                href="/spitz-nain-pomeranien/chiots-disponibles"
                                 className="flex cursor-pointer h-full hover:underline text-sm text-muted-foreground justify-center items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-2 py-1"
                             >
                                 Voir nos portées

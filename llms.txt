@@ -7,10 +7,10 @@ purpose: Website for Mame Shiba breeding in France. It provides accurate informa
 
 key_pages:
 - / (home)
-- /mameshiba
-- /mame-shiba-prix
-- /chiots-disponibles
-- /nos-chiens
+- /spitz-nain-pomeranien
+- /spitz-nain-pomeranien/prix
+- /spitz-nain-pomeranien/chiots-disponibles
+- /spitz-nain-pomeranien/nos-adultes-reproducteurs
 - /adoption/reussir-son-adoption
 - /presentation-elevage
 - /presentation-eleveuses

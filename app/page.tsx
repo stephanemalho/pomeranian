@@ -66,8 +66,8 @@ export default function HomePage() {
     "son adaptation à tous les milieux, du citadin au rural",
   ]
   const heroHighlights = [
-    { label: "Rareté", value: "1 sur 1 million", href: "/chiots-disponibles" },
-    { label: "Signature", value: "Marquage husky", href: "/nos-chiens" },
+    { label: "Rareté", value: "1 sur 1 million", href: "/spitz-nain-pomeranien/chiots-disponibles" },
+    { label: "Signature", value: "Marquage husky", href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs" },
     { label: "Essence", value: "Le plus petit primitif", href: "/presentation-elevage" },
   ]
   const founders = [
@@ -136,7 +136,7 @@ export default function HomePage() {
 
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                     <Link
-                      href="/chiots-disponibles"
+                      href="/spitz-nain-pomeranien/chiots-disponibles"
                       className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#223852] transition hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:bg-[#d8e5f0] dark:text-[#102030] dark:hover:bg-[#c9d8e8]"
                     >
                       Voir nos chiots disponibles
@@ -263,7 +263,7 @@ export default function HomePage() {
                       blanc, tout en conservant l&apos;âme sauvage du husky.
                     </p>
                     <Link
-                      href="/nos-chiens"
+                      href="/spitz-nain-pomeranien/nos-adultes-reproducteurs"
                       className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
                       Explorer nos chiens
@@ -280,7 +280,7 @@ export default function HomePage() {
                       reconnaître en un seul coup d&apos;œil.
                     </p>
                     <Link
-                      href="/chiots-disponibles"
+                      href="/spitz-nain-pomeranien/chiots-disponibles"
                       className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                       Voir des chiots disponibles
@@ -321,7 +321,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         <section className="my-8 py-12">
           <div className="container mx-auto p-2">
@@ -402,7 +402,7 @@ export default function HomePage() {
                         profondément connectés à leur famille.
                       </p>
                       <Link
-                        href="/nos-chiens"
+                        href="/spitz-nain-pomeranien/nos-adultes-reproducteurs"
                         className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-white transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         Voir les marquages de nos chiens
@@ -463,7 +463,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         <section className="my-8">
           <div className="container mx-auto p-2">
@@ -540,7 +540,7 @@ export default function HomePage() {
                     >
                       Avant de vous déplacer, préparez votre adoption
                       <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                    </Link> 
+                    </Link>
                   </CardContent>
                 </Card>
 
@@ -607,41 +607,41 @@ export default function HomePage() {
                   key={item.title}
                   className="group h-full overflow-hidden rounded-[1.8rem] border-primary/10 bg-white/85 p-3 shadow-[0_18px_50px_rgba(52,81,110,0.08)] dark:bg-[#142334]"
                 >
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-[1.2rem]">
-                      <Image
-                        src={item.image}
-                        alt={item.alt}
-                        fill
-                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        quality={75}
-                      />
-                      <div
-                        className="absolute inset-0 bg-linear-to-t from-[#1a2c40]/20 via-transparent to-transparent"
-                        aria-hidden="true"
-                      />
-                    </div>
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-[1.2rem]">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      quality={75}
+                    />
+                    <div
+                      className="absolute inset-0 bg-linear-to-t from-[#1a2c40]/20 via-transparent to-transparent"
+                      aria-hidden="true"
+                    />
+                  </div>
 
-                    <CardContent className="flex flex-col space-y-3 p-6 md:h-[220px]">
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
-                        Valeur
-                      </p>
-                      <h3 className="text-xl font-semibold tracking-[0.01em]">{item.title}</h3>
-                      <p className="text-sm leading-relaxed text-muted-foreground">
-                        {item.text}
-                      </p>
-                    </CardContent>
-                    <div className="p-5 pt-0 text-center">
-                      <Link
-                        href={item.href}
-                        aria-label={`Découvrir ${item.title}`}
-                        className="inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                      >
-                        {item.cta}
-                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                      </Link>
-                    </div>
-                  </Card>
+                  <CardContent className="flex flex-col space-y-3 p-6 md:h-[220px]">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
+                      Valeur
+                    </p>
+                    <h3 className="text-xl font-semibold tracking-[0.01em]">{item.title}</h3>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      {item.text}
+                    </p>
+                  </CardContent>
+                  <div className="p-5 pt-0 text-center">
+                    <Link
+                      href={item.href}
+                      aria-label={`Découvrir ${item.title}`}
+                      className="inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      {item.cta}
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </Link>
+                  </div>
+                </Card>
               ))}
             </div>
           </div>
@@ -681,59 +681,59 @@ export default function HomePage() {
                     key={index}
                     className="group flex h-full overflow-hidden rounded-[1.9rem] border border-primary/10 bg-linear-to-br from-white via-[#f8fbfe] to-[#e7eef6] shadow-[0_18px_50px_rgba(52,81,110,0.08)] dark:from-[#122031] dark:via-[#162435] dark:to-[#1d2d42]"
                   >
-                      <div className="grid h-full w-full gap-0 xl:grid-cols-[240px_1fr]">
-                        <div className="p-5 md:p-6 xl:flex xl:items-start xl:justify-center">
-                          <div className="w-full overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d] xl:max-w-[220px]">
-                            <div className="relative h-120 overflow-hidden">
-                              <Image
-                                src={founder.image || "/home-founder-fallback.jpg"}
-                                alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
-                                fill
-                                className="object-cover transition duration-500 group-hover:scale-[1.04]"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1279px) calc(100vw - 96px), 240px"
-                                quality={70}
-                              />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="grid h-full grid-rows-[auto_auto_1fr] gap-5 p-5 pt-0 md:p-6 md:pt-0 xl:p-7">
-                          <div className="space-y-3">
-                            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
-                              Éleveuse
-                            </p>
-                            <h3 className="text-2xl font-semibold tracking-[0.01em] md:text-3xl">
-                              {founder.name}
-                            </h3>
-                          </div>
-
-                          <div className="min-h-[72px] space-y-1.5">
-                            {founder.badges.map((badge, badgeIdx) => (
-                              <p
-                                key={badgeIdx}
-                                className="text-sm leading-relaxed text-primary/75"
-                              >
-                                {badge}
-                              </p>
-                            ))}
-                          </div>
-
-                          <div className="flex h-full flex-col rounded-[1.4rem] border border-primary/10 bg-white/70 px-5 py-4 dark:bg-[#1a2a3d]">
-                            <p className="text-sm leading-relaxed text-muted-foreground">
-                              {founder.description}
-                            </p>
-                            <Link
-                              href={`/presentation-eleveuses#${founder.name.toLowerCase()}`}
-                              aria-label={`Lire la présentation de ${founder.name}`}
-                              className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                            >
-                              Lire le portrait de {founder.name}
-                              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                            </Link>
+                    <div className="grid h-full w-full gap-0 xl:grid-cols-[240px_1fr]">
+                      <div className="p-5 md:p-6 xl:flex xl:items-start xl:justify-center">
+                        <div className="w-full overflow-hidden rounded-3xl border border-primary/10 bg-white shadow-[0_14px_40px_rgba(52,81,110,0.10)] dark:bg-[#1a2a3d] xl:max-w-[220px]">
+                          <div className="relative h-120 overflow-hidden">
+                            <Image
+                              src={founder.image || "/home-founder-fallback.jpg"}
+                              alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
+                              fill
+                              className="object-cover transition duration-500 group-hover:scale-[1.04]"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1279px) calc(100vw - 96px), 240px"
+                              quality={70}
+                            />
                           </div>
                         </div>
                       </div>
-                    </article>
+
+                      <div className="grid h-full grid-rows-[auto_auto_1fr] gap-5 p-5 pt-0 md:p-6 md:pt-0 xl:p-7">
+                        <div className="space-y-3">
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary/65">
+                            Éleveuse
+                          </p>
+                          <h3 className="text-2xl font-semibold tracking-[0.01em] md:text-3xl">
+                            {founder.name}
+                          </h3>
+                        </div>
+
+                        <div className="min-h-[72px] space-y-1.5">
+                          {founder.badges.map((badge, badgeIdx) => (
+                            <p
+                              key={badgeIdx}
+                              className="text-sm leading-relaxed text-primary/75"
+                            >
+                              {badge}
+                            </p>
+                          ))}
+                        </div>
+
+                        <div className="flex h-full flex-col rounded-[1.4rem] border border-primary/10 bg-white/70 px-5 py-4 dark:bg-[#1a2a3d]">
+                          <p className="text-sm leading-relaxed text-muted-foreground">
+                            {founder.description}
+                          </p>
+                          <Link
+                            href={`/presentation-eleveuses#${founder.name.toLowerCase()}`}
+                            aria-label={`Lire la présentation de ${founder.name}`}
+                            className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                          >
+                            Lire le portrait de {founder.name}
+                            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
                 ))}
               </div>
 
@@ -768,7 +768,7 @@ export default function HomePage() {
         <div className="container mx-auto text-right text-xs text-muted-foreground my-6">
           Dernière mise à jour : {lastMod}
         </div>
-      </div>
+      </div >
     </>
   )
 }

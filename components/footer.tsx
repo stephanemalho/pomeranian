@@ -40,7 +40,7 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/mameshiba"
+                                    href="/spitz-nain-pomeranien"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
                                     Le Mameshiba
@@ -48,7 +48,7 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/mame-shiba-prix"
+                                    href="/spitz-nain-pomeranien/prix"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
                                     Prix du Mameshiba
@@ -72,7 +72,7 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/nos-chiens"
+                                    href="/spitz-nain-pomeranien/nos-adultes-reproducteurs"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
                                     Nos chiens
@@ -80,7 +80,7 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/chiots-disponibles"
+                                    href="/spitz-nain-pomeranien/chiots-disponibles"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
                                     Nos chiots
@@ -207,6 +207,6 @@ export function Footer() {
                     <p>&copy; 2026 Spitz nain Poméranien - Mameshiba. Tous droits réservés.</p>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }

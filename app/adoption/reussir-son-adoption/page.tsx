@@ -120,17 +120,17 @@ const pottySchedule = [
 const resources = filterBlogLinks([
     {
         title: "Bien comprendre le Mameshiba",
-        href: "/mameshiba",
+        href: "/spitz-nain-pomeranien",
         description: "Origines, standard, tempérament et points de vigilance avant de vous engager.",
     },
     {
         title: "Voir nos prix à l’élevage",
-        href: "/mame-shiba-prix",
+        href: "/spitz-nain-pomeranien/prix",
         description: "Une page claire pour consulter nos tarifs Mameshiba à l’élevage et comprendre ce qu’ils recouvrent.",
     },
     {
         title: "Voir les réservations et prochaines portées",
-        href: "/chiots-disponibles",
+        href: "/spitz-nain-pomeranien/chiots-disponibles",
         description: "Consultez les disponibilités actuelles et les informations pratiques liées aux réservations.",
     },
     {
@@ -315,7 +315,7 @@ export default function AdoptionGuidePage() {
                             </div>
                             <div className="flex flex-wrap gap-3">
                                 <Link
-                                    href="/chiots-disponibles"
+                                    href="/spitz-nain-pomeranien/chiots-disponibles"
                                     className="inline-flex items-center rounded-md bg-primary px-4 py-2 font-semibold text-primary-foreground transition hover:bg-primary/85"
                                 >
                                     Voir nos chiots Mameshiba
@@ -628,7 +628,7 @@ export default function AdoptionGuidePage() {
                                     Contacter l&apos;élevage
                                 </Link>
                                 <Link
-                                    href="/mameshiba"
+                                    href="/spitz-nain-pomeranien"
                                     className="inline-flex items-center rounded-md border border-white/40 px-4 py-2 font-semibold transition hover:bg-white/10"
                                 >
                                     Revoir les bases sur le Mameshiba

@@ -17,16 +17,16 @@ import {
 
 const navGroups = [
     {
-        label: "Le Mameshiba",
+        label: "Le Spitz nain Poméranien",
         items: [
             {
-                title: "Le Mameshiba",
-                href: "/mameshiba",
+                title: "Le Spitz nain Poméranien",
+                href: "/spitz-nain-pomeranien",
                 description: "Taille, tempérament, origines et adoption responsable.",
             },
             {
-                title: "Prix du Mameshiba",
-                href: "/mame-shiba-prix",
+                title: "Prix du Spitz nain Poméranien",
+                href: "/spitz-nain-pomeranien/prix",
                 description: "Fourchette de prix, rareté et repères avant adoption.",
             },
             {
@@ -51,7 +51,7 @@ const navGroups = [
             },
             {
                 title: "Nos chiens",
-                href: "/nos-chiens",
+                href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
                 description: "Nos adultes, leurs lignées et notre sélection.",
             },
             {
@@ -66,7 +66,7 @@ const navGroups = [
         items: [
             {
                 title: "Nos chiots",
-                href: "/chiots-disponibles",
+                href: "/spitz-nain-pomeranien/chiots-disponibles",
                 description: "Portées disponibles et informations d'adoption.",
             },
             {

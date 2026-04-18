@@ -183,7 +183,7 @@ const historySteps: HistoryStep[] = [
 
 const mameshibaInternalLinks: InternalLinkItem[] = filterBlogLinks([
     {
-        href: "/nos-chiens",
+        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         title: "Voir nos chiens reproducteurs",
         description: "Découvrir les adultes qui portent notre sélection et leurs lignées.",
     },
@@ -193,7 +193,7 @@ const mameshibaInternalLinks: InternalLinkItem[] = filterBlogLinks([
         description: "Voir comment nous socialisons les chiots et organisons le quotidien de l’élevage.",
     },
     {
-        href: "/mame-shiba-prix",
+        href: "/spitz-nain-pomeranien/prix",
         title: "Consulter nos prix à l’élevage",
         description: "Retrouver nos tarifs actuels et ce qu’ils recouvrent concrètement.",
     },
@@ -651,13 +651,13 @@ export default function MameShibaPage() {
                         </ul>
                         <div className="flex flex-col gap-4 justify-center sm:flex-row">
                             <Link
-                                href="/chiots-disponibles"
+                                href="/spitz-nain-pomeranien/chiots-disponibles"
                                 className="rounded-md bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
                                 Découvrir nos chiots
                             </Link>
                             <Link
-                                href="/mame-shiba-prix"
+                                href="/spitz-nain-pomeranien/prix"
                                 className="border border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-md font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
                                 Comprendre le prix d&apos;un Mameshiba

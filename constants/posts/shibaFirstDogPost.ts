@@ -72,7 +72,7 @@ export const shibaFirstDogPost: BlogPost = {
     relatedLinks: [
         {
             label: "Voir nos prix à l’élevage",
-            href: "/mame-shiba-prix"
+            href: "/spitz-nain-pomeranien/prix"
         },
         {
             label: "Lire notre guide adoption",
@@ -80,7 +80,7 @@ export const shibaFirstDogPost: BlogPost = {
         },
         {
             label: "Voir les prochaines portées",
-            href: "/chiots-disponibles"
+            href: "/spitz-nain-pomeranien/chiots-disponibles"
         },
         {
             label: "Nous contacter pour parler de votre projet",
