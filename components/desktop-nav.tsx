@@ -1,160 +1,45 @@
 "use client"
 
-import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
 
-const navGroups = [
-    {
-        label: "Le Spitz nain Poméranien",
-        items: [
-            {
-                title: "Le Spitz nain Poméranien",
-                href: "/spitz-nain-pomeranien",
-                description: "Taille, tempérament, origines et adoption responsable.",
-            },
-            {
-                title: "Prix du Spitz nain Poméranien",
-                href: "/spitz-nain-pomeranien/prix",
-                description: "Fourchette de prix, rareté et repères avant adoption.",
-            },
-        ],
-    },
-    {
-        label: "L'élevage",
-        items: [
-            {
-                title: "Présentation",
-                href: "/presentation-elevage",
-                description: "Philosophie, valeurs et histoire de l'élevage.",
-            },
-            {
-                title: "Les éleveuses",
-                href: "/presentation-eleveuses",
-                description: "Aurélie & Marine, leur parcours et leur vision.",
-            },
-            {
-                title: "Nos chiens de reproduction",
-                href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
-                description: "Nos adultes, leurs lignées et notre sélection.",
-            },
-            {
-                title: "Conditions de vie",
-                href: "/bien-etre-animal",
-                description: "Le quotidien de nos chiens et chiots.",
-            },
-        ],
-    },
-    {
-        label: "Adoption",
-        items: [
-            {
-                title: "Nos chiots disponibles",
-                href: "/spitz-nain-pomeranien/chiots-disponibles",
-                description: "Portées disponibles et informations d'adoption.",
-            },
-            {
-                title: "Réussir son adoption",
-                href: "/adoption/reussir-son-adoption",
-                description: "Trajet, arrivée à la maison et premières semaines.",
-            },
-            {
-                title: "Contact",
-                href: "/contact",
-                description: "Parlons de votre projet d'adoption.",
-            },
-        ],
-    },
+const navigation = [
+    { name: "Accueil", href: "/" },
+    { name: "Le Spitz nain Poméranien", href: "/spitz-nain-pomeranien" },
+    { name: "Nos chiots", href: "/spitz-nain-pomeranien/chiots-disponibles" },
+    { name: "Nos adultes", href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs" },
+    { name: "Contact", href: "/contact" },
 ]
 
 export function DesktopNav() {
     const pathname = usePathname()
 
     return (
-        <NavigationMenu className="hidden lg:flex" aria-label="Navigation principale">
-            <NavigationMenuList>
-                <NavigationMenuItem>
-                    <NavigationMenuLink asChild>
-                        <Link
-                            href="/"
-                            className={cn(
-                                navigationMenuTriggerStyle(),
-                                pathname === "/" ? "text-primary" : "text-muted-foreground",
-                            )}
-                            aria-current={pathname === "/" ? "page" : undefined}
-                        >
-                            Accueil
-                        </Link>
-                    </NavigationMenuLink>
-                </NavigationMenuItem>
+        <nav className="hidden lg:flex" aria-label="Navigation principale">
+            <ul className="flex items-center gap-1">
+                {navigation.map((item) => {
+                    const isActive =
+                        item.href === "/"
+                            ? pathname === "/"
+                            : pathname === item.href || pathname.startsWith(`${item.href}/`)
 
-                {navGroups.map((group) => {
-                    const isActive = group.items.some((item) => pathname === item.href)
                     return (
-                        <NavigationMenuItem key={group.label}>
-                            <NavigationMenuTrigger data-active={isActive}>
-                                {group.label}
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <ul className="grid gap-3 p-4 md:w-90 lg:w-105">
-                                    {group.items.map((item) => (
-                                        <ListItem
-                                            key={item.href}
-                                            href={item.href}
-                                            title={item.title}
-                                            active={pathname === item.href}
-                                        >
-                                            {item.description}
-                                        </ListItem>
-                                    ))}
-                                </ul>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
+                        <li key={item.href}>
+                            <Link
+                                href={item.href}
+                                className={cn(
+                                    "inline-flex h-10 items-center rounded-md px-3 text-sm font-medium transition-colors hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+                                    isActive ? "text-primary" : "text-muted-foreground"
+                                )}
+                                aria-current={isActive ? "page" : undefined}
+                            >
+                                {item.name}
+                            </Link>
+                        </li>
                     )
                 })}
-            </NavigationMenuList>
-        </NavigationMenu>
+            </ul>
+        </nav>
     )
 }
-
-type ListItemProps = {
-    title: string
-    href: string
-    children: React.ReactNode
-    active?: boolean
-}
-
-const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
-    ({ title, children, href, active }, ref) => {
-        return (
-            <li>
-                <NavigationMenuLink asChild>
-                    <Link
-                        ref={ref}
-                        href={href}
-                        className={cn(
-                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted/70 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
-                            active ? "text-primary bg-muted/40" : "text-muted-foreground"
-                        )}
-                    >
-                        <div className="text-sm font-medium leading-none">{title}</div>
-                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            {children}
-                        </p>
-                    </Link>
-                </NavigationMenuLink>
-            </li>
-        )
-    }
-)
-ListItem.displayName = "ListItem"

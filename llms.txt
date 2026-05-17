@@ -8,13 +8,8 @@ purpose: Website for Spitz nain Poméranien breeding in France. It provides accu
 key_pages:
 - / (home)
 - /spitz-nain-pomeranien
-- /spitz-nain-pomeranien/prix
 - /spitz-nain-pomeranien/chiots-disponibles
 - /spitz-nain-pomeranien/nos-adultes-reproducteurs
-- /adoption/reussir-son-adoption
-- /presentation-elevage
-- /presentation-eleveuses
-- /bien-etre-animal
 - /contact
 - /mentions-legales
 - /conditions-generales

@@ -103,13 +103,8 @@ export const siteConfig = {
     pages: {
         home: "/",
         spitz: "/spitz-nain-pomeranien",
-        spitzPomeranienPrice: "/spitz-nain-pomeranien/prix",
-        adoptionGuide: "/adoption/reussir-son-adoption",
         puppies: "/spitz-nain-pomeranien/chiots-disponibles",
         reproductors: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
-        presentation: "/presentation-elevage",
-        eleveuses: "/presentation-eleveuses",
-        wellness: "/bien-etre-animal",
         contact: "/contact",
         legalNotice: "/mentions-legales",
         terms: "/conditions-generales",
@@ -358,9 +353,9 @@ export const pageMetadata = {
     },
 
     spitz: {
-        title: "Spitz nain Poméranien : caractère, taille, prix et adoption",
+        title: "Spitz nain Poméranien : caractère, taille, entretien et adoption",
         description:
-            "Découvrez le Spitz nain Poméranien : caractère, taille, entretien, prix, socialisation et points essentiels à connaître avant adoption.",
+            "Découvrez le Spitz nain Poméranien : origine, standard FCI, taille, caractère, pelage, entretien et points essentiels à connaître avant adoption.",
         keywords: [
             "spitz pomeranien",
             "Spitz nain Poméranien",
@@ -374,9 +369,9 @@ export const pageMetadata = {
     },
 
     puppies: {
-        title: "Nos chiots actuellement disponibles",
+        title: "Chiots Spitz nain Poméranien disponibles, tarifs et adoption",
         description:
-            "Les portées de Spitz nain Poméranien comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.",
+            "Découvrez nos chiots Spitz nain Poméranien, les prochaines portées, les tarifs, la socialisation à l’élevage et les conseils pour préparer l’adoption.",
         keywords: [
             "chiots Spitz nain Poméranien",
             "Spitz nain Poméranien disponible",
@@ -385,36 +380,6 @@ export const pageMetadata = {
             "elevage Spitz nain Poméranien france",
             "acheter un Spitz nain Poméranien",
             "inscription portee Spitz nain Poméranien"
-        ]
-    },
-
-    spitzPomeranienPrice: {
-        title: "Prix de nos Spitz nain Poméranien | Spitz nain Poméranien",
-        description:
-            "Découvrez les prix de nos Spitz nain Poméranien à l'élevage Spitz nain Poméranien : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
-        keywords: [
-            "prix Spitz nain Poméranien",
-            "prix Spitz nain Poméranien elevage",
-            "tarif Spitz nain Poméranien",
-            "prix chiot Spitz nain Poméranien",
-            "prix male Spitz nain Poméranien",
-            "prix femelle Spitz nain Poméranien",
-            "Spitz nain Poméranien prix"
-        ]
-    },
-
-    adoptionGuide: {
-        title: "Réussir l'adoption de son chiot Spitz nain Poméranien | Spitz nain Poméranien",
-        description:
-            "Guide pratique pour réussir l'adoption d'un chiot Spitz nain Poméranien : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
-        keywords: [
-            "adoption Spitz nain Poméranien",
-            "accueil chiot Spitz nain Poméranien",
-            "premiers jours chiot Spitz nain Poméranien",
-            "trajet adoption chiot",
-            "proprete chiot Spitz nain Poméranien",
-            "solitude chiot spitz",
-            "guide adoption Spitz nain Poméranien"
         ]
     },
 
@@ -428,51 +393,6 @@ export const pageMetadata = {
             "lignées Spitz nain Poméranien",
             "tests genetiques spitz nain pomeranien",
             "caractere Spitz nain Poméranien"
-        ]
-    },
-
-    presentation: {
-        title: "L'élevage Spitz nain Poméranien - Spitz nain Poméranien",
-        description:
-            "Élevage spécialisé Spitz nain Poméranien à Dommartin-lès-Cuiseaux (71) : sélection raisonnée, santé suivie et chiots élevés avec une vraie attention portée à l'équilibre émotionnel.",
-        keywords: [
-            "elevage Spitz nain Poméranien",
-            "selection rigoureuse Spitz nain Poméranien",
-            "accompagnement adoptant",
-            "ethique elevage",
-            "trouver bon elevage Spitz nain Poméranien",
-            "elevage chiots avec mere"
-        ]
-    },
-    eleveuses: {
-        title: "Les éleveuses de Spitz nain Poméranien",
-        description:
-            "Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Spitz nain Poméranien, avec exigence, sensibilité et transparence.",
-        keywords: [
-            "eleveuses Spitz nain Poméranien",
-            "equipe elevage Spitz nain Poméranien",
-            "aurélie Spitz nain Poméranien",
-            "marine Spitz nain Poméranien",
-            "presentation eleveuses",
-            "approche holistique elevage"
-        ]
-    },
-
-    wellness: {
-        title: "La vie en élevage",
-        description:
-            "Voici comment vivent nos Spitz nain Poméranien et nos chiots au sein de l’élevage Spitz nain Poméranien",
-        keywords: [
-            "conditions de vie des chiots en élevage",
-            "élevage familial responsable",
-            "bien-être et socialisation des chiots",
-            "chiots élevés avec leur mère",
-            "suivi vétérinaire dès la naissance",
-            "respect du développement du chiot",
-            "environnement sain pour chiots",
-            "elevage Spitz nain Poméranien",
-            "vie en elevage Spitz nain Poméranien",
-            "socialisation Spitz nain Poméranien"
         ]
     },
 
@@ -556,40 +476,10 @@ export const sitemapPages = [
         lastmod: "2026-04-12"
     },
     {
-        url: "/adoption/reussir-son-adoption",
-        changefreq: "monthly",
-        priority: 0.8,
-        lastmod: seoLastmod
-    },
-    {
-        url: "/spitz-nain-pomeranien/prix",
-        changefreq: "monthly",
-        priority: 0.8,
-        lastmod: "2026-04-06"
-    },
-    {
         url: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         changefreq: "monthly",
         priority: 0.8,
         lastmod: "2026-04-12"
-    },
-    {
-        url: "/presentation-elevage",
-        changefreq: "monthly",
-        priority: 0.7,
-        lastmod: "2026-04-17"
-    },
-    {
-        url: "/presentation-eleveuses",
-        changefreq: "monthly",
-        priority: 0.7,
-        lastmod: seoLastmod
-    },
-    {
-        url: "/bien-etre-animal",
-        changefreq: "monthly",
-        priority: 0.7,
-        lastmod: seoLastmod
     },
     {
         url: "/contact",

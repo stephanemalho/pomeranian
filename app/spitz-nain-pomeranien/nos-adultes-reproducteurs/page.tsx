@@ -21,14 +21,9 @@ const reproductorsInternalLinks: InternalLinkItem[] = [
         description: "Relier nos chiens adultes au standard, à l’histoire et au tempérament du Spitz nain Poméranien.",
     },
     {
-        href: "/bien-etre-animal",
-        title: "Voir leur cadre de vie",
-        description: "Découvrir le quotidien de la meute, la socialisation et l’environnement de l’élevage.",
-    },
-    {
-        href: "/spitz-nain-pomeranien/prix",
-        title: "Consulter nos prix",
-        description: "Retrouver nos tarifs actuels pour les chiots issus de cette sélection.",
+        href: "/spitz-nain-pomeranien/chiots-disponibles",
+        title: "Voir les chiots et tarifs",
+        description: "Consulter les disponibilités, les tarifs, la préparation au départ et les prochaines portées.",
     },
     {
         href: "/contact",
@@ -88,12 +83,12 @@ export default function NosChiensPage() {
                 <div className="container mx-auto my-12">
                     <section className="text-center space-y-4 mb-12">
                         <h1 className="text-xl md:text-3xl font-bold">Nos adultes reproducteurs Spitz nain Poméranien</h1>
-                        <h2 className="text-xl md:text-2xl">Lignées, caractères et sélection de l&apos;élevage</h2>
+                        <h2 className="text-xl md:text-2xl">Santé, tempérament et sélection de l&apos;élevage</h2>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées.
+                            Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à notre sélection, avec une attention portée au type, à la santé, au caractère et à la cohérence des mariages.
                         </p>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Chaque mariage est soigneusement réfléchi afin de préserver l&apos;équilibre émotionnel, la morphologie, la douceur de caractère et l&apos;identité du véritable Spitz nain Poméranien.
+                            Nous observons autant le comportement quotidien que la morphologie : un reproducteur doit être agréable à vivre, stable, suivi sérieusement et capable de transmettre de bonnes bases aux générations futures.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
@@ -163,7 +158,7 @@ export default function NosChiensPage() {
 
                     <InternalLinksSection
                         title="Continuer votre découverte de l’élevage"
-                        description="Après les reproducteurs, voici les pages les plus utiles pour comprendre la race, le cadre de vie, les tarifs et les prochaines étapes."
+                        description="Après les reproducteurs, voici les pages les plus utiles pour comprendre la race, les chiots et les prochaines étapes."
                         items={reproductorsInternalLinks}
                         className="mt-16"
                     />

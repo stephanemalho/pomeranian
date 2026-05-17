@@ -55,8 +55,8 @@ export default function NotFound() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/presentation-elevage" className="text-primary hover:underline">
-                                À propos de nous
+                            <Link href="/spitz-nain-pomeranien" className="text-primary hover:underline">
+                                Le Spitz nain Poméranien
                             </Link>
                         </li>
                     </ul>

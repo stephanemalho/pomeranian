@@ -9,9 +9,60 @@ import { faqSpitzNainPomeranien } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
-import { Feather, Heart, PawPrint, Ruler, Sparkles } from "lucide-react"
+import { BookOpen, Heart, PawPrint, Ruler, ShieldCheck, Sparkles } from "lucide-react"
 
 const pageImage = "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.webp"
+
+const keyFacts = [
+    {
+        title: "Origine",
+        text: "Le Spitz nain, aussi appelé Poméranien ou Loulou de Poméranie, est la plus petite variété du Spitz allemand. Le standard FCI rattache la race à l’Allemagne et au groupe 5, section Spitz européens.",
+        icon: BookOpen,
+    },
+    {
+        title: "Taille FCI",
+        text: "Le standard du Spitz nain/Poméranien indique une taille de 21 cm ± 3 cm au garrot, avec un poids cohérent avec la taille du chien.",
+        icon: Ruler,
+    },
+    {
+        title: "Caractère",
+        text: "Le Poméranien est décrit comme attentif, vif, très attaché à son humain, apte à la vie de famille et ni craintif ni agressif lorsqu’il est bien sélectionné et socialisé.",
+        icon: Heart,
+    },
+]
+
+const carePoints = [
+    {
+        title: "Pelage double",
+        text: "Le Spitz nain possède un poil de couverture long et droit, porté par un sous-poil court, dense et ouaté. Un brossage régulier évite les nœuds et garde le poil aéré.",
+    },
+    {
+        title: "Petit chien, vrais besoins",
+        text: "Son format compact convient bien à la vie de compagnie, mais il a besoin de sorties adaptées, d’interactions, de calme et de repères éducatifs cohérents.",
+    },
+    {
+        title: "Vigilance santé",
+        text: "Comme toute race miniature, le choix de l’élevage compte : suivi vétérinaire, sélection de reproducteurs sains, transparence et préparation progressive du chiot.",
+    },
+]
+
+const spitzInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/spitz-nain-pomeranien/chiots-disponibles",
+        title: "Voir nos chiots",
+        description: "Disponibilités, tarifs, préparation au départ et conseils pour l’arrivée à la maison.",
+    },
+    {
+        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
+        title: "Découvrir nos adultes",
+        description: "Comprendre les chiens qui portent notre sélection, leur santé et leur tempérament.",
+    },
+    {
+        href: "/contact",
+        title: "Parler de votre projet",
+        description: "Échanger avec nous avant de vous inscrire pour une portée ou une visite.",
+    },
+]
 
 export const metadata: Metadata = {
     title: pageMetadata.spitz.title,
@@ -24,7 +75,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Spitz nain Poméranien dans un décor doux et naturel",
+                alt: "Spitz nain Poméranien dans un décor naturel",
                 width: 1200,
                 height: 630,
                 type: "image/webp",
@@ -40,42 +91,6 @@ export const metadata: Metadata = {
         canonical: `${siteConfig.siteUrl}${siteConfig.pages.spitz}`,
     },
 }
-
-const traits = [
-    {
-        title: "Petit format",
-        text: "Le Spitz nain Poméranien est un chien compact, léger et facile à intégrer dans une vie de famille, à condition de respecter ses besoins de mouvement et de repos.",
-        icon: Ruler,
-    },
-    {
-        title: "Tempérament proche",
-        text: "Vif, expressif et attentif, il aime participer à la vie quotidienne. Une socialisation progressive aide à construire un adulte confiant et bien dans ses pattes.",
-        icon: Heart,
-    },
-    {
-        title: "Pelage dense",
-        text: "Sa fourrure double demande un brossage régulier, une attention aux périodes de mue et un entretien doux pour préserver la qualité du poil.",
-        icon: Feather,
-    },
-]
-
-const spitzInternalLinks: InternalLinkItem[] = [
-    {
-        href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
-        title: "Voir nos chiens reproducteurs",
-        description: "Découvrir les adultes qui portent notre sélection et leurs lignées.",
-    },
-    {
-        href: "/bien-etre-animal",
-        title: "Comprendre leur cadre de vie",
-        description: "Voir comment nous socialisons les chiots et organisons le quotidien de l’élevage.",
-    },
-    {
-        href: "/spitz-nain-pomeranien/prix",
-        title: "Consulter nos prix à l’élevage",
-        description: "Retrouver nos tarifs actuels et ce qu’ils recouvrent concrètement.",
-    },
-]
 
 export default function SpitzNainPomeranienPage() {
     const breadcrumbSchema = generateBreadcrumbSchema([
@@ -102,30 +117,30 @@ export default function SpitzNainPomeranienPage() {
                             <Badge variant="secondary" className="w-fit">
                                 Le Spitz nain Poméranien
                             </Badge>
-                            <h1 className="text-xl md:text-3xl font-bold">
-                                Spitz nain Poméranien : caractère, taille, entretien et adoption
+                            <h1 className="text-2xl font-bold md:text-4xl">
+                                Spitz nain Poméranien : origine, caractère, taille et entretien
                             </h1>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                Le Spitz nain Poméranien, aussi appelé Poméranien, est un petit chien de compagnie vif,
-                                élégant et très attaché à ses humains. Son format compact ne doit pas faire oublier son
-                                besoin de repères, de socialisation et d’un quotidien bien structuré.
+                                Le Spitz nain Poméranien est un petit chien de compagnie issu de la famille du Spitz
+                                allemand. Sous son apparence très expressive, il reste un vrai chien : vif, attentif,
+                                proche de ses humains et sensible à la qualité de sa socialisation.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                Notre sélection met l’accent sur la santé, l’équilibre émotionnel, la qualité du type et
-                                l’accompagnement des familles avant comme après l’adoption.
+                                Cette page rassemble les repères essentiels avant adoption, en s’appuyant sur le standard
+                                FCI/Centrale Canine et sur une lecture pratique de la vie avec un Poméranien.
                             </p>
                             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                                 <div className="flex items-center gap-2">
-                                    <Heart className="h-4 w-4 text-primary" aria-hidden="true" />
-                                    <span>chien proche de l’humain</span>
+                                    <PawPrint className="h-4 w-4 text-primary" aria-hidden="true" />
+                                    <span>chien de compagnie</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Sparkles className="h-4 w-4 text-primary" aria-hidden="true" />
-                                    <span>petit format, grande présence</span>
+                                    <span>robe double et collerette</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <PawPrint className="h-4 w-4 text-primary" aria-hidden="true" />
-                                    <span>socialisation progressive</span>
+                                    <ShieldCheck className="h-4 w-4 text-primary" aria-hidden="true" />
+                                    <span>sélection et santé à vérifier</span>
                                 </div>
                             </div>
                         </div>
@@ -143,19 +158,19 @@ export default function SpitzNainPomeranienPage() {
                     </section>
 
                     <section className="grid gap-5 md:grid-cols-3">
-                        {traits.map((trait) => {
-                            const Icon = trait.icon
+                        {keyFacts.map((fact) => {
+                            const Icon = fact.icon
 
                             return (
-                                <Card key={trait.title}>
+                                <Card key={fact.title}>
                                     <CardHeader>
                                         <div className="flex items-center gap-3">
                                             <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
-                                            <CardTitle className="text-lg">{trait.title}</CardTitle>
+                                            <CardTitle className="text-lg">{fact.title}</CardTitle>
                                         </div>
                                     </CardHeader>
                                     <CardContent>
-                                        <p className="text-sm leading-relaxed text-muted-foreground">{trait.text}</p>
+                                        <p className="text-sm leading-relaxed text-muted-foreground">{fact.text}</p>
                                     </CardContent>
                                 </Card>
                             )
@@ -172,30 +187,56 @@ export default function SpitzNainPomeranienPage() {
                                 sizes="(min-width: 768px) 40vw, 100vw"
                             />
                         </div>
-                        <div className="space-y-4">
-                            <h2 className="text-xl md:text-2xl font-bold">Un petit chien à préparer sérieusement</h2>
+                        <div className="space-y-5">
+                            <h2 className="text-xl md:text-2xl font-bold">Ce qu’il faut retenir avant adoption</h2>
                             <p className="text-muted-foreground leading-relaxed">
-                                Le Poméranien peut vivre en appartement comme en maison, si son quotidien reste stable :
-                                sorties régulières, apprentissages doux, manipulations positives et temps de repos
-                                respectés. Son intelligence et sa sensibilité demandent une éducation cohérente, sans
-                                brutalité ni surstimulation.
+                                Le Poméranien est souvent choisi pour son petit format, mais il ne doit pas être traité
+                                comme un accessoire. Son équilibre dépend d’un cadre stable, de sorties adaptées, d’un
+                                apprentissage doux et d’une gestion attentive des stimulations.
                             </p>
-                            <p className="text-muted-foreground leading-relaxed">
-                                Avant toute adoption, nous échangeons avec chaque famille sur son rythme de vie, ses
-                                attentes et sa capacité à accompagner un chiot dans les premières semaines.
-                            </p>
-                            <Link
-                                href={siteConfig.pages.contact}
-                                className="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition hover:bg-primary/90"
-                            >
-                                Nous contacter
-                            </Link>
+                            <div className="grid gap-4">
+                                {carePoints.map((point) => (
+                                    <div key={point.title} className="rounded-lg border bg-muted/30 p-4">
+                                        <h3 className="font-semibold">{point.title}</h3>
+                                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{point.text}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="rounded-lg border bg-muted/30 p-6 md:p-8">
+                        <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-start">
+                            <div className="space-y-2">
+                                <h2 className="text-xl md:text-2xl font-bold">Références utiles</h2>
+                                <p className="text-sm leading-relaxed text-muted-foreground">
+                                    Ces sources servent de base aux repères de cette page.
+                                </p>
+                            </div>
+                            <div className="grid gap-3 text-sm">
+                                <a
+                                    href="https://www.fci.be/fr/nomenclature/SPITZ-ALLEMAND-97.html"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="rounded-md border bg-background p-4 text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                >
+                                    Standard officiel FCI n°97 : Spitz Allemand, variété Spitz nain / Poméranien
+                                </a>
+                                <a
+                                    href="https://www.centrale-canine.fr/sites/default/files/fci_race/097.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="rounded-md border bg-background p-4 text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                >
+                                    PDF Centrale Canine / FCI : standard français du Spitz allemand
+                                </a>
+                            </div>
                         </div>
                     </section>
 
                     <InternalLinksSection
                         title="Continuer votre lecture"
-                        description="Les pages utiles pour comprendre notre élevage, nos chiens et les prochaines étapes d’une adoption."
+                        description="Les pages utiles pour relier les informations de race à notre élevage et à votre projet."
                         items={spitzInternalLinks}
                     />
 

@@ -22,7 +22,7 @@ export const dogs: AdultDog[] = [
         color: "Rouge / Red",
         origin: "Issu de notre sélection",
         lineage:
-            "Lignée de champion, petit-fils et fils de KC-Champion Kairyuu Go Prosperity Dogs",
+            "Lignée suivie, choisie pour le type, le tempérament et la cohérence morphologique",
         size: "30 cm au garrot • 6,1 kg",
         temperament:
             "Avenant, doux, sensible, câlin, curieux, loyal et extrêmement intelligent. Ichiro est un chien de grande prestance, élégant, avec un regard profond et une vraie présence dans la meute.",
@@ -121,10 +121,10 @@ export const dogs: AdultDog[] = [
         name: "Hina",
         title: "HINA - Femelle Spitz nain Poméranien",
         color: "Non précisé",
-        origin: "Née chez Spitz nain Poméranien nain Poméranien",
+        origin: "Née à l’élevage",
         size: "28 cm au garrot • 4,5 kg",
         temperament:
-            "Femelle née à l’élevage, Hina représente notre sélection maison avec un petit format certifié et confirmé au Kennel Club of Japan.",
+            "Femelle née à l’élevage, Hina représente notre sélection maison avec un petit format, une bonne stabilité et une présence douce dans le quotidien.",
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Spitz nain Poméranien",
@@ -133,7 +133,7 @@ export const dogs: AdultDog[] = [
         images: [
             {
                 src: "/pages/reproducteurs/Hina.webp",
-                alt: "Hina, femelle Spitz nain Poméranien née chez Spitz nain Poméranien nain Poméranien"
+                alt: "Hina, femelle Spitz nain Poméranien née à l'élevage"
             }
         ]
     },
@@ -141,10 +141,10 @@ export const dogs: AdultDog[] = [
         name: "Karasuki",
         title: "KARASUKI - Femelle Spitz nain Poméranien",
         color: "Non précisé",
-        origin: "Née chez Spitz nain Poméranien",
+        origin: "Née à l’élevage",
         size: "27 cm au garrot • 4 kg",
         temperament:
-            "Karasuki est une femelle Spitz nain Poméranien née chez Spitz nain Poméranien, au petit gabarit, certifiée et confirmée au Kennel Club of Japan.",
+            "Karasuki est une femelle Spitz nain Poméranien au petit gabarit, suivie pour son équilibre, sa construction et sa capacité à évoluer sereinement dans la meute.",
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Spitz nain Poméranien",
@@ -153,7 +153,7 @@ export const dogs: AdultDog[] = [
         images: [
             {
                 src: "/pages/reproducteurs/Karasuki.webp",
-                alt: "Karasuki, femelle Spitz nain Poméranien née chez Spitz nain Poméranien"
+                alt: "Karasuki, femelle Spitz nain Poméranien née à l'élevage"
             }
         ]
     },
@@ -161,10 +161,10 @@ export const dogs: AdultDog[] = [
         name: "Kimi",
         title: "KIMI - Femelle Spitz nain Poméranien",
         color: "Non précisé",
-        origin: "Née chez Spitz nain Poméranien nain Poméranien",
+        origin: "Née à l’élevage",
         size: "25 cm au garrot • 3,5 kg",
         temperament:
-            "Kimi est une petite femelle Spitz nain Poméranien née chez Spitz nain Poméranien nain Poméranien, certifiée et confirmée, dans un format très compact fidèle à la sélection de l’élevage.",
+            "Kimi est une petite femelle Spitz nain Poméranien au format compact, observée pour sa stabilité, sa douceur et son adaptation au quotidien de l’élevage.",
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Spitz nain Poméranien",
@@ -173,7 +173,7 @@ export const dogs: AdultDog[] = [
         images: [
             {
                 src: "/pages/reproducteurs/Kimi.webp",
-                alt: "Kimi, femelle Spitz nain Poméranien née chez Spitz nain Poméranien nain Poméranien"
+                alt: "Kimi, femelle Spitz nain Poméranien née à l'élevage"
             }
         ]
     },

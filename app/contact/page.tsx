@@ -40,19 +40,14 @@ export const metadata: Metadata = {
 
 const contactInternalLinks: InternalLinkItem[] = [
     {
+        href: "/spitz-nain-pomeranien",
+        title: "Comprendre la race",
+        description: "Lire les repères essentiels sur le caractère, le format et l’entretien du Poméranien.",
+    },
+    {
         href: "/spitz-nain-pomeranien/chiots-disponibles",
         title: "Voir les chiots et réservations",
-        description: "Consulter les disponibilités actuelles et l’état des prochaines portées.",
-    },
-    {
-        href: "/adoption/reussir-son-adoption",
-        title: "Préparer votre adoption",
-        description: "Lire notre guide pratique avant un premier échange ou une future réservation.",
-    },
-    {
-        href: "/spitz-nain-pomeranien/prix",
-        title: "Consulter nos tarifs",
-        description: "Retrouver les prix de nos Spitz nain Poméranien à l’élevage et ce qu’ils recouvrent.",
+        description: "Consulter les disponibilités, tarifs et conseils de préparation au départ.",
     },
     {
         href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
@@ -254,10 +249,10 @@ export default function ContactPage() {
                                     </div>
                                 </div>
                                 <Link
-                                    href="/adoption/reussir-son-adoption"
+                                    href="/spitz-nain-pomeranien/chiots-disponibles#preparer-adoption"
                                     className="inline-flex rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                 >
-                                    Lire le guide adoption
+                                    Préparer l’adoption
                                 </Link>
                             </CardContent>
                         </Card>

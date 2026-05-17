@@ -1,8 +1,6 @@
 import { publicAssetRoutes } from "@/lib/generated-public-asset-paths";
 import { sitemapPages, siteConfig } from "@/lib/seo-config";
 
-const EXTRA_STATIC_PAGE_ROUTES = ["/adoption"] as const;
-
 const APP_METADATA_ROUTES = [
     "/robots.txt",
     "/sitemap.xml",
@@ -12,11 +10,9 @@ const APP_METADATA_ROUTES = [
 ] as const;
 
 const REDIRECT_SOURCE_EXACT_ROUTES = [
-    "/blog",
     "/chiots-disponibles",
     "/le-spitz-pomeranien",
     "/le-spitz-inu",
-    "/spitz-pomeranien-prix",
     "/nos-adultes-reproducteurs",
     "/nos-chiens",
 ] as const;
@@ -25,10 +21,6 @@ const TECHNICAL_ROUTE_PREFIXES = [
     "/_next/",
     "/_vercel/",
     "/__nextjs_",
-] as const;
-
-const REDIRECT_ROUTE_PREFIXES = [
-    "/blog/",
 ] as const;
 
 const TECHNICAL_EXACT_ROUTES = [
@@ -66,7 +58,6 @@ const toPathSet = (paths: Iterable<string>): ReadonlySet<string> =>
 const staticPageRoutes = [
     ...Object.values(siteConfig.pages),
     ...sitemapPages.map((page) => page.url),
-    ...EXTRA_STATIC_PAGE_ROUTES,
 ] as const;
 
 const exactAllowedRoutes = [
@@ -88,14 +79,6 @@ export const isAllowedRequestPath = (pathname: string): boolean => {
 
     if (
         TECHNICAL_ROUTE_PREFIXES.some((prefix) =>
-            normalizedPathname.startsWith(prefix)
-        )
-    ) {
-        return true;
-    }
-
-    if (
-        REDIRECT_ROUTE_PREFIXES.some((prefix) =>
             normalizedPathname.startsWith(prefix)
         )
     ) {

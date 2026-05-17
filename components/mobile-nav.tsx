@@ -11,13 +11,8 @@ import { cn } from "@/lib/utils"
 const navigation = [
     { name: "Accueil", href: "/" },
     { name: "Le Spitz nain Poméranien", href: "/spitz-nain-pomeranien" },
-    { name: "Prix du Spitz nain Poméranien", href: "/spitz-nain-pomeranien/prix" },
-    { name: "L'elevage", href: "/presentation-elevage" },
-    { name: "Les éleveuses", href: "/presentation-eleveuses" },
-    { name: "Nos chiens", href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs" },
     { name: "Nos chiots", href: "/spitz-nain-pomeranien/chiots-disponibles" },
-    { name: "Réussir son adoption", href: "/adoption/reussir-son-adoption" },
-    { name: "Les conditions de vie", href: "/bien-etre-animal" },
+    { name: "Nos adultes", href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs" },
     { name: "Contact", href: "/contact" },
 ]
 

@@ -18,7 +18,7 @@ export const spitzBenefits: BenefitCard[] = [
         text: "Examens génétiques ciblés, suivi vétérinaire pendant la gestation et la lactation, alimentation premium et sélection rigoureuse des reproducteurs nous permettent d'accompagner des chiots robustes dès leurs premiers jours.",
         image: mameSize,
         alt: "Petit chien se tenant debout sur l'herbe",
-        href: "/bien-etre-animal",
+        href: "/spitz-nain-pomeranien/chiots-disponibles#socialisation",
         cta: "Découvrir notre approche du bien-être"
     },
     {
@@ -34,7 +34,7 @@ export const spitzBenefits: BenefitCard[] = [
         text: "Jeux, stimulations, manipulations et découvertes progressives préparent des chiots bien dans leurs pattes, proches de l'humain et faciles à intégrer dans leur nouvelle famille.",
         image: spitzPolyvalent,
         alt: "Petit chien après une baignade, regard vif",
-        href: "/presentation-elevage",
+        href: "/spitz-nain-pomeranien/chiots-disponibles#preparer-adoption",
         cta: "Voir notre méthode d'élevage"
     }
 ];

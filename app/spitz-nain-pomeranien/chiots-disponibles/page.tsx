@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
+import { Calendar, Heart, Mail, NotebookText, PawPrint, Phone, ShieldCheck, Sprout } from "lucide-react"
 import { FAQSection } from "@/components/faq"
 import { faqNosChiots } from "@/lib/faq-data"
-import { Calendar, Dog, Heart, NotebookText, PawPrint, Phone, Mail, Sprout } from "lucide-react"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
@@ -17,25 +17,36 @@ const pageImage = "/pages/spitz-pomeranien-prix/trois-spitz-pomeranien-bebe.jpg"
 
 const puppiesInternalLinks: InternalLinkItem[] = [
     {
+        href: "/spitz-nain-pomeranien",
+        title: "Comprendre la race",
+        description: "Origine, standard, caractère et points de vigilance avant adoption.",
+    },
+    {
         href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
-        title: "Voir les parents et reproducteurs",
-        description: "Relier les futures portées aux adultes qui composent notre sélection Spitz nain Poméranien.",
-    },
-    {
-        href: "/spitz-nain-pomeranien/prix",
-        title: "Consulter nos prix à l’élevage",
-        description: "Retrouver nos tarifs actuels et ce qu’ils recouvrent dans notre travail quotidien.",
-    },
-    {
-        href: "/adoption/reussir-son-adoption",
-        title: "Lire le guide adoption",
-        description: "Préparer l’arrivée du chiot, le trajet du départ et les premières semaines à la maison.",
+        title: "Voir nos adultes",
+        description: "Découvrir les chiens qui portent notre sélection et leur tempérament.",
     },
     {
         href: "/contact",
         title: "Parler de votre projet",
-        description: "Nous contacter pour vous présenter, poser vos questions et préparer une réservation.",
+        description: "Nous contacter pour une future portée, une visite ou une réservation.",
     },
+]
+
+const adoptionSteps = [
+    "préparer un trajet calme avec caisse ou sac adapté, eau, alèse et linge familier",
+    "prévoir les premières 48 heures comme un sas calme, sans visites ni sollicitations excessives",
+    "installer un espace de repos lisible, loin du passage et accessible au chiot",
+    "sortir très régulièrement pour accompagner la propreté sans pression",
+    "habituer progressivement à de courtes absences pour construire la solitude sans rupture brutale",
+]
+
+const socialisationSteps = [
+    "manipulations douces et régulières pour préparer les soins courants",
+    "découverte graduelle des sons, textures, objets et routines de maison",
+    "contacts humains positifs et temps de repos respectés",
+    "sorties adaptées à l’âge et au niveau de sécurité sanitaire",
+    "suivi vétérinaire et observation quotidienne du développement",
 ]
 
 export const metadata: Metadata = {
@@ -49,7 +60,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Chiot Spitz nain Poméranien blanc dans un decor doux",
+                alt: "Chiots Spitz nain Poméranien à l'élevage",
                 width: 1200,
                 height: 630,
                 type: "image/jpeg",
@@ -87,21 +98,37 @@ export default function NosChiotsPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
 
-            <div className="py-16">
-                <div className="container mx-auto my-12">
-                    <section className="text-center space-y-4 mb-12">
-                        <h1 className="text-xl md:text-3xl font-bold">Nos chiots actuellement disponibles</h1>
-                        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Les portées de Spitz nain Poméranien comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.
-                        </p>
-                        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Une nouvelle portée arrive très bientôt et les réservations sont déjà ouvertes. En attendant l'arrivée des chiots, nous recevons les demandes des familles souhaitant être accompagnées sérieusement dans leur projet d'adoption.
-                        </p>
-                        <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
+            <main className="py-16">
+                <div className="container mx-auto space-y-16">
+                    <section className="grid gap-10 items-center md:grid-cols-2">
+                        <div className="space-y-5">
+                            <Badge variant="secondary" className="w-fit">Nos chiots</Badge>
+                            <h1 className="text-2xl font-bold md:text-4xl">Chiots Spitz nain Poméranien disponibles et futures portées</h1>
+                            <p className="text-lg leading-relaxed text-muted-foreground">
+                                Cette page rassemble les disponibilités, les tarifs, la préparation au départ et notre
+                                manière de socialiser les chiots. L’objectif est de vous donner une vision claire avant
+                                toute réservation.
+                            </p>
+                            <div className="flex flex-wrap gap-3">
+                                <a href="#tarifs" className="rounded-md border px-4 py-2 text-sm font-medium text-primary hover:bg-muted">Tarifs</a>
+                                <a href="#socialisation" className="rounded-md border px-4 py-2 text-sm font-medium text-primary hover:bg-muted">Socialisation</a>
+                                <a href="#preparer-adoption" className="rounded-md border px-4 py-2 text-sm font-medium text-primary hover:bg-muted">Préparer l’adoption</a>
+                            </div>
+                        </div>
+                        <div className="relative h-72 overflow-hidden rounded-lg bg-black md:h-105">
+                            <Image
+                                src={pageImage}
+                                alt="Chiots Spitz nain Poméranien à l'élevage"
+                                fill
+                                className="object-cover"
+                                sizes="(min-width: 768px) 50vw, 100vw"
+                                priority
+                            />
+                        </div>
                     </section>
 
                     {hasAvailablePuppies ? (
-                        <div className="grid gap-10 my-12">
+                        <section className="grid gap-10">
                             {availablePuppies.map((puppy, index) => (
                                 <Card key={puppy.name} className="overflow-hidden bg-muted/30">
                                     <CardContent className="p-0">
@@ -116,289 +143,160 @@ export default function NosChiotsPage() {
                                             </div>
                                             <div className={`p-8 space-y-4 flex flex-col justify-center ${index % 2 === 1 ? "md:order-1" : ""}`}>
                                                 <div className="flex items-center gap-2">
-                                                    <Badge variant="secondary">
-                                                        <PawPrint className="h-4 w-4 mr-1" />
-                                                        {puppy.coat}
-                                                    </Badge>
+                                                    <Badge variant="secondary">{puppy.coat}</Badge>
                                                     <Badge variant="outline">{puppy.color}</Badge>
                                                 </div>
-                                                <div className="space-y-2">
-                                                    <h2 className="text-2xl font-bold">{puppy.name}</h2>
-                                                    <p className="text-muted-foreground">{puppy.description}</p>
+                                                <h2 className="text-2xl font-bold">{puppy.name}</h2>
+                                                <p className="text-muted-foreground">{puppy.description}</p>
+                                                <div className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
+                                                    <span className="flex items-center gap-2 text-muted-foreground"><PawPrint className="h-4 w-4 text-primary" />{puppy.sexe}</span>
+                                                    <span className="flex items-center gap-2 text-muted-foreground"><Heart className="h-4 w-4 text-primary" />{puppy.parents}</span>
+                                                    <span className="flex items-center gap-2 text-muted-foreground"><Calendar className="h-4 w-4 text-primary" />{puppy.readyDate}</span>
                                                 </div>
-                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                                                    <div className="flex items-center gap-2 text-muted-foreground">
-                                                        <Dog className="h-4 w-4 text-primary" />
-                                                        <span>{puppy.sexe}</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-2 text-muted-foreground">
-                                                        <Heart className="h-4 w-4 text-primary" />
-                                                        <span>{puppy.parents}</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-2 text-muted-foreground">
-                                                        <Calendar className="h-4 w-4 text-primary" />
-                                                        <span>{puppy.readyDate}</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-2 text-muted-foreground">
-                                                        <PawPrint className="h-4 w-4 text-primary" />
-                                                        <span>{puppy.age}</span>
-                                                    </div>
-                                                </div>
-                                                <div className="flex flex-wrap gap-2">
-                                                    {puppy.highlights.map((item) => (
-                                                        <Badge key={item} variant="secondary">
-                                                            {item}
-                                                        </Badge>
-                                                    ))}
-                                                </div>
-                                                <div className="flex flex-col sm:flex-row gap-3 mt-2">
-                                                    <a
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                        className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 py-2 px-4 rounded-md"
-                                                        href={puppy.linkTo}
-                                                    >
-                                                        Réserver une visite ou demander plus de photos / vidéos
-                                                    </a>
-                                                </div>
+                                                <a
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    className="w-fit rounded-md bg-primary px-4 py-2 font-semibold text-primary-foreground hover:bg-primary/90"
+                                                    href={puppy.linkTo}
+                                                >
+                                                    Demander plus d’informations
+                                                </a>
                                             </div>
                                         </div>
                                     </CardContent>
                                 </Card>
                             ))}
-                        </div>
+                        </section>
                     ) : (
-                        <section className="max-w-5xl mx-auto my-12 grid gap-8">
-                            <Card className="bg-muted/30 border border-muted">
-                                <CardContent className="p-8 md:p-10 space-y-6">
-                                    <div className="flex items-start gap-3">
-                                        <NotebookText className="h-6 w-6 text-primary" aria-hidden="true" />
-                                        <div>
-                                            <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                Inscrivez vous pour la prochaine portée de chiots Spitz nain Poméranien
-                                            </h2>
-                                            <p className="text-muted-foreground">
-                                                Parlez nous de votre projet d’adoption et rejoignez la liste d’attente pour être recontacté dès l’annonce de la prochaine portée.
-                                            </p>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div className="grid gap-3">
-                                        {[
-                                            "Portée à venir très prochainement",
-                                            "Réservations déjà ouvertes pour les familles sérieuses",
-                                            "Sélection attentive des futures familles adoptantes",
-                                            "Accompagnement complet avant, pendant et après l’adoption",
-                                        ].map((item) => (
-                                            <div key={item} className="flex gap-4 items-center">
-                                                <div className="rounded-full bg-primary/10 p-2 text-primary" aria-hidden="true">
-                                                    <NotebookText className="h-4 w-4" />
-                                                </div>
-                                                <p className="text-muted-foreground">{item}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    <div className="flex flex-col gap-3 sm:flex-row">
-                                        <Link
-                                            href="https://forms.gle/myGmQAj5Kim6UnVx8"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                        >
-                                            Rejoindre la liste d&apos;attente
-                                        </Link>
-                                        <p className="text-sm text-muted-foreground sm:max-w-sm">
-                                            Remplissez le questionnaire pour nous présenter votre projet et être recontacté
-                                            pour la prochaine portée.
-                                        </p>
-                                    </div>
-                                </CardContent>
-                            </Card>
-
-                            <div className="grid gap-8 md:grid-cols-2">
-                                <Card className="bg-muted/30 border border-muted">
-                                    <CardContent className="p-8 md:p-10 space-y-6 text-left">
-                                        <div className="flex items-start gap-3">
-                                            <Heart className="h-6 w-6 text-primary" aria-hidden="true" />
-                                            <div>
-                                                <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                    Tarif d’un chiot Spitz nain Poméranien
-                                                </h2>
-                                                <p className="text-muted-foreground mt-2">
-                                                    Le tarif reflète la rareté de la race, la qualité des lignées et le niveau d’exigence
-                                                    demandé pour travailler ce type de chien.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <p className="text-muted-foreground">
-                                            Le prix de nos chiots Spitz nain Poméranien est actuellement de <strong className="text-foreground">4 500 € pour un mâle</strong> et de <strong className="text-foreground">5 000 € pour une femelle</strong>.
-                                        </p>
-                                        <p className="text-muted-foreground">
-                                            Nos chiots sont issus de lignées soigneusement sélectionnées, socialisés avec sérieux et élevés
-                                            dans une optique de véritable chien de compagnie.
-                                        </p>
-                                        <Link
-                                            href="/spitz-nain-pomeranien/prix"
-                                            className="inline-flex w-fit rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                        >
-                                            Voir nos prix à l’élevage
-                                        </Link>
-                                        <Link
-                                            href="/adoption/reussir-son-adoption"
-                                            className="inline-flex w-fit rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                        >
-                                            Lire notre guide adoption
-                                        </Link>
-                                    </CardContent>
-                                </Card>
-
-                                <Card className="bg-muted/30 border border-muted">
-                                    <CardContent className="p-8 md:p-10 space-y-6 text-left">
-                                        <div className="flex items-start gap-3">
-                                            <Sprout className="h-6 w-6 text-primary" aria-hidden="true" />
-                                            <div>
-                                                <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                    Contactez nous
-                                                </h2>
-                                                <p className="text-muted-foreground mt-2">
-                                                    Si vous avez des questions au sujet de nos chiots ou de la prochaine portée, ou vous réflechissez à adopter un Spitz nain Poméranien, nous prenons le temps d'échanger avec vous
-                                                    avant toute réservation.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <p className="text-muted-foreground">
-                                            Nous sélectionnons avec soin les futures familles adoptantes. Une présentation de votre
-                                            projet et un entretien téléphonique sont donc à prévoir afin d’évaluer ensemble si le
-                                            Spitz nain Poméranien correspond bien à votre mode de vie.
-                                        </p>
-
-                                        <div className="space-y-3 text-sm">
-                                            <div className="flex items-center gap-2 text-muted-foreground">
-                                                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
-                                                <span>07 56 80 93 38</span>
-                                            </div>
-                                            <div className="flex items-center gap-2 text-muted-foreground">
-                                                <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
-                                                <span>contact@spitz-nain-pomeranien.fr</span>
-                                            </div>
-                                        </div>
-
-                                        <div className="flex flex-col sm:flex-row gap-3">
-                                            <Link
-                                                href="/contact"
-                                                className="flex items-center justify-center rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                            >
-                                                Nous contacter
-                                            </Link>
-                                        </div>
-                                    </CardContent>
-                                </Card>
+                        <section className="rounded-lg border bg-muted/30 p-8 md:p-10">
+                            <div className="mx-auto max-w-3xl space-y-5 text-center">
+                                <NotebookText className="mx-auto h-8 w-8 text-primary" aria-hidden="true" />
+                                <h2 className="text-xl font-semibold md:text-2xl">Aucun chiot affiché actuellement</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Les réservations peuvent s’anticiper avant l’affichage d’une portée. Nous prenons le
+                                    temps d’échanger avec les familles afin de comprendre leur mode de vie et de préparer
+                                    une adoption cohérente.
+                                </p>
+                                <div className="flex flex-col justify-center gap-3 sm:flex-row">
+                                    <Link
+                                        href="https://forms.gle/myGmQAj5Kim6UnVx8"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/85"
+                                    >
+                                        Rejoindre la liste d’attente
+                                    </Link>
+                                    <Link
+                                        href="/contact"
+                                        className="rounded-md border border-primary px-5 py-3 font-semibold text-primary hover:bg-primary/10"
+                                    >
+                                        Nous contacter
+                                    </Link>
+                                </div>
                             </div>
                         </section>
                     )}
 
-                    <section className="max-w-4xl mx-auto bg-muted/30 border border-muted rounded-2xl p-8 md:p-10 space-y-6 text-left mt-12">
-                        <div className="flex items-start gap-3">
-                            <Sprout className="h-6 w-6 text-2xl text-primary" aria-hidden="true" />
-                            <div>
-                                <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                    Des portées rares, pensées avec soin
-                                </h2>
-                                <p className="text-muted-foreground mt-2">
-                                    Chez Spitz nain Poméranien, nous préférons attendre la bonne portée plutôt que produire vite.
-                                </p>
-                            </div>
+                    <section id="tarifs" className="scroll-mt-24 grid gap-6 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+                        <div className="space-y-3">
+                            <Badge variant="secondary" className="w-fit">Tarifs</Badge>
+                            <h2 className="text-xl font-bold md:text-2xl">Tarifs et réservation</h2>
+                            <p className="text-muted-foreground leading-relaxed">
+                                Le prix d’un Spitz nain Poméranien dépend du sérieux de l’élevage, du suivi, de la
+                                sélection, des soins et de l’accompagnement. Les offres trop basses doivent inviter à
+                                vérifier les origines, les garanties et les conditions d’élevage.
+                            </p>
                         </div>
-                        <p className="text-muted-foreground">
-                            Chaque future portée est pensée avec sérieux, dans le respect du rythme de nos chiens reproducteurs
-                            et de la singularité du Spitz nain Poméranien.
-                        </p>
-                        <div className="grid gap-3">
-                            {[
-                                "sélection rigoureuse des lignées,",
-                                "suivi vétérinaire attentif,",
-                                "respect du rythme naturel de nos reproducteurs,",
-                                "accompagnement des familles avant, pendant et après l’adoption.",
-                            ].map((item) => (
-                                <div key={item} className="flex gap-4 items-center">
-                                    <div className="rounded-full bg-primary/10 p-2 text-primary" aria-hidden="true">
-                                        <Sprout className="h-4 w-4" />
-                                    </div>
-                                    <p className="text-muted-foreground">{item}</p>
-                                </div>
-                            ))}
+                        <div className="grid gap-4 sm:grid-cols-2">
+                            <Card>
+                                <CardContent className="space-y-2 p-6">
+                                    <h3 className="font-semibold">Mâle Spitz nain Poméranien</h3>
+                                    <p className="text-3xl font-bold text-primary">4 500 €</p>
+                                    <p className="text-sm text-muted-foreground">Chiot de compagnie issu de notre sélection.</p>
+                                </CardContent>
+                            </Card>
+                            <Card>
+                                <CardContent className="space-y-2 p-6">
+                                    <h3 className="font-semibold">Femelle Spitz nain Poméranien</h3>
+                                    <p className="text-3xl font-bold text-primary">5 000 €</p>
+                                    <p className="text-sm text-muted-foreground">Même exigence de suivi, de socialisation et d’accompagnement.</p>
+                                </CardContent>
+                            </Card>
                         </div>
-                        <Link
-                            href="/bien-etre-animal"
-                            className="flex items-center justify-center rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                        >
-                            Voir les conditions de vie des chiots
-                        </Link>
                     </section>
 
-                    <section className="mt-12 grid gap-6 md:grid-cols-3">
-                        <figure className="space-y-3">
-                            <div className="relative h-64 rounded-lg overflow-hidden">
-                                <Image
-                                    src="/pages/image-all-spitz/spitz-pomeranien-jardin-course-01.webp"
-                                    alt="Spitz nain Poméranien en mouvement dans le jardin de l'élevage"
-                                    fill
-                                    className="object-cover"
-                                    sizes="(min-width: 768px) 33vw, 100vw"
-                                    quality={75}
-                                />
+                    <section id="socialisation" className="scroll-mt-24 rounded-lg border bg-muted/30 p-6 md:p-8">
+                        <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr]">
+                            <div className="space-y-3">
+                                <Badge variant="secondary" className="w-fit">Socialisation</Badge>
+                                <h2 className="text-xl font-bold md:text-2xl">Un départ progressif, pas une mise en scène</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    La socialisation doit rester adaptée à l’âge du chiot : assez riche pour l’ouvrir au
+                                    monde, assez calme pour respecter son sommeil, sa taille et sa maturité.
+                                </p>
                             </div>
-                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
-                                Des portées pensées avec soin visent des chiots vifs, équilibrés et à l’aise dans
-                                leurs découvertes dès les premières semaines.
-                            </figcaption>
-                        </figure>
+                            <div className="grid gap-3">
+                                {socialisationSteps.map((item) => (
+                                    <div key={item} className="flex gap-3 rounded-md bg-background p-4">
+                                        <Sprout className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                                        <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
 
-                        <figure className="space-y-3">
-                            <div className="relative h-64 rounded-lg overflow-hidden">
-                                <Image
-                                    src="/pages/image-all-spitz/spitz-pomeranien-jardin-ensemble-01.webp"
-                                    alt="Spitz nain Poméranien évoluant dans l'environnement extérieur de l'élevage"
-                                    fill
-                                    className="object-cover"
-                                    sizes="(min-width: 768px) 33vw, 100vw"
-                                    quality={75}
-                                />
-                            </div>
-                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
-                                Le travail autour des futures portées commence par un cadre de vie stable, de
-                                l’observation et une attention constante portée à l’équilibre des chiens.
-                            </figcaption>
-                        </figure>
-
-                        <figure className="space-y-3">
-                            <div className="relative h-64 rounded-lg overflow-hidden">
-                                <Image
-                                    src="/pages/image-all-spitz/spitz-pomeranien-exterieur-profil-01.webp"
-                                    alt="Portrait de Spitz nain Poméranien en extérieur dans un moment calme"
-                                    fill
-                                    className="object-cover"
-                                    sizes="(min-width: 768px) 33vw, 100vw"
-                                    quality={75}
-                                />
-                            </div>
-                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
-                                Attendre la bonne portée, c’est aussi respecter le rythme des reproducteurs et garder
-                                une sélection cohérente, plutôt que produire vite.
-                            </figcaption>
-                        </figure>
+                    <section id="preparer-adoption" className="scroll-mt-24 grid gap-6 md:grid-cols-2">
+                        <Card>
+                            <CardContent className="space-y-5 p-6 md:p-8">
+                                <Badge variant="secondary" className="w-fit">Préparer l’adoption</Badge>
+                                <h2 className="text-xl font-bold md:text-2xl">Les premiers jours doivent être simples et lisibles</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Un chiot Spitz nain Poméranien n’a pas besoin d’une arrivée spectaculaire. Il a besoin
+                                    d’humains calmes, d’un espace de repos, d’un rythme régulier et de sorties fréquentes.
+                                </p>
+                                <div className="grid gap-3">
+                                    {adoptionSteps.map((item) => (
+                                        <div key={item} className="flex gap-3">
+                                            <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                                            <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card>
+                            <CardContent className="space-y-5 p-6 md:p-8">
+                                <Badge variant="secondary" className="w-fit">Contact</Badge>
+                                <h2 className="text-xl font-bold md:text-2xl">Parlez-nous de votre projet</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Nous échangeons avec chaque famille avant réservation afin de vérifier que le Spitz
+                                    nain Poméranien correspond au quotidien envisagé.
+                                </p>
+                                <div className="space-y-3 text-sm">
+                                    <div className="flex items-center gap-2 text-muted-foreground">
+                                        <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                                        <span>{siteConfig.contact.phoneFormatted}</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-muted-foreground">
+                                        <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
+                                        <span>{siteConfig.contact.email}</span>
+                                    </div>
+                                </div>
+                                <Link
+                                    href="/contact"
+                                    className="inline-flex rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/85"
+                                >
+                                    Nous contacter
+                                </Link>
+                            </CardContent>
+                        </Card>
                     </section>
 
                     <InternalLinksSection
                         title="Pages utiles avant de réserver"
-                        description="Ces contenus vous aident à mieux comprendre les adultes, les tarifs, l’adoption et la prise de contact autour de nos prochaines portées."
+                        description="Le parcours le plus simple pour comprendre la race, nos adultes et la suite de votre projet."
                         items={puppiesInternalLinks}
-                        className="mt-16"
                     />
 
                     <FAQSection
@@ -406,11 +304,11 @@ export default function NosChiotsPage() {
                         description="Préparation des chiots, réservations, accompagnement et départ en famille : les réponses essentielles."
                         items={faqNosChiots}
                     />
-                    <div className="text-right text-xs text-muted-foreground mt-6">
+                    <div className="text-right text-xs text-muted-foreground">
                         Dernière mise à jour : {lastMod}
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     )
 }

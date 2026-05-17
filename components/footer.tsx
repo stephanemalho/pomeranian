@@ -48,34 +48,10 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/spitz-nain-pomeranien/prix"
-                                    className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
-                                >
-                                    Prix du Spitz nain Poméranien
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/presentation-elevage"
-                                    className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
-                                >
-                                    L&apos;élevage
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/presentation-eleveuses"
-                                    className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
-                                >
-                                    Les éleveuses
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
                                     href="/spitz-nain-pomeranien/nos-adultes-reproducteurs"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
-                                    Nos chiens
+                                    Nos adultes
                                 </Link>
                             </li>
                             <li>
@@ -84,22 +60,6 @@ export function Footer() {
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
                                     Nos chiots
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/adoption/reussir-son-adoption"
-                                    className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
-                                >
-                                    Réussir son adoption
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/bien-etre-animal"
-                                    className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
-                                >
-                                    Les conditions de vie
                                 </Link>
                             </li>
                         </ul>
