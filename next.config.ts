@@ -7,12 +7,12 @@ const nextConfig: NextConfig = {
     async redirects() {
         return [
             {
-                source: "/le-mame-shiba",
+                source: "/le-spitz-pomeranien",
                 destination: "/spitz-nain-pomeranien",
                 permanent: true
             },
             {
-                source: "/mame-shiba-prix",
+                source: "/spitz-pomeranien-prix",
                 destination: "/spitz-nain-pomeranien/prix",
                 permanent: true
             },
@@ -37,12 +37,12 @@ const nextConfig: NextConfig = {
                 permanent: true
             },
             {
-                source: "/le-shiba-inu/",
+                source: "/le-spitz-inu/",
                 destination: "/spitz-nain-pomeranien",
                 permanent: true
             },
             {
-                source: "/le-shiba-inu",
+                source: "/le-spitz-inu",
                 destination: "/spitz-nain-pomeranien",
                 permanent: true
             }

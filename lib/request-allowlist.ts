@@ -14,9 +14,9 @@ const APP_METADATA_ROUTES = [
 const REDIRECT_SOURCE_EXACT_ROUTES = [
     "/blog",
     "/chiots-disponibles",
-    "/le-mame-shiba",
-    "/le-shiba-inu",
-    "/mame-shiba-prix",
+    "/le-spitz-pomeranien",
+    "/le-spitz-inu",
+    "/spitz-pomeranien-prix",
     "/nos-adultes-reproducteurs",
     "/nos-chiens",
 ] as const;

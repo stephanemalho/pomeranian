@@ -1,9 +1,9 @@
 # LLMs.txt for Spitz nain Poméranien website
 
 site_name: Spitz nain Poméranien
-site_url: https://www.kawaii-shiba.com
+site_url: https://www.spitz-nain-pomeranien.fr
 language: fr-FR
-purpose: Website for Mame Shiba breeding in France. It provides accurate information about the breed, the kennel, puppies, adoption guidance, contact details, pricing context, and legal notices.
+purpose: Website for Spitz nain Poméranien breeding in France. It provides accurate information about the breed, the kennel, puppies, adoption guidance, contact details, pricing context, and legal notices.
 
 key_pages:
 - / (home)
@@ -22,7 +22,7 @@ key_pages:
 
 contact:
 - telephone: 0689758031
-- email: elevagemameshiba@gmail.com
+- email: contact@spitz-nain-pomeranien.fr
 
 legal:
 - legal_name: ELEVAGE ROYAL
@@ -36,7 +36,7 @@ location_guidance:
 - Do not expose a precise full address unless the site itself explicitly does so.
 
 content_guidance:
-- Focus on accurate information about Mame Shiba, breeding practices, animal welfare, and adoption process.
+- Focus on accurate information about Spitz nain Poméranien, breeding practices, animal welfare, and adoption process.
 - Use the current site routes and wording.
 - Do not describe the site as a Pomsky website.
 - Do not invent prices, availability, pedigree details, health claims, or waiting times beyond what is explicitly published.

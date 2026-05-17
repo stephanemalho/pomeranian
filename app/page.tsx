@@ -12,10 +12,10 @@ import heroBannerImage from "@/public/pages/homePage/spitz-nain-pomeranien-feu-b
 import heroPuppyImage from "@/public/pages/homePage/spitz-chiot-gris-1-mois.webp"
 import introPortraitImage from "@/public/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp"
 import signatureDogImage from "@/public/pages/homePage/spitz-nain-pomeranien-gris-silver-et-blanc.webp"
-import aurelieFounderImage from "@/public/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg"
+import aurelieFounderImage from "@/public/assets/authors/aurelie-elevage-spitz-pomeranien-et-chiot.jpeg"
 import marineFounderImage from "@/public/assets/authors/marine-and-a-new-puppy.jpeg"
 
-import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
+import { spitzBenefits } from "@/components/content/home/spitz/spitzBenefits"
 
 export const metadata: Metadata = {
   title: pageMetadata.home.title,
@@ -308,7 +308,7 @@ export default function HomePage() {
                   <div className="relative aspect-[2/3] overflow-hidden rounded-[1.5rem]">
                     <Image
                       src={introPortraitImage}
-                      alt="Chiot blanc dans un décor japonais"
+                      alt="Chiot blanc dans un décor doux"
                       fill
                       unoptimized
                       className="object-cover"
@@ -601,7 +601,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-              {shibaBenefits.map((item) => (
+              {spitzBenefits.map((item) => (
                 <Card
                   key={item.title}
                   className="group h-full overflow-hidden rounded-[1.8rem] border-primary/10 bg-white/85 p-3 shadow-[0_18px_50px_rgba(52,81,110,0.08)] dark:bg-[#142334]"

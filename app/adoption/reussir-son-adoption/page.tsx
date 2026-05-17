@@ -22,7 +22,7 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, seoLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 
-const pageImage = "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg"
+const pageImage = "/pages/homePage/spitz-chiot-gris-1-mois.webp"
 
 export const metadata: Metadata = {
     title: pageMetadata.adoptionGuide.title,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Chiot mameshiba prêt pour une adoption en douceur",
+                alt: "Chiot spitz-pomeranien prêt pour une adoption en douceur",
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
                 type: "image/jpeg",
@@ -88,7 +88,7 @@ const travelModes = [
             "L'avion doit rester un trajet préparé avec beaucoup d'anticipation.",
             "Vérifiez très tôt les conditions de la compagnie et les formalités demandées.",
             "Privilégiez les trajets simples, avec peu d'attente et peu de changements.",
-            "Pour un chiot sensible comme le Mameshiba, chaque étape doit rester lisible et calme.",
+            "Pour un chiot sensible comme le Spitz nain Poméranien, chaque étape doit rester lisible et calme.",
         ],
     },
 ]
@@ -118,14 +118,14 @@ const pottySchedule = [
 
 const resources = [
     {
-        title: "Bien comprendre le Mameshiba",
+        title: "Bien comprendre le Spitz nain Poméranien",
         href: "/spitz-nain-pomeranien",
         description: "Origines, standard, tempérament et points de vigilance avant de vous engager.",
     },
     {
         title: "Voir nos prix à l’élevage",
         href: "/spitz-nain-pomeranien/prix",
-        description: "Une page claire pour consulter nos tarifs Mameshiba à l’élevage et comprendre ce qu’ils recouvrent.",
+        description: "Une page claire pour consulter nos tarifs Spitz nain Poméranien à l’élevage et comprendre ce qu’ils recouvrent.",
     },
     {
         title: "Voir les réservations et prochaines portées",
@@ -148,13 +148,13 @@ const adoptionGuideFaq = [
                     Préparez une couverture, de l&apos;eau, une alèse ou une serviette absorbante et un transport sécurisé comme une caisse ou un harnais adapté.
                 </p>
                 <p>
-                    Pour un chiot Mameshiba, l&apos;objectif est surtout de garder le trajet calme, lisible et sans surstimulation inutile.
+                    Pour un chiot Spitz nain Poméranien, l&apos;objectif est surtout de garder le trajet calme, lisible et sans surstimulation inutile.
                 </p>
             </div>
         ),
     },
     {
-        question: "Comment accueillir un chiot Mameshiba à la maison la première semaine ?",
+        question: "Comment accueillir un chiot Spitz nain Poméranien à la maison la première semaine ?",
         answer: (
             <div className="space-y-3">
                 <p>
@@ -187,17 +187,17 @@ const adoptionGuideFaq = [
                     Oui, mais très progressivement. On évite les départs brutaux et on construit des absences courtes, répétées et compréhensibles pour le chiot.
                 </p>
                 <p>
-                    Chez un Mameshiba sensible, la qualité des débuts compte énormément pour éviter que chaque séparation ne devienne une montée de stress.
+                    Chez un Spitz nain Poméranien sensible, la qualité des débuts compte énormément pour éviter que chaque séparation ne devienne une montée de stress.
                 </p>
             </div>
         ),
     },
     {
-        question: "Le Mameshiba a-t-il besoin de davantage de calme les premiers jours ?",
+        question: "Le Spitz nain Poméranien a-t-il besoin de davantage de calme les premiers jours ?",
         answer: (
             <div className="space-y-3">
                 <p>
-                    Oui, c&apos;est souvent préférable. Le Mameshiba est généralement un petit chien fin, observateur et sensible à son environnement.
+                    Oui, c&apos;est souvent préférable. Le Spitz nain Poméranien est généralement un petit chien fin, observateur et sensible à son environnement.
                 </p>
                 <p>
                     Plus les premières journées sont sobres, prévisibles et reposantes, plus il prend facilement ses repères et se détend dans son nouveau foyer.
@@ -240,7 +240,7 @@ export default function AdoptionGuidePage() {
             `${siteConfig.siteUrl}/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.jpeg`,
         ],
         about: [
-            { "@type": "Thing", name: "Mameshiba" },
+            { "@type": "Thing", name: "Spitz nain Poméranien" },
             { "@type": "Thing", name: "Adoption de chiot" },
             { "@type": "Thing", name: "Premiers jours à la maison" },
             { "@type": "Thing", name: "Propreté du chiot" },
@@ -283,8 +283,8 @@ export default function AdoptionGuidePage() {
                                     installation à la maison, premières nuits, premières sorties et rythme de propreté.
                                 </p>
                                 <p className="max-w-3xl text-muted-foreground">
-                                    Ces conseils sont pensés pour un petit chien japonais sensible, observateur et très réceptif à son environnement.
-                                    Le Mameshiba a besoin d&apos;un quotidien sobre, stable et progressif pour bien démarrer dans sa nouvelle famille.
+                                    Ces conseils sont pensés pour un petit chien sensible sensible, observateur et très réceptif à son environnement.
+                                    Le Spitz nain Poméranien a besoin d&apos;un quotidien sobre, stable et progressif pour bien démarrer dans sa nouvelle famille.
                                 </p>
                             </div>
                             <div className="grid gap-3 sm:grid-cols-3">
@@ -312,7 +312,7 @@ export default function AdoptionGuidePage() {
                                     href="/spitz-nain-pomeranien/chiots-disponibles"
                                     className="inline-flex items-center rounded-md bg-primary px-4 py-2 font-semibold text-primary-foreground transition hover:bg-primary/85"
                                 >
-                                    Voir nos chiots Mameshiba
+                                    Voir nos chiots Spitz nain Poméranien
                                 </Link>
                                 <Link
                                     href="/contact"
@@ -327,7 +327,7 @@ export default function AdoptionGuidePage() {
                             <div className="relative min-h-70 overflow-hidden rounded-2xl">
                                 <Image
                                     src={pageImage}
-                                    alt="Chiot mameshiba prêt pour une arrivée douce dans sa nouvelle famille"
+                                    alt="Chiot spitz-pomeranien prêt pour une arrivée douce dans sa nouvelle famille"
                                     fill
                                     className="object-cover"
                                     priority
@@ -341,7 +341,7 @@ export default function AdoptionGuidePage() {
                                     <div className="space-y-2">
                                         <h2 className="font-semibold">Ce qui aide vraiment un petit chiot sensible</h2>
                                         <p className="text-sm text-muted-foreground">
-                                            Pour un Mameshiba, la douceur du départ compte énormément. Un repère olfactif familier, une ambiance calme et des humains qui n&apos;en font pas trop sont souvent plus utiles que mille stimulations de bienvenue.
+                                            Pour un Spitz nain Poméranien, la douceur du départ compte énormément. Un repère olfactif familier, une ambiance calme et des humains qui n&apos;en font pas trop sont souvent plus utiles que mille stimulations de bienvenue.
                                         </p>
                                     </div>
                                 </div>
@@ -352,8 +352,8 @@ export default function AdoptionGuidePage() {
                     <section className="grid gap-8 md:grid-cols-[0.95fr_1.05fr] md:items-center">
                         <div className="relative min-h-112 overflow-hidden rounded-3xl">
                             <Image
-                                src="/pages/adoption/waru-mame-shiba-kawaii-shiba-portrait.webp"
-                                alt="Chiot mameshiba calme pendant ses premières découvertes"
+                                src="/pages/adoption/waru-spitz-pomeranien-spitz-pomeranien-portrait.webp"
+                                alt="Chiot spitz-pomeranien calme pendant ses premières découvertes"
                                 fill
                                 className="object-cover"
                                 sizes="(min-width: 768px) 45vw, 100vw"
@@ -369,7 +369,7 @@ export default function AdoptionGuidePage() {
                                     Le chiot quitte tout son univers en quelques minutes. Plus l&apos;ambiance est calme, plus la transition est facile. On évite donc l&apos;excitation, les manipulations répétées et les départs précipités.
                                 </p>
                                 <p className="text-muted-foreground">
-                                    Avec un Mameshiba, le trop-plein émotionnel se voit vite : fatigue, inhibition, agitation ou difficultés à s&apos;apaiser. Préparer votre sac avant d&apos;arriver et garder un rythme sobre aide vraiment.
+                                    Avec un Spitz nain Poméranien, le trop-plein émotionnel se voit vite : fatigue, inhibition, agitation ou difficultés à s&apos;apaiser. Préparer votre sac avant d&apos;arriver et garder un rythme sobre aide vraiment.
                                 </p>
                             </div>
                             <Card className="bg-muted/30">
@@ -398,7 +398,7 @@ export default function AdoptionGuidePage() {
                             </Badge>
                             <h2 className="text-xl font-bold md:text-2xl">Voiture, train ou avion : on adapte le matériel au trajet, pas l&apos;inverse</h2>
                             <p className="text-muted-foreground">
-                                Le meilleur trajet est celui qui reste simple, sécurisé et prévisible. Un chiot Mameshiba n&apos;a pas besoin de stimulation, il a besoin de stabilité, de température confortable et d&apos;un adulte disponible.
+                                Le meilleur trajet est celui qui reste simple, sécurisé et prévisible. Un chiot Spitz nain Poméranien n&apos;a pas besoin de stimulation, il a besoin de stabilité, de température confortable et d&apos;un adulte disponible.
                             </p>
                         </div>
                         <div className="grid gap-6 md:grid-cols-3">
@@ -573,7 +573,7 @@ export default function AdoptionGuidePage() {
                                 <div className="relative min-h-140 overflow-hidden rounded-3xl">
                                     <Image
                                         src="/pages/adoption/kaito-7-mois-en-voiture.jpg"
-                                        alt="Jeune mameshiba dans un moment calme avec sa future famille en perspective"
+                                        alt="Jeune spitz-pomeranien dans un moment calme avec sa future famille en perspective"
                                         fill
                                         className="object-cover"
                                         sizes="(min-width: 768px) 40vw, 100vw"
@@ -625,14 +625,14 @@ export default function AdoptionGuidePage() {
                                     href="/spitz-nain-pomeranien"
                                     className="inline-flex items-center rounded-md border border-white/40 px-4 py-2 font-semibold transition hover:bg-white/10"
                                 >
-                                    Revoir les bases sur le Mameshiba
+                                    Revoir les bases sur le Spitz nain Poméranien
                                 </Link>
                             </div>
                         </div>
                     </section>
 
                     <FAQSection
-                        title="FAQ adoption du chiot Mameshiba"
+                        title="FAQ adoption du chiot Spitz nain Poméranien"
                         description="Les repères essentiels pour préparer le départ, les premiers jours à la maison et les bases d'un démarrage serein."
                         items={adoptionGuideFaq}
                     />

@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils"
 
 const navigation = [
     { name: "Accueil", href: "/" },
-    { name: "Le Mameshiba", href: "/spitz-nain-pomeranien" },
-    { name: "Prix du Mameshiba", href: "/spitz-nain-pomeranien/prix" },
+    { name: "Le Spitz nain Poméranien", href: "/spitz-nain-pomeranien" },
+    { name: "Prix du Spitz nain Poméranien", href: "/spitz-nain-pomeranien/prix" },
     { name: "L'elevage", href: "/presentation-elevage" },
     { name: "Les éleveuses", href: "/presentation-eleveuses" },
     { name: "Nos chiens", href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs" },

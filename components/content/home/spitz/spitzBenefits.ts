@@ -1,6 +1,6 @@
 import mameSize from "@/public/pages/homePage/spitz-nain-noir-reflet-bleu-et-blanc-tres-petit.webp";
 import nihonMame from "@/public/pages/homePage/spitz-nain-noir-reflet-bleu-et-blanc-tres-petit.webp";
-import shibaPolyvalent from "@/public/pages/homePage/spitz-nain-noir-reflet-bleu-et-blanc-tres-petit.webp";
+import spitzPolyvalent from "@/public/pages/homePage/spitz-nain-noir-reflet-bleu-et-blanc-tres-petit.webp";
 import { StaticImageData } from "next/image";
 
 type BenefitCard = {
@@ -12,7 +12,7 @@ type BenefitCard = {
     cta: string;
 };
 
-export const shibaBenefits: BenefitCard[] = [
+export const spitzBenefits: BenefitCard[] = [
     {
         title: "Santé et bien-être dès la naissance",
         text: "Examens génétiques ciblés, suivi vétérinaire pendant la gestation et la lactation, alimentation premium et sélection rigoureuse des reproducteurs nous permettent d'accompagner des chiots robustes dès leurs premiers jours.",
@@ -32,7 +32,7 @@ export const shibaBenefits: BenefitCard[] = [
     {
         title: "Socialisation précoce et douceur",
         text: "Jeux, stimulations, manipulations et découvertes progressives préparent des chiots bien dans leurs pattes, proches de l'humain et faciles à intégrer dans leur nouvelle famille.",
-        image: shibaPolyvalent,
+        image: spitzPolyvalent,
         alt: "Petit chien après une baignade, regard vif",
         href: "/presentation-elevage",
         cta: "Voir notre méthode d'élevage"

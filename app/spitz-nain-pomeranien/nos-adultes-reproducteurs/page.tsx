@@ -12,13 +12,13 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { dogs } from "./dogs"
 
-const pageImage = "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp"
+const pageImage = "/pages/reproducteurs/YUMI-femelle-spitz-pomeranien-couleur-feu.webp"
 
 const reproductorsInternalLinks: InternalLinkItem[] = [
     {
         href: "/spitz-nain-pomeranien",
         title: "Mieux comprendre la race",
-        description: "Relier nos chiens adultes au standard, à l’histoire et au tempérament du Mameshiba.",
+        description: "Relier nos chiens adultes au standard, à l’histoire et au tempérament du Spitz nain Poméranien.",
     },
     {
         href: "/bien-etre-animal",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Ichiro mameshiba de l elevage Spitz nain Poméranien",
+                alt: "Ichiro spitz-pomeranien de l elevage Spitz nain Poméranien",
                 width: 1200,
                 height: 630,
                 type: "image/webp",
@@ -87,13 +87,13 @@ export default function NosChiensPage() {
             <div className="py-16">
                 <div className="container mx-auto my-12">
                     <section className="text-center space-y-4 mb-12">
-                        <h1 className="text-xl md:text-3xl font-bold">Nos adultes reproducteurs Mameshiba</h1>
-                        <h2 className="text-xl md:text-2xl">Lignées japonaises, caractères et sélection de l&apos;élevage</h2>
+                        <h1 className="text-xl md:text-3xl font-bold">Nos adultes reproducteurs Spitz nain Poméranien</h1>
+                        <h2 className="text-xl md:text-2xl">Lignées, caractères et sélection de l&apos;élevage</h2>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.
+                            Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées.
                         </p>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Chaque mariage est soigneusement réfléchi afin de préserver l&apos;équilibre émotionnel, la morphologie, la douceur de caractère et l&apos;identité du véritable Mameshiba.
+                            Chaque mariage est soigneusement réfléchi afin de préserver l&apos;équilibre émotionnel, la morphologie, la douceur de caractère et l&apos;identité du véritable Spitz nain Poméranien.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
@@ -170,7 +170,7 @@ export default function NosChiensPage() {
 
                     <FAQSection
                         title="FAQ sélection et lignées"
-                        description="Santé, équilibre émotionnel, vie de meute et importance des lignées dans notre sélection Mameshiba."
+                        description="Santé, équilibre émotionnel, vie de meute et importance des lignées dans notre sélection Spitz nain Poméranien."
                         items={faqReproducteurs}
                     />
                     <div className="text-right text-xs text-muted-foreground mt-6">

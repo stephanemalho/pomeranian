@@ -18,9 +18,9 @@ export type AdultDog = {
 export const dogs: AdultDog[] = [
     {
         name: "Ichiro",
-        title: "Shota Go dit ICHIRO - Mâle Mameshiba",
+        title: "Shota Go dit ICHIRO - Mâle Spitz nain Poméranien",
         color: "Rouge / Red",
-        origin: "Importé du Japon",
+        origin: "Issu de notre sélection",
         lineage:
             "Lignée de champion, petit-fils et fils de KC-Champion Kairyuu Go Prosperity Dogs",
         size: "30 cm au garrot • 6,1 kg",
@@ -28,78 +28,78 @@ export const dogs: AdultDog[] = [
             "Avenant, doux, sensible, câlin, curieux, loyal et extrêmement intelligent. Ichiro est un chien de grande prestance, élégant, avec un regard profond et une vraie présence dans la meute.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
-                src: "/pages/reproducteurs/ichiro-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait d'Ichiro, mâle Mameshiba de l'élevage Spitz nain Poméranien"
+                src: "/pages/reproducteurs/ichiro-spitz-pomeranien-spitz-pomeranien-portrait.webp",
+                alt: "Portrait d'Ichiro, mâle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
             },
             {
-                src: "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp",
-                alt: "Ichiro, mâle Mameshiba de l'élevage Spitz nain Poméranien"
+                src: "/pages/reproducteurs/ISHIRO-spitz-pomeranien-spitz-pomeranien.webp",
+                alt: "Ichiro, mâle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
             }
         ]
     },
     {
         name: "Yuzu",
-        title: "YUZU - Femelle Mameshiba",
+        title: "YUZU - Femelle Spitz nain Poméranien",
         color: "Rouge / Red",
-        origin: "Importée du Japon",
-        lineage: "Excellente lignée japonaise",
+        origin: "Issue de notre sélection",
+        lineage: "Excellente lignée sélectionnée",
         size: "29,5 cm au garrot • 4,8 kg",
         temperament:
             "Curieuse, intelligente, malicieuse, joyeuse, active et pleine de vie. Yuzu est sélective dans ses affinités, mais lorsqu’on gagne son respect et son cœur, elle devient absolument adorable et très proche de l’humain.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
-                src: "/pages/reproducteurs/yuzu-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Yuzu, femelle Mameshiba de l'élevage Spitz nain Poméranien"
+                src: "/pages/reproducteurs/yuzu-spitz-pomeranien-spitz-pomeranien-portrait.webp",
+                alt: "Portrait de Yuzu, femelle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
             }
         ]
     },
     {
         name: "Sakura",
-        title: "SAKURA - Femelle Mameshiba",
+        title: "SAKURA - Femelle Spitz nain Poméranien",
         color: "Crème",
-        origin: "Importée du Japon",
-        lineage: "Excellente lignée japonaise",
+        origin: "Issue de notre sélection",
+        lineage: "Excellente lignée sélectionnée",
         size: "28,5 cm au garrot • 4,7 kg",
         temperament:
             "Douce, élégante, sage, intelligente et loyale. Sakura est une femelle très observatrice, sociable et avenante, qui aime les câlins et l’attention. C’est une excellente maman et une véritable force tranquille.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
-                src: "/pages/reproducteurs/sakura-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Sakura, femelle Mameshiba crème de l'élevage Spitz nain Poméranien"
+                src: "/pages/reproducteurs/sakura-spitz-pomeranien-spitz-pomeranien-portrait.webp",
+                alt: "Portrait de Sakura, femelle Spitz nain Poméranien crème de l'élevage Spitz nain Poméranien"
             },
             {
-                src: "/pages/reproducteurs/SAKURA-white-mame-shiba-from-japan.webp",
-                alt: "Sakura, femelle Mameshiba crème importée du Japon"
+                src: "/pages/reproducteurs/SAKURA-white-spitz-pomeranien-from-japan.webp",
+                alt: "Sakura, femelle Spitz nain Poméranien crème issue de notre sélection"
             }
         ]
     },
     {
         name: "Kawaii",
-        title: "KAWAII - Femelle Mameshiba",
+        title: "KAWAII - Femelle Spitz nain Poméranien",
         color: "Red",
-        origin: "Née en Europe, parents importés du Japon",
-        lineage: "Excellente lignée 100% japonaise",
+        origin: "Née en Europe, parents issus de lignées sélectionnées",
+        lineage: "Excellente lignée sélectionnée",
         size: "25 cm au garrot • 3,8 kg",
         temperament:
             "Posée, calme, zen et réfléchie. Kawaii réclame juste ce qu’il faut de contact, communique beaucoup par le regard et sait parfaitement trouver sa place au sein de la meute. Discrète, bien codée et très adaptable, elle possède aussi un excellent rappel.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
@@ -112,143 +112,143 @@ export const dogs: AdultDog[] = [
                 alt: "Kawaii dans un champ de fleurs jaunes"
             },
             {
-                src: "/pages/reproducteurs/KAWAII-femelle-mame-shiba-couleur-feu.webp",
-                alt: "Kawaii, femelle Mameshiba couleur feu"
+                src: "/pages/reproducteurs/KAWAII-femelle-spitz-pomeranien-couleur-feu.webp",
+                alt: "Kawaii, femelle Spitz nain Poméranien couleur feu"
             }
         ]
     },
     {
         name: "Hina",
-        title: "HINA - Femelle Mameshiba",
+        title: "HINA - Femelle Spitz nain Poméranien",
         color: "Non précisé",
-        origin: "Née chez Kawaii Mameshiba",
+        origin: "Née chez Spitz nain Poméranien nain Poméranien",
         size: "28 cm au garrot • 4,5 kg",
         temperament:
             "Femelle née à l’élevage, Hina représente notre sélection maison avec un petit format certifié et confirmé au Kennel Club of Japan.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
                 src: "/pages/reproducteurs/Hina.webp",
-                alt: "Hina, femelle Mameshiba née chez Kawaii Mameshiba"
+                alt: "Hina, femelle Spitz nain Poméranien née chez Spitz nain Poméranien nain Poméranien"
             }
         ]
     },
     {
         name: "Karasuki",
-        title: "KARASUKI - Femelle Mameshiba",
+        title: "KARASUKI - Femelle Spitz nain Poméranien",
         color: "Non précisé",
         origin: "Née chez Spitz nain Poméranien",
         size: "27 cm au garrot • 4 kg",
         temperament:
-            "Karasuki est une femelle Mameshiba née chez Spitz nain Poméranien, au petit gabarit, certifiée et confirmée au Kennel Club of Japan.",
+            "Karasuki est une femelle Spitz nain Poméranien née chez Spitz nain Poméranien, au petit gabarit, certifiée et confirmée au Kennel Club of Japan.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
                 src: "/pages/reproducteurs/Karasuki.webp",
-                alt: "Karasuki, femelle Mameshiba née chez Spitz nain Poméranien"
+                alt: "Karasuki, femelle Spitz nain Poméranien née chez Spitz nain Poméranien"
             }
         ]
     },
     {
         name: "Kimi",
-        title: "KIMI - Femelle Mameshiba",
+        title: "KIMI - Femelle Spitz nain Poméranien",
         color: "Non précisé",
-        origin: "Née chez Kawaii Mameshiba",
+        origin: "Née chez Spitz nain Poméranien nain Poméranien",
         size: "25 cm au garrot • 3,5 kg",
         temperament:
-            "Kimi est une petite femelle Mameshiba née chez Kawaii Mameshiba, certifiée et confirmée, dans un format très compact fidèle à la sélection de l’élevage.",
+            "Kimi est une petite femelle Spitz nain Poméranien née chez Spitz nain Poméranien nain Poméranien, certifiée et confirmée, dans un format très compact fidèle à la sélection de l’élevage.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
                 src: "/pages/reproducteurs/Kimi.webp",
-                alt: "Kimi, femelle Mameshiba née chez Kawaii Mameshiba"
+                alt: "Kimi, femelle Spitz nain Poméranien née chez Spitz nain Poméranien nain Poméranien"
             }
         ]
     },
     {
         name: "Natsuko",
-        title: "NATSUKO dit NATSU - Mâle Mameshiba",
+        title: "NATSUKO dit NATSU - Mâle Spitz nain Poméranien",
         color: "Noire et feu",
-        origin: "Né en Europe, parents importés du Japon",
-        lineage: "Excellente lignée 100% japonaise, lignée CH KCJ Kairyuu Go",
+        origin: "Né en Europe, parents issus de lignées sélectionnées",
+        lineage: "Excellente lignée sélectionnée",
         size: "29 cm au garrot • 5,6 kg",
         temperament:
             "Très câlin, sociable, extraverti, joyeux et intéressé par l’humain. Natsu aime les balades et se montre à l’aise dans des environnements variés. C’est un petit ourson zen, stable et sans impulsivité.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
-                src: "/pages/reproducteurs/natsuko-dit-natsu-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Natsuko dit Natsu, mâle Mameshiba noir et feu"
+                src: "/pages/reproducteurs/natsuko-dit-natsu-spitz-pomeranien-spitz-pomeranien-portrait.webp",
+                alt: "Portrait de Natsuko dit Natsu, mâle Spitz nain Poméranien noir et feu"
             },
             {
-                src: "/pages/reproducteurs/NATSUKO-male-mame-shiba-noir-et-feu.webp",
-                alt: "Natsuko dit Natsu, mâle Mameshiba noir et feu"
+                src: "/pages/reproducteurs/NATSUKO-male-spitz-pomeranien-noir-et-feu.webp",
+                alt: "Natsuko dit Natsu, mâle Spitz nain Poméranien noir et feu"
             }
         ]
     },
     {
         name: "Yumi",
-        title: "YUMI - Femelle Mameshiba",
+        title: "YUMI - Femelle Spitz nain Poméranien",
         color: "Red",
         origin: "Née à l’élevage",
-        lineage: "Excellente lignée 100% japonaise",
+        lineage: "Excellente lignée sélectionnée",
         size: "28 cm au garrot • 5,5 kg",
         temperament:
             "Fille d’Ichiro et Sakura, Yumi possède le physique de sa mère dans une jolie couleur fauve. Très sociable, à l’écoute, facile à éduquer et interactive, elle s’intègre facilement à la meute et reflète très bien notre sélection.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
-                src: "/pages/reproducteurs/yumi-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Yumi, femelle Mameshiba de l'élevage Spitz nain Poméranien"
+                src: "/pages/reproducteurs/yumi-spitz-pomeranien-spitz-pomeranien-portrait.webp",
+                alt: "Portrait de Yumi, femelle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
             },
             {
-                src: "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp",
-                alt: "Yumi, femelle Mameshiba couleur feu"
+                src: "/pages/reproducteurs/YUMI-femelle-spitz-pomeranien-couleur-feu.webp",
+                alt: "Yumi, femelle Spitz nain Poméranien couleur feu"
             }
         ]
     },
     {
         name: "Waru",
-        title: "HAIYU WARU - Mâle Mameshiba",
+        title: "HAIYU WARU - Mâle Spitz nain Poméranien",
         color: "Red",
-        origin: "Origine Japon",
-        lineage: "Excellente lignée 100% japonaise",
+        origin: "Origine sélectionnée",
+        lineage: "Excellente lignée sélectionnée",
         size: "27 cm au garrot • 4,5 kg",
         temperament:
-            "Waru a marqué l’histoire du Mameshiba au Japon avant d’arriver chez nous. Solitaire, observateur, sensible et doux, il préfère souvent profiter de sa tranquillité en retrait du groupe.",
+            "Waru a marqué l’histoire du Spitz nain Poméranien avant d’arriver chez nous. Solitaire, observateur, sensible et doux, il préfère souvent profiter de sa tranquillité en retrait du groupe.",
         health: [
             "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
+            "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
         images: [
             {
-                src: "/pages/reproducteurs/waru-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Waru, mâle Mameshiba de l'élevage Spitz nain Poméranien"
+                src: "/pages/reproducteurs/waru-spitz-pomeranien-spitz-pomeranien-portrait.webp",
+                alt: "Portrait de Waru, mâle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
             },
             {
-                src: "/pages/reproducteurs/WARU-male-mame-shiba-couleur-feu.webp",
-                alt: "Waru, mâle Mameshiba couleur feu"
+                src: "/pages/reproducteurs/WARU-male-spitz-pomeranien-couleur-feu.webp",
+                alt: "Waru, mâle Spitz nain Poméranien couleur feu"
             }
         ]
     }

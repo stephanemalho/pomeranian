@@ -19,7 +19,7 @@ export function Navigation() {
                     <div className="h-10 w-10 relative">
                         <Image
                             src="/logo-cercle-polaire.png"
-                            alt="logo Spitz nain Poméranien - Elevage de shiba"
+                            alt="logo Spitz nain Poméranien - Elevage de spitz"
                             fill
                             sizes="40px"
                             className="object-contain"

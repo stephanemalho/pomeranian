@@ -257,9 +257,9 @@ export function generatePuppyListSchema(
     return {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        name: "Chiots Mameshiba disponibles",
+        name: "Chiots Spitz nain Poméranien disponibles",
         description:
-            "Liste des chiots Mameshiba de l'élevage Spitz nain Poméranien disponibles à l'adoption.",
+            "Liste des chiots Spitz nain Poméranien de l'élevage Spitz nain Poméranien disponibles à l'adoption.",
         numberOfItems: puppies.length,
         itemListElement: puppies.map((puppy, index) => ({
             "@type": "ListItem",

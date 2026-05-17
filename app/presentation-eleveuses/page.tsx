@@ -9,7 +9,7 @@ import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-genera
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { faqEleveuses } from "@/lib/faq-data"
 
-const pageImage = "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
+const pageImage = "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-spitz-pomeranien-de-elevage-kawaii.jpeg"
 
 const eleveusesInternalLinks: InternalLinkItem[] = [
     {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Aurélie avec un chiot mameshiba",
+                alt: "Aurélie avec un chiot spitz-pomeranien",
                 width: 1200,
                 height: 630,
                 type: "image/jpeg",
@@ -72,13 +72,13 @@ export default function PresentationEleveusesPage() {
             className: "col-span-6 md:col-span-3 row-span-6 md:row-span-6",
         },
         {
-            src: "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg",
-            alt: "Aurélie avec un chiot mameshiba",
+            src: "/assets/authors/aurelie-elevage-spitz-pomeranien-et-chiot.jpeg",
+            alt: "Aurélie avec un chiot spitz-pomeranien",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
-            src: "/pages/les-eleveuses/aurelie-avec-ses-collegues-et-les-mame-shiba.jpeg",
-            alt: "Aurélie ses collègues de l’élevage et les Mameshiba",
+            src: "/pages/les-eleveuses/aurelie-avec-ses-collegues-et-les-spitz-pomeranien.jpeg",
+            alt: "Aurélie ses collègues de l’élevage et les Spitz nain Poméranien",
             className: "col-span-3 md:col-span-3 row-span-3",
         }
     ]
@@ -90,13 +90,13 @@ export default function PresentationEleveusesPage() {
             className: "col-span-6 md:col-span-3 row-span-6 md:row-span-6",
         },
         {
-            src: "/pages/les-eleveuses/marine-et-les-shiba.jpg",
-            alt: "Les Mameshiba de Marine dans un restaurant",
+            src: "/pages/les-eleveuses/marine-et-les-spitz.jpg",
+            alt: "Les Spitz nain Poméranien de Marine dans un restaurant",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/pages/les-eleveuses/marine-a-paris.jpg",
-            alt: "Marine avec un Mameshiba à Paris",
+            alt: "Marine avec un Spitz nain Poméranien à Paris",
             className: "col-span-3 md:col-span-3 row-span-3",
         }
     ]
@@ -117,7 +117,7 @@ export default function PresentationEleveusesPage() {
                     <section className="text-center space-y-6 mb-16">
                         <h1 className="text-xl md:text-3xl font-bold">Les éleveuses de Spitz nain Poméranien</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                            Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.
+                            Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Spitz nain Poméranien, avec exigence, sensibilité et transparence.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
@@ -170,7 +170,7 @@ export default function PresentationEleveusesPage() {
                                             cohérence entre les deux.
                                         </p>
                                         <p>
-                                            Le Mameshiba est un chien sensible, intelligent, très expressif et parfois plus subtil
+                                            Le Spitz nain Poméranien est un chien sensible, intelligent, très expressif et parfois plus subtil
                                             qu’il n’y paraît. Il ne supporte pas bien la brutalité ni l’incohérence. Cette race me
                                             touche justement pour cela : elle oblige à être juste, calme, présente et lucide.
                                         </p>
@@ -183,7 +183,7 @@ export default function PresentationEleveusesPage() {
                                         <p>
                                             Ma fascination pour les chiens au tempérament fort et noble remonte à l’enfance. Avec le
                                             temps, cette attirance s’est affinée vers les chiens primitifs et, plus tard, vers la
-                                            culture japonaise. Le Mameshiba a représenté une évidence : toute la dignité du Shiba Inu,
+                                            culture canine. Le Spitz nain Poméranien a représenté une évidence : toute la dignité du Spitz nain Poméranien,
                                             dans un petit format, avec une présence incroyable.
                                         </p>
                                         <p>
@@ -239,7 +239,7 @@ export default function PresentationEleveusesPage() {
                                             récupération des mères et le bon développement des chiots.
                                         </p>
                                         <p>
-                                            Le Mameshiba demande un environnement lisible, propre et cohérent. C’est une race qui
+                                            Le Spitz nain Poméranien demande un environnement lisible, propre et cohérent. C’est une race qui
                                             peut être très sensible à l’ambiance et aux variations autour d’elle. J’aime justement
                                             apporter ce cadre calme, régulier et rassurant.
                                         </p>
@@ -268,14 +268,14 @@ export default function PresentationEleveusesPage() {
 
                     <FAQSection
                         title="FAQ sur notre vision et notre parcours"
-                        description="Quelques réponses aux questions fréquentes sur notre approche du Mameshiba et de l’élevage."
+                        description="Quelques réponses aux questions fréquentes sur notre approche du Spitz nain Poméranien et de l’élevage."
                         items={faqEleveuses}
                     />
 
                     <section className="text-center space-y-6">
                         <h2 className="text-xl md:text-2xl font-bold">Envie d’échanger avec nous ?</h2>
                         <p className="text-muted-foreground max-w-2xl mx-auto">
-                            Parlons de votre projet et voyons ensemble si le Mameshiba correspond vraiment à votre mode de vie.
+                            Parlons de votre projet et voyons ensemble si le Spitz nain Poméranien correspond vraiment à votre mode de vie.
                         </p>
                         <div className="flex flex-col mt-10 sm:flex-row gap-8 justify-center h-10 items-center">
                             <Link

@@ -13,13 +13,13 @@ import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { Badge } from "@/components/ui/badge"
 
-const pageImage = "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
+const pageImage = "/pages/spitz-pomeranien-prix/trois-spitz-pomeranien-bebe.jpg"
 
 const puppiesInternalLinks: InternalLinkItem[] = [
     {
         href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         title: "Voir les parents et reproducteurs",
-        description: "Relier les futures portées aux adultes qui composent notre sélection Mameshiba.",
+        description: "Relier les futures portées aux adultes qui composent notre sélection Spitz nain Poméranien.",
     },
     {
         href: "/spitz-nain-pomeranien/prix",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Chiot mameshiba blanc dans un decor japonais",
+                alt: "Chiot Spitz nain Poméranien blanc dans un decor doux",
                 width: 1200,
                 height: 630,
                 type: "image/jpeg",
@@ -92,7 +92,7 @@ export default function NosChiotsPage() {
                     <section className="text-center space-y-4 mb-12">
                         <h1 className="text-xl md:text-3xl font-bold">Nos chiots actuellement disponibles</h1>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Les portées de Mameshiba comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.
+                            Les portées de Spitz nain Poméranien comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.
                         </p>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                             Une nouvelle portée arrive très bientôt et les réservations sont déjà ouvertes. En attendant l'arrivée des chiots, nous recevons les demandes des familles souhaitant être accompagnées sérieusement dans leur projet d'adoption.
@@ -175,7 +175,7 @@ export default function NosChiotsPage() {
                                         <NotebookText className="h-6 w-6 text-primary" aria-hidden="true" />
                                         <div>
                                             <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                Inscrivez vous pour la prochaine portée de chiots Mameshiba
+                                                Inscrivez vous pour la prochaine portée de chiots Spitz nain Poméranien
                                             </h2>
                                             <p className="text-muted-foreground">
                                                 Parlez nous de votre projet d’adoption et rejoignez la liste d’attente pour être recontacté dès l’annonce de la prochaine portée.
@@ -225,7 +225,7 @@ export default function NosChiotsPage() {
                                             <Heart className="h-6 w-6 text-primary" aria-hidden="true" />
                                             <div>
                                                 <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                    Tarif d’un chiot Mameshiba
+                                                    Tarif d’un chiot Spitz nain Poméranien
                                                 </h2>
                                                 <p className="text-muted-foreground mt-2">
                                                     Le tarif reflète la rareté de la race, la qualité des lignées et le niveau d’exigence
@@ -235,7 +235,7 @@ export default function NosChiotsPage() {
                                         </div>
 
                                         <p className="text-muted-foreground">
-                                            Le prix de nos chiots Mameshiba est actuellement de <strong className="text-foreground">4 500 € pour un mâle</strong> et de <strong className="text-foreground">5 000 € pour une femelle</strong>.
+                                            Le prix de nos chiots Spitz nain Poméranien est actuellement de <strong className="text-foreground">4 500 € pour un mâle</strong> et de <strong className="text-foreground">5 000 € pour une femelle</strong>.
                                         </p>
                                         <p className="text-muted-foreground">
                                             Nos chiots sont issus de lignées soigneusement sélectionnées, socialisés avec sérieux et élevés
@@ -265,7 +265,7 @@ export default function NosChiotsPage() {
                                                     Contactez nous
                                                 </h2>
                                                 <p className="text-muted-foreground mt-2">
-                                                    Si vous avez des questions au sujet de nos chiots ou de la prochaine portée, ou vous réflechissez à adopter un Mameshiba, nous prenons le temps d'échanger avec vous
+                                                    Si vous avez des questions au sujet de nos chiots ou de la prochaine portée, ou vous réflechissez à adopter un Spitz nain Poméranien, nous prenons le temps d'échanger avec vous
                                                     avant toute réservation.
                                                 </p>
                                             </div>
@@ -274,7 +274,7 @@ export default function NosChiotsPage() {
                                         <p className="text-muted-foreground">
                                             Nous sélectionnons avec soin les futures familles adoptantes. Une présentation de votre
                                             projet et un entretien téléphonique sont donc à prévoir afin d’évaluer ensemble si le
-                                            Mameshiba correspond bien à votre mode de vie.
+                                            Spitz nain Poméranien correspond bien à votre mode de vie.
                                         </p>
 
                                         <div className="space-y-3 text-sm">
@@ -284,7 +284,7 @@ export default function NosChiotsPage() {
                                             </div>
                                             <div className="flex items-center gap-2 text-muted-foreground">
                                                 <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
-                                                <span>elevagemameshiba@gmail.com</span>
+                                                <span>contact@spitz-nain-pomeranien.fr</span>
                                             </div>
                                         </div>
 
@@ -316,7 +316,7 @@ export default function NosChiotsPage() {
                         </div>
                         <p className="text-muted-foreground">
                             Chaque future portée est pensée avec sérieux, dans le respect du rythme de nos chiens reproducteurs
-                            et de la singularité du Mameshiba.
+                            et de la singularité du Spitz nain Poméranien.
                         </p>
                         <div className="grid gap-3">
                             {[
@@ -345,8 +345,8 @@ export default function NosChiotsPage() {
                         <figure className="space-y-3">
                             <div className="relative h-64 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/image-all-shiba/mameshiba-jardin-course-01.webp"
-                                    alt="Mameshiba en mouvement dans le jardin de l'élevage"
+                                    src="/pages/image-all-spitz/spitz-pomeranien-jardin-course-01.webp"
+                                    alt="Spitz nain Poméranien en mouvement dans le jardin de l'élevage"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 768px) 33vw, 100vw"
@@ -362,8 +362,8 @@ export default function NosChiotsPage() {
                         <figure className="space-y-3">
                             <div className="relative h-64 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/image-all-shiba/mameshiba-jardin-ensemble-01.webp"
-                                    alt="Mameshiba évoluant dans l'environnement extérieur de l'élevage"
+                                    src="/pages/image-all-spitz/spitz-pomeranien-jardin-ensemble-01.webp"
+                                    alt="Spitz nain Poméranien évoluant dans l'environnement extérieur de l'élevage"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 768px) 33vw, 100vw"
@@ -379,8 +379,8 @@ export default function NosChiotsPage() {
                         <figure className="space-y-3">
                             <div className="relative h-64 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/image-all-shiba/mameshiba-exterieur-profil-01.webp"
-                                    alt="Portrait de Mameshiba en extérieur dans un moment calme"
+                                    src="/pages/image-all-spitz/spitz-pomeranien-exterieur-profil-01.webp"
+                                    alt="Portrait de Spitz nain Poméranien en extérieur dans un moment calme"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 768px) 33vw, 100vw"
@@ -402,7 +402,7 @@ export default function NosChiotsPage() {
                     />
 
                     <FAQSection
-                        title="FAQ adoption et vie avec un Mameshiba"
+                        title="FAQ adoption et vie avec un Spitz nain Poméranien"
                         description="Préparation des chiots, réservations, accompagnement et départ en famille : les réponses essentielles."
                         items={faqNosChiots}
                     />

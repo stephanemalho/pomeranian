@@ -9,20 +9,20 @@ import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig, 
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { Banknote, Heart, NotebookText, PawPrint, ShieldCheck, Sprout } from "lucide-react"
 
-const mameshibaPriceOgJpg = "/pages/image-all-shiba/mameshiba-exterieur-profil-01.webp"
+const spitzPomeranienPriceOgJpg = "/pages/image-all-spitz/spitz-pomeranien-exterieur-profil-01.webp"
 
 export const metadata: Metadata = {
-    title: pageMetadata.mameshibaPrice.title,
-    description: pageMetadata.mameshibaPrice.description,
-    keywords: pageMetadata.mameshibaPrice.keywords,
+    title: pageMetadata.spitzPomeranienPrice.title,
+    description: pageMetadata.spitzPomeranienPrice.description,
+    keywords: pageMetadata.spitzPomeranienPrice.keywords,
     openGraph: buildOpenGraph({
-        title: pageMetadata.mameshibaPrice.title,
-        description: pageMetadata.mameshibaPrice.description,
-        url: `${siteConfig.siteUrl}${siteConfig.pages.mameshibaPrice}`,
+        title: pageMetadata.spitzPomeranienPrice.title,
+        description: pageMetadata.spitzPomeranienPrice.description,
+        url: `${siteConfig.siteUrl}${siteConfig.pages.spitzPomeranienPrice}`,
         images: [
             {
-                url: `${siteConfig.siteUrl}${mameshibaPriceOgJpg}`,
-                alt: "Chiot Mameshiba de l elevage Spitz nain Poméranien",
+                url: `${siteConfig.siteUrl}${spitzPomeranienPriceOgJpg}`,
+                alt: "Chiot Spitz nain Poméranien de l elevage Spitz nain Poméranien",
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
                 type: "image/jpeg",
@@ -30,31 +30,31 @@ export const metadata: Metadata = {
         ],
     }),
     twitter: buildTwitter({
-        title: pageMetadata.mameshibaPrice.title,
-        description: pageMetadata.mameshibaPrice.description,
-        imageUrl: `${siteConfig.siteUrl}${mameshibaPriceOgJpg}`,
+        title: pageMetadata.spitzPomeranienPrice.title,
+        description: pageMetadata.spitzPomeranienPrice.description,
+        imageUrl: `${siteConfig.siteUrl}${spitzPomeranienPriceOgJpg}`,
     }),
     alternates: {
-        canonical: `${siteConfig.siteUrl}${siteConfig.pages.mameshibaPrice}`,
+        canonical: `${siteConfig.siteUrl}${siteConfig.pages.spitzPomeranienPrice}`,
     },
 }
 
 const quickPrices = [
-    { label: "Mâle Mameshiba", price: "4 500 €" },
-    { label: "Femelle Mameshiba", price: "5 000 €" },
+    { label: "Mâle Spitz nain Poméranien", price: "4 500 €" },
+    { label: "Femelle Spitz nain Poméranien", price: "5 000 €" },
     { label: "Réservations", price: "sur demande" },
 ]
 
 const priceCategories = [
     {
-        category: "Mâle Mameshiba",
+        category: "Mâle Spitz nain Poméranien",
         profile: "chiot de compagnie issu de notre sélection, suivi avec sérieux et élevé pour une vie de famille équilibrée",
         lineage: "sélection Spitz nain Poméranien",
         price: "4 500 €",
         availability: "Selon les portées",
     },
     {
-        category: "Femelle Mameshiba",
+        category: "Femelle Spitz nain Poméranien",
         profile: "chiot de compagnie issu de notre sélection, avec le même niveau d’exigence sur le type, le caractère et le suivi",
         lineage: "sélection Spitz nain Poméranien",
         price: "5 000 €",
@@ -68,14 +68,14 @@ const priceCategories = [
         availability: "Oui",
     },
     {
-        category: "Mameshiba retraité d’élevage",
+        category: "Spitz nain Poméranien retraité d’élevage",
         profile: "chien adulte retraité de l’élevage, si moins de 3 ans et n’ayant pas eu de chiot",
         lineage: "accompagnement personnalisé",
         price: "2 000 €",
         availability: "Selon profil",
     },
     {
-        category: "Mameshiba retraité d’élevage",
+        category: "Spitz nain Poméranien retraité d’élevage",
         profile: "chien adulte retraité de l’élevage de plus de 3 ans",
         lineage: "tarif ajusté selon l’âge",
         price: "~ 1 000 €",
@@ -86,7 +86,7 @@ const priceCategories = [
 const priceFactors = [
     {
         title: "1. Une sélection exigeante des lignées",
-        text: "Nos tarifs reflètent d’abord le travail de sélection réalisé autour de nos reproducteurs. Nous cherchons un Mameshiba cohérent, bien construit, équilibré et fidèle au type que nous souhaitons préserver à l’élevage.",
+        text: "Nos tarifs reflètent d’abord le travail de sélection réalisé autour de nos reproducteurs. Nous cherchons un Spitz nain Poméranien cohérent, bien construit, équilibré et fidèle au type que nous souhaitons préserver à l’élevage.",
     },
     {
         title: "2. Des portées rares et suivies de près",
@@ -98,7 +98,7 @@ const priceFactors = [
     },
     {
         title: "4. Une socialisation sérieuse",
-        text: "Le Mameshiba est un petit chien fin, sensible et intelligent. Nous attachons beaucoup d’importance à la qualité des premières semaines, à la stabilité émotionnelle et aux manipulations adaptées avant le départ.",
+        text: "Le Spitz nain Poméranien est un petit chien fin, sensible et intelligent. Nous attachons beaucoup d’importance à la qualité des premières semaines, à la stabilité émotionnelle et aux manipulations adaptées avant le départ.",
     },
     {
         title: "5. Un accompagnement d’élevage, pas une simple vente",
@@ -121,7 +121,7 @@ const includedItems = [
 const categoryGuides = [
     {
         title: "Le caractère compte autant que le physique",
-        text: "Chez un Mameshiba, nous regardons autant l’équilibre émotionnel, la sensibilité et la qualité de la socialisation que l’esthétique du chiot.",
+        text: "Chez un Spitz nain Poméranien, nous regardons autant l’équilibre émotionnel, la sensibilité et la qualité de la socialisation que l’esthétique du chiot.",
     },
     {
         title: "Le tarif s’apprécie dans l’ensemble du projet",
@@ -139,7 +139,7 @@ const faqSpitzNainPomeranienPrice: FAQItem[] = [
         ),
     },
     {
-        question: "Que comprend le prix d’un chiot Mameshiba ?",
+        question: "Que comprend le prix d’un chiot Spitz nain Poméranien ?",
         answer: (
             <p>
                 Le prix ne correspond pas seulement au chiot le jour de son départ. Il comprend aussi tout le travail réalisé avant : sélection des adultes, suivi de la portée, soins vétérinaires, socialisation, préparation du chiot et échanges avec sa future famille.
@@ -164,14 +164,14 @@ const faqSpitzNainPomeranienPrice: FAQItem[] = [
     },
 ]
 
-export default function MameshibaPricePage() {
-    const pageLastModValue = sitemapPages.find((page) => page.url === siteConfig.pages.mameshibaPrice)?.lastmod
+export default function SpitzPomeranienPricePage() {
+    const pageLastModValue = sitemapPages.find((page) => page.url === siteConfig.pages.spitzPomeranienPrice)?.lastmod
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
-        { name: "Prix de nos Mameshiba", url: siteConfig.pages.mameshibaPrice },
+        { name: "Prix de nos Spitz nain Poméranien", url: siteConfig.pages.spitzPomeranienPrice },
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqSpitzNainPomeranienPrice))
-    const lastMod = returnLastmod(siteConfig.pages.mameshibaPrice)
+    const lastMod = returnLastmod(siteConfig.pages.spitzPomeranienPrice)
 
     return (
         <>
@@ -189,16 +189,16 @@ export default function MameshibaPricePage() {
                     <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                         <div className="space-y-6">
                             <Badge variant="secondary" className="w-fit">
-                                Prix de nos Mameshiba
+                                Prix de nos Spitz nain Poméranien
                             </Badge>
                             <h1 className="text-2xl font-bold md:text-4xl">
-                                Prix de nos Mameshiba à l'élevage Spitz nain Poméranien
+                                Prix de nos Spitz nain Poméranien à l'élevage Spitz nain Poméranien
                             </h1>
                             <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
                                 Chez Spitz nain Poméranien, nous souhaitons afficher nos
-                                tarifs de manière simple et lisible. Le prix de nos chiots Mameshiba correspond au prix d'un chiot Mameshiba au Japon : ils sont fixés à 4 500 € pour un mâle et 5 000 € pour une femelle.
+                                tarifs de manière simple et lisible. Le prix de nos chiots Spitz nain Poméranien correspond au prix d'un chiot Spitz nain Poméranien en élevage spécialisé : ils sont fixés à 4 500 € pour un mâle et 5 000 € pour une femelle.
                             </p>
-                            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">Ce prix élevé est le reflet de la rareté absolue qu'est le Mameshiba. </p>
+                            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">Ce prix élevé est le reflet de la rareté absolue qu'est le Spitz nain Poméranien. </p>
                             <p className="max-w-3xl leading-relaxed text-muted-foreground">
                                 Cette page présente nos prix à l’élevage, ce qu’ils reflètent dans notre travail et la manière dont nous accompagnons les familles avant toute réservation.
                             </p>
@@ -220,8 +220,8 @@ export default function MameshibaPricePage() {
 
                         <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-[30rem]">
                             <Image
-                                src={mameshibaPriceOgJpg}
-                                alt="Chiot Mameshiba de Spitz nain Poméranien"
+                                src={spitzPomeranienPriceOgJpg}
+                                alt="Chiot Spitz nain Poméranien de Spitz nain Poméranien"
                                 fill
                                 priority
                                 fetchPriority="high"
@@ -236,7 +236,7 @@ export default function MameshibaPricePage() {
                         <div className="space-y-3">
                             <h2 className="text-xl font-bold md:text-2xl">Nos tarifs 2026</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Nos chiots Mameshiba sont proposés à 4 500 € pour un mâle et 5 000 € pour une femelle. Nous avons fait le choix d’un affichage clair pour que les familles puissent se projeter sereinement.
+                                Nos chiots Spitz nain Poméranien sont proposés à 4 500 € pour un mâle et 5 000 € pour une femelle. Nous avons fait le choix d’un affichage clair pour que les familles puissent se projeter sereinement.
                             </p>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
                                 Au-delà du tarif affiché, ces prix reflètent notre sélection, le temps consacré aux chiots, la qualité de vie proposée à l’élevage et l’accompagnement autour de chaque adoption.
@@ -319,8 +319,8 @@ export default function MameshibaPricePage() {
                         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
                             <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
                                 <Image
-                                    src="/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
-                                    alt="Mameshiba adulte chez Spitz nain Poméranien"
+                                    src="/pages/spitz-pomeranien-prix/trois-spitz-pomeranien-bebe.jpg"
+                                    alt="Spitz nain Poméranien adulte chez Spitz nain Poméranien"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 1024px) 35vw, 100vw"
@@ -328,8 +328,8 @@ export default function MameshibaPricePage() {
                             </div>
                             <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
                                 <Image
-                                    src="/pages/image-all-shiba/visuel-texte-mameshiba-elevage-kawaii.webp"
-                                    alt="Mameshiba adulte chez Spitz nain Poméranien"
+                                    src="/pages/image-all-spitz/visuel-texte-spitz-pomeranien-elevage-kawaii.webp"
+                                    alt="Spitz nain Poméranien adulte chez Spitz nain Poméranien"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 1024px) 35vw, 100vw"
@@ -363,13 +363,13 @@ export default function MameshibaPricePage() {
                                 </div>
                                 <h2 className="text-xl font-bold md:text-2xl">Vous souhaitez mieux connaître la race avant de réserver ?</h2>
                                 <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                    Avant une réservation, il est utile de bien comprendre ce qu’est réellement un Mameshiba, son origine, son standard, sa rareté et les points de vigilance à connaître avant toute adoption.
+                                    Avant une réservation, il est utile de bien comprendre ce qu’est réellement un Spitz nain Poméranien, son origine, son standard, sa rareté et les points de vigilance à connaître avant toute adoption.
                                 </p>
                                 <Link
-                                    href={siteConfig.pages.shiba}
+                                    href={siteConfig.pages.spitz}
                                     className="inline-flex rounded-md border border-primary px-5 py-3 font-semibold text-primary transition-colors hover:bg-primary/10"
                                 >
-                                    Découvrir le Mameshiba
+                                    Découvrir le Spitz nain Poméranien
                                 </Link>
                             </CardContent>
                         </Card>
@@ -405,7 +405,7 @@ export default function MameshibaPricePage() {
                     </section>
 
                     <FAQSection
-                        title="Questions fréquentes sur nos prix Mameshiba"
+                        title="Questions fréquentes sur nos prix Spitz nain Poméranien"
                         description="Les réponses essentielles sur nos tarifs à l’élevage, ce qu’ils recouvrent et la manière dont nous accompagnons les réservations."
                         items={faqSpitzNainPomeranienPrice}
                     />

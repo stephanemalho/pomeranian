@@ -13,17 +13,17 @@ export function Footer() {
                             <div className="h-10 w-10 relative">
                                 <Image
                                     src="/logo-cercle-polaire.png"
-                                    alt="logo Spitz nain Poméranien elevage de mameshiba"
+                                    alt="logo Spitz nain Poméranien élevage de Spitz nain Poméranien"
                                     fill
                                     sizes="40px"
                                     className="object-contain"
                                     quality={80}
                                 />
                             </div>
-                            <span className="text-lg font-bold text-primary">Spitz nain Poméranien - MAMESHIBA</span>
+                            <span className="text-lg font-bold text-primary">Spitz nain Poméranien</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                            Elevage Professionel de Mameshiba en Saône-et-Loire (71). Santé, socialisation et accompagnement des familles.
+                            Elevage Professionel de Spitz nain Poméranien en Saône-et-Loire (71). Santé, socialisation et accompagnement des familles.
                         </p>
                     </div>
 
@@ -43,7 +43,7 @@ export function Footer() {
                                     href="/spitz-nain-pomeranien"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
-                                    Le Mameshiba
+                                    Le Spitz nain Poméranien
                                 </Link>
                             </li>
                             <li>
@@ -51,7 +51,7 @@ export function Footer() {
                                     href="/spitz-nain-pomeranien/prix"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
-                                    Prix du Mameshiba
+                                    Prix du Spitz nain Poméranien
                                 </Link>
                             </li>
                             <li>
@@ -150,11 +150,11 @@ export function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="mailto:elevagemameshiba@gmail.com"
+                                    href="mailto:contact@spitz-nain-pomeranien.fr"
                                     className="hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
-                                    aria-label="Envoyer un email à elevagemameshiba@gmail.com"
+                                    aria-label="Envoyer un email à contact@spitz-nain-pomeranien.fr"
                                 >
-                                    e-mail : elevagemameshiba@gmail.com
+                                    e-mail : contact@spitz-nain-pomeranien.fr
                                 </a>
                             </li>
                         </ul>
@@ -164,29 +164,29 @@ export function Footer() {
                         <h3 className="font-semibold mb-4">Suivez-nous</h3>
                         <div className="flex space-x-4">
                             <a
-                                href="https://www.facebook.com/people/Elevage-Mameshiba-Kawaii-Shiba/100088811580709"
+                                href="https://www.facebook.com/people/Elevage-Spitz-Nain-Pomeranien/100088811580709"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez Kawaii Mameshiba sur Facebook (lien externe)"
+                                    aria-label="Suivez Spitz nain Poméranien sur Facebook (lien externe)"
                             >
                                 <Facebook className="h-5 w-5" aria-hidden="true" />
                             </a>
                             <a
-                                href="https://www.instagram.com/kawaiimameshiba/"
+                                href="https://www.instagram.com/spitznainpomeranien/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez Kawaii Mameshiba sur Instagram (lien externe)"
+                                    aria-label="Suivez Spitz nain Poméranien sur Instagram (lien externe)"
                             >
                                 <Instagram className="h-5 w-5" aria-hidden="true" />
                             </a>
                             <a
-                                href="https://www.tiktok.com/@kawaiimameshiba"
+                                href="https://www.tiktok.com/@spitznainpomeranien"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez Kawaii Mameshiba sur TikTok (lien externe)"
+                                    aria-label="Suivez Spitz nain Poméranien sur TikTok (lien externe)"
                             >
                                 <FaTiktok className="h-5 w-5" aria-hidden="true" />
                             </a>
@@ -204,7 +204,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-                    <p>&copy; 2026 Spitz nain Poméranien - Mameshiba. Tous droits réservés.</p>
+                    <p>&copy; 2026 Spitz nain Poméranien. Tous droits réservés.</p>
                 </div>
             </div>
         </footer >

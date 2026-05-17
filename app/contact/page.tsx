@@ -52,7 +52,7 @@ const contactInternalLinks: InternalLinkItem[] = [
     {
         href: "/spitz-nain-pomeranien/prix",
         title: "Consulter nos tarifs",
-        description: "Retrouver les prix de nos Mameshiba à l’élevage et ce qu’ils recouvrent.",
+        description: "Retrouver les prix de nos Spitz nain Poméranien à l’élevage et ce qu’ils recouvrent.",
     },
     {
         href: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
@@ -80,7 +80,7 @@ const contactItems = [
         icon: Mail,
         title: "Email",
         type: "email",
-        content: "elevagemameshiba@gmail.com",
+        content: "contact@spitz-nain-pomeranien.fr",
         secondaryLine: "Réponse sous 24h, vidéos envoyées sur demande."
     },
     {
@@ -220,7 +220,7 @@ export default function ContactPage() {
                             <CardContent className="p-6 space-y-4">
                                 <h2 className="text-xl md:text-2xl font-semibold">Dites nous en plus sur votre projet avant de prendre rendez-vous</h2>
                                 <p className="text-muted-foreground">
-                                    Remplissez notre questionnaire de pré-visite pour que nous puissions mieux comprendre vos attentes et vous proposer le Mameshiba qui correspondra parfaitement à votre famille. <br /><span className="text-sm italic text-muted-foreground/80">(gratuit et sans engagement de votre part)</span>
+                                    Remplissez notre questionnaire de pré-visite pour que nous puissions mieux comprendre vos attentes et vous proposer le Spitz nain Poméranien qui correspondra parfaitement à votre famille. <br /><span className="text-sm italic text-muted-foreground/80">(gratuit et sans engagement de votre part)</span>
                                 </p>
                                 <div className="space-y-3">
                                     <div className="flex items-center space-x-2">
@@ -267,7 +267,7 @@ export default function ContactPage() {
                         <figure className="space-y-3">
                             <div className="relative h-72 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/image-all-shiba/jardin-cloture-elevage-vertical.webp"
+                                    src="/pages/image-all-spitz/jardin-cloture-elevage-vertical.webp"
                                     alt="Vue d'un espace extérieur sécurisé de l'élevage"
                                     fill
                                     className="object-cover"
@@ -277,15 +277,15 @@ export default function ContactPage() {
                             </div>
                             <figcaption className="text-sm leading-relaxed text-muted-foreground">
                                 Une visite se prépare toujours sur rendez-vous, dans un cadre calme qui nous permet
-                                d’échanger sérieusement sur votre projet et sur la réalité du Mameshiba.
+                                d’échanger sérieusement sur votre projet et sur la réalité du Spitz nain Poméranien.
                             </figcaption>
                         </figure>
 
                         <figure className="space-y-3">
                             <div className="relative h-72 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/image-all-shiba/mameshiba-exterieur-portrait-01.webp"
-                                    alt="Mameshiba observant son environnement en extérieur"
+                                    src="/pages/image-all-spitz/spitz-pomeranien-exterieur-portrait-01.webp"
+                                    alt="Spitz nain Poméranien observant son environnement en extérieur"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 768px) 50vw, 100vw"
@@ -293,7 +293,7 @@ export default function ContactPage() {
                                 />
                             </div>
                             <figcaption className="text-sm leading-relaxed text-muted-foreground">
-                                Le premier contact sert aussi à vérifier que le tempérament du Mameshiba correspond
+                                Le premier contact sert aussi à vérifier que le tempérament du Spitz nain Poméranien correspond
                                 réellement à votre mode de vie, à vos attentes et à votre cadre familial.
                             </figcaption>
                         </figure>
@@ -308,7 +308,7 @@ export default function ContactPage() {
 
                     <FAQSection
                         title="FAQ avant de prendre contact"
-                        description="Réponses rapides sur le caractère et la cohabitation du Mameshiba."
+                        description="Réponses rapides sur le caractère et la cohabitation du Spitz nain Poméranien."
                         items={faqContact}
                     />
                     <div className="text-right text-xs text-muted-foreground mt-6">

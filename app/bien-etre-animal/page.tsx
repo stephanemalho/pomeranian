@@ -159,7 +159,7 @@ export default function SejoursPage() {
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden">
                                     <ImageCarousel
                                         images={[
-                                            "pages/conditions-de-vie/cocom-pour-chiots-mame-shiba.webp",
+                                            "pages/conditions-de-vie/cocom-pour-chiots-spitz-pomeranien.webp",
                                             "pages/conditions-de-vie/bebe-chiots-lit-douillet.webp",
                                             "pages/conditions-de-vie/salle-ambiante-pour-chiots.webp",
                                         ]}
@@ -177,15 +177,15 @@ export default function SejoursPage() {
                                     <ImageCarousel
                                         images={[
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-sur-structure-bois-01.webp",
+                                                src: "/pages/image-all-spitz/spitz-pomeranien-sur-structure-bois-01.webp",
                                                 alt: "Chiot en découverte sur une structure en bois",
                                             },
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-parmi-les-branches.webp",
+                                                src: "/pages/image-all-spitz/spitz-pomeranien-parmi-les-branches.webp",
                                                 alt: "Chiot observant son environnement pendant une phase de découverte",
                                             },
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-jardin-course-02.webp",
+                                                src: "/pages/image-all-spitz/spitz-pomeranien-jardin-course-02.webp",
                                                 alt: "Chiot en mouvement pendant une séance de jeux d'éveil",
                                             },
                                         ]}
@@ -232,15 +232,15 @@ export default function SejoursPage() {
                                     <ImageCarousel
                                         images={[
                                             {
-                                                src: "/pages/image-all-shiba/jardin-cloture-elevage-horizontal.webp",
+                                                src: "/pages/image-all-spitz/jardin-cloture-elevage-horizontal.webp",
                                                 alt: "Parc extérieur clôturé de l'élevage pour les sorties quotidiennes",
                                             },
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-en-laisse-herbe-01.webp",
+                                                src: "/pages/image-all-spitz/spitz-pomeranien-en-laisse-herbe-01.webp",
                                                 alt: "Chiot accompagné pendant une sortie encadrée",
                                             },
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-jardin-ensemble-03.webp",
+                                                src: "/pages/image-all-spitz/spitz-pomeranien-jardin-ensemble-03.webp",
                                                 alt: "Chiot évoluant dans un espace extérieur sécurisé de l'élevage",
                                             },
                                         ]}
@@ -262,7 +262,7 @@ export default function SejoursPage() {
                                                 alt: "Alimentation remise au départ pour accompagner la transition du chiot",
                                             },
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-interieur-textile-01.webp",
+                                                src: "/pages/image-all-spitz/spitz-pomeranien-interieur-textile-01.webp",
                                                 alt: "Chiot au calme dans un environnement intérieur soigné",
                                             },
                                         ]}
