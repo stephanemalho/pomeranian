@@ -29,19 +29,19 @@ function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: I
     const next = () => setIndex((i) => (i + 1) % total)
 
     return (
-        <div className="relative h-72 md:h-full overflow-hidden rounded-lg bg-card/40 mx-4">
+    <div className="relative h-72 md:h-full overflow-hidden rounded-lg bg-[#102033] mx-4">
             <Image
                 src={currentImageSrc}
                 alt={currentImage.alt}
                 fill
-                className="object-cover transition duration-300 p-2"
+                className="object-contain transition duration-300"
                 sizes={resolvedSizes}
                 priority={priority}
                 fetchPriority={priority ? "high" : "auto"}
                 loading={priority ? "eager" : "lazy"}
                 quality={quality}
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-black/35 via-transparent to-transparent" />
             <div className="absolute top-3 right-3 text-xs px-3 py-1 rounded-full bg-black/60 text-white">
                 {index + 1}/{total}
             </div>

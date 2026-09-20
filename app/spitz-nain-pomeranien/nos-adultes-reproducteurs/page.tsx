@@ -12,7 +12,8 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { dogs } from "./dogs"
 
-const pageImage = "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.jpeg"
+const pageImage =
+    "/pages/le-spitz-pomeranien/reproducteurs/inuk/inuk-spitz-nain-pomeranien-male-spitz-nain-pomeranien-marquage-husky-bleu-blanc-01.jpeg"
 
 const reproductorsInternalLinks: InternalLinkItem[] = [
     {
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Spitz nain Poméranien de l'élevage",
-                width: 1536,
-                height: 1024,
+                alt: "Inuk, mâle Spitz nain Poméranien marquage husky bleu et blanc",
+                width: 2048,
+                height: 1366,
                 type: "image/jpeg",
             },
         ],

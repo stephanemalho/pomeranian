@@ -15,163 +15,137 @@ export type AdultDog = {
     images: DogImage[];
 };
 
+const reproductorBasePath = "/pages/le-spitz-pomeranien/reproducteurs";
+
+const buildDogImages = (
+    dogFolder: string,
+    imageBaseName: string,
+    count: number,
+    alt: string
+): DogImage[] =>
+    Array.from({ length: count }, (_, index) => {
+        const imageNumber = String(index + 1).padStart(2, "0");
+
+        return {
+            src: `${reproductorBasePath}/${dogFolder}/${imageBaseName}-${imageNumber}.webp`,
+            alt: `${alt} - photo ${index + 1}`
+        };
+    });
+
 export const dogs: AdultDog[] = [
     {
-        name: "Ichiro",
-        title: "Shota Go dit ICHIRO - Mâle Spitz nain Poméranien",
-        color: "Rouge / Red",
-        origin: "Issu de notre sélection",
-        lineage:
-            "Lignée suivie, choisie pour le type, le tempérament et la cohérence morphologique",
-        size: "30 cm au garrot • 6,1 kg",
+        name: "Inuk",
+        title: "INUK - Mâle Spitz nain Poméranien marquage husky",
+        color: "Bleue et blanche",
+        origin: "Non LOF, couleur exotique",
+        size: "19 cm au garrot • 1,4 kg",
         temperament:
-            "Avenant, doux, sensible, câlin, curieux, loyal et extrêmement intelligent. Ichiro est un chien de grande prestance, élégant, avec un regard profond et une vraie présence dans la meute.",
+            "Inuk est un mâle joueur, attachant, sensible et sociable.",
         health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
+            "Test ADN laboratoire Antagene",
+            "Indemne de maladie génétique"
         ],
-        images: []
+        images: buildDogImages(
+            "inuk",
+            "inuk-spitz-nain-pomeranien-male-spitz-nain-pomeranien-marquage-husky-bleu-blanc",
+            3,
+            "Inuk, mâle Spitz nain Poméranien marquage husky bleu et blanc"
+        )
     },
     {
-        name: "Yuzu",
-        title: "YUZU - Femelle Spitz nain Poméranien",
-        color: "Rouge / Red",
-        origin: "Issue de notre sélection",
-        lineage: "Excellente lignée sélectionnée",
-        size: "29,5 cm au garrot • 4,8 kg",
+        name: "Bulle",
+        title: "BULLE - Femelle Spitz nain Poméranien marquage husky",
+        color: "Noire, grise et blanche",
+        origin: "Non LOF, couleur exotique",
+        size: "22 cm au garrot • 3 kg",
         temperament:
-            "Curieuse, intelligente, malicieuse, joyeuse, active et pleine de vie. Yuzu est sélective dans ses affinités, mais lorsqu’on gagne son respect et son cœur, elle devient absolument adorable et très proche de l’humain.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
+            "Bulle est une femelle très joyeuse, pot de colle, proche de l’humain, sociable et douce.",
+        health: ["Non LOF, couleur exotique"],
+        images: buildDogImages(
+            "bulle",
+            "bulle-spitz-nain-pomeranien-femelle-spitz-nain-pomeranien-marquage-husky-noire-grise-blanche",
+            2,
+            "Bulle, femelle Spitz nain Poméranien marquage husky noire grise et blanche"
+        )
     },
     {
-        name: "Sakura",
-        title: "SAKURA - Femelle Spitz nain Poméranien",
-        color: "Crème",
-        origin: "Issue de notre sélection",
-        lineage: "Excellente lignée sélectionnée",
-        size: "28,5 cm au garrot • 4,7 kg",
+        name: "Apache",
+        title: "APACHE - Femelle Spitz nain Poméranien marquage husky",
+        color: "Grise, noire et blanche",
+        origin: "Non LOF, couleur exotique",
+        size: "21 cm au garrot • 2,9 kg",
         temperament:
-            "Douce, élégante, sage, intelligente et loyale. Sakura est une femelle très observatrice, sociable et avenante, qui aime les câlins et l’attention. C’est une excellente maman et une véritable force tranquille.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
+            "Apache est une femelle vive et intelligente, interactive et joueuse. Elle est proche de l’humain et sociable.",
+        health: ["Non LOF, couleur exotique"],
+        images: buildDogImages(
+            "apache",
+            "apache-spitz-nain-pomeranien-femelle-spitz-nain-pomeranien-marquage-husky-grise-noire-blanche",
+            5,
+            "Apache, femelle Spitz nain Poméranien marquage husky grise noire et blanche"
+        )
     },
     {
-        name: "Kawaii",
-        title: "KAWAII - Femelle Spitz nain Poméranien",
-        color: "Red",
-        origin: "Née en Europe, parents issus de lignées sélectionnées",
-        lineage: "Excellente lignée sélectionnée",
-        size: "25 cm au garrot • 3,8 kg",
+        name: "Willow",
+        title: "WILLOW - Femelle Spitz nain Poméranien marquage husky",
+        color: "Bleue et blanche",
+        origin: "Non LOF, couleur exotique",
+        size: "21 cm au garrot • 3 kg",
         temperament:
-            "Posée, calme, zen et réfléchie. Kawaii réclame juste ce qu’il faut de contact, communique beaucoup par le regard et sait parfaitement trouver sa place au sein de la meute. Discrète, bien codée et très adaptable, elle possède aussi un excellent rappel.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
+            "Willow est une femelle douce et observatrice, interactive et joueuse. Elle est câline, proche de l’humain et sociable.",
+        health: ["Non LOF, couleur exotique"],
+        images: buildDogImages(
+            "willow",
+            "willow-spitz-nain-pomeranien-femelle-spitz-nain-pomeranien-marquage-husky-bleue-blanche",
+            2,
+            "Willow, femelle Spitz nain Poméranien marquage husky bleue et blanche"
+        )
     },
     {
-        name: "Hina",
-        title: "HINA - Femelle Spitz nain Poméranien",
-        color: "Non précisé",
-        origin: "Née à l’élevage",
-        size: "28 cm au garrot • 4,5 kg",
+        name: "Aleu",
+        title: "ALEU - Femelle Spitz nain Poméranien marquage husky",
+        color: "Grise et blanche",
+        origin: "Non LOF, couleur exotique",
+        size: "24 cm au garrot • 3,7 kg",
         temperament:
-            "Femelle née à l’élevage, Hina représente notre sélection maison avec un petit format, une bonne stabilité et une présence douce dans le quotidien.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
+            "Aleu est une femelle vive et intelligente, interactive et joueuse. Elle adore les jeux de balle, elle est proche de l’humain et sociable.",
+        health: ["Non LOF, couleur exotique"],
+        images: buildDogImages(
+            "aleu",
+            "aleu-spitz-nain-pomeranien-femelle-spitz-nain-pomeranien-marquage-husky-grise-blanche",
+            6,
+            "Aleu, femelle Spitz nain Poméranien marquage husky grise et blanche"
+        )
     },
     {
-        name: "Karasuki",
-        title: "KARASUKI - Femelle Spitz nain Poméranien",
-        color: "Non précisé",
-        origin: "Née à l’élevage",
-        size: "27 cm au garrot • 4 kg",
+        name: "Legend",
+        title: "LEGEND - Mâle Spitz nain Poméranien marquage husky",
+        color: "Noire et blanche",
+        origin: "Non LOF, couleur exotique",
+        size: "23 cm au garrot • 3 kg",
         temperament:
-            "Karasuki est une femelle Spitz nain Poméranien au petit gabarit, suivie pour son équilibre, sa construction et sa capacité à évoluer sereinement dans la meute.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
+            "Legend est un mâle vif, joyeux et observateur. Interactif, il est câlin, proche de l’humain et sociable.",
+        health: ["Non LOF, couleur exotique"],
+        images: buildDogImages(
+            "legend",
+            "legend-spitz-nain-pomeranien-male-spitz-nain-pomeranien-marquage-husky-noir-blanc",
+            1,
+            "Legend, mâle Spitz nain Poméranien marquage husky noir et blanc"
+        )
     },
     {
-        name: "Kimi",
-        title: "KIMI - Femelle Spitz nain Poméranien",
-        color: "Non précisé",
-        origin: "Née à l’élevage",
-        size: "25 cm au garrot • 3,5 kg",
+        name: "Tempête",
+        title: "TEMPÊTE - Femelle Spitz nain Poméranien marquage husky",
+        color: "Bleue et blanche",
+        origin: "Non LOF, couleur exotique",
+        size: "18 cm au garrot • 2,2 kg",
         temperament:
-            "Kimi est une petite femelle Spitz nain Poméranien au format compact, observée pour sa stabilité, sa douceur et son adaptation au quotidien de l’élevage.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
-    },
-    {
-        name: "Natsuko",
-        title: "NATSUKO dit NATSU - Mâle Spitz nain Poméranien",
-        color: "Noire et feu",
-        origin: "Né en Europe, parents issus de lignées sélectionnées",
-        lineage: "Excellente lignée sélectionnée",
-        size: "29 cm au garrot • 5,6 kg",
-        temperament:
-            "Très câlin, sociable, extraverti, joyeux et intéressé par l’humain. Natsu aime les balades et se montre à l’aise dans des environnements variés. C’est un petit ourson zen, stable et sans impulsivité.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
-    },
-    {
-        name: "Yumi",
-        title: "YUMI - Femelle Spitz nain Poméranien",
-        color: "Red",
-        origin: "Née à l’élevage",
-        lineage: "Excellente lignée sélectionnée",
-        size: "28 cm au garrot • 5,5 kg",
-        temperament:
-            "Fille d’Ichiro et Sakura, Yumi possède le physique de sa mère dans une jolie couleur fauve. Très sociable, à l’écoute, facile à éduquer et interactive, elle s’intègre facilement à la meute et reflète très bien notre sélection.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
-    },
-    {
-        name: "Waru",
-        title: "HAIYU WARU - Mâle Spitz nain Poméranien",
-        color: "Red",
-        origin: "Origine sélectionnée",
-        lineage: "Excellente lignée sélectionnée",
-        size: "27 cm au garrot • 4,5 kg",
-        temperament:
-            "Waru a marqué l’histoire du Spitz nain Poméranien avant d’arriver chez nous. Solitaire, observateur, sensible et doux, il préfère souvent profiter de sa tranquillité en retrait du groupe.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Spitz nain Poméranien",
-            "Indemne de maladies génétiques"
-        ],
-        images: []
+            "Tempête est une femelle très attachante, drôle, unique et interactive. Elle est très mignonne.",
+        health: ["Non LOF, couleur exotique"],
+        images: buildDogImages(
+            "tempete",
+            "tempete-spitz-nain-pomeranien-femelle-spitz-nain-pomeranien-marquage-husky-bleue-blanche",
+            4,
+            "Tempête, femelle Spitz nain Poméranien marquage husky bleue et blanche"
+        )
     }
 ];

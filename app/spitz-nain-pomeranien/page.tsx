@@ -10,7 +10,9 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { BookOpen, Heart, PawPrint, Ruler, ShieldCheck, Sparkles } from "lucide-react"
 
-const pageImage = "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.webp"
+const pageImage = "/pages/le-spitz-pomeranien/spitz-nain-pomeranien-noir-feu-exterieur.jpeg"
+const heroImage = "/pages/le-spitz-pomeranien/spitz-nain-pomeranien-noir-feu-exterieur.webp"
+const careImage = "/pages/le-spitz-pomeranien/spitz-nain-pomeranien-creme-portrait.webp"
 
 const keyFacts = [
     {
@@ -75,9 +77,9 @@ export const metadata: Metadata = {
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
                 alt: "Spitz nain Poméranien dans un décor naturel",
-                width: 1200,
-                height: 630,
-                type: "image/webp",
+                width: 2048,
+                height: 1366,
+                type: "image/jpeg",
             },
         ],
     }),
@@ -144,12 +146,12 @@ export default function SpitzNainPomeranienPage() {
                             </div>
                         </div>
 
-                        <div className="relative h-72 overflow-hidden rounded-lg bg-black md:h-105">
+                        <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
                             <Image
-                                src={pageImage}
+                                src={heroImage}
                                 alt="Spitz nain Poméranien dans un décor naturel"
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                                 sizes="(min-width: 768px) 50vw, 100vw"
                                 priority
                             />
@@ -177,12 +179,12 @@ export default function SpitzNainPomeranienPage() {
                     </section>
 
                     <section className="grid gap-8 items-center md:grid-cols-[0.9fr_1.1fr]">
-                        <div className="relative h-72 overflow-hidden rounded-lg bg-black md:h-96">
+                        <div className="relative mx-auto aspect-[2/3] w-full max-w-md overflow-hidden rounded-lg md:max-w-none">
                             <Image
-                                src="/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp"
+                                src={careImage}
                                 alt="Jeune Spitz nain Poméranien au pelage clair"
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                                 sizes="(min-width: 768px) 40vw, 100vw"
                             />
                         </div>

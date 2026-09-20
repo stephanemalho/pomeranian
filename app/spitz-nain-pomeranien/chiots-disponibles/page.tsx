@@ -115,12 +115,12 @@ export default function NosChiotsPage() {
                                 <a href="#preparer-adoption" className="rounded-md border px-4 py-2 text-sm font-medium text-primary hover:bg-muted">Préparer l’adoption</a>
                             </div>
                         </div>
-                        <div className="relative h-72 overflow-hidden rounded-lg bg-black md:h-105">
+                        <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                             <Image
                                 src={pageImage}
                                 alt="Chiots Spitz nain Poméranien à l'élevage"
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                                 sizes="(min-width: 768px) 50vw, 100vw"
                                 priority
                             />

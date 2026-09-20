@@ -146,14 +146,14 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="relative h-80 overflow-hidden rounded-lg bg-black md:h-110">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
               <Image
                 src={heroBannerImage}
                 alt="Spitz nain Poméranien de l'élevage Cercle Polaire"
                 fill
                 priority
                 placeholder="blur"
-                className="object-cover"
+                className="object-contain"
                 sizes="(min-width: 1024px) 45vw, 100vw"
               />
             </div>
@@ -162,13 +162,13 @@ export default function HomePage() {
 
         <section className="py-16">
           <div className="container mx-auto grid gap-8 px-4 md:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div className="relative h-80 overflow-hidden rounded-lg bg-muted lg:h-105">
+            <div className="relative mx-auto aspect-[2/3] w-full max-w-md overflow-hidden rounded-lg lg:max-w-none">
               <Image
                 src={introPortraitImage}
                 alt="Jeune Spitz nain Poméranien au pelage clair"
                 fill
                 placeholder="blur"
-                className="object-cover"
+                className="object-contain"
                 sizes="(min-width: 1024px) 40vw, 100vw"
               />
             </div>
@@ -241,20 +241,22 @@ export default function HomePage() {
                 préparés, dans un cadre propre, stable et attentif.
               </p>
             </div>
-            <div className="grid gap-6 lg:grid-cols-2">
+            <div className="grid items-stretch gap-6 lg:grid-cols-2">
               {founders.map((founder) => (
-                <Card key={founder.name} className="overflow-hidden">
-                  <CardContent className="grid gap-0 p-0 md:grid-cols-[220px_1fr]">
-                    <div className="relative min-h-80 bg-muted">
-                      <Image
-                        src={founder.image}
-                        alt={`Photo de ${founder.name}, éleveuse de Spitz nain Poméranien`}
-                        fill
-                        className="object-cover"
-                        sizes="(min-width: 768px) 220px, 100vw"
-                      />
+                <Card key={founder.name} className="h-full overflow-hidden">
+                  <CardContent className="grid h-full gap-0 p-6 md:grid-cols-[300px_1fr] md:items-center md:gap-8">
+                    <div className="flex justify-center md:justify-start">
+                      <div className="relative h-[420px] w-full max-w-[320px] overflow-hidden md:h-[460px] md:w-[300px] md:max-w-none">
+                        <Image
+                          src={founder.image}
+                          alt={`Photo de ${founder.name}, éleveuse de Spitz nain Poméranien`}
+                          fill
+                          className="object-contain"
+                          sizes="(min-width: 768px) 300px, 320px"
+                        />
+                      </div>
                     </div>
-                    <div className="space-y-4 p-6">
+                    <div className="flex flex-col justify-center space-y-4 pt-6 md:pt-0">
                       <h3 className="text-2xl font-semibold">{founder.name}</h3>
                       <p className="leading-relaxed text-muted-foreground">{founder.description}</p>
                     </div>

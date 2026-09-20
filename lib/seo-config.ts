@@ -267,10 +267,16 @@ export const buildOpenGraph = ({
 
                   return {
                       url: resolvedImage.url,
-                      width: resolvedImage.width ?? siteConfig.ogImageWidth,
-                      height: resolvedImage.height ?? siteConfig.ogImageHeight,
+                      width:
+                          image.width ??
+                          resolvedImage.width ??
+                          siteConfig.ogImageWidth,
+                      height:
+                          image.height ??
+                          resolvedImage.height ??
+                          siteConfig.ogImageHeight,
                       alt: image.alt ?? siteConfig.ogImageAlt,
-                      type: resolvedImage.type
+                      type: image.type ?? resolvedImage.type
                   };
               })
             : (() => {

@@ -237,7 +237,7 @@ export default function ContactPage() {
                                             src="/adobe-express-qr-code.png"
                                             alt="QR code pour contacter Spitz nain Poméranien"
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                             sizes="160px"
                                             quality={80}
                                         />
@@ -260,12 +260,12 @@ export default function ContactPage() {
 
                     <section className="mt-16 grid gap-6 md:grid-cols-2">
                         <figure className="space-y-3">
-                            <div className="relative h-72 rounded-lg overflow-hidden">
+                            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
                                 <Image
                                     src="/locaux.webp"
                                     alt="Vue d'un espace extérieur sécurisé de l'élevage"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                     sizes="(min-width: 768px) 50vw, 100vw"
                                     quality={75}
                                 />
@@ -277,12 +277,12 @@ export default function ContactPage() {
                         </figure>
 
                         <figure className="space-y-3">
-                            <div className="relative h-72 rounded-lg overflow-hidden">
+                            <div className="relative aspect-[3/2] rounded-lg overflow-hidden">
                                 <Image
                                     src="/pages/conditions-de-vie/sortie-encadree-avec-marine.webp"
                                     alt="Spitz nain Poméranien observant son environnement en extérieur"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                     sizes="(min-width: 768px) 50vw, 100vw"
                                     quality={75}
                                 />
