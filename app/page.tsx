@@ -11,7 +11,7 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import heroBannerImage from "@/public/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.webp"
 import introPortraitImage from "@/public/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp"
 import aurelieFounderImage from "@/public/assets/authors/aurelie-elevage-spitz-pomeranien-et-chiot.jpeg"
-import marineFounderImage from "@/public/assets/authors/marine-and-a-new-puppy.jpeg"
+import marineFounderImage from "@/public/assets/authors/marine-eleveuse-avec-spitz-bebe.jpeg"
 
 export const metadata: Metadata = {
   title: pageMetadata.home.title,

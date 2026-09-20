@@ -29,7 +29,9 @@ export const siteConfig = {
     author: CANONICAL_NAME,
     locale: "fr-FR",
 
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.spitz-nain-pomeranien.fr",
+    siteUrl:
+        process.env.NEXT_PUBLIC_SITE_URL ??
+        "https://www.spitz-nain-pomeranien.fr",
 
     /* ------------------------------ SEO Global -------------------------------- */
     title: "Élevage de Spitz nain Poméranien en France",
@@ -90,13 +92,12 @@ export const siteConfig = {
 
     /* ------------------------------ OpenGraph --------------------------------- */
     ogImage: "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.jpeg",
-    ogImageAlt:
-        "Spitz nain Poméranien dans un décor naturel",
+    ogImageAlt: "Spitz nain Poméranien dans un décor naturel",
     ogImageWidth: 2560,
     ogImageHeight: 1707,
 
     socialLinks: {
-        instagram: "https://www.instagram.com/spitznainpomeranien/"
+        instagram: "https://www.instagram.com/pomeranien.cerclepolaire"
     },
 
     /* ------------------------------- Pages ------------------------------------ */
@@ -159,7 +160,7 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         height: 2560,
         type: "image/jpeg"
     },
-    "/assets/authors/marine-and-a-new-puppy.jpeg": {
+    "/assets/authors/marine-eleveuse-avec-spitz-bebe.jpeg": {
         width: 2048,
         height: 1536,
         type: "image/jpeg"
