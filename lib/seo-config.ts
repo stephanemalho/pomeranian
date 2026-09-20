@@ -29,9 +29,7 @@ export const siteConfig = {
     author: CANONICAL_NAME,
     locale: "fr-FR",
 
-    siteUrl:
-        process.env.NEXT_PUBLIC_SITE_URL ??
-        "https://www.spitz-nain-pomeranien.fr",
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pomeranien.fr",
 
     /* ------------------------------ SEO Global -------------------------------- */
     title: "Élevage de Spitz nain Poméranien en France",
@@ -326,7 +324,8 @@ export const buildTwitter = ({
 export const pageMetadata = {
     home: {
         title: "Élevage de Spitz Nain Poméranien en France | Chiots & Éleveur",
-        description: "Élevage familial de Spitz nains Poméraniens en France. Découvrez nos chiots élevés avec soin, socialisés, issus de lignées sélectionnées et prêts à l'adoption.",
+        description:
+            "Élevage familial de Spitz nains Poméraniens en France. Découvrez nos chiots élevés avec soin, socialisés, issus de lignées sélectionnées et prêts à l'adoption.",
         keywords: [
             "élevage spitz nain poméranien france",
             "éleveur spitz nain",
@@ -339,7 +338,8 @@ export const pageMetadata = {
 
     spitz: {
         title: "Spitz Nain Poméranien : Caractère, Taille, Entretien & Prix",
-        description: "Tout savoir sur le Spitz nain Poméranien : standard FCI, caractère, taille, espérance de vie, entretien du pelage et conseils avant d'adopter votre chiot.",
+        description:
+            "Tout savoir sur le Spitz nain Poméranien : standard FCI, caractère, taille, espérance de vie, entretien du pelage et conseils avant d'adopter votre chiot.",
         keywords: [
             "spitz pomeranien race",
             "caractere spitz nain pomeranien",
@@ -352,7 +352,8 @@ export const pageMetadata = {
 
     puppies: {
         title: "Chiots Spitz Nain Poméranien Disponibles : Prix & Réservation",
-        description: "Consultez nos chiots Spitz nain Poméranien disponibles à la réservation. Informations sur les prochaines portées, prix, santé et processus d'adoption.",
+        description:
+            "Consultez nos chiots Spitz nain Poméranien disponibles à la réservation. Informations sur les prochaines portées, prix, santé et processus d'adoption.",
         keywords: [
             "chiots spitz nain pomeranien disponibles",
             "prix spitz nain pomeranien",
@@ -364,7 +365,8 @@ export const pageMetadata = {
 
     reproductors: {
         title: "Nos Reproducteurs Spitz Nain Poméranien | Lignées & Tests de Santé",
-        description: "Découvrez les étalons et femelles reproductrices de notre élevage de Spitz nains. Sélection rigoureuse sur la santé, le type FCI et le pedigree.",
+        description:
+            "Découvrez les étalons et femelles reproductrices de notre élevage de Spitz nains. Sélection rigoureuse sur la santé, le type FCI et le pedigree.",
         keywords: [
             "reproducteurs spitz nain pomeranien",
             "lignées spitz nain pomeranien",
@@ -376,7 +378,8 @@ export const pageMetadata = {
 
     contact: {
         title: "Contact & Visite de l'Élevage de Spitz Nain Poméranien",
-        description: "Une question sur nos chiots ou sur la réservation ? Contactez notre élevage de Spitz nains Poméraniens. Visites sur rendez-vous uniquement.",
+        description:
+            "Une question sur nos chiots ou sur la réservation ? Contactez notre élevage de Spitz nains Poméraniens. Visites sur rendez-vous uniquement.",
         keywords: [
             "contact elevage spitz nain",
             "visiter elevage pomeranien",
@@ -387,7 +390,8 @@ export const pageMetadata = {
 
     legalNotice: {
         title: "Mentions Légales | Élevage de Spitz Nain Poméranien",
-        description: "Consultez les mentions légales de notre site d'élevage de Spitz nain Poméranien : éditeur, SIRET, hébergement et cadre juridique.",
+        description:
+            "Consultez les mentions légales de notre site d'élevage de Spitz nain Poméranien : éditeur, SIRET, hébergement et cadre juridique.",
         keywords: [
             "mentions legales elevage",
             "siret elevage canin",
@@ -397,16 +401,15 @@ export const pageMetadata = {
 
     terms: {
         title: "Conditions Générales d'Utilisation (CGU) | Élevage Spitz Nain",
-        description: "Conditions générales d'utilisation du site de notre élevage de Spitz nains Poméraniens. Règles d'usage, propriétés et responsabilités.",
-        keywords: [
-            "cgu elevage canin",
-            "conditions d utilisation site spitz"
-        ]
+        description:
+            "Conditions générales d'utilisation du site de notre élevage de Spitz nains Poméraniens. Règles d'usage, propriétés et responsabilités.",
+        keywords: ["cgu elevage canin", "conditions d utilisation site spitz"]
     },
 
     privacy: {
         title: "Politique de Confidentialité & RGPD | Élevage Spitz Nain",
-        description: "Protection de vos données personnelles et politique de cookies conformément au RGPD pour notre site d'élevage de Spitz nain Poméranien.",
+        description:
+            "Protection de vos données personnelles et politique de cookies conformément au RGPD pour notre site d'élevage de Spitz nain Poméranien.",
         keywords: [
             "politique de confidentialite",
             "protection donnees rgpd elevage",
