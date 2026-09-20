@@ -12,6 +12,8 @@ import heroBannerImage from "@/public/pages/homePage/spitz-nain-pomeranien-feu-b
 import introPortraitImage from "@/public/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp"
 import aurelieFounderImage from "@/public/assets/authors/aurelie-elevage-spitz-pomeranien-et-chiot.jpeg"
 import marineFounderImage from "@/public/assets/authors/marine-eleveuse-avec-spitz-bebe.jpeg"
+import huskyMarkingImage from "@/public/pages/le-spitz-pomeranien/spitz-nain-pomeranien-noir-blanc-profil.webp"
+import breedingSelectionImage from "@/public/pages/le-spitz-pomeranien/spitz-nain-pomeranien-creme-face.webp"
 
 export const metadata: Metadata = {
   title: pageMetadata.home.title,
@@ -198,7 +200,195 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <section className="py-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+              <div className="space-y-6">
+                <div className="space-y-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary/75">
+                    Notre signature
+                  </p>
 
+                  <h2 className="max-w-3xl text-2xl font-semibold leading-tight md:text-4xl">
+                    Nos Spitz nains sont issus d’un long travail de sélection
+                  </h2>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="leading-relaxed">
+                    Nous avons choisi de consacrer une partie de notre travail de sélection au
+                    Spitz nain Poméranien présentant un marquage husky. Ce marquage très
+                    caractéristique dessine des contrastes, un masque et des nuances qui rappellent
+                    l’esthétique des chiens nordiques, tout en conservant le type du Poméranien.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Du gris silver au noir et blanc, en passant par certaines nuances plus froides,
+                    chaque chien exprime son marquage différemment. Le dessin du masque, la
+                    répartition des couleurs et les contrastes rendent chaque sujet immédiatement
+                    reconnaissable.
+                  </p>
+                </div>
+
+                <div className="rounded-lg border bg-muted/30 p-5">
+                  <p className="font-medium leading-relaxed">
+                    Notre objectif n’est pas seulement de rechercher une esthétique particulière :
+                    chaque mariage doit également préserver la santé, le tempérament, l’équilibre
+                    et les qualités attendues d’un véritable chien de compagnie.
+                  </p>
+                </div>
+              </div>
+
+              <figure className="space-y-3">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
+                  <Image
+                    src={breedingSelectionImage}
+                    alt="Spitz nain Poméranien présentant un marquage husky"
+                    fill
+                    placeholder="blur"
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 45vw, 100vw"
+                  />
+                </div>
+
+                <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                  Le travail sur le marquage fait partie de notre sélection, au même titre que la
+                  santé, le caractère et l’équilibre général du chien.
+                </figcaption>
+              </figure>
+            </div>
+
+            <div className="mt-16">
+              <div className="mx-auto mb-10 max-w-3xl text-center space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary/75">
+                  Sélection et génétique
+                </p>
+
+                <h3 className="text-2xl font-semibold md:text-3xl">
+                  Une sélection pensée sur plusieurs générations
+                </h3>
+
+                <p className="text-muted-foreground leading-relaxed">
+                  Chaque mariage est étudié en tenant compte de plusieurs critères complémentaires.
+                  L’apparence ne constitue jamais, à elle seule, un objectif de sélection.
+                </p>
+              </div>
+
+              <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+                <Card className="h-full">
+                  <CardContent className="space-y-4 p-6">
+                    <ShieldCheck className="h-6 w-6 text-primary" aria-hidden="true" />
+
+                    <h4 className="text-lg font-semibold">
+                      Tests et suivi de santé
+                    </h4>
+
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Nos reproducteurs font l’objet d’un suivi attentif et de tests adaptés afin
+                      d’éclairer nos décisions de mariage et de limiter autant que possible la
+                      transmission de problèmes héréditaires.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="h-full">
+                  <CardContent className="space-y-4 p-6">
+                    <Sparkles className="h-6 w-6 text-primary" aria-hidden="true" />
+
+                    <h4 className="text-lg font-semibold">
+                      Type et marquage
+                    </h4>
+
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Nous observons la morphologie, les couleurs et l’expression du marquage afin
+                      de construire une sélection cohérente sans perdre de vue les qualités
+                      fondamentales du Spitz nain Poméranien.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="h-full">
+                  <CardContent className="space-y-4 p-6">
+                    <Heart className="h-6 w-6 text-primary" aria-hidden="true" />
+
+                    <h4 className="text-lg font-semibold">
+                      Tempérament équilibré
+                    </h4>
+
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      La proximité avec l’humain, la stabilité émotionnelle, la curiosité et la
+                      capacité à évoluer sereinement dans une famille font partie intégrante de
+                      notre sélection.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="h-full">
+                  <CardContent className="space-y-4 p-6">
+                    <PawPrint className="h-6 w-6 text-primary" aria-hidden="true" />
+
+                    <h4 className="text-lg font-semibold">
+                      Aptitude à la vie de famille
+                    </h4>
+
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Nous recherchons des chiens capables de s’adapter à différents environnements
+                      de vie, qu’ils soient urbains ou ruraux, tout en respectant leurs besoins
+                      physiques et comportementaux.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div className="mt-16 grid gap-10 rounded-lg border bg-muted/30 p-6 md:p-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                <Image
+                  src={huskyMarkingImage}
+                  alt="Spitz nain Poméranien élevé au sein de Cercle Polaire"
+                  fill
+                  placeholder="blur"
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                />
+              </div>
+
+              <div className="space-y-5">
+                <div className="space-y-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary/75">
+                    À l’origine du projet
+                  </p>
+
+                  <h3 className="text-2xl font-semibold md:text-3xl">
+                    Une expérience construite autour des chiens de type nordique
+                  </h3>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="leading-relaxed">
+                    Notre expérience de l’élevage a commencé avec Royal Pomsky. Pendant plusieurs
+                    années, ce travail nous a permis d’approfondir notre connaissance des chiens de
+                    type nordique, de leur comportement et des attentes des familles qui souhaitent
+                    partager leur quotidien avec eux.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Cette expérience nous a progressivement conduits vers un nouveau projet :
+                    travailler l’expression d’une esthétique nordique directement chez le Spitz
+                    nain Poméranien, sans chercher à réduire artificiellement la taille d’un
+                    Pomsky.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Le marquage husky est ainsi devenu l’une des signatures de notre élevage, mais
+                    toujours dans le cadre d’une sélection plus large où santé, tempérament,
+                    morphologie et qualité de vie restent indissociables.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="bg-muted/30 py-16">
           <div className="container mx-auto px-4 md:px-6">
             <div className="mx-auto mb-10 max-w-3xl text-center space-y-3">

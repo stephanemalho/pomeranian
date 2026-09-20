@@ -75,7 +75,7 @@ const contactItems = [
         icon: Mail,
         title: "Email",
         type: "email",
-        content: "contact@spitz-nain-pomeranien.fr",
+        content: "cerclepolairepomeranien@gmail.com ",
         secondaryLine: "Réponse sous 24h, vidéos envoyées sur demande."
     },
     {

@@ -17,7 +17,7 @@ key_pages:
 
 contact:
 - telephone: 0689758031
-- email: contact@spitz-nain-pomeranien.fr
+- email: cerclepolairepomeranien@gmail.com 
 
 legal:
 - legal_name: ELEVAGE ROYAL

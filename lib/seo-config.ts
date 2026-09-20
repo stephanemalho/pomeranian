@@ -49,7 +49,7 @@ export const siteConfig = {
 
     /* ------------------------------ Contact ---------------------------------- */
     contact: {
-        email: "contact@spitz-nain-pomeranien.fr",
+        email: "cerclepolairepomeranien@gmail.com ",
         phone: "+33689758031",
         phoneFormatted: "06 89 75 80 31"
     },

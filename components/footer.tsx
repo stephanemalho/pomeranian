@@ -109,11 +109,11 @@ export function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="mailto:contact@spitz-nain-pomeranien.fr"
+                                    href="mailto:cerclepolairepomeranien@gmail.com "
                                     className="hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
-                                    aria-label="Envoyer un email à contact@spitz-nain-pomeranien.fr"
+                                    aria-label="Envoyer un email à cerclepolairepomeranien@gmail.com "
                                 >
-                                    e-mail : contact@spitz-nain-pomeranien.fr
+                                    e-mail : cerclepolairepomeranien@gmail.com
                                 </a>
                             </li>
                         </ul>
@@ -127,7 +127,7 @@ export function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                    aria-label="Suivez Spitz nain Poméranien sur Instagram (lien externe)"
+                                aria-label="Suivez Spitz nain Poméranien sur Instagram (lien externe)"
                             >
                                 <Instagram className="h-5 w-5" aria-hidden="true" />
                             </a>
