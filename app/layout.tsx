@@ -9,7 +9,7 @@ import { Footer } from "../components/footer"
 import { buildOpenGraph, buildTwitter, siteConfig } from "@/lib/seo-config"
 import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/schema-generators"
 import { Questrial } from "next/font/google"
-
+//@TODO : retirer le gone et rediriger vers 404 error page pour les routes non définies, et ajouter une page 500 error pour les erreurs serveur
 const questrial = Questrial({
   weight: ["400"],
   subsets: ["latin"],

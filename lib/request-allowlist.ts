@@ -1,4 +1,3 @@
-import { publicAssetRoutes } from "@/lib/generated-public-asset-paths";
 import { sitemapPages, siteConfig } from "@/lib/seo-config";
 
 const APP_METADATA_ROUTES = [
@@ -29,6 +28,9 @@ const TECHNICAL_EXACT_ROUTES = [
     "/manifest.json",
     "/browserconfig.xml",
 ] as const;
+
+const PUBLIC_FILE_EXTENSION_PATTERN =
+    /\.(?:avif|gif|ico|jpeg|jpg|png|svg|webmanifest|webp|xml)$/i;
 
 const normalizeSlashes = (pathname: string) => pathname.replace(/\/{2,}/g, "/");
 
@@ -64,7 +66,6 @@ const exactAllowedRoutes = [
     ...staticPageRoutes,
     ...REDIRECT_SOURCE_EXACT_ROUTES,
     ...APP_METADATA_ROUTES,
-    ...publicAssetRoutes,
     ...TECHNICAL_EXACT_ROUTES,
 ];
 
@@ -74,6 +75,10 @@ export const isAllowedRequestPath = (pathname: string): boolean => {
     const normalizedPathname = normalizePathname(pathname);
 
     if (allowedExactPathnames.has(normalizedPathname)) {
+        return true;
+    }
+
+    if (PUBLIC_FILE_EXTENSION_PATTERN.test(normalizedPathname)) {
         return true;
     }
 

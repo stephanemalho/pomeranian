@@ -12,7 +12,7 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { dogs } from "./dogs"
 
-const pageImage = "/pages/reproducteurs/YUMI-femelle-spitz-pomeranien-couleur-feu.webp"
+const pageImage = "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.jpeg"
 
 const reproductorsInternalLinks: InternalLinkItem[] = [
     {
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Ichiro spitz-pomeranien de l elevage Spitz nain Poméranien",
-                width: 1200,
-                height: 630,
-                type: "image/webp",
+                alt: "Spitz nain Poméranien de l'élevage",
+                width: 1536,
+                height: 1024,
+                type: "image/jpeg",
             },
         ],
     }),
@@ -99,12 +99,23 @@ export default function NosChiensPage() {
                                 <CardContent className="p-0">
                                     <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? "md:grid-flow-col-dense" : ""}`}>
                                         <div className={`relative md:min-h-120 min-w-0 ${index % 2 === 1 ? "md:order-2" : ""}`}>
-                                            <ImageCarousel
-                                                images={dog.images}
-                                                alt={`Carrousel d'images de ${dog.name}`}
-                                                priority={index === 0}
-                                                sizes="(min-width: 1024px) 50vw, (min-width: 768px) 50vw, 100vw"
-                                            />
+                                            {dog.images.length > 0 ? (
+                                                <ImageCarousel
+                                                    images={dog.images}
+                                                    alt={`Carrousel d'images de ${dog.name}`}
+                                                    priority={index === 0}
+                                                    sizes="(min-width: 1024px) 50vw, (min-width: 768px) 50vw, 100vw"
+                                                />
+                                            ) : (
+                                                <div className="mx-4 flex h-72 items-center justify-center rounded-lg bg-card/40 p-8 text-center md:h-full">
+                                                    <div className="space-y-3">
+                                                        <PawPrint className="mx-auto h-8 w-8 text-primary" aria-hidden="true" />
+                                                        <p className="text-sm font-medium text-muted-foreground">
+                                                            Photos de {dog.name} à venir
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
                                         <div className={`p-8 space-y-4 flex flex-col justify-center min-w-0 ${index % 2 === 1 ? "md:order-1" : ""}`}>
                                             <div className="flex flex-wrap items-center gap-2">

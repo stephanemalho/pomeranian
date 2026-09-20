@@ -31,16 +31,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/ichiro-spitz-pomeranien-spitz-pomeranien-portrait.webp",
-                alt: "Portrait d'Ichiro, mâle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
-            },
-            {
-                src: "/pages/reproducteurs/ISHIRO-spitz-pomeranien-spitz-pomeranien.webp",
-                alt: "Ichiro, mâle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
-            }
-        ]
+        images: []
     },
     {
         name: "Yuzu",
@@ -56,12 +47,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/yuzu-spitz-pomeranien-spitz-pomeranien-portrait.webp",
-                alt: "Portrait de Yuzu, femelle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
-            }
-        ]
+        images: []
     },
     {
         name: "Sakura",
@@ -77,16 +63,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/sakura-spitz-pomeranien-spitz-pomeranien-portrait.webp",
-                alt: "Portrait de Sakura, femelle Spitz nain Poméranien crème de l'élevage Spitz nain Poméranien"
-            },
-            {
-                src: "/pages/reproducteurs/SAKURA-white-spitz-pomeranien-from-japan.webp",
-                alt: "Sakura, femelle Spitz nain Poméranien crème issue de notre sélection"
-            }
-        ]
+        images: []
     },
     {
         name: "Kawaii",
@@ -102,20 +79,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/kawaii-de-nuit-sur-un-rocher.webp",
-                alt: "Kawaii de nuit sur un rocher"
-            },
-            {
-                src: "/pages/reproducteurs/kawaii-sur-un-champ-de-fleurs-jaunes.webp",
-                alt: "Kawaii dans un champ de fleurs jaunes"
-            },
-            {
-                src: "/pages/reproducteurs/KAWAII-femelle-spitz-pomeranien-couleur-feu.webp",
-                alt: "Kawaii, femelle Spitz nain Poméranien couleur feu"
-            }
-        ]
+        images: []
     },
     {
         name: "Hina",
@@ -130,12 +94,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/Hina.webp",
-                alt: "Hina, femelle Spitz nain Poméranien née à l'élevage"
-            }
-        ]
+        images: []
     },
     {
         name: "Karasuki",
@@ -150,12 +109,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/Karasuki.webp",
-                alt: "Karasuki, femelle Spitz nain Poméranien née à l'élevage"
-            }
-        ]
+        images: []
     },
     {
         name: "Kimi",
@@ -170,12 +124,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/Kimi.webp",
-                alt: "Kimi, femelle Spitz nain Poméranien née à l'élevage"
-            }
-        ]
+        images: []
     },
     {
         name: "Natsuko",
@@ -191,16 +140,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/natsuko-dit-natsu-spitz-pomeranien-spitz-pomeranien-portrait.webp",
-                alt: "Portrait de Natsuko dit Natsu, mâle Spitz nain Poméranien noir et feu"
-            },
-            {
-                src: "/pages/reproducteurs/NATSUKO-male-spitz-pomeranien-noir-et-feu.webp",
-                alt: "Natsuko dit Natsu, mâle Spitz nain Poméranien noir et feu"
-            }
-        ]
+        images: []
     },
     {
         name: "Yumi",
@@ -216,16 +156,7 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/yumi-spitz-pomeranien-spitz-pomeranien-portrait.webp",
-                alt: "Portrait de Yumi, femelle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
-            },
-            {
-                src: "/pages/reproducteurs/YUMI-femelle-spitz-pomeranien-couleur-feu.webp",
-                alt: "Yumi, femelle Spitz nain Poméranien couleur feu"
-            }
-        ]
+        images: []
     },
     {
         name: "Waru",
@@ -241,15 +172,6 @@ export const dogs: AdultDog[] = [
             "Test ADN Embark 100% Spitz nain Poméranien",
             "Indemne de maladies génétiques"
         ],
-        images: [
-            {
-                src: "/pages/reproducteurs/waru-spitz-pomeranien-spitz-pomeranien-portrait.webp",
-                alt: "Portrait de Waru, mâle Spitz nain Poméranien de l'élevage Spitz nain Poméranien"
-            },
-            {
-                src: "/pages/reproducteurs/WARU-male-spitz-pomeranien-couleur-feu.webp",
-                alt: "Waru, mâle Spitz nain Poméranien couleur feu"
-            }
-        ]
+        images: []
     }
 ];

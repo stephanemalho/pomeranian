@@ -89,7 +89,7 @@ export const siteConfig = {
     ],
 
     /* ------------------------------ OpenGraph --------------------------------- */
-    ogImage: "/spitz-pomeranien-in-a-sakura-tree.jpg",
+    ogImage: "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.jpeg",
     ogImageAlt:
         "Spitz nain Poméranien dans un décor naturel",
     ogImageWidth: 2560,
@@ -119,25 +119,25 @@ type SocialImageAsset = {
 };
 
 const socialImageAssets: Record<string, SocialImageAsset> = {
-    "/spitz-pomeranien-in-a-sakura-tree.jpg": {
-        width: 2560,
-        height: 1707,
-        type: "image/webp"
-    },
     "/locaux.webp": {
         width: 2048,
         height: 1536,
         type: "image/webp"
     },
     "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.webp": {
-        width: 2560,
-        height: 1709,
+        width: 1536,
+        height: 1024,
         type: "image/webp"
     },
+    "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.jpeg": {
+        width: 1536,
+        height: 1024,
+        type: "image/jpeg"
+    },
     "/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.jpeg": {
-        width: 1320,
-        height: 1908,
-        type: "image/webp"
+        width: 1024,
+        height: 1536,
+        type: "image/jpeg"
     },
     "/pages/homePage/spitz-chiot-gris-1-mois.webp": {
         width: 1320,
@@ -145,50 +145,34 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         type: "image/webp"
     },
     "/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp": {
-        width: 2560,
-        height: 1707,
-        type: "image/jpeg"
+        width: 1024,
+        height: 1536,
+        type: "image/webp"
     },
     "/pages/homePage/spitz-nain-pomeranien-gris-silver-et-blanc.webp": {
-        width: 2560,
-        height: 1708,
-        type: "image/jpeg"
-    },
-    "/pages/spitz-pomeranien-prix/trois-spitz-pomeranien-bebe.jpg": {
-        width: 1600,
-        height: 1066,
-        type: "image/jpeg"
-    },
-    "/pages/spitz-pomeranien-prix/deux-spitz-pomeranien-chiots-blanc-et-un-noir.jpeg": {
-        width: 2560,
-        height: 1707,
-        type: "image/jpeg"
-    },
-    "/pages/reproducteurs/ISHIRO-spitz-pomeranien-spitz-pomeranien.webp": {
-        width: 683,
+        width: 1536,
         height: 1024,
         type: "image/webp"
     },
-    "/pages/reproducteurs/YUMI-femelle-spitz-pomeranien-couleur-feu.webp": {
-        width: 2560,
-        height: 1709,
-        type: "image/webp"
-    },
-    "/pages/reproducteurs/kawaii-sur-un-champ-de-fleurs-jaunes.webp": {
-        width: 3127,
-        height: 2087,
-        type: "image/webp"
-    },
-    "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-spitz-pomeranien-de-elevage-kawaii.jpeg":
-        {
-            width: 3301,
-            height: 2203,
-            type: "image/jpeg"
-        },
     "/assets/authors/aurelie-elevage-spitz-pomeranien-et-chiot.jpeg": {
         width: 1708,
         height: 2560,
         type: "image/jpeg"
+    },
+    "/assets/authors/marine-and-a-new-puppy.jpeg": {
+        width: 2048,
+        height: 1536,
+        type: "image/jpeg"
+    },
+    "/pages/conditions-de-vie/sortie-encadree-avec-marine.webp": {
+        width: 1534,
+        height: 1006,
+        type: "image/webp"
+    },
+    "/pages/conditions-de-vie/la-maman-et-son-chiot-avec-marine.webp": {
+        width: 1600,
+        height: 1066,
+        type: "image/webp"
     }
 };
 

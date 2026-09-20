@@ -262,7 +262,7 @@ export default function ContactPage() {
                         <figure className="space-y-3">
                             <div className="relative h-72 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/image-all-spitz/jardin-cloture-elevage-vertical.webp"
+                                    src="/locaux.webp"
                                     alt="Vue d'un espace extérieur sécurisé de l'élevage"
                                     fill
                                     className="object-cover"
@@ -279,7 +279,7 @@ export default function ContactPage() {
                         <figure className="space-y-3">
                             <div className="relative h-72 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/image-all-spitz/spitz-pomeranien-exterieur-portrait-01.webp"
+                                    src="/pages/conditions-de-vie/sortie-encadree-avec-marine.webp"
                                     alt="Spitz nain Poméranien observant son environnement en extérieur"
                                     fill
                                     className="object-cover"

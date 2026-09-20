@@ -13,7 +13,7 @@ import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { Badge } from "@/components/ui/badge"
 
-const pageImage = "/pages/spitz-pomeranien-prix/trois-spitz-pomeranien-bebe.jpg"
+const pageImage = "/pages/homePage/spitz-chiot-gris-1-mois.jpeg"
 
 const puppiesInternalLinks: InternalLinkItem[] = [
     {
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
                 alt: "Chiots Spitz nain Poméranien à l'élevage",
-                width: 1200,
-                height: 630,
+                width: 1320,
+                height: 866,
                 type: "image/jpeg",
             },
         ],
