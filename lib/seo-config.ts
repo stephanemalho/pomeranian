@@ -17,7 +17,7 @@ import { createLastmodGetter } from "./lastmod";
 
 const CANONICAL_NAME = "Spitz nain Poméranien";
 
-export const seoLastmod = "2026-04-04";
+export const seoLastmod = "2026-09-20";
 
 /* -------------------------------------------------------------------------- */
 /*  SITE CONFIG                                                                */
@@ -325,124 +325,95 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "Élevage de Spitz nain Poméranien en France | Chiots & accompagnement",
-        description:
-            "Élevage de Spitz nain Poméranien en France : chiots élevés avec soin, socialisation sérieuse, sélection attentive et accompagnement avant adoption.",
+        title: "Élevage de Spitz Nain Poméranien en France | Chiots & Éleveur",
+        description: "Élevage familial de Spitz nains Poméraniens en France. Découvrez nos chiots élevés avec soin, socialisés, issus de lignées sélectionnées et prêts à l'adoption.",
         keywords: [
-            "élevage de Spitz nain Poméranien responsable",
-            "chiots Spitz nain Poméranien en France",
-            "élevage de petit spitz à taille humaine",
-            "chiots spitz bien socialisés",
-            "Spitz nain Poméranien roux",
-            "Spitz nain Poméranien noir",
-            "Spitz nain Poméranien blanc",
+            "élevage spitz nain poméranien france",
+            "éleveur spitz nain",
+            "chiot spitz nain poméranien",
             "adopter un pomeranien",
-            "Spitz nain Poméranien",
-            "élevage de Spitz nain Poméranien en France",
-            "adopter un Spitz nain Poméranien en France"
+            "spitz nain roux noir blanc",
+            "élevage canin familial spitz"
         ]
     },
 
     spitz: {
-        title: "Spitz nain Poméranien : caractère, taille, entretien et adoption",
-        description:
-            "Découvrez le Spitz nain Poméranien : origine, standard FCI, taille, caractère, pelage, entretien et points essentiels à connaître avant adoption.",
+        title: "Spitz Nain Poméranien : Caractère, Taille, Entretien & Prix",
+        description: "Tout savoir sur le Spitz nain Poméranien : standard FCI, caractère, taille, espérance de vie, entretien du pelage et conseils avant d'adopter votre chiot.",
         keywords: [
-            "spitz pomeranien",
-            "Spitz nain Poméranien",
-            "taille du Spitz nain Poméranien",
-            "caractere Spitz nain Poméranien",
-            "standard Spitz nain Poméranien",
-            "adopter un Spitz nain Poméranien",
-            "chien ressemblant à un renard",
-            "chien de compagnie"
+            "spitz pomeranien race",
+            "caractere spitz nain pomeranien",
+            "taille spitz nain pomeranien",
+            "entretien pelage pomeranien",
+            "standard fci spitz nain",
+            "chien nain qui ressemble a un renard"
         ]
     },
 
     puppies: {
-        title: "Chiots Spitz nain Poméranien disponibles, tarifs et adoption",
-        description:
-            "Découvrez nos chiots Spitz nain Poméranien, les prochaines portées, les tarifs, la socialisation à l’élevage et les conseils pour préparer l’adoption.",
+        title: "Chiots Spitz Nain Poméranien Disponibles : Prix & Réservation",
+        description: "Consultez nos chiots Spitz nain Poméranien disponibles à la réservation. Informations sur les prochaines portées, prix, santé et processus d'adoption.",
         keywords: [
-            "chiots Spitz nain Poméranien",
-            "Spitz nain Poméranien disponible",
-            "reservation chiot Spitz nain Poméranien",
-            "portee Spitz nain Poméranien",
-            "elevage Spitz nain Poméranien france",
-            "acheter un Spitz nain Poméranien",
-            "inscription portee Spitz nain Poméranien"
+            "chiots spitz nain pomeranien disponibles",
+            "prix spitz nain pomeranien",
+            "reservation chiot pomeranien",
+            "portee spitz nain france",
+            "acheter un spitz nain pomeranien"
         ]
     },
 
     reproductors: {
-        title: "Nos adultes reproducteurs Spitz nain Poméranien",
-        description:
-            "Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à notre sélection, avec une attention portée au type, à la santé, au caractère et à la cohérence des lignées.",
+        title: "Nos Reproducteurs Spitz Nain Poméranien | Lignées & Tests de Santé",
+        description: "Découvrez les étalons et femelles reproductrices de notre élevage de Spitz nains. Sélection rigoureuse sur la santé, le type FCI et le pedigree.",
         keywords: [
-            "nos chiens Spitz nain Poméranien",
-            "adultes reproducteurs Spitz nain Poméranien",
-            "lignées Spitz nain Poméranien",
-            "tests genetiques spitz nain pomeranien",
-            "caractere Spitz nain Poméranien"
+            "reproducteurs spitz nain pomeranien",
+            "lignées spitz nain pomeranien",
+            "tests génétiques spitz nain",
+            "étalons pomeranien",
+            "femelles spitz nain"
         ]
     },
 
     contact: {
-        title: "Contact & visites",
-        description:
-            "Parlons de votre futur compagnon. Les visites se font uniquement sur rendez-vous pour respecter le rythme des chiots.",
+        title: "Contact & Visite de l'Élevage de Spitz Nain Poméranien",
+        description: "Une question sur nos chiots ou sur la réservation ? Contactez notre élevage de Spitz nains Poméraniens. Visites sur rendez-vous uniquement.",
         keywords: [
-            "contact elevage Spitz nain Poméranien",
-            "visite elevage",
-            "rendez-vous",
-            "adoption Spitz nain Poméranien",
-            "informations chiot",
-            "reservation chiot",
-            "questions elevage Spitz nain Poméranien",
-            "prendre contact avec elevage Spitz nain Poméranien"
+            "contact elevage spitz nain",
+            "visiter elevage pomeranien",
+            "rendez-vous elevage canin",
+            "adresse elevage spitz nain france"
         ]
     },
 
     legalNotice: {
-        title: "Mentions légales",
-        description:
-            "Informations réglementaires de l'élevage Spitz nain Poméranien et cadre juridique d'utilisation du site.",
+        title: "Mentions Légales | Élevage de Spitz Nain Poméranien",
+        description: "Consultez les mentions légales de notre site d'élevage de Spitz nain Poméranien : éditeur, SIRET, hébergement et cadre juridique.",
         keywords: [
-            "mentions legales",
-            "informations legales",
-            "siren",
-            "siret",
-            "editeur du site"
+            "mentions legales elevage",
+            "siret elevage canin",
+            "éditeur site spitz nain"
         ]
     },
 
     terms: {
-        title: "Termes et conditions d'utilisation",
-        description:
-            "Règles d'usage du site Spitz nain Poméranien, informations précontractuelles et responsabilités de chacune des parties.",
+        title: "Conditions Générales d'Utilisation (CGU) | Élevage Spitz Nain",
+        description: "Conditions générales d'utilisation du site de notre élevage de Spitz nains Poméraniens. Règles d'usage, propriétés et responsabilités.",
         keywords: [
-            "conditions generales",
-            "conditions dutilisation",
-            "CGU",
-            "responsabilite",
-            "propriete intellectuelle"
+            "cgu elevage canin",
+            "conditions d utilisation site spitz"
         ]
     },
 
     privacy: {
-        title: "Politique de confidentialité",
-        description:
-            "Comment Spitz nain Poméranien collecte, utilise et protège vos données personnelles dans le respect du RGPD.",
+        title: "Politique de Confidentialité & RGPD | Élevage Spitz Nain",
+        description: "Protection de vos données personnelles et politique de cookies conformément au RGPD pour notre site d'élevage de Spitz nain Poméranien.",
         keywords: [
-            "RGPD",
-            "confidentialite",
-            "donnees personnelles",
-            "cookies",
-            "droits des utilisateurs"
+            "politique de confidentialite",
+            "protection donnees rgpd elevage",
+            "gestion des cookies"
         ]
     }
 };
-
 /* -------------------------------------------------------------------------- */
 /*  SITEMAP                                                                    */
 /* -------------------------------------------------------------------------- */
@@ -452,25 +423,25 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-04-12"
-    },
-    {
-        url: "/spitz-nain-pomeranien",
-        changefreq: "monthly",
-        priority: 0.75,
-        lastmod: "2026-04-06"
+        lastmod: "2026-09-20"
     },
     {
         url: "/spitz-nain-pomeranien/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.9,
-        lastmod: "2026-04-12"
+        lastmod: "2026-09-20"
+    },
+    {
+        url: "/spitz-nain-pomeranien",
+        changefreq: "monthly",
+        priority: 0.85,
+        lastmod: "2026-09-20"
     },
     {
         url: "/spitz-nain-pomeranien/nos-adultes-reproducteurs",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-04-12"
+        lastmod: "2026-09-20"
     },
     {
         url: "/contact",
