@@ -178,7 +178,7 @@ export default function NosChiotsPage() {
                                 </p>
                                 <div className="flex flex-col justify-center gap-3 sm:flex-row">
                                     <Link
-                                        href="https://forms.gle/myGmQAj5Kim6UnVx8"
+                                        href="https://forms.gle/VXzUR4y1LK4jMDrEA"
                                         target="_blank"
                                         rel="noreferrer"
                                         className="rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/85"

@@ -243,7 +243,7 @@ export default function ContactPage() {
                                         />
                                     </div>
                                     <div className="flex flex-col items-center space-y-2">
-                                        <Link target="_blank" href="https://forms.gle/myGmQAj5Kim6UnVx8" className="flex h-10 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Remplir le questionnaire
+                                        <Link target="_blank" href="https://forms.gle/VXzUR4y1LK4jMDrEA" className="flex h-10 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Remplir le questionnaire
                                         </Link>
                                         <span className="text-sm italic text-muted-foreground/80">Vous recevrez un exemplaire par mail</span>
                                     </div>

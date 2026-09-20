@@ -1,7 +1,7 @@
 # LLMs.txt for Spitz nain Poméranien website
 
 site_name: Spitz nain Poméranien
-site_url: https://www.spitz-nain-pomeranien.fr
+site_url: https://www.pomeranien.fr
 language: fr-FR
 purpose: Website for Spitz nain Poméranien breeding in France. It provides accurate information about the breed, the kennel, puppies, adoption guidance, contact details, pricing context, and legal notices.
 

@@ -38,7 +38,7 @@ export const puppies: Puppy[] = [
             "Nanook est une femelle Poméranien au marquage Husky, rare et unique elle possède une robe grise, nuancée de noir et de sable.",
         highlights: ["Joueuse", "Affectueuse", "Sociable"],
         images: ["/pages/le-spitz-pomeranien/chiots/nanook/nanook.jpeg"],
-        linkTo: "/nanook"
+        linkTo: "https://forms.gle/VXzUR4y1LK4jMDrEA"
     },
     {
         name: "Soren",
@@ -56,7 +56,7 @@ export const puppies: Puppy[] = [
             "Soren est un petit mâle à la robe rare Musy noire et blanche",
         highlights: ["Joueuse", "Affectueuse", "Sociable"],
         images: ["/pages/le-spitz-pomeranien/chiots/soren/soren.jpeg"],
-        linkTo: "/soren",
+        linkTo: "https://forms.gle/VXzUR4y1LK4jMDrEA",
         isReserved: true
     },
     {
@@ -75,7 +75,7 @@ export const puppies: Puppy[] = [
             "Opale est une très jolie femelle Poméranie marquage Husky de couleur sable et grise.",
         highlights: ["Joueuse", "Affectueuse", "Sociable"],
         images: ["/pages/le-spitz-pomeranien/chiots/opale/opale.jpeg"],
-        linkTo: "/opale",
+        linkTo: "https://forms.gle/VXzUR4y1LK4jMDrEA",
     },
     {
         name: "Koda",
@@ -93,6 +93,6 @@ export const puppies: Puppy[] = [
             "Koda est un minuscule mâle de couleur grise, sable et blanche au marquage Husky",
         highlights: ["Joueuse", "Affectueuse", "Sociable"],
         images: ["/pages/le-spitz-pomeranien/chiots/koda/koda.jpeg"],
-        linkTo: "/koda",
+        linkTo: "https://forms.gle/VXzUR4y1LK4jMDrEA",
     }
 ];
