@@ -116,19 +116,21 @@ export default function SpitzNainPomeranienPage() {
                     <section className="grid gap-10 items-center md:grid-cols-2">
                         <div className="space-y-6">
                             <Badge variant="secondary" className="w-fit">
-                                Le Spitz nain Poméranien
+                                Le Cercle Polaire
                             </Badge>
                             <h1 className="text-2xl font-bold md:text-4xl">
-                                Spitz nain Poméranien : origine, caractère, taille et entretien
+                                Le Spitz nain Poméranien
                             </h1>
+                            <p className="text-lg md:text-xl font-semibold text-foreground/90">
+                                Origine, caractère, taille et entretien
+                            </p>
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 Le Spitz nain Poméranien est un petit chien de compagnie issu de la famille du Spitz
                                 allemand. Sous son apparence très expressive, il reste un vrai chien : vif, attentif,
                                 proche de ses humains et sensible à la qualité de sa socialisation.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                Cette page rassemble les repères essentiels avant adoption, en s’appuyant sur le standard
-                                FCI/Centrale Canine et sur une lecture pratique de la vie avec un Poméranien.
+                                Découvrez tout ce qu'il faut savoir sur la race, le standard officiel et la réalité du quotidien avec un Spitz nain avant de vous lancer.
                             </p>
                             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                                 <div className="flex items-center gap-2">
@@ -167,7 +169,7 @@ export default function SpitzNainPomeranienPage() {
                                     <CardHeader>
                                         <div className="flex items-center gap-3">
                                             <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
-                                            <CardTitle className="text-lg">{fact.title}</CardTitle>
+                                            <h2 className="text-lg">{fact.title}</h2>
                                         </div>
                                     </CardHeader>
                                     <CardContent>
@@ -211,7 +213,7 @@ export default function SpitzNainPomeranienPage() {
                             <div className="space-y-2">
                                 <h2 className="text-xl md:text-2xl font-bold">Références utiles</h2>
                                 <p className="text-sm leading-relaxed text-muted-foreground">
-                                    Ces sources servent de base aux repères de cette page.
+                                    Les standards officiels de référence pour mieux comprendre les caractéristiques, la morphologie et les critères reconnus du Spitz nain / Poméranien.
                                 </p>
                             </div>
                             <div className="grid gap-3 text-sm">

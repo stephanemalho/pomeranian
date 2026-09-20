@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { Calendar, Heart, Mail, NotebookText, PawPrint, Phone, ShieldCheck, Sprout } from "lucide-react"
+import { Calendar, Dog, Heart, Mail, NotebookText, PawPrint, Phone, ShieldCheck, Sprout } from "lucide-react"
 import { FAQSection } from "@/components/faq"
 import { faqNosChiots } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
@@ -13,7 +13,7 @@ import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { Badge } from "@/components/ui/badge"
 
-const pageImage = "/pages/homePage/spitz-chiot-gris-1-mois.jpeg"
+const pageImage = "/pages/le-spitz-pomeranien/chiots/bebe-chiot-spitz-pomeranien.jpeg"
 
 const puppiesInternalLinks: InternalLinkItem[] = [
     {
@@ -34,19 +34,19 @@ const puppiesInternalLinks: InternalLinkItem[] = [
 ]
 
 const adoptionSteps = [
-    "préparer un trajet calme avec caisse ou sac adapté, eau, alèse et linge familier",
-    "prévoir les premières 48 heures comme un sas calme, sans visites ni sollicitations excessives",
-    "installer un espace de repos lisible, loin du passage et accessible au chiot",
-    "sortir très régulièrement pour accompagner la propreté sans pression",
-    "habituer progressivement à de courtes absences pour construire la solitude sans rupture brutale",
+    "Un trajet apaisant : transport sécurisé avec panier adapté, eau et linge imprégné de notre élevage.",
+    "Un cocon pour commencer : gardez les 48 premières heures au calme, sans visites ni agitation.",
+    "Un coin repos dédié : installez son panier dans un endroit paisible et facile d'accès.",
+    "Un coin repos dédié : installez son panier dans un endroit paisible et facile d'accès.",
+    "L'apprentissage de la propreté : proposez des sorties très régulières, toujours sans pression.",
 ]
 
 const socialisationSteps = [
-    "manipulations douces et régulières pour préparer les soins courants",
-    "découverte graduelle des sons, textures, objets et routines de maison",
-    "contacts humains positifs et temps de repos respectés",
-    "sorties adaptées à l’âge et au niveau de sécurité sanitaire",
-    "suivi vétérinaire et observation quotidienne du développement",
+    "Manipulations douces et bienveillantes pour l'habituer aux soins du quotidien.",
+    "Découverte progressive des bruits, des textures et des habitudes de la maison.",
+    "Interactions humaines positives tout en préservant ses temps de repos.",
+    "Sorties et découvertes adaptées à son âge et à son protocole sanitaire.",
+    "Suivi vétérinaire rigoureux et observation individuelle de son développement.",
 ]
 
 export const metadata: Metadata = {
@@ -102,12 +102,10 @@ export default function NosChiotsPage() {
                 <div className="container mx-auto space-y-16">
                     <section className="grid gap-10 items-center md:grid-cols-2">
                         <div className="space-y-5">
-                            <Badge variant="secondary" className="w-fit">Nos chiots</Badge>
-                            <h1 className="text-2xl font-bold md:text-4xl">Chiots Spitz nain Poméranien disponibles et futures portées</h1>
+                            <Badge variant="secondary" className="w-fit">Nos chiots disponibles</Badge>
+                            <h1 className="text-2xl font-bold md:text-4xl">Adoptez votre Spitz Nain en toute confiance</h1>
                             <p className="text-lg leading-relaxed text-muted-foreground">
-                                Cette page rassemble les disponibilités, les tarifs, la préparation au départ et notre
-                                manière de socialiser les chiots. L’objectif est de vous donner une vision claire avant
-                                toute réservation.
+                                Retrouvez ici toutes nos disponibilités, nos tarifs et nos conseils pour accueillir votre chiot dans les meilleures conditions.
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 <a href="#tarifs" className="rounded-md border px-4 py-2 text-sm font-medium text-primary hover:bg-muted">Tarifs</a>
@@ -115,7 +113,7 @@ export default function NosChiotsPage() {
                                 <a href="#preparer-adoption" className="rounded-md border px-4 py-2 text-sm font-medium text-primary hover:bg-muted">Préparer l’adoption</a>
                             </div>
                         </div>
-                        <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                        <div className="relative aspect-4/3 overflow-hidden rounded-lg">
                             <Image
                                 src={pageImage}
                                 alt="Chiots Spitz nain Poméranien à l'élevage"
@@ -152,6 +150,7 @@ export default function NosChiotsPage() {
                                                     <span className="flex items-center gap-2 text-muted-foreground"><PawPrint className="h-4 w-4 text-primary" />{puppy.sexe}</span>
                                                     <span className="flex items-center gap-2 text-muted-foreground"><Heart className="h-4 w-4 text-primary" />{puppy.parents}</span>
                                                     <span className="flex items-center gap-2 text-muted-foreground"><Calendar className="h-4 w-4 text-primary" />{puppy.readyDate}</span>
+                                                    <span className="flex items-center gap-2 text-muted-foreground"><Dog className="h-4 w-4 text-primary" />{puppy.pedigree}</span>
                                                 </div>
                                                 <a
                                                     target="_blank"
@@ -200,11 +199,9 @@ export default function NosChiotsPage() {
                     <section id="tarifs" className="scroll-mt-24 grid gap-6 md:grid-cols-[0.9fr_1.1fr] md:items-start">
                         <div className="space-y-3">
                             <Badge variant="secondary" className="w-fit">Tarifs</Badge>
-                            <h2 className="text-xl font-bold md:text-2xl">Tarifs et réservation</h2>
+                            <h2 className="text-xl font-bold md:text-2xl">Un prix juste pour un chiot en parfaite santé et bien dans ses pattes</h2>
                             <p className="text-muted-foreground leading-relaxed">
-                                Le prix d’un Spitz nain Poméranien dépend du sérieux de l’élevage, du suivi, de la
-                                sélection, des soins et de l’accompagnement. Les offres trop basses doivent inviter à
-                                vérifier les origines, les garanties et les conditions d’élevage.
+                                Chez nous, aucune mauvaise surprise : nos prix reflètent l'exigence de nos soins, le respect de nos reproducteurs et la qualité de notre suivi. Préparez la réservation de votre chiot en toute confiance.
                             </p>
                         </div>
                         <div className="grid gap-4 sm:grid-cols-2">
@@ -212,14 +209,14 @@ export default function NosChiotsPage() {
                                 <CardContent className="space-y-2 p-6">
                                     <h3 className="font-semibold">Mâle Spitz nain Poméranien</h3>
                                     <p className="text-3xl font-bold text-primary">4 500 €</p>
-                                    <p className="text-sm text-muted-foreground">Chiot de compagnie issu de notre sélection.</p>
+                                    <p className="text-sm text-muted-foreground">Sociabilisé, identifié et accompagné de son dossier de santé complet.</p>
                                 </CardContent>
                             </Card>
                             <Card>
                                 <CardContent className="space-y-2 p-6">
                                     <h3 className="font-semibold">Femelle Spitz nain Poméranien</h3>
                                     <p className="text-3xl font-bold text-primary">5 000 €</p>
-                                    <p className="text-sm text-muted-foreground">Même exigence de suivi, de socialisation et d’accompagnement.</p>
+                                    <p className="text-sm text-muted-foreground">Même niveau d'exigence, de soins et d'accompagnement au quotidien.</p>
                                 </CardContent>
                             </Card>
                         </div>
@@ -229,10 +226,9 @@ export default function NosChiotsPage() {
                         <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr]">
                             <div className="space-y-3">
                                 <Badge variant="secondary" className="w-fit">Socialisation</Badge>
-                                <h2 className="text-xl font-bold md:text-2xl">Un départ progressif, pas une mise en scène</h2>
+                                <h2 className="text-xl font-bold md:text-2xl">Une socialisation douce, respectueuse de son rythme</h2>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    La socialisation doit rester adaptée à l’âge du chiot : assez riche pour l’ouvrir au
-                                    monde, assez calme pour respecter son sommeil, sa taille et sa maturité.
+                                    La socialisation doit être équilibrée : suffisamment stimulante pour l'éveiller au monde, mais assez calme pour préserver son sommeil, sa santé et son équilibre émotionnel.
                                 </p>
                             </div>
                             <div className="grid gap-3">
@@ -250,10 +246,9 @@ export default function NosChiotsPage() {
                         <Card>
                             <CardContent className="space-y-5 p-6 md:p-8">
                                 <Badge variant="secondary" className="w-fit">Préparer l’adoption</Badge>
-                                <h2 className="text-xl font-bold md:text-2xl">Les premiers jours doivent être simples et lisibles</h2>
+                                <h2 className="text-xl font-bold md:text-2xl">Préparer une arrivée en toute sérénité</h2>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Un chiot Spitz nain Poméranien n’a pas besoin d’une arrivée spectaculaire. Il a besoin
-                                    d’humains calmes, d’un espace de repos, d’un rythme régulier et de sorties fréquentes.
+                                    Pour votre Spitz, les premiers jours sont décisifs. Inutile d'en faire trop : un cadre bienveillant, du calme et des habitudes claires suffisent pour le rassurer.
                                 </p>
                                 <div className="grid gap-3">
                                     {adoptionSteps.map((item) => (

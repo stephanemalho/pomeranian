@@ -18,18 +18,18 @@ const pageImage =
 const reproductorsInternalLinks: InternalLinkItem[] = [
     {
         href: "/spitz-nain-pomeranien",
-        title: "Mieux comprendre la race",
-        description: "Relier nos chiens adultes au standard, à l’histoire et au tempérament du Spitz nain Poméranien.",
+        title: "Le standard & l'histoire",
+        description: "Tout savoir sur le caractère, l'origine et les particularités du Spitz nain Poméranien.",
     },
     {
         href: "/spitz-nain-pomeranien/chiots-disponibles",
-        title: "Voir les chiots et tarifs",
-        description: "Consulter les disponibilités, les tarifs, la préparation au départ et les prochaines portées.",
+        title: "Chiots & réservation",
+        description: "Découvrez nos chiots disponibles, les futures portées et les conditions de réservation.",
     },
     {
         href: "/contact",
-        title: "Échanger avec nous",
-        description: "Nous poser vos questions sur une lignée, un mariage ou un projet d’adoption.",
+        title: "Contact & questions",
+        description: "Une question sur une portée ou sur l'élevage ? Nous sommes là pour vous répondre.",
     },
 ]
 
@@ -83,13 +83,13 @@ export default function NosChiensPage() {
             <div className="py-16">
                 <div className="container mx-auto my-12">
                     <section className="text-center space-y-4 mb-12">
-                        <h1 className="text-xl md:text-3xl font-bold">Nos adultes reproducteurs Spitz nain Poméranien</h1>
-                        <h2 className="text-xl md:text-2xl">Santé, tempérament et sélection de l&apos;élevage</h2>
+                        <h1 className="text-xl md:text-3xl font-bold">Nos Spitz Nains Poméraniens : Le cœur de notre élevage</h1>
+                        <h2 className="text-xl md:text-2xl">Santé, caractère d'exception et rigueur de sélection</h2>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Les chiens présentés ici constituent le cœur de notre élevage Spitz nain Poméranien. Chacun participe à notre sélection, avec une attention portée au type, à la santé, au caractère et à la cohérence des mariages.
+                            Découvrez les chiens qui partagent notre quotidien et font la fierté de notre élevage. Chaque mariage est pensé avec soin pour allier la beauté de la race, une santé irréprochable et un tempérament équilibré.   
                         </p>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            Nous observons autant le comportement quotidien que la morphologie : un reproducteur doit être agréable à vivre, stable, suivi sérieusement et capable de transmettre de bonnes bases aux générations futures.
+                            Bien plus que des reproducteurs, ce sont nos compagnons de vie. Nous sélectionnons des chiens stables, affectueux et suivis médicalement avec la plus grande rigueur pour vous offrir des chiots sains et bien élevés.   
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
@@ -164,13 +164,13 @@ export default function NosChiensPage() {
                             href="/spitz-nain-pomeranien/chiots-disponibles"
                             className="inline-block w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                         >
-                            Découvrir nos chiots
+                            Découvrir nos chiots disponibles
                         </Link>
                     </div>
 
                     <InternalLinksSection
-                        title="Continuer votre découverte de l’élevage"
-                        description="Après les reproducteurs, voici les pages les plus utiles pour comprendre la race, les chiots et les prochaines étapes."
+                        title="Pour aller plus loin"
+                        description="Découvrez la race en détail, consultez nos disponibilités ou contactez-nous pour échanger sur votre projet."
                         items={reproductorsInternalLinks}
                         className="mt-16"
                     />

@@ -8,14 +8,6 @@ const APP_METADATA_ROUTES = [
     "/apple-icon.png",
 ] as const;
 
-const REDIRECT_SOURCE_EXACT_ROUTES = [
-    "/chiots-disponibles",
-    "/le-spitz-pomeranien",
-    "/le-spitz-inu",
-    "/nos-adultes-reproducteurs",
-    "/nos-chiens",
-] as const;
-
 const TECHNICAL_ROUTE_PREFIXES = [
     "/_next/",
     "/_vercel/",
@@ -64,7 +56,6 @@ const staticPageRoutes = [
 
 const exactAllowedRoutes = [
     ...staticPageRoutes,
-    ...REDIRECT_SOURCE_EXACT_ROUTES,
     ...APP_METADATA_ROUTES,
     ...TECHNICAL_EXACT_ROUTES,
 ];
