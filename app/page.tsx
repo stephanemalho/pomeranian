@@ -164,7 +164,7 @@ export default function HomePage() {
 
         <section className="py-16">
           <div className="container mx-auto grid gap-8 px-4 md:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div className="relative mx-auto aspect-[2/3] w-full max-w-md overflow-hidden rounded-lg lg:max-w-none">
+            <div className="relative mx-auto aspect-[3/2] w-full overflow-hidden rounded-lg">
               <Image
                 src={introPortraitImage}
                 alt="Jeune Spitz nain Poméranien au pelage clair"

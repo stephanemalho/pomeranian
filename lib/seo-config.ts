@@ -124,18 +124,18 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         type: "image/webp"
     },
     "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.webp": {
-        width: 1536,
-        height: 1024,
+        width: 1280,
+        height: 853,
         type: "image/webp"
     },
     "/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.jpeg": {
-        width: 1536,
-        height: 1024,
+        width: 1280,
+        height: 853,
         type: "image/jpeg"
     },
     "/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.jpeg": {
-        width: 1024,
-        height: 1536,
+        width: 1280,
+        height: 853,
         type: "image/jpeg"
     },
     "/pages/homePage/spitz-chiot-gris-1-mois.webp": {
@@ -144,8 +144,8 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         type: "image/webp"
     },
     "/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp": {
-        width: 1024,
-        height: 1536,
+        width: 1280,
+        height: 853,
         type: "image/webp"
     },
     "/pages/homePage/spitz-nain-pomeranien-gris-silver-et-blanc.webp": {
