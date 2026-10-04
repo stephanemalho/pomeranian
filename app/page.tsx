@@ -10,7 +10,7 @@ import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchem
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import heroBannerImage from "@/public/pages/homePage/spitz-nain-pomeranien-feu-blanc-gris-noir.webp"
 import introPortraitImage from "@/public/pages/homePage/spitz-nain-pomeranien-blanc-beige-gris.webp"
-import aurelieFounderImage from "@/public/assets/authors/aurelie-elevage-spitz-pomeranien-et-chiot.jpeg"
+import aurelieFounderImage from "@/public/assets/authors/aurelie/aurelie-avec-chiot-husky.webp"
 import marineFounderImage from "@/public/assets/authors/marine-eleveuse-avec-spitz-bebe.jpeg"
 import huskyMarkingImage from "@/public/pages/le-spitz-pomeranien/spitz-nain-pomeranien-noir-blanc-profil.webp"
 import breedingSelectionImage from "@/public/pages/le-spitz-pomeranien/spitz-nain-pomeranien-creme-face.webp"
@@ -127,8 +127,9 @@ export default function HomePage() {
                   Élevage de Spitz nain Poméranien en France
                 </h1>
                 <p className="max-w-2xl text-base leading-relaxed text-white/82 md:text-lg">
-                  Nous élevons des Spitz nains Poméraniens avec une attention particulière portée à la
-                  santé, au tempérament, à la socialisation et à l’accompagnement des familles.
+                  Nous élevons des spitz nains poméranien au marquage husky à la génétique rare et unique
+                  au monde : 1 sujet sur 1 million possède cette robe spectaculaire issue du gène domino :
+                  le poméranien aux allures de husky
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">
@@ -179,16 +180,14 @@ export default function HomePage() {
                 Notre élevage
               </p>
               <h2 className="text-2xl font-semibold md:text-4xl">
-                Une sélection à taille humaine, pensée pour la vie de famille
+                Notre élevage de poméranien vise l’excellence
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Le Spitz nain Poméranien demande plus qu’une belle apparence : il a besoin d’un départ
-                stable, d’une socialisation progressive et d’humains capables de respecter son petit gabarit
-                comme sa personnalité vive.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Notre rôle est de préparer des chiots équilibrés, de préserver le bien-être des adultes et
-                d’accompagner chaque famille avec transparence avant toute réservation.
+                Passionnés des chiens de type nordique et primitif, nous sommes tombés amoureux du plus
+                petit primitif au monde : le spitz nain. Après plusieurs années de recherches et de
+                sélection nous avons vu naître ces sujets à la robe rare et unique issus de prestigieuses
+                lignées. Nos chiens sont tous testés ADN et indemnes de maladies génétiques. Ils sont
+                séléctionnés pour leur tempérament sociable et proche de l’humain.
               </p>
               <Link
                 href="/spitz-nain-pomeranien"
@@ -216,25 +215,37 @@ export default function HomePage() {
 
                 <div className="space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Nous avons choisi de consacrer une partie de notre travail de sélection au
-                    Spitz nain Poméranien présentant un marquage husky. Ce marquage très
-                    caractéristique dessine des contrastes, un masque et des nuances qui rappellent
-                    l’esthétique des chiens nordiques, tout en conservant le type du Poméranien.
+                    Nous avons été séduits par la possibilité de retrouver, chez un Spitz nain sans
+                    aucun mélange avec le Husky, ces contrastes et ce masque si caractéristiques qui
+                    évoquent immédiatement l’univers des chiens nordiques.
                   </p>
 
                   <p className="leading-relaxed">
-                    Du gris silver au noir et blanc, en passant par certaines nuances plus froides,
-                    chaque chien exprime son marquage différemment. Le dessin du masque, la
-                    répartition des couleurs et les contrastes rendent chaque sujet immédiatement
-                    reconnaissable.
+                    Notre sélection s’est ainsi construite autour de Poméraniens conservant pleinement
+                    le type, le petit gabarit et les caractéristiques du Spitz nain, tout en exprimant
+                    des marquages spectaculaires : gris silver, noir et blanc, nuances froides, masques
+                    plus ou moins dessinés…
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Chaque naissance est unique. Le dessin du visage, l’intensité des contrastes et
+                    la répartition des couleurs donnent à chacun de nos chiots une véritable identité.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    C’est finalement la rencontre de deux univers qui nous passionnent : l’esthétique
+                    nordique que nous aimons tant chez le Pomsky, dans un véritable Spitz nain
+                    Poméranien, sans croisement avec le Husky.
                   </p>
                 </div>
 
                 <div className="rounded-lg border bg-muted/30 p-5">
                   <p className="font-medium leading-relaxed">
-                    Notre objectif n’est pas seulement de rechercher une esthétique particulière :
-                    chaque mariage doit également préserver la santé, le tempérament, l’équilibre
-                    et les qualités attendues d’un véritable chien de compagnie.
+                    Nous réfléchissons à chaque mariage dans son ensemble, en choisissant nos reproducteurs
+                    pour leur complémentarité, leur santé, leur caractère et leur morphologie. Notre
+                    ambition est de faire naître de magnifiques Spitz nains au look nordique, mais surtout
+                    des chiens bien dans leurs pattes, proches de leur famille et agréables à vivre au
+                    quotidien.
                   </p>
                 </div>
               </div>
@@ -269,8 +280,17 @@ export default function HomePage() {
                 </h3>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Chaque mariage est étudié en tenant compte de plusieurs critères complémentaires.
-                  L’apparence ne constitue jamais, à elle seule, un objectif de sélection.
+                  Notre travail ne s’arrête jamais à une seule portée. Chaque mariage s’inscrit dans
+                  une vision à long terme, avec l’envie de construire génération après génération une
+                  lignée qui nous ressemble.
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed">
+                  Nous recherchons cet équilibre très particulier entre le type Poméranien que nous
+                  aimons, un très petit gabarit et cette expression nordique qui fait toute la
+                  singularité de nos chiens. Chaque naissance nous permet d’observer, d’affiner nos
+                  choix et de poursuivre notre sélection vers un type toujours plus homogène et
+                  reconnaissable.
                 </p>
               </div>
 
@@ -360,45 +380,65 @@ export default function HomePage() {
                   </p>
 
                   <h3 className="text-2xl font-semibold md:text-3xl">
-                    Une expérience construite autour des chiens de type nordique
+                    Du Pomsky au Spitz nain, une histoire qui s’est dessinée naturellement
                   </h3>
                 </div>
 
                 <div className="space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Notre expérience de l’élevage a commencé avec Royal Pomsky. Pendant plusieurs
-                    années, ce travail nous a permis d’approfondir notre connaissance des chiens de
-                    type nordique, de leur comportement et des attentes des familles qui souhaitent
-                    partager leur quotidien avec eux.
+                    Éleveuses de Pomsky depuis 2017 et pionnières de la race en France, c’est à travers
+                    le Pomsky que nous sommes peu à peu tombées amoureuses du Spitz nain Poméranien.
                   </p>
 
                   <p className="leading-relaxed">
-                    Cette expérience nous a progressivement conduits vers un nouveau projet :
-                    travailler l’expression d’une esthétique nordique directement chez le Spitz
-                    nain Poméranien, sans chercher à réduire artificiellement la taille d’un
-                    Pomsky.
+                    D’abord présent dans notre travail de sélection pour apporter son petit gabarit,
+                    nous avons découvert au fil des années une race à part entière qui nous a
+                    profondément séduites : son expression, sa personnalité, son incroyable fourrure
+                    et ce format miniature si particulier.
                   </p>
 
                   <p className="leading-relaxed">
-                    Le marquage husky est ainsi devenu l’une des signatures de notre élevage, mais
-                    toujours dans le cadre d’une sélection plus large où santé, tempérament,
-                    morphologie et qualité de vie restent indissociables.
+                    Notre passion pour l’esthétique nordique ne nous ayant jamais quittées, l’idée
+                    s’est alors imposée naturellement : réunir dans un véritable Spitz nain ce que
+                    nous aimions de ces deux univers.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Nous avons ainsi orienté une partie de notre sélection vers des Poméraniens
+                    capables d’exprimer naturellement ces magnifiques marquages inspirés du Husky :
+                    masques, contrastes, gris silver, noir et blanc sans aucun croisement avec le Husky.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Aujourd’hui, ce travail représente la continuité de notre histoire : celle d’une
+                    passion commencée avec le Pomsky en 2017 et qui nous a conduites, presque
+                    naturellement, jusqu’au Spitz nain Poméranien.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="bg-muted/30 py-16">
+        <section className="py-16">
           <div className="container mx-auto px-4 md:px-6">
             <div className="mx-auto mb-10 max-w-3xl text-center space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary/75">
                 Nos engagements
               </p>
-              <h2 className="text-2xl font-semibold md:text-4xl">Santé, socialisation et suivi</h2>
+              <h2 className="text-2xl font-semibold md:text-4xl">Grandir au cœur de notre quotidien</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Nous privilégions des portées limitées, un suivi quotidien et un cadre calme pour respecter
-                le rythme des chiots comme celui des adultes.
+                Nos chiots naissent et grandissent auprès de nous. Dès leurs premières semaines, nous
+                suivons leur évolution individuellement, observons leur caractère et les accompagnons
+                progressivement dans leurs découvertes.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                La socialisation fait partie intégrante de notre quotidien : bruits de la maison,
+                manipulations, présence humaine, autres chiens et premières expériences sont introduits
+                naturellement et au rythme de chacun.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Cette proximité nous permet de connaître réellement nos chiots et de guider chaque
+                famille vers celui dont le tempérament correspondra le mieux à son mode de vie.
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-3">
@@ -497,10 +537,19 @@ export default function HomePage() {
                 <MapPin className="h-6 w-6 text-primary" aria-hidden="true" />
                 <h2 className="text-xl font-semibold">Situés en Saône-et-Loire</h2>
               </div>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                L’élevage est situé à Dommartin-lès-Cuiseaux, en Bourgogne-Franche-Comté, à proximité du Jura.
-                Les visites se font uniquement sur rendez-vous afin de respecter le rythme des chiens.
-              </p>
+              <div className="space-y-3 text-sm leading-relaxed text-muted-foreground">
+                <p>
+                  L’élevage est situé à Dommartin-lès-Cuiseaux, en Bourgogne-Franche-Comté, à proximité du Jura.
+                  Les visites se font uniquement sur rendez-vous afin de respecter le rythme des chiens.
+                </p>
+                <p>
+                  <span className="font-semibold">GAEC ELEVAGE ROYAL</span>
+                  <br />
+                  800 chemin de la liambe
+                  <br />
+                  71480 DOMMARTIN-LES-CUISEAUX
+                </p>
+              </div>
             </div>
             <FAQSection
               title="FAQ Spitz nain Poméranien en bref"
